@@ -1,0 +1,435 @@
+{
+  "source_mode": "ga4_api",
+  "property_id": "314940331",
+  "auth_mode": "oauth_installed_app",
+  "config_file": "ga4_config.json",
+  "credentials_file": null,
+  "credentials_configured": false,
+  "oauth_client_secrets_file": "ga4-oauth-client-secrets.json",
+  "oauth_token_file": "ga4-oauth-token.json",
+  "oauth_configured": true,
+  "oauth_token_available": true,
+  "date_range": {
+    "start_date": "2025-03-25",
+    "end_date": "2026-03-24"
+  },
+  "generated_at": "2026-03-24T09:43:20",
+  "summary": {
+    "observed_event_count": 17,
+    "total_event_occurrences": 764476,
+    "configured_key_event_count": 10,
+    "events_with_key_event_activity": 6,
+    "events_flagged_for_review": 1,
+    "total_key_event_occurrences": 626240.0
+  },
+  "configured_key_events": [
+    {
+      "event_name": "click",
+      "resource_name": "properties/314940331/keyEvents/6244777227",
+      "custom": true,
+      "deletable": true,
+      "counting_method": "ONCE_PER_EVENT",
+      "create_time": "2023-10-02T17:09:37.151588Z"
+    },
+    {
+      "event_name": "file_download",
+      "resource_name": "properties/314940331/keyEvents/6244812247",
+      "custom": true,
+      "deletable": true,
+      "counting_method": "ONCE_PER_EVENT",
+      "create_time": "2023-10-02T17:09:38.765141Z"
+    },
+    {
+      "event_name": "first_visit",
+      "resource_name": "properties/314940331/keyEvents/6244766228",
+      "custom": true,
+      "deletable": true,
+      "counting_method": "ONCE_PER_EVENT",
+      "create_time": "2023-10-02T17:09:39.703917Z"
+    },
+    {
+      "event_name": "GM_Nominations",
+      "resource_name": "properties/314940331/keyEvents/4462873716",
+      "custom": true,
+      "deletable": true,
+      "counting_method": "ONCE_PER_EVENT",
+      "create_time": "2023-01-30T17:23:47.403356Z"
+    },
+    {
+      "event_name": "page_view",
+      "resource_name": "properties/314940331/keyEvents/6244829460",
+      "custom": true,
+      "deletable": true,
+      "counting_method": "ONCE_PER_EVENT",
+      "create_time": "2023-10-02T17:09:41.019551Z"
+    },
+    {
+      "event_name": "purchase",
+      "resource_name": "properties/314940331/keyEvents/3562657680",
+      "custom": null,
+      "deletable": null,
+      "counting_method": "ONCE_PER_EVENT",
+      "create_time": "2022-05-13T19:26:40.262018Z"
+    },
+    {
+      "event_name": "Registration",
+      "resource_name": "properties/314940331/keyEvents/4307673817",
+      "custom": true,
+      "deletable": true,
+      "counting_method": "ONCE_PER_EVENT",
+      "create_time": "2022-11-23T15:04:18.224099Z"
+    },
+    {
+      "event_name": "scroll",
+      "resource_name": "properties/314940331/keyEvents/6244839229",
+      "custom": true,
+      "deletable": true,
+      "counting_method": "ONCE_PER_EVENT",
+      "create_time": "2023-10-02T17:09:41.970298Z"
+    },
+    {
+      "event_name": "session_start",
+      "resource_name": "properties/314940331/keyEvents/6244787775",
+      "custom": null,
+      "deletable": true,
+      "counting_method": "ONCE_PER_EVENT",
+      "create_time": "2023-10-02T17:09:42.978289Z"
+    },
+    {
+      "event_name": "VideoPlay",
+      "resource_name": "properties/314940331/keyEvents/8107279150",
+      "custom": true,
+      "deletable": true,
+      "counting_method": "ONCE_PER_EVENT",
+      "create_time": "2024-05-01T19:48:58.245659Z"
+    }
+  ],
+  "configured_key_events_not_observed": [
+    {
+      "event_name": "GM_Nominations",
+      "resource_name": "properties/314940331/keyEvents/4462873716",
+      "custom": true,
+      "deletable": true,
+      "counting_method": "ONCE_PER_EVENT",
+      "create_time": "2023-01-30T17:23:47.403356Z"
+    },
+    {
+      "event_name": "purchase",
+      "resource_name": "properties/314940331/keyEvents/3562657680",
+      "custom": null,
+      "deletable": null,
+      "counting_method": "ONCE_PER_EVENT",
+      "create_time": "2022-05-13T19:26:40.262018Z"
+    },
+    {
+      "event_name": "Registration",
+      "resource_name": "properties/314940331/keyEvents/4307673817",
+      "custom": true,
+      "deletable": true,
+      "counting_method": "ONCE_PER_EVENT",
+      "create_time": "2022-11-23T15:04:18.224099Z"
+    },
+    {
+      "event_name": "VideoPlay",
+      "resource_name": "properties/314940331/keyEvents/8107279150",
+      "custom": true,
+      "deletable": true,
+      "counting_method": "ONCE_PER_EVENT",
+      "create_time": "2024-05-01T19:48:58.245659Z"
+    }
+  ],
+  "events": [
+    {
+      "event_name": "page_view",
+      "event_count": 238759,
+      "total_users": 135512,
+      "event_count_per_user": 1.7637772590272442,
+      "key_events": 234349.0,
+      "has_key_event_activity": true,
+      "is_configured_key_event": true,
+      "review_flag": null
+    },
+    {
+      "event_name": "session_start",
+      "event_count": 171834,
+      "total_users": 135404,
+      "event_count_per_user": 1.2702850552959961,
+      "key_events": 171687.0,
+      "has_key_event_activity": true,
+      "is_configured_key_event": true,
+      "review_flag": null
+    },
+    {
+      "event_name": "first_visit",
+      "event_count": 135039,
+      "total_users": 134582,
+      "event_count_per_user": 1.0033956992762776,
+      "key_events": 134892.0,
+      "has_key_event_activity": true,
+      "is_configured_key_event": true,
+      "review_flag": null
+    },
+    {
+      "event_name": "user_engagement",
+      "event_count": 123474,
+      "total_users": 60682,
+      "event_count_per_user": 2.065507954298332,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": null
+    },
+    {
+      "event_name": "scroll",
+      "event_count": 64087,
+      "total_users": 48279,
+      "event_count_per_user": 1.3292197287095036,
+      "key_events": 64087.0,
+      "has_key_event_activity": true,
+      "is_configured_key_event": true,
+      "review_flag": null
+    },
+    {
+      "event_name": "click",
+      "event_count": 19163,
+      "total_users": 10812,
+      "event_count_per_user": 1.7736949278045169,
+      "key_events": 19163.0,
+      "has_key_event_activity": true,
+      "is_configured_key_event": true,
+      "review_flag": null
+    },
+    {
+      "event_name": "video_engagement",
+      "event_count": 2860,
+      "total_users": 313,
+      "event_count_per_user": 9.166666666666666,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": null
+    },
+    {
+      "event_name": "form_submit",
+      "event_count": 2524,
+      "total_users": 1199,
+      "event_count_per_user": 2.105087572977481,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": null
+    },
+    {
+      "event_name": "file_download",
+      "event_count": 2062,
+      "total_users": 953,
+      "event_count_per_user": 2.1682439537329126,
+      "key_events": 2062.0,
+      "has_key_event_activity": true,
+      "is_configured_key_event": true,
+      "review_flag": null
+    },
+    {
+      "event_name": "video_progress",
+      "event_count": 1615,
+      "total_users": 437,
+      "event_count_per_user": 3.7126436781609193,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": null
+    },
+    {
+      "event_name": "form_start",
+      "event_count": 1610,
+      "total_users": 793,
+      "event_count_per_user": 2.030264817150063,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": null
+    },
+    {
+      "event_name": "video_start",
+      "event_count": 754,
+      "total_users": 614,
+      "event_count_per_user": 1.2320261437908497,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": null
+    },
+    {
+      "event_name": "ow_click_nomination",
+      "event_count": 381,
+      "total_users": 136,
+      "event_count_per_user": 2.801470588235294,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": null
+    },
+    {
+      "event_name": "video_complete",
+      "event_count": 236,
+      "total_users": 211,
+      "event_count_per_user": 1.1238095238095238,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": null
+    },
+    {
+      "event_name": "click_nomination",
+      "event_count": 40,
+      "total_users": 17,
+      "event_count_per_user": 2.3529411764705883,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": null
+    },
+    {
+      "event_name": "ow_form_submit",
+      "event_count": 36,
+      "total_users": 35,
+      "event_count_per_user": 1.0285714285714285,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": null
+    },
+    {
+      "event_name": "view_search_results",
+      "event_count": 2,
+      "total_users": 1,
+      "event_count_per_user": 2.0,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": "review_low_volume_non_key_event"
+    }
+  ],
+  "flagged_events": [
+    {
+      "event_name": "view_search_results",
+      "event_count": 2,
+      "total_users": 1,
+      "event_count_per_user": 2.0,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": "review_low_volume_non_key_event"
+    }
+  ],
+  "top_events": [
+    {
+      "event_name": "page_view",
+      "event_count": 238759,
+      "total_users": 135512,
+      "event_count_per_user": 1.7637772590272442,
+      "key_events": 234349.0,
+      "has_key_event_activity": true,
+      "is_configured_key_event": true,
+      "review_flag": null
+    },
+    {
+      "event_name": "session_start",
+      "event_count": 171834,
+      "total_users": 135404,
+      "event_count_per_user": 1.2702850552959961,
+      "key_events": 171687.0,
+      "has_key_event_activity": true,
+      "is_configured_key_event": true,
+      "review_flag": null
+    },
+    {
+      "event_name": "first_visit",
+      "event_count": 135039,
+      "total_users": 134582,
+      "event_count_per_user": 1.0033956992762776,
+      "key_events": 134892.0,
+      "has_key_event_activity": true,
+      "is_configured_key_event": true,
+      "review_flag": null
+    },
+    {
+      "event_name": "user_engagement",
+      "event_count": 123474,
+      "total_users": 60682,
+      "event_count_per_user": 2.065507954298332,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": null
+    },
+    {
+      "event_name": "scroll",
+      "event_count": 64087,
+      "total_users": 48279,
+      "event_count_per_user": 1.3292197287095036,
+      "key_events": 64087.0,
+      "has_key_event_activity": true,
+      "is_configured_key_event": true,
+      "review_flag": null
+    },
+    {
+      "event_name": "click",
+      "event_count": 19163,
+      "total_users": 10812,
+      "event_count_per_user": 1.7736949278045169,
+      "key_events": 19163.0,
+      "has_key_event_activity": true,
+      "is_configured_key_event": true,
+      "review_flag": null
+    },
+    {
+      "event_name": "video_engagement",
+      "event_count": 2860,
+      "total_users": 313,
+      "event_count_per_user": 9.166666666666666,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": null
+    },
+    {
+      "event_name": "form_submit",
+      "event_count": 2524,
+      "total_users": 1199,
+      "event_count_per_user": 2.105087572977481,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": null
+    },
+    {
+      "event_name": "file_download",
+      "event_count": 2062,
+      "total_users": 953,
+      "event_count_per_user": 2.1682439537329126,
+      "key_events": 2062.0,
+      "has_key_event_activity": true,
+      "is_configured_key_event": true,
+      "review_flag": null
+    },
+    {
+      "event_name": "video_progress",
+      "event_count": 1615,
+      "total_users": 437,
+      "event_count_per_user": 3.7126436781609193,
+      "key_events": 0.0,
+      "has_key_event_activity": false,
+      "is_configured_key_event": false,
+      "review_flag": null
+    }
+  ],
+  "notes": [
+    "This inventory reflects observed GA4 event activity for the selected date range.",
+    "review_low_volume_non_key_event is a review heuristic only, not an auto-delete instruction.",
+    "review_configured_key_event_no_activity flags configured key events with no observed key-event activity in the selected range."
+  ],
+  "status": "ready",
+  "window_days": 365,
+  "window_label": "Last 365 days"
+}

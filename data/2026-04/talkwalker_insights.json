@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-05-19T10:32:00",
+  "report_date": "2026-05-01T07:01:00",
+  "source_file": "Talkwalker shared report",
+  "source_url": "https://app.talkwalker.com/app/project/f3190b5e-b0bf-4579-a562-1287c371b4ae/shared_report/mk5wd4x9_1670v2druq2lq/7b47f84c-4a4d-4b67-a086-072514aec7d1",
+  "report_url": "https://app.talkwalker.com/app/project/f3190b5e-b0bf-4579-a562-1287c371b4ae/shared_report/mk5wd4x9_1670v2druq2lq/7b47f84c-4a4d-4b67-a086-072514aec7d1",
+  "report_title": "Brand Management Report - Sabin Vaccine Institute",
+  "report_sections": [
+    "KEY METRICS",
+    "PERFORMANCE OVER TIME",
+    "SHARE OF MEDIA TYPES",
+    "THEMES",
+    "SENTIMENT",
+    "DEMOGRAPHICS",
+    "DIGITAL OPINION LEADERS"
+  ],
+  "status": "ATTACHED",
+  "metrics": {
+    "positive_mentions": 0,
+    "neutral_mentions": 0,
+    "negative_mentions": 0,
+    "sabin_mentions": 127,
+    "results": 127,
+    "results_change_percent": 0,
+    "results_previous": 127,
+    "performance_results": 127,
+    "unique_authors": 92,
+    "unique_authors_change_percent": 12.2,
+    "unique_authors_previous": 82,
+    "unique_sites": 32,
+    "unique_sites_change_percent": 52.4,
+    "unique_sites_previous": 21,
+    "competitor_mentions": {},
+    "trending_topics": [
+      "Sabin Vaccine Institute",
+      "HPV / cervical cancer elimination",
+      "Polio",
+      "Outbreak response",
+      "Vaccine confidence",
+      "Global immunization"
+    ],
+    "media_types": [],
+    "media_type_breakdown": [],
+    "reach": 0,
+    "impressions": 0,
+    "engagement": 284,
+    "engagement_change_percent": -3.1,
+    "engagement_previous": 293,
+    "gender_distribution": [
+      {
+        "label": "Female",
+        "percent": 33.3
+      },
+      {
+        "label": "Male",
+        "percent": 66.7
+      }
+    ],
+    "age_sample_results": 25,
+    "occupation_sample_results": 8,
+    "most_active_author": "Sabin Vaccine Institute on X - 7 posts",
+    "most_influential_author": "Sabin Vaccine Institute on LinkedIn - 88 engagements",
+    "most_active_site": "alistweekly.substack.com - 1 post",
+    "most_influential_site": "startrek on Reddit - 3 engagements",
+    "current_preview_results": 416,
+    "current_preview_window": "04/19/26 - 05/18/26",
+    "current_preview_note": "The 416-result preview is from the cleaned Sabin brand topic after configuration, not the April 30-day shared report."
+  },
+  "sentiment": {
+    "positive_percent": 41,
+    "negative_percent": 42,
+    "neutral_percent": 10,
+    "note": "Sentiment percentages are read from the shared Talkwalker report; drill into drivers before using them as final reputation conclusions."
+  },
+  "intelligence_center": {
+    "summary": "The April Talkwalker Brand Management report is now attached. Use it as the monthly source for brand listening volume, engagement, author breadth, site breadth, sentiment, and influencer context, while keeping the configured IQ apps as the live early-warning layer.",
+    "talkwalker_overview_url": "https://app.talkwalker.com/app/page#/IQ_APPS#co=project&cid=f3190b5e-b0bf-4579-a562-1287c371b4ae",
+    "talkwalker_report_url": "https://app.talkwalker.com/app/project/f3190b5e-b0bf-4579-a562-1287c371b4ae/shared_report/mk5wd4x9_1670v2druq2lq/7b47f84c-4a4d-4b67-a086-072514aec7d1",
+    "operational_cards": [
+      {
+        "label": "Results",
+        "value": "127",
+        "subtext": "Flat vs previous period"
+      },
+      {
+        "label": "Engagement",
+        "value": "284",
+        "subtext": "-3.1% vs previous period"
+      },
+      {
+        "label": "Unique authors",
+        "value": "92",
+        "subtext": "+12.2% vs previous period"
+      },
+      {
+        "label": "Unique sites",
+        "value": "32",
+        "subtext": "+52.4% vs previous period"
+      }
+    ],
+    "active_monitors": [
+      "Sabin brand clean",
+      "Ebola / Filovirus Early Warning",
+      "Crisis / Rapid Response",
+      "Vaccine Confidence & Trust",
+      "Outbreak Preparedness & Response",
+      "Research / Innovation / R&D",
+      "Routine Immunization",
+      "Policy & Financing"
+    ],
+    "decision_rules": [
+      "Treat the attached Talkwalker report as the monthly brand-listening source, but use Crisis and Trends Analysis for live issue monitoring.",
+      "Escalate outbreak or vaccine-confidence spikes when volume rises and credible local sources appear in the same window.",
+      "Keep owned Sabin posts, partner amplification, and earned third-party sentiment separate before reporting reputation health.",
+      "Turn repeated questions, criticism, or confusion into recommended owned-channel content or partner amplification."
+    ],
+    "weekly_questions": [
+      "Did any signal emerge that Sabin should know before it becomes a broader public story?",
+      "Are the 42% negative and 41% positive sentiment shares being driven by real Sabin reputation signals or by topic/context artifacts?",
+      "Which authors or sites are actually worth engaging, briefing, or watching?",
+      "Which topics are rising in listening but underrepresented in owned content?"
+    ],
+    "next_actions": [
+      "Use the shared report to confirm monthly baseline numbers: 127 results, 284 engagements, 92 unique authors, and 32 unique sites.",
+      "Review sentiment key drivers before repeating the positive/negative split outside the Comms team.",
+      "Use Results Curation to save the most useful positive, negative, and influential results for the weekly digest.",
+      "Attach a raw Talkwalker export later if Comms needs chart-level detail for media mix, top themes, or top hashtags."
+    ],
+    "monthly_export_status": "Shared Talkwalker report attached; raw export is still recommended for chart-level media mix and theme extraction."
+  },
+  "insights": {
+    "strengths": [
+      "The report gives April a confirmed monthly listening baseline: 127 results, 284 engagements, 92 unique authors, and 32 unique sites.",
+      "Conversation breadth improved: unique authors rose 12.2% and unique sites rose 52.4% compared with the prior period.",
+      "Sabin's owned presence is visible in the influencer section, with Sabin Vaccine Institute listed as the most active author on X and most influential author on LinkedIn."
+    ],
+    "vulnerabilities": [
+      "Engagement declined 3.1% even while author and site breadth increased, so the conversation spread wider but did not become more interactive.",
+      "Sentiment is nearly split between positive and negative, with 42% negative and 41% positive; this needs driver review before being used as a reputation headline.",
+      "The report mixes owned Sabin activity with broader conversation signals, so earned sentiment should be separated from owned and partner amplification before executive reporting.",
+      "The cleaned-topic preview later showed 416 results for 04/19/26 to 05/18/26, which should not be compared directly with this 30-day report."
+    ],
+    "opportunities": [
+      "Use the author and site breadth increase as a prompt to find new credible voices, not just as a volume win.",
+      "Create a weekly curated digest that includes one emerging issue, one reputation signal, one influential result, and one recommended action.",
+      "Use the negative sentiment driver review to identify whether Sabin needs a response, partner amplification, or just monitoring."
+    ],
+    "content_ideas": [
+      "Create a short 'what we are seeing externally' note when the weekly report shows wider author/site spread.",
+      "When sentiment is close to evenly split, draft owned content that clarifies Sabin's role in vaccine access, R&D, outbreak response, or trust.",
+      "For outbreak signals, prepare a one-paragraph internal brief that distinguishes verified news, public concern, and Sabin relevance."
+    ],
+    "discussion_points": [
+      "The dashboard should answer 'what should Comms do next?' before it answers 'how many mentions did we get?'",
+      "Talkwalker report metrics are useful as a monthly baseline, but the live IQ apps are the better early-warning surface.",
+      "Results Curation is the best bridge from Talkwalker noise to leadership-ready insight."
+    ],
+    "summary": "April's Talkwalker Brand Management report is attached. The report shows stable volume at 127 results, engagement down slightly to 284, and broader conversation breadth through 92 unique authors and 32 unique sites. The biggest Comms takeaway is not volume; it is that the conversation spread wider while sentiment stayed mixed, so the next step is driver review and curated interpretation."
+  }
+}

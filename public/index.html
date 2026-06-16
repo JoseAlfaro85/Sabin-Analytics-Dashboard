@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#196BAC">
+  <title>Sabin Performance Dashboard</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="app-icon.svg" type="image/svg+xml">
+  <meta http-equiv="refresh" content="3; url=DASHBOARD_PREVIEW.html">
+  <style>
+    :root {
+      --navy: #196BAC;
+      --orange: #EC881D;
+      --text: #333333;
+      --bg: #f3f4f4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Museo Sans", Aptos, "Segoe UI", Tahoma, sans-serif;
+    }
+    .launch {
+      width: min(440px, calc(100vw - 32px));
+      padding: 28px;
+      background: #fff;
+      border: 1px solid rgba(25, 107, 172, 0.14);
+      border-top: 4px solid var(--orange);
+      border-radius: 8px;
+      box-shadow: 0 16px 40px rgba(5, 67, 114, 0.12);
+    }
+    .mark {
+      display: block;
+      width: 142px;
+      height: auto;
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.45rem;
+      line-height: 1.2;
+    }
+    p {
+      margin: 0 0 18px;
+      color: #5f7388;
+      line-height: 1.5;
+    }
+    a {
+      color: var(--navy);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main class="launch">
+    <img class="mark" src="assets/sabin-logo-color.png" alt="Sabin Vaccine Institute">
+    <h1>Opening Sabin Performance Dashboard</h1>
+    <p>The dashboard should open automatically. If it does not, use the link below.</p>
+    <a id="dashboard-link" href="DASHBOARD_PREVIEW.html">Open dashboard</a>
+  </main>
+  <script>
+    const isServed = window.location.protocol !== 'file:';
+    const target = new URL(isServed ? '/app' : 'DASHBOARD_PREVIEW.html', window.location.href);
+    const currentParams = new URLSearchParams(window.location.search);
+    currentParams.forEach((value, key) => target.searchParams.set(key, value));
+    document.getElementById('dashboard-link').href = target.href;
+    window.location.replace(target);
+  </script>
+</body>
+</html>

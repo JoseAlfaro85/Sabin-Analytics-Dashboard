@@ -1,0 +1,374 @@
+{
+  "status": "unavailable",
+  "month": "2026-05",
+  "source_mode": "openai_responses_api",
+  "generated_at": "2026-06-16T11:38:37",
+  "report_file": "2026-05_openai_analysis.json",
+  "prompt_version": "2026-03-23-v1",
+  "model": "gpt-4o-mini",
+  "reasoning_effort": "medium",
+  "config": {
+    "enabled": false,
+    "config_file": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Desktop\\Python Scripts\\config\\openai_reporting_config.json",
+    "api_key_env_var": "OPENAI_API_KEY",
+    "api_key_configured": false,
+    "max_output_tokens": 1400,
+    "save_raw_response": false,
+    "sdk_available": true
+  },
+  "reason": "OpenAI reporting analysis is disabled in config.",
+  "analysis": {},
+  "notes": [
+    "Set enabled=true in openai_reporting_config.json to activate the AI analysis layer."
+  ],
+  "source_snapshot": {
+    "month": null,
+    "executive_context": {
+      "headline": "May 2026: 49 social posts generated 44,118 impressions and 3,038 engagements.",
+      "adjustment_areas": [
+        "Facebook follower pace is off track.",
+        "Instagram follower pace is off track.",
+        "Instagram posting cadence is off track."
+      ]
+    },
+    "account_summary": {
+      "total_followers": 42457,
+      "net_new_followers": 1727,
+      "total_posts": 49,
+      "total_engagements": 3038,
+      "total_link_clicks": 5663,
+      "page_impressions": 44118,
+      "page_reach": 44118,
+      "engagement_rate_platform_average": 0.0573,
+      "engagement_per_post": 62.0,
+      "follows_per_1000_impressions": 39.15
+    },
+    "export_completeness": {
+      "status": "complete",
+      "status_reason": "All expected monthly export families were present without relying on supplemental top-post files.",
+      "fallback_platforms": [],
+      "missing_post_data_platforms": [],
+      "post_data_sources": {
+        "facebook": "full_post_performance",
+        "instagram": "full_post_performance",
+        "linkedin": "full_post_performance",
+        "x": "missing"
+      }
+    },
+    "growth_vs_targets": {
+      "summary": {
+        "tracked_platforms": 3,
+        "on_track": 1,
+        "slightly_behind": 0,
+        "off_track": 2,
+        "unknown": 0
+      },
+      "methodology": {
+        "actual_reporting_pace": "actual followers end minus real January 1 followers where available",
+        "target_benchmark_pace": "annual target net new followers multiplied by completed-year pace",
+        "status_basis": "Actual YTD net new followers compared with target benchmark YTD net new followers"
+      },
+      "platforms": [
+        {
+          "platform_key": "linkedin",
+          "platform": "LinkedIn",
+          "status": "on_track",
+          "posting_status": "on_track",
+          "actual_followers_end": 29734,
+          "actual_net_new_followers_ytd": 3518,
+          "reporting_baseline_followers_start": 26216,
+          "target_benchmark_followers_to_date": 30288,
+          "target_benchmark_net_new_followers_to_date": 3365,
+          "gap_to_target_benchmark_net_new_followers": 153,
+          "posts_actual": 20,
+          "posts_target_min": 14,
+          "posts_target_max": 22,
+          "gap_to_year_end_target": 5266
+        },
+        {
+          "platform_key": "facebook",
+          "platform": "Facebook",
+          "status": "off_track",
+          "posting_status": "on_track",
+          "actual_followers_end": 7921,
+          "actual_net_new_followers_ytd": 342,
+          "reporting_baseline_followers_start": 7579,
+          "target_benchmark_followers_to_date": 8130,
+          "target_benchmark_net_new_followers_to_date": 478,
+          "gap_to_target_benchmark_net_new_followers": -136,
+          "posts_actual": 19,
+          "posts_target_min": 14,
+          "posts_target_max": 22,
+          "gap_to_year_end_target": 879
+        },
+        {
+          "platform_key": "instagram",
+          "platform": "Instagram",
+          "status": "off_track",
+          "posting_status": "off_track",
+          "actual_followers_end": 4802,
+          "actual_net_new_followers_ytd": -14,
+          "reporting_baseline_followers_start": 4816,
+          "target_benchmark_followers_to_date": 5452,
+          "target_benchmark_net_new_followers_to_date": 606,
+          "gap_to_target_benchmark_net_new_followers": -620,
+          "posts_actual": 10,
+          "posts_target_min": 5,
+          "posts_target_max": 8,
+          "gap_to_year_end_target": 1498
+        }
+      ]
+    },
+    "content_performance": {
+      "account": {
+        "posts": 49,
+        "engagements": 3038,
+        "link_clicks": 5663,
+        "impressions": 44118,
+        "engagement_rate": 0.0573,
+        "engagement_per_post": 62.0,
+        "follows_per_1000_impressions": 39.15
+      },
+      "platforms": [
+        {
+          "platform": "Linkedin",
+          "posts": 20,
+          "engagements": 715,
+          "link_clicks": 2323,
+          "impressions": 24506,
+          "engagement_rate": 0.0889,
+          "engagement_per_post": 35.75,
+          "follows_per_1000_impressions": 60.64,
+          "post_data_source": "full_post_performance"
+        },
+        {
+          "platform": "Facebook",
+          "posts": 19,
+          "engagements": 214,
+          "link_clicks": 105,
+          "impressions": 17381,
+          "engagement_rate": 0.0339,
+          "engagement_per_post": 11.26,
+          "follows_per_1000_impressions": 12.31,
+          "post_data_source": "full_post_performance"
+        },
+        {
+          "platform": "Instagram",
+          "posts": 10,
+          "engagements": 62,
+          "link_clicks": 0,
+          "impressions": 1833,
+          "engagement_rate": 0.0386,
+          "engagement_per_post": 6.2,
+          "follows_per_1000_impressions": 14.73,
+          "post_data_source": "full_post_performance"
+        }
+      ],
+      "platform_insights": {
+        "top_engagement_platform": {
+          "platform": "linkedin",
+          "engagement_rate": 0.0889
+        },
+        "top_follower_efficiency_platform": {
+          "platform": "linkedin",
+          "follows_per_1000_impressions": 60.63821105035502
+        },
+        "highest_volume_platform": {
+          "platform": "linkedin",
+          "posts": 20
+        },
+        "adjustment_areas": [
+          "Facebook follower pace is off track.",
+          "Instagram follower pace is off track.",
+          "Instagram posting cadence is off track."
+        ]
+      }
+    },
+    "web_analytics": {
+      "status": "ready",
+      "source_mode": "ga4_saved_extract",
+      "summary": {
+        "sessions": 13173,
+        "total_users": 10954,
+        "new_users": 10378,
+        "engagement_rate": 0.9567,
+        "bounce_rate": 0.0433,
+        "session_key_event_rate": 0.9946,
+        "avg_engagement_time_label": "23s",
+        "key_events": 46080
+      },
+      "top_channels": [
+        {
+          "channel_group": "Direct",
+          "sessions": 6891,
+          "total_users": 6784,
+          "new_users": 6521,
+          "engagement_rate": 0.9922,
+          "key_events": 24591
+        },
+        {
+          "channel_group": "Organic Search",
+          "sessions": 5048,
+          "total_users": 3503,
+          "new_users": 3211,
+          "engagement_rate": 0.94,
+          "key_events": 17653
+        },
+        {
+          "channel_group": "Referral",
+          "sessions": 418,
+          "total_users": 258,
+          "new_users": 235,
+          "engagement_rate": 0.9545,
+          "key_events": 1542
+        },
+        {
+          "channel_group": "Organic Social",
+          "sessions": 380,
+          "total_users": 264,
+          "new_users": 235,
+          "engagement_rate": 0.9711,
+          "key_events": 1324
+        },
+        {
+          "channel_group": "Unassigned",
+          "sessions": 291,
+          "total_users": 122,
+          "new_users": 118,
+          "engagement_rate": 0.4742,
+          "key_events": 623
+        }
+      ],
+      "top_pages": [
+        {
+          "title": "/",
+          "path": "/",
+          "metric_label": "Sessions",
+          "metric_value": 1855,
+          "secondary_label": "Active Users",
+          "secondary_value": 1587,
+          "key_events": 7868,
+          "source_type": "landing_page"
+        },
+        {
+          "title": "/about/opportunities/careers",
+          "path": "/about/opportunities/careers",
+          "metric_label": "Sessions",
+          "metric_value": 571,
+          "secondary_label": "Active Users",
+          "secondary_value": 383,
+          "key_events": 2050,
+          "source_type": "landing_page"
+        },
+        {
+          "title": "Vaccines 101: Their History, How They Work, and Their Impact",
+          "path": "/resources/vaccines-101-their-history-how-they-work-and-their-impact",
+          "metric_label": "Sessions",
+          "metric_value": 422,
+          "secondary_label": "Active Users",
+          "secondary_value": 334,
+          "key_events": 1313,
+          "source_type": "landing_page"
+        },
+        {
+          "title": "/sabin-newsletter-archive",
+          "path": "/sabin-newsletter-archive",
+          "metric_label": "Sessions",
+          "metric_value": 376,
+          "secondary_label": "Active Users",
+          "secondary_value": 377,
+          "key_events": 1499,
+          "source_type": "landing_page"
+        },
+        {
+          "title": "Understanding Pentavalent and Hexavalent Vaccines",
+          "path": "/resources/understanding-pentavalent-and-hexavalent-vaccines",
+          "metric_label": "Sessions",
+          "metric_value": 337,
+          "secondary_label": "Active Users",
+          "secondary_value": 322,
+          "key_events": 1072,
+          "source_type": "landing_page"
+        }
+      ],
+      "referral_sources": [
+        {
+          "source": "(direct)",
+          "views": 8069,
+          "total_users": 6586,
+          "new_users": 6521,
+          "key_events": 24591
+        },
+        {
+          "source": "google",
+          "views": 6717,
+          "total_users": 3284,
+          "new_users": 2969,
+          "key_events": 16028
+        },
+        {
+          "source": "bing",
+          "views": 565,
+          "total_users": 210,
+          "new_users": 171,
+          "key_events": 1214
+        },
+        {
+          "source": "hootsuite",
+          "views": 409,
+          "total_users": 175,
+          "new_users": 137,
+          "key_events": 904
+        },
+        {
+          "source": "chatgpt.com",
+          "views": 179,
+          "total_users": 79,
+          "new_users": 68,
+          "key_events": 385
+        }
+      ],
+      "event_audit_summary": {
+        "status": "ready",
+        "window_label": "Last 365 days",
+        "observed_event_count": 17,
+        "configured_key_event_count": 10,
+        "events_flagged_for_review": 1,
+        "configured_key_events_not_observed": [
+          "GM_Nominations",
+          "purchase",
+          "Registration",
+          "VideoPlay"
+        ]
+      }
+    },
+    "qa": {
+      "status": "passed",
+      "can_finalize": true,
+      "failed_checks": 0,
+      "warning_checks": 1,
+      "failed_check_details": [],
+      "warning_check_details": [
+        {
+          "name": "account_vs_detail_rollup_gap",
+          "status": "warning",
+          "details": "Cross-network account totals differ from detailed platform rollups. page_impressions: account=44,118, detail=43,720 | total_engagements: account=3,038, detail=991"
+        }
+      ]
+    },
+    "assumptions": [
+      "Reach and impressions are standardized into one visibility metric per platform, using impressions when available and otherwise reach.",
+      "Report-facing summary cards use Facebook, Instagram, and LinkedIn only so the dashboard and quarterly report share one scope.",
+      "Cross-network post engagements continue to come from Hootsuite's Post engagement aggregate, with X removed when legacy X totals are present.",
+      "Report-facing engagement totals stay aligned to Hootsuite's engagement definition and do not add link clicks on top.",
+      "Owly tracked-click exports are the report-facing website-resource click metric for Facebook and LinkedIn posts; X/Twitter Owly tables are optional when present.",
+      "YouTube follower counts remain available in raw Hootsuite exports, but report-facing summary cards exclude YouTube until a matching platform detail layer is maintained.",
+      "Actual follower pace uses real January 1 follower counts when they can be recovered from January exports or saved January dashboard artifacts.",
+      "Target pace remains a separate benchmark derived from the stated year-end target and annual growth rate.",
+      "Monthly export completeness is complete only when the cross-platform aggregate export, Facebook/Instagram/LinkedIn full post-performance exports, and the expected Facebook/LinkedIn Owly website-click exports are present.",
+      "Email exports are excluded from social platform calculations to avoid mixing unlike metrics.",
+      "Follower pace is labeled slightly behind when actual performance is within 5% of the benchmark pace."
+    ]
+  },
+  "response": {}
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Sabin Dashboard icon</title>
+  <desc id="desc">A Sabin S mark with dashboard bars.</desc>
+  <rect width="512" height="512" rx="96" fill="#196BAC"/>
+  <path d="M112 344h288v40H112z" fill="#EC881D"/>
+  <path d="M136 296h54v48h-54zM229 236h54v108h-54zM322 168h54v176h-54z" fill="#ffffff"/>
+  <path d="M176 168c0-43 35-73 89-73 36 0 69 12 96 34l-32 39c-20-16-42-24-65-24-24 0-38 9-38 24 0 18 20 24 55 35 49 15 88 35 88 88 0 47-38 79-98 79-43 0-83-15-115-43l33-38c25 21 52 32 82 32 28 0 45-11 45-29 0-17-17-25-54-36-52-15-86-36-86-88z" fill="#ffffff" opacity="0.28"/>
+</svg>

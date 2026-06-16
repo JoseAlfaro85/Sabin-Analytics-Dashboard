@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-16T11:38:37",
+  "local_export_root": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\powerbi",
+  "sharepoint_site_url": "https://sabinorg.sharepoint.com/sites/SabinCommunications",
+  "sharepoint_folder_hint": "Shared Documents/Digital Comms Team/Social & Digital Analytics/Performance Dashboards/data/powerbi",
+  "tables": [
+    {
+      "name": "dim_month",
+      "file": "dim_month.csv"
+    },
+    {
+      "name": "dim_platform",
+      "file": "dim_platform.csv"
+    },
+    {
+      "name": "fact_account_summary",
+      "file": "fact_account_summary.csv"
+    },
+    {
+      "name": "fact_network_metrics",
+      "file": "fact_network_metrics.csv"
+    },
+    {
+      "name": "fact_program_metrics",
+      "file": "fact_program_metrics.csv"
+    },
+    {
+      "name": "fact_web_summary",
+      "file": "fact_web_summary.csv"
+    },
+    {
+      "name": "fact_web_channels",
+      "file": "fact_web_channels.csv"
+    },
+    {
+      "name": "fact_web_pages",
+      "file": "fact_web_pages.csv"
+    },
+    {
+      "name": "fact_social_posts",
+      "file": "fact_social_posts.csv"
+    },
+    {
+      "name": "fact_target_platforms",
+      "file": "fact_target_platforms.csv"
+    },
+    {
+      "name": "fact_qa_checks",
+      "file": "fact_qa_checks.csv"
+    },
+    {
+      "name": "fact_export_completeness",
+      "file": "fact_export_completeness.csv"
+    }
+  ],
+  "suggested_relationships": [
+    {
+      "from_table": "dim_month",
+      "from_column": "month",
+      "to_column": "month"
+    },
+    {
+      "from_table": "dim_platform",
+      "from_column": "platform",
+      "to_column": "platform"
+    }
+  ]
+}

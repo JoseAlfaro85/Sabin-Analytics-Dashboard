@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-03-13T17:23:47",
+  "report_date": "2026-01-31T23:59:00",
+  "source_file": "January listening placeholder generated from dashboard social performance",
+  "report_title": "Social Listening - Sabin Brand",
+  "report_sections": [
+    "SOCIAL PERFORMANCE SIGNAL",
+    "DISCUSSION POINTS FOR LEADERSHIP"
+  ],
+  "status": "PENDING",
+  "metrics": {
+    "positive_mentions": 0,
+    "neutral_mentions": 0,
+    "negative_mentions": 0,
+    "sabin_mentions": 0,
+    "results": 0,
+    "performance_results": 0,
+    "unique_authors": 0,
+    "unique_sites": 0,
+    "competitor_mentions": {},
+    "trending_topics": [],
+    "media_types": [],
+    "reach": 0,
+    "impressions": 0,
+    "engagement": 0
+  },
+  "sentiment": {
+    "positive_percent": 0,
+    "negative_percent": 0,
+    "neutral_percent": 0
+  },
+  "insights": {
+    "strengths": [
+      "Owned social performance in January was solid, with 843 total engagements and a 5.95% weighted engagement rate.",
+      "LinkedIn drove the clearest interaction signal with 287 engagements and 720 link clicks.",
+      "Instagram delivered 2,003 views while Facebook added 78 reactions, showing multi-platform support even without archived listening data."
+    ],
+    "vulnerabilities": [
+      "No January Talkwalker report is currently archived in the dashboard data folder, so this month can only show social-performance-led interpretation.",
+      "Without a month-specific listening export, media-type mix, unique authors, and site breadth cannot be measured for January."
+    ],
+    "opportunities": [
+      "Backfill the January Talkwalker export later if it is recovered from Outlook or Downloads so month-over-month listening trends can start from January.",
+      "Use January as the baseline owned-media month when comparing February and March listening concentration and engagement quality."
+    ],
+    "content_ideas": [
+      "Summarize which January LinkedIn content themes drove the highest clicks and carry those into future listening comparisons.",
+      "Pair January social highlights with the January web analytics results to show which owned topics also pulled site traffic."
+    ],
+    "discussion_points": [
+      "January is now loadable in the Social Listening tab, but it is a placeholder month until the underlying Talkwalker export is recovered.",
+      "The owned-channel signal suggests LinkedIn was the strongest January platform for interaction and traffic-driving performance."
+    ],
+    "summary": "January listening has been backfilled as a placeholder month so the dashboard can load it consistently. It does not contain archived Talkwalker results yet; the narrative is based on January owned social performance only."
+  }
+}

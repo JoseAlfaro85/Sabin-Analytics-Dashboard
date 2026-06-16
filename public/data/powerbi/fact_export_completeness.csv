@@ -1,0 +1,6 @@
+month,status,status_reason,fallback_files_used,cross_network_export_present,post_performance_any_present,post_performance_all_expected_present,owly_any_present,owly_all_expected_present
+2026-01,partial,"supplemental top-post files used for x; full post-performance exports present for facebook, instagram, linkedin; expected Facebook/LinkedIn Owly monthly click exports missing",,True,True,False,False,False
+2026-02,supplemental_only,"Cross-platform aggregate export was present, but all social post data came from supplemental *_top_posts.csv files rather than full post-performance exports.",,True,False,False,True,True
+2026-03,partial,"supplemental top-post files used for instagram, linkedin; post data missing for x; full post-performance exports present for facebook",,True,True,False,True,True
+2026-04,complete,All expected monthly export families were present without relying on supplemental top-post files.,,True,True,True,True,True
+2026-05,complete,All expected monthly export families were present without relying on supplemental top-post files.,,True,True,True,True,True

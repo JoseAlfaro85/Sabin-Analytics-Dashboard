@@ -1,0 +1,4 @@
+﻿platform,post_id,post_url,primary_asset_type,asset_type_source,asset_type_basis,notes
+linkedin,urn:li:ugcPost:7447375212058263554,https://www.linkedin.com/feed/update/urn:li:ugcPost:7447375212058263554,Carousel,manual asset override,manual review: LinkedIn document carousel,User identified post ending 554 as a document/carousel.
+linkedin,urn:li:ugcPost:7453499207795007490,https://www.linkedin.com/feed/update/urn:li:ugcPost:7453499207795007490,Photo,manual asset override,manual review: LinkedIn newsletter static image/photo,User identified post ending 490 as Sabin LinkedIn Newsletter static image/photo.
+linkedin,urn:li:ugcPost:7447699070703464448,https://www.linkedin.com/feed/update/urn:li:ugcPost:7447699070703464448,Photo,manual asset override,manual review: LinkedIn newsletter static image/photo,User identified post ending 448 as Sabin LinkedIn Newsletter static image/photo.

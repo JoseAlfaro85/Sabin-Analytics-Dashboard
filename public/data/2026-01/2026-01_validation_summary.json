@@ -1,0 +1,30 @@
+{
+  "_meta": {
+    "month": "2026-01",
+    "generated_at": "2026-04-09T15:40:31"
+  },
+  "status": "review_required",
+  "ready_for_teammate_share": false,
+  "summary": "Validation passed, but warning-level review is still required before teammate sharing.",
+  "export_completeness_status": "partial",
+  "export_completeness_reason": "supplemental top-post files used for x; full post-performance exports present for facebook, instagram, linkedin; expected Facebook/LinkedIn Owly monthly click exports missing",
+  "qa_status": "passed",
+  "qa_failed_count": 0,
+  "qa_warning_count": 2,
+  "failed_checks": [],
+  "warning_checks": [
+    {
+      "name": "account_vs_detail_rollup_gap",
+      "details": "Cross-network account totals differ from detailed platform rollups. total_posts: account=49, detail=30 | page_impressions: account=38,600, detail=13,619 | total_link_clicks: account=1,467, detail=728 | total_engagements: account=2,213, detail=401"
+    },
+    {
+      "name": "monthly_export_completeness",
+      "details": "Monthly export completeness is partial. supplemental top-post files used for x; full post-performance exports present for facebook, instagram, linkedin; expected Facebook/LinkedIn Owly monthly click exports missing"
+    }
+  ],
+  "recommended_actions": [
+    "Review warning checks and decide whether the month is presentable as-is.",
+    "Refresh missing Hootsuite exports so export completeness reaches complete.",
+    "Open the month validation summary and reconcile each warning before presenting results."
+  ]
+}

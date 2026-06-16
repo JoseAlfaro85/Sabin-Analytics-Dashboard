@@ -1,0 +1,27 @@
+{
+  "name": "Sabin Performance Dashboard",
+  "short_name": "Sabin Dashboard",
+  "description": "Monthly social, web, and stakeholder reporting dashboard for Sabin Communications.",
+  "id": "/app",
+  "start_url": "/app",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "browser"
+  ],
+  "background_color": "#f4f7fb",
+  "theme_color": "#196BAC",
+  "categories": [
+    "business",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "_meta": {
+    "month": "2026-01",
+    "generated_at": "2026-04-09T15:40:31"
+  },
+  "month": "2026-01",
+  "status": "partial",
+  "status_reason": "supplemental top-post files used for x; full post-performance exports present for facebook, instagram, linkedin; expected Facebook/LinkedIn Owly monthly click exports missing",
+  "report_file": "2026-01_monthly_export_completeness.json",
+  "rules": {
+    "complete": "Cross-platform aggregate export present, all social platforms have full post-performance exports, and all expected Facebook/LinkedIn Owly website-click exports are present.",
+    "partial": "The month uses a mix of full exports, supplemental top-post files, missing post exports, or missing Owly exports.",
+    "supplemental_only": "Cross-platform aggregate export is present, but only supplemental *_top_posts.csv files were available instead of full post-performance exports."
+  },
+  "cross_network_performance_monthly_export": {
+    "present": true,
+    "files": [
+      "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\January 2026\\crossnetwork_performance_template_2026-01-01_to_2026-01-31_created_on_20260226T2146Z_account_metrics.csv"
+    ]
+  },
+  "post_performance_monthly_export": {
+    "any_present": true,
+    "all_expected_present": false,
+    "platforms": {
+      "facebook": {
+        "full_post_performance_export_present": true,
+        "full_post_performance_files": [
+          "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\January 2026\\facebook_post_performance_2026-01-01_to_2026-01-31_created_on_20260226T1554Z_facebook_post_performance.csv"
+        ],
+        "supplemental_top_post_file_present": true,
+        "supplemental_top_post_files": [
+          "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\January 2026\\crossnetwork_performance_template_2026-01-01_to_2026-01-31_created_on_20260226T2146Z_fb_top_posts.csv"
+        ],
+        "post_data_source": "full_post_performance",
+        "source_file_used": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\January 2026\\facebook_post_performance_2026-01-01_to_2026-01-31_created_on_20260226T1554Z_facebook_post_performance.csv"
+      },
+      "instagram": {
+        "full_post_performance_export_present": true,
+        "full_post_performance_files": [
+          "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\January 2026\\instagram_post_performance_2026-01-01_to_2026-01-31_instagram_post_performance.csv"
+        ],
+        "supplemental_top_post_file_present": true,
+        "supplemental_top_post_files": [
+          "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\January 2026\\crossnetwork_performance_template_2026-01-01_to_2026-01-31_created_on_20260226T2146Z_ig_top_posts.csv"
+        ],
+        "post_data_source": "full_post_performance",
+        "source_file_used": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\January 2026\\instagram_post_performance_2026-01-01_to_2026-01-31_instagram_post_performance.csv"
+      },
+      "linkedin": {
+        "full_post_performance_export_present": true,
+        "full_post_performance_files": [
+          "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\January 2026\\linkedin_post_performance_2026-01-01_to_2026-01-31_created_on_20260226T1554Z_linkedin_post_performance.csv"
+        ],
+        "supplemental_top_post_file_present": true,
+        "supplemental_top_post_files": [
+          "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\January 2026\\crossnetwork_performance_template_2026-01-01_to_2026-01-31_created_on_20260226T2146Z_li_pages_top_posts.csv"
+        ],
+        "post_data_source": "full_post_performance",
+        "source_file_used": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\January 2026\\linkedin_post_performance_2026-01-01_to_2026-01-31_created_on_20260226T1554Z_linkedin_post_performance.csv"
+      },
+      "x": {
+        "full_post_performance_export_present": false,
+        "full_post_performance_files": [],
+        "supplemental_top_post_file_present": true,
+        "supplemental_top_post_files": [
+          "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\January 2026\\crossnetwork_performance_template_2026-01-01_to_2026-01-31_created_on_20260226T2146Z_tw_top_posts.csv"
+        ],
+        "post_data_source": "supplemental_top_posts",
+        "source_file_used": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\January 2026\\crossnetwork_performance_template_2026-01-01_to_2026-01-31_created_on_20260226T2146Z_tw_top_posts.csv"
+      }
+    }
+  },
+  "owly_link_click_monthly_export": {
+    "any_present": false,
+    "all_expected_present": false,
+    "expected_platforms": [
+      "facebook",
+      "linkedin"
+    ],
+    "optional_platforms": [
+      "x"
+    ],
+    "platforms": {
+      "facebook": {
+        "present": false,
+        "required": true,
+        "files": []
+      },
+      "linkedin": {
+        "present": false,
+        "required": true,
+        "files": []
+      },
+      "x": {
+        "present": false,
+        "required": false,
+        "files": []
+      }
+    }
+  },
+  "supplemental_top_post_files_used": true,
+  "supplemental_top_post_platforms": [
+    "x"
+  ],
+  "full_post_performance_platforms": [
+    "facebook",
+    "instagram",
+    "linkedin"
+  ],
+  "missing_post_data_platforms": [],
+  "post_data_sources": {
+    "facebook": "full_post_performance",
+    "instagram": "full_post_performance",
+    "linkedin": "full_post_performance",
+    "x": "supplemental_top_posts"
+  }
+}

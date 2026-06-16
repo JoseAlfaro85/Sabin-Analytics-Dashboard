@@ -1,0 +1,71 @@
+{
+  "latest_month": "2026-05",
+  "months": [
+    {
+      "key": "2026-05",
+      "label": "May 2026",
+      "has_dashboard": true,
+      "has_listening": false,
+      "has_validation_summary": true,
+      "validation_source": "validation_summary",
+      "validation_status": "review_required",
+      "ready_for_teammate_share": false,
+      "qa_warning_count": 1,
+      "qa_failed_count": 0,
+      "export_completeness_status": "complete"
+    },
+    {
+      "key": "2026-04",
+      "label": "April 2026",
+      "has_dashboard": true,
+      "has_listening": true,
+      "has_validation_summary": true,
+      "validation_source": "validation_summary",
+      "validation_status": "review_required",
+      "ready_for_teammate_share": false,
+      "qa_warning_count": 1,
+      "qa_failed_count": 0,
+      "export_completeness_status": "complete"
+    },
+    {
+      "key": "2026-03",
+      "label": "March 2026",
+      "has_dashboard": true,
+      "has_listening": false,
+      "has_validation_summary": true,
+      "validation_source": "validation_summary",
+      "validation_status": "review_required",
+      "ready_for_teammate_share": false,
+      "qa_warning_count": 2,
+      "qa_failed_count": 0,
+      "export_completeness_status": "partial"
+    },
+    {
+      "key": "2026-02",
+      "label": "February 2026",
+      "has_dashboard": true,
+      "has_listening": true,
+      "has_validation_summary": false,
+      "validation_source": "reporting_framework_fallback",
+      "validation_status": "review_required",
+      "ready_for_teammate_share": false,
+      "qa_warning_count": 2,
+      "qa_failed_count": 0,
+      "export_completeness_status": "supplemental_only"
+    },
+    {
+      "key": "2026-01",
+      "label": "January 2026",
+      "has_dashboard": true,
+      "has_listening": true,
+      "has_validation_summary": true,
+      "validation_source": "validation_summary",
+      "validation_status": "review_required",
+      "ready_for_teammate_share": false,
+      "qa_warning_count": 2,
+      "qa_failed_count": 0,
+      "export_completeness_status": "partial"
+    }
+  ],
+  "generated_at": "2026-06-16T11:38:37"
+}

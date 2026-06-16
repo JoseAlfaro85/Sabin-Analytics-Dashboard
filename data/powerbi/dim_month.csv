@@ -1,0 +1,6 @@
+month,month_start_date,year,month_number,month_name,month_label,has_dashboard,has_reporting_framework,has_social_posts,dashboard_generated_at,reporting_generated_at
+2026-01,2026-01-01,2026,1,January,January 2026,True,True,True,2026-04-09T15:40:31,2026-04-09T15:40:31
+2026-02,2026-02-01,2026,2,February,February 2026,True,True,True,2026-04-08T15:46:59,2026-04-08T15:46:59
+2026-03,2026-03-01,2026,3,March,March 2026,True,True,True,2026-04-09T15:39:45,2026-04-09T15:39:45
+2026-04,2026-04-01,2026,4,April,April 2026,True,True,True,2026-05-18T11:41:52,2026-05-18T11:41:52
+2026-05,2026-05-01,2026,5,May,May 2026,True,True,True,2026-06-16T11:38:37,2026-06-16T11:38:37

@@ -1,0 +1,211 @@
+
+================================================================================
+SABIN DASHBOARD - GIT PUBLICATION CHECKLIST
+================================================================================
+
+Generated: 2026-06-16 12:31:44
+Repository Root: C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard
+
+================================================================================
+STEP 1: INITIALIZE REPOSITORY (if not already initialized)
+================================================================================
+
+[ ] Open PowerShell and navigate to the dashboard root:
+    cd "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard"
+
+[ ] Initialize git repository:
+    git init
+
+[ ] Configure git user:
+    git config user.name "Sabin Dashboard Automation"
+    git config user.email "dashboard@sabin.org"
+
+[ ] Verify initialization:
+    git status
+
+================================================================================
+STEP 2: COMMIT 1 - Reporting Logic + Dashboard Refresh
+================================================================================
+
+Message: "Align May dashboard metrics and restore GA4 fallback"
+
+Files to stage:
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Desktop\Python Scripts\reporting_framework.py
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Desktop\Python Scripts\dashboard_preview_builder.py
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Desktop\Python Scripts\hootsuite_to_dashboard.py
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\index.html
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\dashboard_server.py
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\data
+
+[ ] Stage files:
+    git add \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Desktop\Python Scripts\reporting_framework.py" \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Desktop\Python Scripts\dashboard_preview_builder.py" \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Desktop\Python Scripts\hootsuite_to_dashboard.py" \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\index.html" \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\dashboard_server.py" \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\data"
+
+[ ] Check staged files:
+    git status
+
+[ ] Create commit:
+    git commit -m "Align May dashboard metrics and restore GA4 fallback"
+
+================================================================================
+STEP 3: COMMIT 2 - Optional Hosting Scaffold
+================================================================================
+
+Message: "Prepare dashboard wrapper for hosted deployment"
+
+Files to stage:
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\.openai
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\app
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\build
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\worker
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\public
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\package.json
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\vite.config.ts
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\next.config.ts
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\tsconfig.json
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\postcss.config.mjs
+  * C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\scripts
+
+[ ] Stage files:
+    git add \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\.openai" \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\app" \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\build" \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\worker" \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\public" \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\package.json" \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\vite.config.ts" \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\next.config.ts" \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\tsconfig.json" \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\postcss.config.mjs" \
+      "C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\scripts"
+
+[ ] Check staged files:
+    git status
+
+[ ] Create commit:
+    git commit -m "Prepare dashboard wrapper for hosted deployment"
+
+================================================================================
+STEP 4: VERIFY LOCAL REPOSITORY
+================================================================================
+
+[ ] View commit history:
+    git log --oneline
+
+[ ] View current status:
+    git status
+
+================================================================================
+STEP 5: SETUP GITHUB REMOTE (for publication)
+================================================================================
+
+[ ] Create a new repository on GitHub (if not already created)
+    - Go to https://github.com/new
+    - Name: sabin-analytics-dashboard
+    - Description: Sabin Vaccine Institute social analytics dashboard
+    - Make it private (internal use only)
+    - Do NOT initialize with README
+
+[ ] Add GitHub remote to local repository:
+    git remote add origin https://github.com/josealfaro85/sabin-analytics-dashboard.git
+
+[ ] Verify remote:
+    git remote -v
+
+[ ] Push to GitHub:
+    git branch -M main
+    git push -u origin main
+
+================================================================================
+STEP 6: OPTIONAL - ADD .gitignore
+================================================================================
+
+Create a .gitignore file to exclude sensitive data:
+
+[ ] Create .gitignore with:
+    
+    # Python
+    __pycache__/
+    *.py[cod]
+    *$py.class
+    *.egg-info/
+    .venv/
+    venv/
+    
+    # Environment
+    .env
+    .env.local
+    *.key
+    *.secret
+    client_secret_*.json
+    
+    # Data files
+    *.csv
+    *.xlsx
+    *.xls
+    
+    # Logs
+    logs/
+    *.log
+    
+    # Node
+    node_modules/
+    package-lock.json
+    
+    # OS
+    .DS_Store
+    Thumbs.db
+    
+    # IDE
+    .vscode/
+    .idea/
+    *.swp
+
+[ ] Stage and commit .gitignore:
+    git add .gitignore
+    git commit -m "Add .gitignore for sensitive data"
+    git push
+
+================================================================================
+USEFUL GIT COMMANDS
+================================================================================
+
+View changes:
+    git diff                          # Show unstaged changes
+    git diff --staged                 # Show staged changes
+    git log                           # Show full commit history
+    git log --oneline -10             # Show last 10 commits (compact)
+
+Undo changes:
+    git restore <file>                # Discard changes to a file
+    git reset HEAD <file>             # Unstage a file
+    git revert <commit>               # Undo a commit (creates new commit)
+
+Branching:
+    git branch                        # List local branches
+    git branch -a                     # List all branches (local + remote)
+    git checkout -b <branch-name>     # Create and switch to new branch
+    git switch <branch-name>          # Switch to existing branch
+
+Pushing updates:
+    git push                          # Push current branch
+    git push origin <branch-name>     # Push specific branch
+    git push --all                    # Push all branches
+
+================================================================================
+NOTES
+================================================================================
+
+* This checklist assumes git is installed and available in PowerShell
+* Replace YOUR-ORG with your actual GitHub organization
+* Keep sensitive files (.json, .key) out of git using .gitignore
+* Commit messages use imperative tense (e.g., "Add feature" not "Added feature")
+* The two commits match the HANDOFF.md recommendations
+
+================================================================================

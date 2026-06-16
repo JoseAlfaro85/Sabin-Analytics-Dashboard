@@ -1,0 +1,15 @@
+﻿primary_asset_type,unique_posts
+Video short,19
+Carousel,11
+Photo,11
+Graphic,1
+
+platform,primary_asset_type,unique_posts
+facebook,Video short,5
+instagram,Video short,7
+instagram,Carousel,4
+instagram,Photo,2
+linkedin,Photo,9
+linkedin,Carousel,7
+linkedin,Video short,7
+linkedin,Graphic,1

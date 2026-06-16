@@ -1,0 +1,16 @@
+month,platform,platform_label,platform_sort_order,posts,reach,impressions,clicks,engagements,ctr,engagement_rate,engagement_per_post,followers_start,followers_end,new_followers,follows_per_1000_impressions,post_data_source,calculation_source
+2026-01,facebook,Facebook,1,18,2736,2736,8,78,,0.02850877192982456,4.333333333333333,7579,7615,36,13.157894736842104,full_post_performance,standardized_posts_with_legacy_backfill[clicks]
+2026-01,instagram,Instagram,2,5,685,685,0,36,,0.052554744525547446,7.2,4816,4838,22,32.11678832116788,full_post_performance,standardized_posts
+2026-01,linkedin,LinkedIn,3,7,10198,10198,720,287,,0.028142773092763286,41.0,26216,26837,621,60.894292998627186,full_post_performance,standardized_posts
+2026-02,facebook,Facebook,1,16,76504,76504,9,5011,,0.06549984314545644,313.1875,7602,7627,25,0.3267802990693297,supplemental_top_posts,account_metrics_rollup
+2026-02,instagram,Instagram,2,10,3229,3229,0,174,,0.053886652214307836,17.4,4804,4869,65,20.130071229482812,supplemental_top_posts,account_metrics_rollup
+2026-02,linkedin,LinkedIn,3,23,20269,20269,1166,1555,,0.07671814100350288,67.6086956521739,26838,27188,350,17.26774877892348,supplemental_top_posts,account_metrics_rollup
+2026-03,facebook,Facebook,1,17,5921,5921,208,118,,0.019929066036142543,6.9411764705882355,7608,7681,73,12.328998479986488,full_post_performance,standardized_posts
+2026-03,instagram,Instagram,2,7,2600,2600,0,158,,0.06076923076923077,22.571428571428573,4830,4843,13,5.0,supplemental_top_posts,account_metrics_rollup
+2026-03,linkedin,LinkedIn,3,23,30282,30282,3081,3413,,0.11270721880985404,148.3913043478261,27189,27574,385,12.713823393435044,supplemental_top_posts,account_metrics_rollup
+2026-04,facebook,Facebook,1,5,975,975,4,33,,0.0513,6.6,7655,7731,76,77.94871794871796,full_post_performance,standardized_posts
+2026-04,instagram,Instagram,2,13,2521,2521,0,134,,0.0608,10.307692307692308,4800,4821,21,8.330027766759223,full_post_performance,standardized_posts
+2026-04,linkedin,LinkedIn,3,24,30935,30935,3623,4909,,0.1207,204.54166666666666,27585,28258,673,21.75529335703895,full_post_performance,standardized_posts
+2026-05,facebook,Facebook,1,19,17381,17381,105,214,,0.0339,11.263157894736842,7707,7921,214,12.312295034808125,full_post_performance,standardized_posts
+2026-05,instagram,Instagram,2,10,1833,1833,0,62,,0.038599999999999995,6.2,4775,4802,27,14.729950900163667,full_post_performance,standardized_posts
+2026-05,linkedin,LinkedIn,3,20,24506,24506,2323,715,,0.0889,35.75,28248,29734,1486,60.63821105035502,full_post_performance,standardized_posts

@@ -1,0 +1,16 @@
+month,platform,platform_label,platform_sort_order,year_end_followers_target,annual_growth_rate,reporting_baseline_followers_start,target_benchmark_followers_to_date,target_benchmark_net_new_followers_to_date,actual_followers_end,actual_net_new_followers_ytd,gap_to_target_benchmark_followers,gap_to_target_benchmark_net_new_followers,status,posts_actual,posts_target_min,posts_target_max,posting_status,gap_to_year_end_target
+2026-01,facebook,Facebook,1,8800,0.15,7615,7748,96,7615,0,-133,-96,off_track,18,14,22,on_track,1185
+2026-01,instagram,Instagram,2,6300,0.3,4838,4967,121,4838,0,-129,-121,off_track,5,5,8,on_track,1462
+2026-01,linkedin,LinkedIn,3,35000,0.3,26837,27596,673,26837,0,-759,-673,off_track,7,14,22,off_track,8163
+2026-02,facebook,Facebook,1,8800,0.15,7579,7843,191,7627,48,-216,-143,off_track,16,12,20,on_track,1173
+2026-02,instagram,Instagram,2,6300,0.3,4816,5088,242,4869,53,-219,-189,off_track,10,4,8,off_track,1431
+2026-02,linkedin,LinkedIn,3,35000,0.3,26216,28269,1346,27188,972,-1081,-374,off_track,23,12,20,off_track,7812
+2026-03,facebook,Facebook,1,8800,0.15,7579,7939,287,7681,102,-258,-185,off_track,17,14,22,on_track,1119
+2026-03,instagram,Instagram,2,6300,0.3,4816,5210,363,4843,27,-367,-336,off_track,7,5,8,on_track,1457
+2026-03,linkedin,LinkedIn,3,35000,0.3,26216,28942,2019,27574,1358,-1368,-661,off_track,23,14,22,off_track,7426
+2026-04,facebook,Facebook,1,8800,0.15,7579,8035,383,7731,152,-304,-231,off_track,5,13,21,off_track,1069
+2026-04,instagram,Instagram,2,6300,0.3,4816,5331,485,4821,5,-510,-480,off_track,13,5,8,off_track,1479
+2026-04,linkedin,LinkedIn,3,35000,0.3,26216,29615,2692,28258,2042,-1357,-650,off_track,24,13,21,off_track,6742
+2026-05,facebook,Facebook,1,8800,0.15,7579,8130,478,7921,342,-209,-136,off_track,19,14,22,on_track,879
+2026-05,instagram,Instagram,2,6300,0.3,4816,5452,606,4802,-14,-650,-620,off_track,10,5,8,off_track,1498
+2026-05,linkedin,LinkedIn,3,35000,0.3,26216,30288,3365,29734,3518,-554,153,on_track,20,14,22,on_track,5266

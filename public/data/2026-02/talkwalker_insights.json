@@ -1,0 +1,263 @@
+{
+  "generated_at": "2026-03-13T17:13:04",
+  "report_date": "2026-03-13T16:53:00",
+  "source_file": "Talkwalker Brand Management shared report",
+  "report_title": "Brand Management Report- Sabin Vaccine Institute",
+  "report_sections": [
+    "RESULTS",
+    "ENGAGEMENT",
+    "UNIQUE AUTHORS",
+    "UNIQUE SITES",
+    "PERFORMANCE OVER TIME",
+    "SHARE OF MEDIA TYPES",
+    "THEMES",
+    "TOP THEMES",
+    "TOP HASHTAGS",
+    "GENDER",
+    "AGE",
+    "TOP OCCUPATIONS",
+    "MOST ACTIVE AUTHORS",
+    "MOST INFLUENTIAL SITES"
+  ],
+  "status": "STABLE",
+  "metrics": {
+    "positive_mentions": 0,
+    "neutral_mentions": 0,
+    "negative_mentions": 0,
+    "sabin_mentions": 145,
+    "results": 145,
+    "results_change_percent": -5.8,
+    "results_previous_period": 154,
+    "performance_results": 145,
+    "unique_authors": 98,
+    "unique_authors_change_percent": -3.0,
+    "unique_authors_previous_period": 101,
+    "unique_sites": 21,
+    "unique_sites_change_percent": -36.4,
+    "unique_sites_previous_period": 33,
+    "competitor_mentions": {},
+    "trending_topics": [
+      "vaccine",
+      "sabin",
+      "polio",
+      "HPV",
+      "cervical cancer",
+      "India",
+      "Sudan",
+      "Kenya",
+      "South Africa"
+    ],
+    "media_types": [
+      "X",
+      "LinkedIn",
+      "Blogs",
+      "Instagram",
+      "Reddit",
+      "Bluesky",
+      "Online News Other",
+      "Facebook",
+      "YouTube",
+      "Other"
+    ],
+    "media_type_breakdown": [
+      {
+        "label": "X",
+        "share": 49.7,
+        "change_percent": 14
+      },
+      {
+        "label": "LinkedIn",
+        "share": 21.4,
+        "change_percent": 7
+      },
+      {
+        "label": "Blogs",
+        "share": 8.3,
+        "change_percent": 71
+      },
+      {
+        "label": "Instagram",
+        "share": 5.5,
+        "change_percent": -11
+      },
+      {
+        "label": "Reddit",
+        "share": 4.0,
+        "change_percent": 20
+      },
+      {
+        "label": "Bluesky",
+        "share": 3.0,
+        "change_percent": -17
+      },
+      {
+        "label": "Online News Other",
+        "share": 2.5,
+        "change_percent": -77
+      },
+      {
+        "label": "Facebook",
+        "share": 2.3,
+        "change_percent": -63
+      },
+      {
+        "label": "YouTube",
+        "share": 1.8,
+        "change_percent": -50
+      },
+      {
+        "label": "Other",
+        "share": 1.5,
+        "change_percent": 200
+      }
+    ],
+    "reach": 0,
+    "impressions": 0,
+    "engagement": 464,
+    "engagement_change_percent": 14.0,
+    "engagement_previous_period": 407,
+    "gender": {
+      "female_percent": 33.3,
+      "male_percent": 66.7
+    },
+    "age_distribution": [
+      {
+        "label": "18-24",
+        "percent": 16
+      },
+      {
+        "label": "25-34",
+        "percent": 52
+      },
+      {
+        "label": "35-44",
+        "percent": 12
+      },
+      {
+        "label": "45-54",
+        "percent": 20
+      },
+      {
+        "label": "55-64",
+        "percent": 0
+      },
+      {
+        "label": "65+",
+        "percent": 0
+      }
+    ],
+    "age_sample_results": 25,
+    "top_occupations": [
+      {
+        "label": "Executive manager",
+        "percent": 25
+      },
+      {
+        "label": "Construction Worker",
+        "percent": 25
+      },
+      {
+        "label": "Engineer",
+        "percent": 25
+      },
+      {
+        "label": "Politician",
+        "percent": 12.5
+      },
+      {
+        "label": "Transportation",
+        "percent": 12.5
+      }
+    ],
+    "occupation_sample_results": 8,
+    "top_authors": [
+      {
+        "name": "Sabin Vaccine Institute",
+        "network": "X",
+        "posts": 7,
+        "post_change_percent": -46.2,
+        "sentiment": "mixed"
+      },
+      {
+        "name": "sabinvaccine",
+        "network": "Instagram",
+        "posts": 6,
+        "post_change_percent": 150,
+        "sentiment": "mixed"
+      },
+      {
+        "name": "Cervical Cancer Elimination Consortium",
+        "network": "LinkedIn",
+        "posts": 6,
+        "sentiment": "mixed"
+      },
+      {
+        "name": "Sabin Vaccine Institute",
+        "network": "LinkedIn",
+        "posts": 4,
+        "post_change_percent": -20,
+        "sentiment": "mixed"
+      }
+    ],
+    "top_sites": [
+      {
+        "name": "startrek",
+        "network": "Reddit",
+        "posts": 1,
+        "sentiment": "negative"
+      },
+      {
+        "name": "alistweekly.substack",
+        "network": "Substack",
+        "posts": 1,
+        "sentiment": "mixed"
+      },
+      {
+        "name": "www.theborneopost.com",
+        "network": "News",
+        "posts": 1,
+        "sentiment": "positive"
+      },
+      {
+        "name": "montco.today",
+        "network": "Web",
+        "posts": 1,
+        "sentiment": "positive"
+      }
+    ]
+  },
+  "sentiment": {
+    "positive_percent": 0,
+    "negative_percent": 0,
+    "neutral_percent": 0
+  },
+  "insights": {
+    "strengths": [
+      "Engagement is up 14% even though total results are down 5.8%, which indicates the conversation is concentrating but becoming more interactive.",
+      "Sabin owned social delivered 2,027 engagements at a 6.61% engagement rate, giving the brand a strong owned-media base to amplify earned attention.",
+      "X and LinkedIn account for most visible conversation share, which aligns well with Sabin\u2019s strongest current social channels for reach and engagement."
+    ],
+    "vulnerabilities": [
+      "Unique sites are down 36.4%, suggesting the conversation is appearing in fewer publishing environments and may be narrowing in breadth.",
+      "Audience analysis is based on small samples for age and occupations, so those demographics should be treated as directional rather than decision-grade.",
+      "The strongest conversation themes are concentrated around HPV, cervical-cancer elimination, polio, and outbreak-response language; other priority narratives may be underrepresented."
+    ],
+    "opportunities": [
+      "Lean into HPV and cervical-cancer-elimination storytelling because those topics are clearly driving the current theme and hashtag clouds.",
+      "Use the growth in blog and LinkedIn share to place more substantive thought-leadership content where the conversation is showing depth rather than just volume.",
+      "Review the most active author and influential site lists to separate earned advocacy from owned or adjacent amplification."
+    ],
+    "content_ideas": [
+      "Create a leadership-facing post or article that connects HPV, cervical cancer elimination, and vaccine confidence to Sabin program outcomes.",
+      "Build reactive LinkedIn and X content around the top hashtags while conversation is concentrated in those environments.",
+      "Publish a monthly social-to-listening bridge summary showing which owned content themes are surfacing in earned conversation."
+    ],
+    "discussion_points": [
+      "Conversation volume is slightly lower, but engagement is materially higher. The key question is whether Sabin wants to optimize for breadth of coverage or quality of interaction.",
+      "The media mix is now dominated by X and LinkedIn, while blogs are growing quickly. That suggests a useful split between rapid-response social commentary and deeper expert content.",
+      "Audience demographics suggest a male-skewing and 25\u201334 heavy sample, but the sample size is too small to support strong targeting decisions without additional months of data.",
+      "The most important thematic signal is the concentration around HPV, cervical cancer elimination, polio, and outbreak response."
+    ],
+    "summary": "Brand-management listening shows a more concentrated but more engaged conversation around Sabin. Results fell from 154 to 145, but engagement rose from 407 to 464. X remains the dominant media type, LinkedIn is the clear secondary platform, and blogs are growing sharply. The clearest strategic theme is HPV and cervical-cancer-elimination content, with supporting signals around polio, outbreak response, and global vaccine work."
+  }
+}

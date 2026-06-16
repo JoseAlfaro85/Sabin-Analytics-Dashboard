@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#196BAC">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="app-icon.svg" type="image/svg+xml">
+  <title>Sabin Dashboard | May 2026 Settings</title>
+  <style>
+:root {
+  --bg: #f3f4f4;
+  --text: #333333;
+  --muted: #6d8197;
+  --shadow: 0 18px 44px rgba(5, 67, 114, 0.14);
+  --blue: #32a0da;
+  --navy: #196bac;
+  --navy-deep: #054372;
+  --orange: #ec881d;
+  --green: #60a443;
+  --pink: #985f99;
+  --yellow: #ffba00;
+  --slate: #6f7c8f;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+  color: var(--text);
+  font-family: "Museo Sans", Aptos, "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: rgba(255, 255, 255, 0.9);
+  border-right: 3px solid var(--orange);
+  padding: 32px 16px 24px;
+  backdrop-filter: blur(14px);
+  box-shadow: 12px 0 30px rgba(5, 67, 114, 0.07);
+}
+
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
+  padding: 0 6px;
+}
+
+.brand-logo {
+  display: block;
+  width: min(156px, 100%);
+  height: auto;
+}
+
+.brand-text {
+  line-height: 1.05;
+}
+
+.brand-text .wordmark {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--navy);
+}
+
+.brand-text .submark {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.nav {
+  display: grid;
+  gap: 8px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  color: #51677f;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.nav-link:hover {
+  background: rgba(25, 107, 172, 0.06);
+  border-color: rgba(25, 107, 172, 0.1);
+}
+
+.nav-link.active {
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--navy), var(--navy-deep));
+  box-shadow: 0 12px 24px rgba(5, 67, 114, 0.24);
+}
+
+.nav-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0.9;
+}
+
+.main-panel {
+  padding: 26px 30px 32px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  margin-bottom: 22px;
+}
+
+.title-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 1.95rem;
+  line-height: 1.12;
+  letter-spacing: 0;
+  color: var(--navy);
+}
+
+.page-title .accent {
+  color: var(--orange);
+}
+
+.page-sub {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.status-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.status-pill {
+  border-radius: 999px;
+  border: 1px solid rgba(25, 107, 172, 0.08);
+  padding: 7px 12px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--navy);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.status-pill.warn {
+  color: #8d5b04;
+  background: rgba(255, 232, 192, 0.9);
+}
+
+.status-pill.good {
+  color: #156a31;
+  background: rgba(214, 248, 221, 0.9);
+}
+
+.status-pill.bad {
+  color: #8f2020;
+  background: rgba(255, 218, 218, 0.92);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mode-toggle {
+  display: inline-flex;
+  padding: 3px;
+  background: var(--navy);
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.mode-btn {
+  border: 0;
+  border-radius: 9px;
+  padding: 9px 14px;
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.78);
+  background: transparent;
+  cursor: pointer;
+}
+
+.mode-btn.is-active {
+  background: #ffffff;
+  color: var(--navy);
+}
+
+.month-select {
+  min-width: 188px;
+  border-radius: 12px;
+  border: 2px solid rgba(25, 107, 172, 0.9);
+  background: rgba(255, 255, 255, 0.96);
+  padding: 10px 14px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.month-select option:disabled {
+  color: #9aa8b6;
+}
+
+.export-btn {
+  border: 0;
+  border-radius: 12px;
+  background: var(--orange);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 800;
+  padding: 11px 18px;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(236, 136, 29, 0.22);
+}
+
+.dashboard-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: start;
+  gap: 18px;
+}
+
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.panel-grid .panel.span-2 {
+  grid-column: 1 / -1;
+}
+
+.metric-card,
+.panel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0)),
+    linear-gradient(135deg, var(--navy), var(--navy-deep));
+  color: #ffffff;
+  padding: 22px 26px;
+  box-shadow: var(--shadow);
+}
+
+.metric-card {
+  width: 100%;
+  min-height: 148px;
+}
+
+.metric-card::before,
+.panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: var(--orange);
+  opacity: 0.95;
+}
+
+.accent-green::before {
+  background: var(--green);
+}
+
+.accent-pink::before {
+  background: var(--pink);
+}
+
+.accent-slate::before {
+  background: #b7c2d0;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.metric-value {
+  margin-top: 12px;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.metric-sub {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.76);
+  min-height: 1.35em;
+}
+
+.metric-description {
+  margin-top: 10px;
+  max-width: 92%;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.metric-card[role="button"] {
+  border: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.metric-card.is-expandable {
+  transition: transform 160ms ease, box-shadow 160ms ease, outline-color 160ms ease;
+}
+
+.metric-card.is-expandable::after {
+  content: "+";
+  position: absolute;
+  right: 18px;
+  top: 16px;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.metric-card.is-expandable:hover,
+.metric-card.is-expandable:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 46px rgba(9, 45, 78, 0.28);
+  outline: 3px solid rgba(255, 255, 255, 0.7);
+  outline-offset: 3px;
+}
+
+.metric-card.is-expanded::after {
+  content: "-";
+}
+
+.metric-card .kpi-breakdown-panel {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.kpi-breakdown-panel {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #ffffff;
+  padding: 0;
+}
+
+.kpi-breakdown-view[hidden],
+.kpi-breakdown-panel[hidden] {
+  display: none;
+}
+
+.kpi-breakdown-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.kpi-breakdown-title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.kpi-breakdown-subtitle {
+  margin: 5px 0 0;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 0.86rem;
+  font-weight: 650;
+}
+
+.kpi-breakdown-close {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.kpi-breakdown-table {
+  width: 100%;
+  min-width: 0;
+  border-collapse: collapse;
+}
+
+.kpi-breakdown-panel .table-wrap {
+  margin-top: 0;
+}
+
+.kpi-breakdown-table th,
+.kpi-breakdown-table td {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  color: rgba(255, 255, 255, 0.9);
+  text-align: left;
+}
+
+.kpi-breakdown-table th {
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.kpi-breakdown-table .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.kpi-share {
+  color: #ffffff;
+  font-weight: 800;
+  text-align: right;
+}
+
+.panel-title {
+  margin: 0;
+  font-size: 1.45rem;
+  font-weight: 800;
+}
+
+.panel-subtitle {
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.summary-list {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.summary-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.summary-label {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.summary-value {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: right;
+}
+
+.table-wrap {
+  margin-top: 24px;
+  overflow-x: auto;
+}
+
+.network-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 820px;
+}
+
+.network-table th,
+.network-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.network-table th {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.network-table td {
+  font-size: 0.94rem;
+  color: #ffffff;
+}
+
+.network-table .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.platform-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.platform-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--orange);
+}
+
+.platform-dot.facebook {
+  background: #f59a29;
+}
+
+.platform-dot.instagram {
+  background: #c870f1;
+}
+
+.platform-dot.linkedin {
+  background: #67c67b;
+}
+
+.platform-dot.x {
+  background: #bdc7d5;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.highlight-card {
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.highlight-label {
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.highlight-title {
+  margin-top: 10px;
+  font-size: 0.96rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.highlight-meta {
+  margin-top: 10px;
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.mini-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.mini-kpi {
+  border-radius: 8px;
+  padding: 8px 9px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.mini-kpi-label {
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.mini-kpi-value {
+  margin-top: 4px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 900;
+  line-height: 1.18;
+}
+
+.highlight-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #ffd8aa;
+}
+
+.page-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.page-tab {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid rgba(25, 107, 172, 0.12);
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--navy);
+  padding: 10px 14px;
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.page-tab.is-active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #ffffff;
+  box-shadow: 0 12px 24px rgba(25, 107, 172, 0.18);
+}
+
+.deck-report-stack {
+  gap: 22px;
+  font-family: Arial, "Segoe UI", Tahoma, sans-serif;
+}
+
+.deck-slide {
+  background: #ffffff;
+  color: #151f2a;
+  border-radius: 10px;
+  border: 1px solid rgba(25, 107, 172, 0.1);
+  box-shadow: 0 14px 34px rgba(18, 59, 99, 0.11);
+  padding: 22px 28px 26px;
+}
+
+.deck-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 34px;
+  border: 2px solid var(--navy);
+  border-radius: 999px;
+  padding: 5px 14px;
+  color: #111827;
+  font-weight: 800;
+}
+
+.deck-period-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.84rem;
+  color: #111827;
+}
+
+.deck-period-pill::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border: 1.8px solid #111827;
+  border-radius: 999px;
+}
+
+.deck-readout {
+  margin-top: 14px;
+  border-radius: 8px;
+  border: 2px solid rgba(11, 111, 179, 0.22);
+  background: #f8fbfd;
+  padding: 18px 20px 20px;
+}
+
+.deck-readout-kicker {
+  color: var(--navy);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.deck-readout-claim {
+  margin-top: 7px;
+  color: #111827;
+  font-size: 1.15rem;
+  line-height: 1.25;
+  font-weight: 900;
+}
+
+.deck-readout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.9fr;
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.deck-readout-cell {
+  border-top: 4px solid #8fcdeb;
+  padding-top: 10px;
+}
+
+.deck-readout-cell:nth-child(2) {
+  border-color: var(--orange);
+}
+
+.deck-readout-cell:nth-child(3) {
+  border-color: #c9add0;
+}
+
+.deck-readout-label {
+  color: var(--navy);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.deck-readout-cell:nth-child(2) .deck-readout-label,
+.deck-readout-cell:nth-child(3) .deck-readout-label {
+  color: #111827;
+}
+
+.deck-readout-list {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 7px;
+  color: #151f2a;
+}
+
+.deck-readout-list li,
+.deck-readout-takeaway {
+  font-size: 0.9rem;
+  line-height: 1.42;
+}
+
+.deck-readout-takeaway {
+  margin: 8px 0 0;
+  color: #151f2a;
+  font-weight: 800;
+}
+
+.deck-kpi-band {
+  margin-top: 14px;
+  border-radius: 8px;
+  background: #ffbc05;
+  padding: 14px 14px 16px;
+  text-align: center;
+}
+
+.deck-kpi-title {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.deck-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.deck-kpi-cell {
+  border-radius: 8px;
+  background: rgba(255, 235, 180, 0.92);
+  padding: 10px 12px;
+  min-height: 68px;
+}
+
+.deck-kpi-label {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.deck-kpi-value {
+  margin-top: 4px;
+  font-size: 1.15rem;
+  line-height: 1.05;
+  font-weight: 800;
+  color: #111827;
+}
+
+.deck-kpi-sub {
+  margin-top: 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: rgba(17, 24, 39, 0.7);
+}
+
+.deck-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.deck-grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.deck-panel {
+  background: #f2f2f2;
+  color: #151f2a;
+  border-radius: 8px;
+  border: 1px solid rgba(15, 70, 119, 0.08);
+  padding: 18px 20px;
+  min-height: 100%;
+}
+
+.deck-panel.span-2 {
+  grid-column: 1 / -1;
+}
+
+.deck-panel.white {
+  background: #ffffff;
+}
+
+.deck-panel.blue-tab::before,
+.deck-panel.orange-tab::before,
+.deck-panel.purple-tab::before {
+  display: block;
+  width: fit-content;
+  min-width: 182px;
+  margin: -2px auto 14px;
+  border-radius: 6px;
+  padding: 7px 14px;
+  text-align: center;
+  font-size: 0.86rem;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.deck-panel.blue-tab::before {
+  content: attr(data-tab-title);
+  background: #8fcdeb;
+}
+
+.deck-panel.orange-tab::before {
+  content: attr(data-tab-title);
+  color: #111827;
+  background: var(--orange);
+}
+
+.deck-panel.purple-tab::before {
+  content: attr(data-tab-title);
+  color: #111827;
+  background: #c9add0;
+}
+
+.deck-panel-title {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1.04rem;
+  line-height: 1.16;
+  font-weight: 800;
+}
+
+.deck-panel-subtitle {
+  margin-top: 4px;
+  color: var(--orange);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.deck-panel .body-copy,
+.deck-panel .inline-note {
+  color: #243447;
+}
+
+.deck-panel .insight-list li {
+  color: #243447;
+}
+
+.deck-panel .summary-list {
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.deck-panel .summary-row {
+  border-bottom: 1px solid rgba(25, 107, 172, 0.12);
+  padding-bottom: 8px;
+}
+
+.deck-panel .summary-label {
+  color: #34495e;
+  font-size: 0.86rem;
+}
+
+.deck-panel .summary-value {
+  color: #111827;
+  font-size: 1.06rem;
+}
+
+.deck-panel .highlight-card {
+  background: #ffffff;
+  border: 1px solid rgba(25, 107, 172, 0.12);
+  color: #151f2a;
+}
+
+.deck-panel .highlight-card.has-asset {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.92fr) minmax(0, 1.08fr);
+  gap: 14px;
+  align-items: stretch;
+}
+
+.asset-preview {
+  overflow: hidden;
+  border-radius: 8px;
+  background: #e5e7eb;
+  border: 1px solid rgba(25, 107, 172, 0.12);
+  min-height: 170px;
+}
+
+.asset-preview img {
+  width: 100%;
+  height: 100%;
+  min-height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.asset-preview-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 170px;
+  padding: 14px;
+  text-align: center;
+  color: var(--navy);
+  font-size: 0.84rem;
+  font-weight: 800;
+  background:
+    linear-gradient(135deg, rgba(143, 205, 235, 0.34), rgba(255, 188, 5, 0.2));
+}
+
+.deck-panel .highlight-title {
+  color: #151f2a;
+}
+
+.deck-panel .highlight-meta {
+  color: #34495e;
+}
+
+.deck-panel .mini-kpi {
+  background: #f7fbfe;
+  border-color: rgba(25, 107, 172, 0.12);
+}
+
+.deck-panel .mini-kpi-label {
+  color: #53677d;
+}
+
+.deck-panel .mini-kpi-value {
+  color: #111827;
+}
+
+.deck-panel .section-kicker {
+  color: var(--navy);
+}
+
+.deck-panel .empty-state {
+  color: #34495e;
+  background: #ffffff;
+  border: 1px solid rgba(25, 107, 172, 0.12);
+}
+
+.deck-panel .meta-chip {
+  color: var(--navy);
+  background: rgba(143, 205, 235, 0.28);
+  border-color: rgba(11, 111, 179, 0.16);
+}
+
+.deck-panel .link-btn.secondary {
+  color: var(--navy);
+  background: rgba(143, 205, 235, 0.25);
+  border-color: rgba(11, 111, 179, 0.2);
+}
+
+.deck-takeaways {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 14px;
+}
+
+.deck-takeaway-title {
+  color: var(--navy);
+  font-size: 0.96rem;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.deck-bullet-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #151f2a;
+  display: grid;
+  gap: 9px;
+}
+
+.deck-bullet-list li {
+  font-size: 0.9rem;
+  line-height: 1.42;
+}
+
+.deck-note {
+  margin-top: 12px;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #34495e;
+}
+
+.body-copy {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+.body-copy + .body-copy {
+  margin-top: 12px;
+}
+
+.insight-list {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 0;
+  padding: 0;
+}
+
+.insight-list li {
+  position: relative;
+  padding-left: 18px;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.insight-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.58rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--orange);
+}
+
+.section-kicker {
+  margin-top: 18px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  border-radius: 12px;
+  background: var(--orange);
+  color: #ffffff;
+  padding: 10px 14px;
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  box-shadow: 0 14px 28px rgba(236, 136, 29, 0.22);
+}
+
+.link-btn.secondary {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: none;
+}
+
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.meta-chip {
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.84);
+  background: rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.topic-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.topic-chip {
+  border-radius: 999px;
+  padding: 7px 12px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.mono-block {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.84);
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.inline-note {
+  margin-top: 14px;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.empty-state {
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.76);
+  font-weight: 600;
+}
+
+@media (max-width: 1440px) {
+  .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .highlights {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: 0;
+    border-bottom: 3px solid var(--orange);
+  }
+}
+
+@media (max-width: 920px) {
+  .topbar {
+    flex-direction: column;
+  }
+
+  .controls {
+    justify-content: flex-start;
+  }
+
+  .panel-grid,
+  .highlights,
+  .deck-grid,
+  .deck-grid.three,
+  .deck-takeaways {
+    grid-template-columns: 1fr;
+  }
+
+  .deck-panel.span-2 {
+    grid-column: auto;
+  }
+
+  .deck-panel .highlight-card.has-asset {
+    grid-template-columns: 1fr;
+  }
+
+  .deck-readout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-panel {
+    padding: 18px 16px 24px;
+  }
+
+  .metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-title {
+    font-size: 1.42rem;
+    line-height: 1.14;
+  }
+
+  .metric-value {
+    font-size: 2.3rem;
+  }
+
+  .deck-slide {
+    padding: 18px 16px 20px;
+  }
+
+  .deck-header {
+    align-items: flex-start;
+    border-radius: 12px;
+    flex-direction: column;
+  }
+
+  .deck-readout-claim {
+    font-size: 1.02rem;
+    line-height: 1.24;
+  }
+
+  .deck-panel-title {
+    font-size: 0.98rem;
+  }
+
+  .deck-kpi-title {
+    font-size: 0.88rem;
+  }
+
+  .deck-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  .sidebar,
+  .controls {
+    display: none !important;
+  }
+
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .main-panel {
+    padding: 0;
+  }
+
+  .metric-card,
+  .panel {
+    break-inside: avoid;
+    box-shadow: none;
+  }
+}
+</style>
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand-lockup" href="DASHBOARD_PREVIEW.html" aria-label="Sabin Vaccine Institute dashboard home">
+      <img class="brand-logo" src="assets/sabin-logo-color.png" alt="Sabin Vaccine Institute">
+    </a>
+    <nav class="nav"><a class="nav-link" data-page="dashboard" href="DASHBOARD_PREVIEW.html"><span class="nav-icon"></span>Organic Analytics</a><a class="nav-link" data-page="reports" href="REPORTS.html"><span class="nav-icon"></span>Stakeholder Reports</a><a class="nav-link" data-page="social-listening" href="SOCIAL_LISTENING.html"><span class="nav-icon"></span>Social Listening</a><a class="nav-link" data-page="help" href="HELP.html"><span class="nav-icon"></span>Help</a></nav>
+  </aside>
+  <main class="main-panel">
+    <div class="topbar">
+      <div class="title-wrap">
+        <div>
+          <h1 class="page-title">Dashboard <span class="accent">Settings</span></h1>
+          <div class="page-sub" id="report-date">Canonical dashboard package - May 2026</div>
+          <div class="status-pills" id="status-pills"><span class="status-pill">Package status</span></div>
+        </div>
+      </div>
+      <div class="controls"><select id="month-selector" class="month-select" aria-label="Select report month"><option value="2026-05" selected>May 2026</option><option value="2026-04">April 2026</option><option value="2026-03">March 2026</option><option value="2026-02">February 2026</option><option value="2026-01">January 2026</option></select></div>
+    </div>
+    <div id="page-content"><div class="dashboard-stack"><section class="panel-grid"><section class="panel accent-orange"><h2 class="panel-title">Package Status</h2><div class="panel-subtitle">Selected month diagnostics</div><div class="summary-list"><div class="summary-row"><div class="summary-label">Selected month</div><div class="summary-value">May 2026</div></div><div class="summary-row"><div class="summary-label">Manifest latest month</div><div class="summary-value">2026-05</div></div><div class="summary-row"><div class="summary-label">Data status</div><div class="summary-value">complete</div></div><div class="summary-row"><div class="summary-label">QA</div><div class="summary-value">passed</div></div></div></section><section class="panel accent-green"><h2 class="panel-title">Refresh Workflow</h2><div class="panel-subtitle">Source-of-truth update path</div><p class="body-copy">The canonical dashboard package is regenerated from the Python reporting pipeline and then written into the shared dashboard root. HTML pages are now generated from one builder so branding and month switching stay aligned.</p><ul class="insight-list"><li>Run hootsuite_to_dashboard.py for a month package refresh.</li><li>Use update_dashboard.py when only the HTML package needs to be rebuilt from saved JSON.</li><li>Open Dashboard.cmd if the browser caches local file output aggressively.</li></ul></section><section class="panel accent-slate span-2"><h2 class="panel-title">Artifact Paths</h2><div class="panel-subtitle">Month-specific outputs</div><p class="body-copy">Key source-of-truth artifacts for the selected month.</p><div class="mono-block">C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\data\2026-05\2026-05_dashboard.json
+C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\data\2026-05\2026-05_reporting_framework.json
+C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\data\2026-05\2026-05_standardized_posts.csv</div></section><section class="panel accent-pink span-2"><h2 class="panel-title">Dashboard Root</h2><div class="panel-subtitle">Canonical package location</div><p class="body-copy">Canonical dashboard root and utility launcher.</p><div class="mono-block">C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard
+C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\Open Dashboard.cmd</div></section></section></div></div>
+  </main>
+</div>
+<script>
+const VIEW_MODELS = {"2026-05": {"subtitle": "Canonical dashboard package - May 2026", "status_html": "<span class=\"status-pill\">Package status<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"panel-grid\"><section class=\"panel accent-orange\"><h2 class=\"panel-title\">Package Status<\/h2><div class=\"panel-subtitle\">Selected month diagnostics<\/div><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Selected month<\/div><div class=\"summary-value\">May 2026<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Manifest latest month<\/div><div class=\"summary-value\">2026-05<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Data status<\/div><div class=\"summary-value\">complete<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">QA<\/div><div class=\"summary-value\">passed<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Refresh Workflow<\/h2><div class=\"panel-subtitle\">Source-of-truth update path<\/div><p class=\"body-copy\">The canonical dashboard package is regenerated from the Python reporting pipeline and then written into the shared dashboard root. HTML pages are now generated from one builder so branding and month switching stay aligned.<\/p><ul class=\"insight-list\"><li>Run hootsuite_to_dashboard.py for a month package refresh.<\/li><li>Use update_dashboard.py when only the HTML package needs to be rebuilt from saved JSON.<\/li><li>Open Dashboard.cmd if the browser caches local file output aggressively.<\/li><\/ul><\/section><section class=\"panel accent-slate span-2\"><h2 class=\"panel-title\">Artifact Paths<\/h2><div class=\"panel-subtitle\">Month-specific outputs<\/div><p class=\"body-copy\">Key source-of-truth artifacts for the selected month.<\/p><div class=\"mono-block\">C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-05\\2026-05_dashboard.json\nC:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-05\\2026-05_reporting_framework.json\nC:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-05\\2026-05_standardized_posts.csv<\/div><\/section><section class=\"panel accent-pink span-2\"><h2 class=\"panel-title\">Dashboard Root<\/h2><div class=\"panel-subtitle\">Canonical package location<\/div><p class=\"body-copy\">Canonical dashboard root and utility launcher.<\/p><div class=\"mono-block\">C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\nC:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\Open Dashboard.cmd<\/div><\/section><\/section><\/div>", "title": "Sabin Dashboard | May 2026 Settings"}, "2026-04": {"subtitle": "Canonical dashboard package - April 2026", "status_html": "<span class=\"status-pill\">Package status<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"panel-grid\"><section class=\"panel accent-orange\"><h2 class=\"panel-title\">Package Status<\/h2><div class=\"panel-subtitle\">Selected month diagnostics<\/div><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Selected month<\/div><div class=\"summary-value\">April 2026<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Manifest latest month<\/div><div class=\"summary-value\">2026-05<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Data status<\/div><div class=\"summary-value\">complete<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">QA<\/div><div class=\"summary-value\">passed<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Refresh Workflow<\/h2><div class=\"panel-subtitle\">Source-of-truth update path<\/div><p class=\"body-copy\">The canonical dashboard package is regenerated from the Python reporting pipeline and then written into the shared dashboard root. HTML pages are now generated from one builder so branding and month switching stay aligned.<\/p><ul class=\"insight-list\"><li>Run hootsuite_to_dashboard.py for a month package refresh.<\/li><li>Use update_dashboard.py when only the HTML package needs to be rebuilt from saved JSON.<\/li><li>Open Dashboard.cmd if the browser caches local file output aggressively.<\/li><\/ul><\/section><section class=\"panel accent-slate span-2\"><h2 class=\"panel-title\">Artifact Paths<\/h2><div class=\"panel-subtitle\">Month-specific outputs<\/div><p class=\"body-copy\">Key source-of-truth artifacts for the selected month.<\/p><div class=\"mono-block\">C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-04\\2026-04_dashboard.json\nC:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-04\\2026-04_reporting_framework.json\nC:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-04\\2026-04_standardized_posts.csv<\/div><\/section><section class=\"panel accent-pink span-2\"><h2 class=\"panel-title\">Dashboard Root<\/h2><div class=\"panel-subtitle\">Canonical package location<\/div><p class=\"body-copy\">Canonical dashboard root and utility launcher.<\/p><div class=\"mono-block\">C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\nC:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\Open Dashboard.cmd<\/div><\/section><\/section><\/div>", "title": "Sabin Dashboard | April 2026 Settings"}, "2026-03": {"subtitle": "Canonical dashboard package - March 2026", "status_html": "<span class=\"status-pill\">Package status<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"panel-grid\"><section class=\"panel accent-orange\"><h2 class=\"panel-title\">Package Status<\/h2><div class=\"panel-subtitle\">Selected month diagnostics<\/div><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Selected month<\/div><div class=\"summary-value\">March 2026<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Manifest latest month<\/div><div class=\"summary-value\">2026-05<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Data status<\/div><div class=\"summary-value\">partial<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">QA<\/div><div class=\"summary-value\">passed<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Refresh Workflow<\/h2><div class=\"panel-subtitle\">Source-of-truth update path<\/div><p class=\"body-copy\">The canonical dashboard package is regenerated from the Python reporting pipeline and then written into the shared dashboard root. HTML pages are now generated from one builder so branding and month switching stay aligned.<\/p><ul class=\"insight-list\"><li>Run hootsuite_to_dashboard.py for a month package refresh.<\/li><li>Use update_dashboard.py when only the HTML package needs to be rebuilt from saved JSON.<\/li><li>Open Dashboard.cmd if the browser caches local file output aggressively.<\/li><\/ul><\/section><section class=\"panel accent-slate span-2\"><h2 class=\"panel-title\">Artifact Paths<\/h2><div class=\"panel-subtitle\">Month-specific outputs<\/div><p class=\"body-copy\">Key source-of-truth artifacts for the selected month.<\/p><div class=\"mono-block\">C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-03\\2026-03_dashboard.json\nC:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-03\\2026-03_reporting_framework.json\nC:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-03\\2026-03_standardized_posts.csv<\/div><\/section><section class=\"panel accent-pink span-2\"><h2 class=\"panel-title\">Dashboard Root<\/h2><div class=\"panel-subtitle\">Canonical package location<\/div><p class=\"body-copy\">Canonical dashboard root and utility launcher.<\/p><div class=\"mono-block\">C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\nC:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\Open Dashboard.cmd<\/div><\/section><\/section><\/div>", "title": "Sabin Dashboard | March 2026 Settings"}, "2026-02": {"subtitle": "Canonical dashboard package - February 2026", "status_html": "<span class=\"status-pill\">Package status<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"panel-grid\"><section class=\"panel accent-orange\"><h2 class=\"panel-title\">Package Status<\/h2><div class=\"panel-subtitle\">Selected month diagnostics<\/div><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Selected month<\/div><div class=\"summary-value\">February 2026<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Manifest latest month<\/div><div class=\"summary-value\">2026-05<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Data status<\/div><div class=\"summary-value\">supplemental only<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">QA<\/div><div class=\"summary-value\">passed<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Refresh Workflow<\/h2><div class=\"panel-subtitle\">Source-of-truth update path<\/div><p class=\"body-copy\">The canonical dashboard package is regenerated from the Python reporting pipeline and then written into the shared dashboard root. HTML pages are now generated from one builder so branding and month switching stay aligned.<\/p><ul class=\"insight-list\"><li>Run hootsuite_to_dashboard.py for a month package refresh.<\/li><li>Use update_dashboard.py when only the HTML package needs to be rebuilt from saved JSON.<\/li><li>Open Dashboard.cmd if the browser caches local file output aggressively.<\/li><\/ul><\/section><section class=\"panel accent-slate span-2\"><h2 class=\"panel-title\">Artifact Paths<\/h2><div class=\"panel-subtitle\">Month-specific outputs<\/div><p class=\"body-copy\">Key source-of-truth artifacts for the selected month.<\/p><div class=\"mono-block\">C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-02\\2026-02_dashboard.json\nC:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-02\\2026-02_reporting_framework.json\nC:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-02\\2026-02_standardized_posts.csv<\/div><\/section><section class=\"panel accent-pink span-2\"><h2 class=\"panel-title\">Dashboard Root<\/h2><div class=\"panel-subtitle\">Canonical package location<\/div><p class=\"body-copy\">Canonical dashboard root and utility launcher.<\/p><div class=\"mono-block\">C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\nC:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\Open Dashboard.cmd<\/div><\/section><\/section><\/div>", "title": "Sabin Dashboard | February 2026 Settings"}, "2026-01": {"subtitle": "Canonical dashboard package - January 2026", "status_html": "<span class=\"status-pill\">Package status<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"panel-grid\"><section class=\"panel accent-orange\"><h2 class=\"panel-title\">Package Status<\/h2><div class=\"panel-subtitle\">Selected month diagnostics<\/div><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Selected month<\/div><div class=\"summary-value\">January 2026<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Manifest latest month<\/div><div class=\"summary-value\">2026-05<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Data status<\/div><div class=\"summary-value\">partial<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">QA<\/div><div class=\"summary-value\">passed<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Refresh Workflow<\/h2><div class=\"panel-subtitle\">Source-of-truth update path<\/div><p class=\"body-copy\">The canonical dashboard package is regenerated from the Python reporting pipeline and then written into the shared dashboard root. HTML pages are now generated from one builder so branding and month switching stay aligned.<\/p><ul class=\"insight-list\"><li>Run hootsuite_to_dashboard.py for a month package refresh.<\/li><li>Use update_dashboard.py when only the HTML package needs to be rebuilt from saved JSON.<\/li><li>Open Dashboard.cmd if the browser caches local file output aggressively.<\/li><\/ul><\/section><section class=\"panel accent-slate span-2\"><h2 class=\"panel-title\">Artifact Paths<\/h2><div class=\"panel-subtitle\">Month-specific outputs<\/div><p class=\"body-copy\">Key source-of-truth artifacts for the selected month.<\/p><div class=\"mono-block\">C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-01\\2026-01_dashboard.json\nC:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-01\\2026-01_reporting_framework.json\nC:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-01\\2026-01_standardized_posts.csv<\/div><\/section><section class=\"panel accent-pink span-2\"><h2 class=\"panel-title\">Dashboard Root<\/h2><div class=\"panel-subtitle\">Canonical package location<\/div><p class=\"body-copy\">Canonical dashboard root and utility launcher.<\/p><div class=\"mono-block\">C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\nC:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\Open Dashboard.cmd<\/div><\/section><\/section><\/div>", "title": "Sabin Dashboard | January 2026 Settings"}};
+const PAGE_TARGETS = {"dashboard": "DASHBOARD_PREVIEW.html", "reports": "REPORTS.html", "programs": "PROGRAMS_REPORT.html", "executive": "EXECUTIVE_REPORT.html", "board": "BOARD_REPORT.html", "social-listening": "SOCIAL_LISTENING.html", "settings": "SETTINGS.html", "help": "HELP.html"};
+const DEFAULT_MONTH = "2026-05";
+const monthSelector = document.getElementById('month-selector');
+const reportDate = document.getElementById('report-date');
+const statusPills = document.getElementById('status-pills');
+const pageContent = document.getElementById("page-content");
+const params = new URLSearchParams(window.location.search);
+const activeMode = params.get('mode');
+function initKpiBreakdowns() {
+  const panel = document.getElementById('kpi-breakdown-panel');
+  const cards = Array.from(document.querySelectorAll('[data-kpi-card]'));
+  if (!panel || !cards.length) {
+    return;
+  }
+  const views = Array.from(panel.querySelectorAll('[data-kpi-breakdown]'));
+  const closeButtons = Array.from(panel.querySelectorAll('[data-kpi-close]'));
+  function closeBreakdown() {
+    panel.hidden = true;
+    views.forEach(function (view) { view.hidden = true; });
+    cards.forEach(function (card) {
+      card.classList.remove('is-expanded');
+      card.setAttribute('aria-expanded', 'false');
+    });
+  }
+  function openBreakdown(key, card) {
+    const view = views.find(function (candidate) {
+      return candidate.getAttribute('data-kpi-breakdown') === key;
+    });
+    if (!view) {
+      return;
+    }
+    const shouldClose = !panel.hidden && !view.hidden && card.getAttribute('aria-expanded') === 'true';
+    if (shouldClose) {
+      closeBreakdown();
+      return;
+    }
+    views.forEach(function (candidate) { candidate.hidden = candidate !== view; });
+    cards.forEach(function (candidate) {
+      const isActive = candidate === card;
+      candidate.classList.toggle('is-expanded', isActive);
+      candidate.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+    });
+    card.appendChild(panel);
+    panel.hidden = false;
+    card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  panel.addEventListener('click', function (event) {
+    event.stopPropagation();
+  });
+  cards.forEach(function (card) {
+    card.addEventListener('click', function (event) {
+      if (event.target.closest('.kpi-breakdown-panel')) {
+        return;
+      }
+      openBreakdown(card.getAttribute('data-kpi-card'), card);
+    });
+    card.addEventListener('keydown', function (event) {
+      if (event.key !== 'Enter' && event.key !== ' ') {
+        return;
+      }
+      if (event.target.closest('.kpi-breakdown-panel')) {
+        return;
+      }
+      event.preventDefault();
+      openBreakdown(card.getAttribute('data-kpi-card'), card);
+    });
+  });
+  closeButtons.forEach(function (button) {
+    button.addEventListener('click', function (event) {
+      event.stopPropagation();
+      closeBreakdown();
+    });
+  });
+}
+function getInitialMonth() {
+  const requestedMonth = params.get('month');
+  return VIEW_MODELS[requestedMonth] ? requestedMonth : DEFAULT_MONTH;
+}
+let activeMonth = getInitialMonth();
+function resolvePageTarget(page) {
+  if (page === 'dashboard' && window.location.protocol !== 'file:') {
+    return '/app';
+  }
+  return PAGE_TARGETS[page] || PAGE_TARGETS.dashboard;
+}
+function buildPageUrl(page) {
+  const target = resolvePageTarget(page);
+  const url = new URL(target, window.location.href);
+  if (activeMonth) {
+    url.searchParams.set('month', activeMonth);
+  }
+  if (activeMode) {
+    url.searchParams.set('mode', activeMode);
+  }
+  return window.location.protocol === 'file:' ? url.href : url.pathname + url.search;
+}
+function updatePageLinks() {
+  document.querySelectorAll('[data-page]').forEach(function (link) {
+    const page = link.getAttribute('data-page');
+    if (page) {
+      link.setAttribute('href', buildPageUrl(page));
+    }
+  });
+}
+function updateQuery() {
+  const url = new URL(window.location.href);
+  if (activeMonth) {
+    url.searchParams.set('month', activeMonth);
+  } else {
+    url.searchParams.delete('month');
+  }
+  history.replaceState({}, '', url);
+}
+function loadPage() {
+  const view = VIEW_MODELS[activeMonth] || VIEW_MODELS[DEFAULT_MONTH];
+  if (!view || !pageContent) {
+    return;
+  }
+  reportDate.textContent = view.subtitle;
+  if (statusPills) {
+    statusPills.innerHTML = view.status_html || '';
+  }
+  pageContent.innerHTML = view.content_html || '';
+  document.title = view.title;
+  initKpiBreakdowns();
+  if (monthSelector) {
+    monthSelector.value = activeMonth;
+  }
+  updatePageLinks();
+}
+if (monthSelector) {
+  monthSelector.addEventListener('change', function (event) {
+    activeMonth = event.target.value;
+    updateQuery();
+    loadPage();
+  });
+}
+updateQuery();
+loadPage();
+</script>
+<script>
+(function () {
+  if (!('serviceWorker' in navigator) || window.location.protocol === 'file:') {
+    return;
+  }
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js').catch(function (error) {
+      console.warn('Sabin dashboard service worker registration failed:', error);
+    });
+  });
+}());
+</script>
+</body>
+</html>
