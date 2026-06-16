@@ -7,9 +7,9 @@
   },
   "scripts": {
     "prebuild": "node scripts/sync-dashboard-public.mjs",
-    "dev": "vinext dev",
-    "build": "vinext build",
-    "start": "vinext start",
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite preview",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"
   },
