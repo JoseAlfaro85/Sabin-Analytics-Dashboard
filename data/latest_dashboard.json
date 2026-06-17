@@ -1655,6 +1655,255 @@
       "window_label": "Last 365 days"
     }
   },
+  "paid_media": {
+    "status": "ready",
+    "month": "2026-05",
+    "source_mode": "impact_paid_content_exports",
+    "source_files": {
+      "facebook": "C:\\Users\\JAlfaro\\Downloads\\impact_facebook_marketing_paid_content_export.zip",
+      "linkedin": "C:\\Users\\JAlfaro\\Downloads\\impact_linkedin_marketing_paid_content_export.zip"
+    },
+    "methodology": {
+      "grain": "campaign",
+      "row_filter": "campaigns with active windows overlapping the reporting month",
+      "primary_click_metric": "landing page clicks when available, otherwise link clicks"
+    },
+    "summary": {
+      "campaigns": 6,
+      "spend_usd": 488.85,
+      "impressions": 446544,
+      "primary_clicks": 3789,
+      "primary_click_label": "Paid landing-page visits",
+      "landing_page_clicks": 3789,
+      "link_clicks": 0,
+      "engagements": 7366,
+      "ctr": 0.00848516607545953,
+      "cpc": 0.12901821060965954,
+      "cpm": 1.094740943781576
+    },
+    "platforms": {
+      "facebook": {
+        "platform": "facebook",
+        "label": "Facebook",
+        "status": "no_activity",
+        "source_file": "C:\\Users\\JAlfaro\\Downloads\\impact_facebook_marketing_paid_content_export.zip",
+        "source_mode": "impact_paid_content_export",
+        "campaigns": 0,
+        "spend_usd": 0.0,
+        "impressions": 0,
+        "landing_page_clicks": 0,
+        "link_clicks": 0,
+        "primary_clicks": 0,
+        "primary_click_label": "Paid landing-page visits",
+        "engagements": 0,
+        "ctr": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "top_campaigns": [],
+        "objective_mix": [],
+        "notes": [
+          "No Facebook paid campaigns overlapped May 2026."
+        ]
+      },
+      "linkedin": {
+        "platform": "linkedin",
+        "label": "LinkedIn",
+        "status": "ready",
+        "source_file": "C:\\Users\\JAlfaro\\Downloads\\impact_linkedin_marketing_paid_content_export.zip",
+        "source_mode": "impact_paid_content_export",
+        "campaigns": 6,
+        "spend_usd": 488.85,
+        "impressions": 446544,
+        "landing_page_clicks": 3789,
+        "link_clicks": 0,
+        "primary_clicks": 3789,
+        "primary_click_label": "Paid landing-page visits",
+        "engagements": 7366,
+        "ctr": 0.00848516607545953,
+        "cpc": 0.12901821060965954,
+        "cpm": 1.094740943781576,
+        "top_campaigns": [
+          {
+            "name": "Boost Post Engagement May 11, 2026 at 5:21 PM",
+            "objective": "Engagement",
+            "status": "COMPLETED",
+            "start_time": "05/11/26 17:21",
+            "end_time": "05/20/26 23:45",
+            "spend_usd": 100.0,
+            "impressions": 128002,
+            "landing_page_clicks": 1407,
+            "link_clicks": 0,
+            "primary_clicks": 1407,
+            "engagements": 1593
+          },
+          {
+            "name": "Boost Post Website Visits May 27, 2026 at 4:24 PM",
+            "objective": "Website Visit",
+            "status": "COMPLETED",
+            "start_time": "05/27/26 16:25",
+            "end_time": "06/03/26 23:45",
+            "spend_usd": 92.74,
+            "impressions": 126003,
+            "landing_page_clicks": 1023,
+            "link_clicks": 0,
+            "primary_clicks": 1023,
+            "engagements": 1024
+          },
+          {
+            "name": "Boost Post Website Visits May 27, 2026 at 4:26 PM",
+            "objective": "Website Visit",
+            "status": "COMPLETED",
+            "start_time": "05/27/26 16:27",
+            "end_time": "06/09/26 23:45",
+            "spend_usd": 53.86,
+            "impressions": 72025,
+            "landing_page_clicks": 649,
+            "link_clicks": 0,
+            "primary_clicks": 649,
+            "engagements": 654
+          },
+          {
+            "name": "Boost Post Engagement May 28, 2026 at 3:42 PM",
+            "objective": "Engagement",
+            "status": "COMPLETED",
+            "start_time": "05/28/26 15:43",
+            "end_time": "06/05/26 23:45",
+            "spend_usd": 42.22,
+            "impressions": 61891,
+            "landing_page_clicks": 419,
+            "link_clicks": 0,
+            "primary_clicks": 419,
+            "engagements": 479
+          },
+          {
+            "name": "Boost Post Engagement April 24, 2026 at 8:32 PM",
+            "objective": "Engagement",
+            "status": "COMPLETED",
+            "start_time": "04/27/26 00:00",
+            "end_time": "05/06/26 23:45",
+            "spend_usd": 100.03,
+            "impressions": 50816,
+            "landing_page_clicks": 287,
+            "link_clicks": 0,
+            "primary_clicks": 287,
+            "engagements": 2735
+          }
+        ],
+        "objective_mix": [
+          {
+            "objective": "Engagement",
+            "campaigns": 4,
+            "spend_usd": 342.25,
+            "primary_clicks": 2117,
+            "impressions": 248516
+          },
+          {
+            "objective": "Website Visit",
+            "campaigns": 2,
+            "spend_usd": 146.6,
+            "primary_clicks": 1672,
+            "impressions": 198028
+          }
+        ],
+        "notes": [],
+        "campaigns_with_delivery": 6
+      }
+    },
+    "top_platform": {
+      "platform": "linkedin",
+      "label": "LinkedIn",
+      "primary_clicks": 3789,
+      "spend_usd": 488.85,
+      "impressions": 446544
+    },
+    "top_campaigns": [
+      {
+        "name": "Boost Post Engagement May 11, 2026 at 5:21 PM",
+        "objective": "Engagement",
+        "status": "COMPLETED",
+        "start_time": "05/11/26 17:21",
+        "end_time": "05/20/26 23:45",
+        "spend_usd": 100.0,
+        "impressions": 128002,
+        "landing_page_clicks": 1407,
+        "link_clicks": 0,
+        "primary_clicks": 1407,
+        "engagements": 1593
+      },
+      {
+        "name": "Boost Post Website Visits May 27, 2026 at 4:24 PM",
+        "objective": "Website Visit",
+        "status": "COMPLETED",
+        "start_time": "05/27/26 16:25",
+        "end_time": "06/03/26 23:45",
+        "spend_usd": 92.74,
+        "impressions": 126003,
+        "landing_page_clicks": 1023,
+        "link_clicks": 0,
+        "primary_clicks": 1023,
+        "engagements": 1024
+      },
+      {
+        "name": "Boost Post Website Visits May 27, 2026 at 4:26 PM",
+        "objective": "Website Visit",
+        "status": "COMPLETED",
+        "start_time": "05/27/26 16:27",
+        "end_time": "06/09/26 23:45",
+        "spend_usd": 53.86,
+        "impressions": 72025,
+        "landing_page_clicks": 649,
+        "link_clicks": 0,
+        "primary_clicks": 649,
+        "engagements": 654
+      },
+      {
+        "name": "Boost Post Engagement May 28, 2026 at 3:42 PM",
+        "objective": "Engagement",
+        "status": "COMPLETED",
+        "start_time": "05/28/26 15:43",
+        "end_time": "06/05/26 23:45",
+        "spend_usd": 42.22,
+        "impressions": 61891,
+        "landing_page_clicks": 419,
+        "link_clicks": 0,
+        "primary_clicks": 419,
+        "engagements": 479
+      },
+      {
+        "name": "Boost Post Engagement April 24, 2026 at 8:32 PM",
+        "objective": "Engagement",
+        "status": "COMPLETED",
+        "start_time": "04/27/26 00:00",
+        "end_time": "05/06/26 23:45",
+        "spend_usd": 100.03,
+        "impressions": 50816,
+        "landing_page_clicks": 287,
+        "link_clicks": 0,
+        "primary_clicks": 287,
+        "engagements": 2735
+      }
+    ],
+    "objective_mix": [
+      {
+        "objective": "Engagement",
+        "campaigns": 4,
+        "spend_usd": 342.25,
+        "primary_clicks": 2117,
+        "impressions": 248516
+      },
+      {
+        "objective": "Website Visit",
+        "campaigns": 2,
+        "spend_usd": 146.6,
+        "primary_clicks": 1672,
+        "impressions": 198028
+      }
+    ],
+    "notes": [
+      "No paid delivery was identified for Facebook in May 2026.",
+      "Paid metrics come from campaign-level impact exports and are filtered to campaigns whose active windows overlap the reporting month."
+    ]
+  },
   "mom_deltas": {
     "followers_mom_delta": 1647,
     "followers_mom_pct_change": 4.04,
@@ -2675,7 +2924,7 @@
     "status": "unavailable",
     "month": "2026-05",
     "source_mode": "openai_responses_api",
-    "generated_at": "2026-06-16T11:38:37",
+    "generated_at": "2026-06-17T12:39:56",
     "report_file": "2026-05_openai_analysis.json",
     "prompt_version": "2026-03-23-v1",
     "model": "gpt-4o-mini",
@@ -2704,6 +2953,6 @@
   },
   "_meta": {
     "month": "2026-05",
-    "generated_at": "2026-06-16T11:38:37"
+    "generated_at": "2026-06-17T12:39:56"
   }
 }

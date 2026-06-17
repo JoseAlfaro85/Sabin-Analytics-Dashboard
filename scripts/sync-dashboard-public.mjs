@@ -17,6 +17,7 @@ const itemsToCopy = [
   "EXECUTIVE_REPORT.html",
   "BOARD_REPORT.html",
   "SOCIAL_LISTENING.html",
+  "ADS.html",
   "SETTINGS.html",
   "HELP.html",
   "manifest.webmanifest",
