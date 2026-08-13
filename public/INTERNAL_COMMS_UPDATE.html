@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Internal Comms Update | Sabin Performance Dashboard</title>
+  <link rel="icon" href="app-icon.svg" />
+  <style>
+    :root {
+      --ink: #17212b;
+      --muted: #5a6572;
+      --line: #d9e0e6;
+      --panel: #ffffff;
+      --soft: #f6f8fa;
+      --blue: #1f5f8b;
+      --teal: #0f766e;
+      --green: #557a3f;
+      --gold: #a66b00;
+      --red: #a43e3e;
+      --paper: #fbfaf7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      letter-spacing: 0;
+    }
+
+    a { color: inherit; }
+
+    .topbar {
+      background: #10233a;
+      color: #fff;
+      border-bottom: 4px solid #6ea08c;
+    }
+
+    .topbar-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 220px;
+    }
+
+    .brand img { height: 36px; width: auto; display: block; }
+
+    .brand span {
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .nav {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: rgba(255,255,255,.84);
+      font-size: 13px;
+      padding: 8px 10px;
+      border-radius: 6px;
+    }
+
+    .nav a.active,
+    .nav a:hover { background: rgba(255,255,255,.14); color: #fff; }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 20px 48px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(280px, .75fr);
+      gap: 24px;
+      align-items: end;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .lede {
+      margin: 14px 0 0;
+      color: var(--muted);
+      max-width: 760px;
+      font-size: 17px;
+      line-height: 1.55;
+    }
+
+    .meeting-meta {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 10px 30px rgba(17, 35, 58, .06);
+    }
+
+    .meeting-meta p {
+      margin: 0 0 10px;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 14px;
+    }
+
+    .meeting-meta strong { color: var(--ink); display: block; margin-bottom: 3px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .kpi,
+    .section,
+    .note {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(17, 35, 58, .05);
+    }
+
+    .kpi {
+      grid-column: span 3;
+      padding: 16px;
+      min-height: 126px;
+    }
+
+    .kpi .label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    .kpi .value {
+      margin-top: 12px;
+      font-size: 30px;
+      line-height: 1;
+      font-weight: 800;
+    }
+
+    .kpi .sub {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .section {
+      grid-column: span 12;
+      padding: 20px;
+    }
+
+    .section.half { grid-column: span 6; }
+    .section.third { grid-column: span 4; }
+    .section.full { grid-column: span 12; }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+
+    .section-header p,
+    .section > p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .table-scroll {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .spend-table {
+      min-width: 940px;
+    }
+
+    th {
+      text-align: left;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      border-bottom: 1px solid var(--line);
+      padding: 10px 8px;
+      white-space: nowrap;
+    }
+
+    td {
+      border-bottom: 1px solid #edf1f4;
+      padding: 11px 8px;
+      vertical-align: top;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+    .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      min-width: 78px;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #fff;
+      background: var(--red);
+      white-space: nowrap;
+    }
+
+    .status.ok { background: var(--green); }
+    .status.warn { background: var(--gold); }
+
+    .callouts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .callout {
+      border-left: 4px solid var(--teal);
+      background: var(--soft);
+      border-radius: 6px;
+      padding: 12px;
+    }
+
+    .callout strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .callout span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .bullets {
+      margin: 12px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 14px;
+    }
+
+    .bullets li { margin: 6px 0; }
+
+    .source {
+      grid-column: span 12;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      padding: 14px 2px 0;
+    }
+
+    .source a { color: var(--blue); }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .kpi,
+      .section.half,
+      .section.third { grid-column: span 12; }
+      .section.full { grid-column: span 12; }
+      .callouts { grid-template-columns: 1fr; }
+      .topbar-inner { align-items: flex-start; flex-direction: column; }
+      .nav { justify-content: flex-start; }
+      table { font-size: 12px; }
+      th, td { padding: 9px 6px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="DASHBOARD_PREVIEW.html" aria-label="Sabin dashboard home">
+        <img src="assets/sabin-logo-white.png" alt="Sabin Vaccine Institute" />
+        <span>Performance Dashboard</span>
+      </a>
+      <nav class="nav" aria-label="Dashboard navigation">
+        <a href="DASHBOARD_PREVIEW.html">Organic Analytics</a>
+        <a href="REPORTS.html">Stakeholder Reports</a>
+        <a href="ADS.html">Ads</a>
+        <a href="SOCIAL_LISTENING.html">Social Listening</a>
+        <a class="active" href="/internal_comms_update">Internal Update</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">In-person communications meeting</p>
+        <h1>Internal Comms Update</h1>
+        <p class="lede">A midyear checkpoint on 2026 growth goals, paid spend, creative asset signals, web content performance, and measurement changes that should shape the second half of the year.</p>
+      </div>
+      <aside class="meeting-meta">
+        <p><strong>Reporting window</strong>H1 2026, with July social, web, and paid data used as the latest available checkpoint.</p>
+        <p><strong>Primary question</strong>Are we growing the right audiences, investing with discipline, and giving creative enough performance feedback?</p>
+        <p><strong>How to use this</strong>Read this as a working brief: the goal is to decide what to keep, change, and standardize next.</p>
+      </aside>
+    </section>
+
+    <section class="grid" aria-label="Executive metrics">
+      <article class="kpi">
+        <div class="label">Current audience</div>
+        <div class="value">43,032</div>
+        <div class="sub">Facebook, Instagram, and LinkedIn followers at July close.</div>
+      </article>
+      <article class="kpi">
+        <div class="label">H1 net followers</div>
+        <div class="value">+4,476</div>
+        <div class="sub">January through June audience growth across tracked platforms.</div>
+      </article>
+      <article class="kpi">
+        <div class="label">H1 engagement</div>
+        <div class="value">20,399</div>
+        <div class="sub">Engagements from 299 H1 social posts.</div>
+      </article>
+      <article class="kpi">
+        <div class="label">2026 paid spend</div>
+        <div class="value">$1,965.90</div>
+        <div class="sub">Tracked paid spend January through May, plus June and July billing spend with available delivery metrics.</div>
+      </article>
+
+      <section class="section full">
+        <div class="section-header">
+          <h2>Network Performance</h2>
+          <p>July checkpoint for the tracked platforms, set against audience size and near-term growth pace.</p>
+        </div>
+        <div class="grid" style="margin-top: 0;">
+          <article class="kpi" style="grid-column: span 4; min-height: 170px;">
+            <div class="label">LinkedIn</div>
+            <div class="value">30,366</div>
+            <div class="sub">Followers at July close. H1 net new: +4,150. 23 posts, 22,327 impressions, 500 engagements, and the strongest growth signal in the mix.</div>
+          </article>
+          <article class="kpi" style="grid-column: span 4; min-height: 170px;">
+            <div class="label">Instagram</div>
+            <div class="value">4,737</div>
+            <div class="sub">Followers at July close. H1 net new: -79. 6 posts, 647 impressions, 34 engagements, and the weakest conversion from posting to performance.</div>
+          </article>
+          <article class="kpi" style="grid-column: span 4; min-height: 170px;">
+            <div class="label">Facebook</div>
+            <div class="value">7,929</div>
+            <div class="sub">Followers at July close. H1 net new: +350. 17 posts, 4,774 impressions, 245 engagements, and steady output without the same growth upside as LinkedIn.</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Growth Goals: Where We Are</h2>
+          <p>July checkpoint against year-end follower targets and expected pace.</p>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Platform</th>
+              <th class="num">Year-end goal</th>
+              <th class="num">July actual</th>
+              <th class="num">Benchmark</th>
+              <th class="num">Gap to pace</th>
+              <th class="num">YTD net new</th>
+              <th class="num">Remaining</th>
+              <th>Status</th>
+              <th>Posting</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Facebook</td>
+              <td class="num">8,800</td>
+              <td class="num">7,929</td>
+              <td class="num">8,322</td>
+              <td class="num">-393</td>
+              <td class="num">+350</td>
+              <td class="num">871</td>
+              <td><span class="status">Off track</span></td>
+              <td><span class="status ok">On pace</span></td>
+            </tr>
+            <tr>
+              <td>Instagram</td>
+              <td class="num">6,300</td>
+              <td class="num">4,737</td>
+              <td class="num">5,694</td>
+              <td class="num">-957</td>
+              <td class="num">-79</td>
+              <td class="num">1,563</td>
+              <td><span class="status">Off track</span></td>
+              <td><span class="status ok">On pace</span></td>
+            </tr>
+            <tr>
+              <td>LinkedIn</td>
+              <td class="num">35,000</td>
+              <td class="num">30,366</td>
+              <td class="num">31,635</td>
+              <td class="num">-1,269</td>
+              <td class="num">+4,150</td>
+              <td class="num">4,634</td>
+              <td><span class="status">Off track</span></td>
+              <td><span class="status warn">High</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="callouts">
+        </div>
+      </section>
+
+      <section class="section full">
+        <div class="section-header">
+          <h2>Spend Habits</h2>
+          <p>Monthly 2026 paid activity from dashboard-paid sources through July.</p>
+        </div>
+        <div class="table-scroll">
+        <table class="spend-table">
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Status</th>
+              <th class="num">Spend</th>
+              <th class="num">Campaigns</th>
+              <th class="num">Impressions</th>
+              <th class="num">Results</th>
+              <th class="num">Engagements</th>
+              <th class="num">CTR</th>
+              <th class="num">Cost / result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>January</td>
+              <td>Spend tracked</td>
+              <td class="num">$189.18</td>
+              <td class="num">3</td>
+              <td class="num">123,738</td>
+              <td class="num">1,043</td>
+              <td class="num">1,686</td>
+              <td class="num">0.84%</td>
+              <td class="num">$0.18</td>
+            </tr>
+            <tr>
+              <td>February</td>
+              <td>Spend tracked</td>
+              <td class="num">$478.21</td>
+              <td class="num">6</td>
+              <td class="num">610,444</td>
+              <td class="num">4,156</td>
+              <td class="num">64,773</td>
+              <td class="num">0.68%</td>
+              <td class="num">$0.12</td>
+            </tr>
+            <tr>
+              <td>March</td>
+              <td>Spend tracked</td>
+              <td class="num">$290.21</td>
+              <td class="num">2</td>
+              <td class="num">370,193</td>
+              <td class="num">2,718</td>
+              <td class="num">2,767</td>
+              <td class="num">0.73%</td>
+              <td class="num">$0.11</td>
+            </tr>
+            <tr>
+              <td>April</td>
+              <td>Spend tracked</td>
+              <td class="num">$270.89</td>
+              <td class="num">3</td>
+              <td class="num">247,769</td>
+              <td class="num">7,163</td>
+              <td class="num">11,682</td>
+              <td class="num">2.89%</td>
+              <td class="num">$0.04</td>
+            </tr>
+            <tr>
+              <td>May</td>
+              <td>Spend tracked</td>
+              <td class="num">$388.82</td>
+              <td class="num">5</td>
+              <td class="num">395,728</td>
+              <td class="num">3,502</td>
+              <td class="num">4,631</td>
+              <td class="num">0.88%</td>
+              <td class="num">$0.11</td>
+            </tr>
+            <tr>
+              <td>June</td>
+              <td>Billing tracked</td>
+              <td class="num">$194.81</td>
+              <td class="num">3</td>
+              <td class="num">259,919</td>
+              <td class="num">2,091</td>
+              <td class="num">2,157</td>
+              <td class="num">0.80%</td>
+              <td class="num">$0.09</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Billing tracked</td>
+              <td class="num">$153.78</td>
+              <td class="num">1</td>
+              <td class="num">50,731</td>
+              <td class="num">744</td>
+              <td class="num">794</td>
+              <td class="num">1.47%</td>
+              <td class="num">$0.21</td>
+            </tr>
+            <tr>
+              <td>2026 confirmed YTD</td>
+              <td>Tracked / billing</td>
+              <td class="num">$1,965.90</td>
+              <td class="num">23</td>
+              <td class="num">2,058,522</td>
+              <td class="num">21,417</td>
+              <td class="num">88,490</td>
+              <td class="num">1.04%</td>
+              <td class="num">$0.09</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <ul class="bullets">
+          <li>February was the biggest paid month, April was the most efficient, and June-July were lighter billing-tracked months.</li>
+          <li>When we talk about June and July, call them billing-tracked months with delivery metrics attached where available.</li>
+          <li>Use H2 spend only on assets with a defined audience, destination, and success metric.</li>
+        </ul>
+      </section>
+
+      <section class="section full">
+        <div class="section-header">
+          <h2>Measurement Shift</h2>
+          <p>Search, AI assistants, and GA4 reporting.</p>
+        </div>
+        <ul class="bullets">
+          <li>GA4 now has an AI Assistant channel for chatbot referrers such as ChatGPT, Gemini, and Claude.</li>
+          <li>Expect some Referral traffic to move into AI Assistant, so do not read that shift as a loss without checking the labels.</li>
+          <li>Pair AI Assistant with Organic Search, Referral, and Direct whenever we discuss discovery trends.</li>
+          <li>Use the channel change as a reason to annotate the report, not as a reason to over-explain the noise.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Creative Asset Signal: H1 2026</h2>
+          <p>Deduplicated unique assets across social placements, January through June.</p>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Asset type</th>
+              <th class="num">Unique assets</th>
+              <th class="num">Reach</th>
+              <th class="num">Engagements</th>
+              <th class="num">Tracked clicks</th>
+              <th>Readout for creative</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Carousel</td>
+              <td class="num">18</td>
+              <td class="num">27,147</td>
+              <td class="num">4,014</td>
+              <td class="num">95</td>
+              <td>Strongest engagement format; useful for explaining programs and multi-step stories.</td>
+            </tr>
+            <tr>
+              <td>Video short</td>
+              <td class="num">24</td>
+              <td class="num">22,298</td>
+              <td class="num">1,798</td>
+              <td class="num">97</td>
+              <td>Reliable attention driver; pair with sharper captions and next actions.</td>
+            </tr>
+            <tr>
+              <td>Photo</td>
+              <td class="num">39</td>
+              <td class="num">16,030</td>
+              <td class="num">1,203</td>
+              <td class="num">267</td>
+              <td>Flexible baseline asset; best when people, events, and mission context are clear.</td>
+            </tr>
+            <tr>
+              <td>Graphic</td>
+              <td class="num">18</td>
+              <td class="num">4,078</td>
+              <td class="num">197</td>
+              <td class="num">5,430</td>
+              <td>Click signal needs QA, but resource-oriented graphics can move users when CTAs are explicit.</td>
+            </tr>
+            <tr>
+              <td>Other / unknown</td>
+              <td class="num">28</td>
+              <td class="num">2,630</td>
+              <td class="num">147</td>
+              <td class="num">0</td>
+              <td>Reduce unclassified publishing by tagging asset type and campaign intent at launch.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="callouts">
+          <div class="callout"><strong>127 unique assets</strong><span>H1 included 192 placements and 127 conservatively deduplicated assets; 49 assets appeared on more than one platform.</span></div>
+          <div class="callout"><strong>LinkedIn should stay the scale channel</strong><span>It won reach most often across comparable assets and should remain our default distribution lane for high-value content.</span></div>
+          <div class="callout"><strong>Creative brief rule</strong><span>Every asset brief should name the platform, CTA, URL/UTM, asset type, and the one metric it should move.</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Blogs and Resources: H1 Performance</h2>
+          <p>Top year-to-date content pages from GA4 exports, excluding general site utility pages.</p>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Content</th>
+              <th class="num">Sessions</th>
+              <th class="num">Users</th>
+              <th class="num">Key events</th>
+              <th>Planning signal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Vaccines 101: Their History, How They Work, and Their Impact</td>
+              <td class="num">2,748</td>
+              <td class="num">2,304</td>
+              <td class="num">8,752</td>
+              <td>Evergreen vaccine education remains a durable discovery asset.</td>
+            </tr>
+            <tr>
+              <td>All About Different Vaccine Delivery Methods</td>
+              <td class="num">2,448</td>
+              <td class="num">2,190</td>
+              <td class="num">7,742</td>
+              <td>Technical explainers can perform when framed for broad audiences.</td>
+            </tr>
+            <tr>
+              <td>Understanding Pentavalent and Hexavalent Vaccines</td>
+              <td class="num">2,402</td>
+              <td class="num">2,246</td>
+              <td class="num">7,530</td>
+              <td>Vaccine-specific education deserves refresh and internal linking support.</td>
+            </tr>
+            <tr>
+              <td>How Vaccines Protect You and Your Loved Ones</td>
+              <td class="num">1,382</td>
+              <td class="num">1,255</td>
+              <td class="num">4,220</td>
+              <td>Public-facing trust content belongs in the H2 evergreen rotation.</td>
+            </tr>
+            <tr>
+              <td>A Year of Progress, Preparedness, and Partnership</td>
+              <td class="num">1,170</td>
+              <td class="num">970</td>
+              <td class="num">3,502</td>
+              <td>Institutional impact stories can drive traffic when timely and packaged well.</td>
+            </tr>
+            <tr>
+              <td>From COVID-19 to Typhoid: 2026 Sabin Awards Spotlight Vaccine Pioneers</td>
+              <td class="num">928</td>
+              <td class="num">425</td>
+              <td class="num">2,436</td>
+              <td>Awards content is useful for stakeholder credibility and event-adjacent promotion.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section third">
+        <div class="section-header">
+          <h2>Lessons Learned</h2>
+        </div>
+        <ul class="bullets">
+          <li>Volume alone is not closing follower gaps, so we need stronger creative and sharper distribution choices.</li>
+          <li>Reuse content by adapting the format and CTA for each platform, not by reposting unchanged.</li>
+          <li>Paid campaigns need a shared spend log, delivery export, and clear campaign objective before we boost more.</li>
+          <li>Annotate measurement changes so we do not mistake a reporting shift for a performance change.</li>
+        </ul>
+      </section>
+
+      <section class="section third">
+        <div class="section-header">
+          <h2>H2 Focus</h2>
+        </div>
+        <ul class="bullets">
+          <li>Build repeatable creative packages around carousels, short video, and evergreen explainers.</li>
+          <li>Keep LinkedIn as the stakeholder reach engine and rebuild Instagram around a more specific audience job.</li>
+          <li>Boost only assets with a clear destination, UTM, and decision-ready metric.</li>
+          <li>Review goal pace monthly before leadership meetings so the team can course-correct earlier.</li>
+        </ul>
+      </section>
+
+      <section class="section third">
+        <div class="section-header">
+          <h2>Team Prompts</h2>
+        </div>
+        <ul class="bullets">
+          <li>Which growth targets should stay as-is, and which need a different tactic or channel mix?</li>
+          <li>What should every video or graphic brief include so performance is built in earlier?</li>
+          <li>Which H1 resource pages deserve a refresh, paid boost, or social repackaging first?</li>
+          <li>What do we need to log every month so accuracy conversations stop taking up meeting time?</li>
+        </ul>
+      </section>
+
+      <div class="source">
+        Sources: Sabin Performance Dashboard monthly social exports, H1 unique asset analysis, GA4 web exports, user-confirmed monthly paid spend table for January-May 2026, user-provided June-July billing rows, and available LinkedIn delivery exports. Data notes: July social uses supplemental Facebook post files alongside account totals; June and July paid rows combine billing evidence with delivery metrics where available; H1 asset deduplication uses caption similarity, timing, tags, and format because no universal media ID exists. GA4 AI Assistant note references Google's May 2026 Analytics update: <a href="https://support.google.com/analytics/answer/9164320?hl=en">Google Analytics What's New</a>.
+      </div>
+    </section>
+  </main>
+</body>
+</html>
