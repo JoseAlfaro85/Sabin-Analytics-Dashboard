@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#196BAC">
+  <meta name="theme-color" content="#25303A">
   <title>Sabin Performance Dashboard</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="app-icon.svg" type="image/svg+xml">
   <meta http-equiv="refresh" content="3; url=DASHBOARD_PREVIEW.html">
   <style>
     :root {
-      --navy: #196BAC;
-      --orange: #EC881D;
-      --text: #333333;
-      --bg: #f3f4f4;
+      --navy: #25303A;
+      --blue: #196BAC;
+      --orange: #D77A1F;
+      --text: #202733;
+      --bg: #f6f4ef;
+      --border: rgba(35, 45, 55, 0.12);
     }
     * { box-sizing: border-box; }
     body {
@@ -29,10 +31,10 @@
       width: min(440px, calc(100vw - 32px));
       padding: 28px;
       background: #fff;
-      border: 1px solid rgba(25, 107, 172, 0.14);
+      border: 1px solid var(--border);
       border-top: 4px solid var(--orange);
       border-radius: 8px;
-      box-shadow: 0 16px 40px rgba(5, 67, 114, 0.12);
+      box-shadow: 0 16px 34px rgba(35, 45, 55, 0.09);
     }
     .mark {
       display: block;
@@ -51,7 +53,7 @@
       line-height: 1.5;
     }
     a {
-      color: var(--navy);
+      color: var(--blue);
       font-weight: 700;
     }
   </style>

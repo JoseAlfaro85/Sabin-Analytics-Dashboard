@@ -10,28 +10,26 @@ month,qa_status,can_finalize,failed_checks,warning_checks,check_name,check_statu
 2026-01,passed,True,0,2,source_data_loaded_for_reporting_month,passed,Required monthly source data loaded and standardized social rows were available.
 2026-01,passed,True,0,2,source_dates_match_reporting_month,passed,All parsed source dates aligned to the selected reporting month.
 2026-01,passed,True,0,2,source_files_in_selected_folder,passed,All selected source files came from the reporting folder.
-2026-02,passed,True,0,2,account_totals_match_cross_network_export,passed,Account summary metrics reconcile to the Hootsuite cross-network export.
-2026-02,passed,True,0,2,account_vs_detail_rollup_gap,warning,"Cross-network account totals differ from detailed platform rollups. total_engagements: account=1,801, detail=6,740"
-2026-02,passed,True,0,2,additive_and_nonadditive_separation,passed,All reported rates are recalculated from additive totals.
-2026-02,passed,True,0,2,month_label_correct,passed,Report month label is 2026-02.
-2026-02,passed,True,0,2,monthly_export_completeness,warning,"Monthly export completeness is supplemental_only. Cross-platform aggregate export was present, but all social post data came from supplemental *_top_posts.csv files rather than full post-performance exports."
-2026-02,passed,True,0,2,no_archive_or_test_files,passed,All selected source files avoided archive/test style paths.
-2026-02,passed,True,0,2,no_metric_double_counting,passed,Engagements and clicks are sourced from separate Hootsuite metrics.
-2026-02,passed,True,0,2,platform_totals_internal_consistency,passed,Detailed platform totals reconcile to the summed platform rows.
-2026-02,passed,True,0,2,source_data_loaded_for_reporting_month,passed,Required monthly source data loaded and standardized social rows were available.
-2026-02,passed,True,0,2,source_dates_match_reporting_month,passed,All parsed source dates aligned to the selected reporting month.
-2026-02,passed,True,0,2,source_files_in_selected_folder,passed,All selected source files came from the reporting folder.
-2026-03,passed,True,0,2,account_totals_match_cross_network_export,passed,Account summary metrics reconcile to the Hootsuite cross-network export.
-2026-03,passed,True,0,2,account_vs_detail_rollup_gap,warning,"Cross-network account totals differ from detailed platform rollups. page_impressions: account=42,094, detail=38,803 | total_link_clicks: account=3,082, detail=3,289 | total_engagements: account=4,080, detail=3,689"
-2026-03,passed,True,0,2,additive_and_nonadditive_separation,passed,All reported rates are recalculated from additive totals.
-2026-03,passed,True,0,2,month_label_correct,passed,Report month label is 2026-03.
-2026-03,passed,True,0,2,monthly_export_completeness,warning,"Monthly export completeness is partial. supplemental top-post files used for instagram, linkedin; post data missing for x; full post-performance exports present for facebook"
-2026-03,passed,True,0,2,no_archive_or_test_files,passed,All selected source files avoided archive/test style paths.
-2026-03,passed,True,0,2,no_metric_double_counting,passed,Engagements and clicks are sourced from separate Hootsuite metrics.
-2026-03,passed,True,0,2,platform_totals_internal_consistency,passed,Detailed platform totals reconcile to the summed platform rows.
-2026-03,passed,True,0,2,source_data_loaded_for_reporting_month,passed,Required monthly source data loaded and standardized social rows were available.
-2026-03,passed,True,0,2,source_dates_match_reporting_month,passed,All parsed source dates aligned to the selected reporting month.
-2026-03,passed,True,0,2,source_files_in_selected_folder,passed,All selected source files came from the reporting folder.
+2026-02,passed,True,0,1,account_totals_match_cross_network_export,passed,Account summary metrics reconcile to the Hootsuite cross-network export plus tracked-click enrichments.
+2026-02,passed,True,0,1,account_vs_detail_rollup_gap,warning,"Cross-network account totals differ from detailed platform rollups. page_impressions: account=100,002, detail=113,214 | total_engagements: account=1,801, detail=972"
+2026-02,passed,True,0,1,additive_and_nonadditive_separation,passed,"Derived rates reconcile to additive totals, while native Hootsuite average engagement rates are preserved as source-provided metrics."
+2026-02,passed,True,0,1,engagements_follow_base_formula,passed,Report-facing engagements stay aligned to base engagement totals without adding clicks.
+2026-02,passed,True,0,1,month_label_correct,passed,Report month label is 2026-02.
+2026-02,passed,True,0,1,no_archive_or_test_files,passed,All selected source files avoided archive/test style paths.
+2026-02,passed,True,0,1,platform_totals_internal_consistency,passed,Detailed platform totals reconcile to the summed platform rows.
+2026-02,passed,True,0,1,source_data_loaded_for_reporting_month,passed,Required monthly source data loaded and standardized social rows were available.
+2026-02,passed,True,0,1,source_dates_match_reporting_month,passed,All parsed source dates aligned to the selected reporting month.
+2026-02,passed,True,0,1,source_files_in_selected_folder,passed,All selected source files came from the reporting folder.
+2026-03,passed,True,0,1,account_totals_match_cross_network_export,passed,Account summary metrics reconcile to the Hootsuite cross-network export plus tracked-click enrichments.
+2026-03,passed,True,0,1,account_vs_detail_rollup_gap,warning,"Cross-network account totals differ from detailed platform rollups. page_impressions: account=42,094, detail=43,296 | total_engagements: account=4,080, detail=1,226"
+2026-03,passed,True,0,1,additive_and_nonadditive_separation,passed,"Derived rates reconcile to additive totals, while native Hootsuite average engagement rates are preserved as source-provided metrics."
+2026-03,passed,True,0,1,engagements_follow_base_formula,passed,Report-facing engagements stay aligned to base engagement totals without adding clicks.
+2026-03,passed,True,0,1,month_label_correct,passed,Report month label is 2026-03.
+2026-03,passed,True,0,1,no_archive_or_test_files,passed,All selected source files avoided archive/test style paths.
+2026-03,passed,True,0,1,platform_totals_internal_consistency,passed,Detailed platform totals reconcile to the summed platform rows.
+2026-03,passed,True,0,1,source_data_loaded_for_reporting_month,passed,Required monthly source data loaded and standardized social rows were available.
+2026-03,passed,True,0,1,source_dates_match_reporting_month,passed,All parsed source dates aligned to the selected reporting month.
+2026-03,passed,True,0,1,source_files_in_selected_folder,passed,All selected source files came from the reporting folder.
 2026-04,passed,True,0,1,account_totals_match_cross_network_export,passed,Account summary metrics reconcile to the Hootsuite cross-network export.
 2026-04,passed,True,0,1,account_vs_detail_rollup_gap,warning,"Cross-network account totals differ from detailed platform rollups. total_posts: account=59, detail=42 | page_impressions: account=49,811, detail=34,431 | total_link_clicks: account=3,269, detail=3,627 | total_engagements: account=4,124, detail=1,449"
 2026-04,passed,True,0,1,additive_and_nonadditive_separation,passed,All reported rates are recalculated from additive totals.
@@ -52,3 +50,49 @@ month,qa_status,can_finalize,failed_checks,warning_checks,check_name,check_statu
 2026-05,passed,True,0,1,source_data_loaded_for_reporting_month,passed,Required monthly source data loaded and standardized social rows were available.
 2026-05,passed,True,0,1,source_dates_match_reporting_month,passed,All parsed source dates aligned to the selected reporting month.
 2026-05,passed,True,0,1,source_files_in_selected_folder,passed,All selected source files came from the reporting folder.
+2026-06,passed,True,0,2,account_totals_match_cross_network_export,passed,Account summary metrics reconcile to the Hootsuite cross-network export plus tracked-click enrichments.
+2026-06,passed,True,0,2,account_vs_detail_rollup_gap,warning,"Cross-network account totals differ from detailed platform rollups. page_impressions: account=24,990, detail=24,382 | total_engagements: account=1,874, detail=795"
+2026-06,passed,True,0,2,additive_and_nonadditive_separation,passed,"Derived rates reconcile to additive totals, while native Hootsuite average engagement rates are preserved as source-provided metrics."
+2026-06,passed,True,0,2,engagements_follow_base_formula,passed,Report-facing engagements stay aligned to base engagement totals without adding clicks.
+2026-06,passed,True,0,2,month_label_correct,passed,Report month label is 2026-06.
+2026-06,passed,True,0,2,monthly_export_completeness,warning,"Monthly export completeness is partial. supplemental top-post files used for facebook; full post-performance exports present for instagram, linkedin"
+2026-06,passed,True,0,2,no_archive_or_test_files,passed,All selected source files avoided archive/test style paths.
+2026-06,passed,True,0,2,platform_totals_internal_consistency,passed,Detailed platform totals reconcile to the summed platform rows.
+2026-06,passed,True,0,2,source_data_loaded_for_reporting_month,passed,Required monthly source data loaded and standardized social rows were available.
+2026-06,passed,True,0,2,source_dates_match_reporting_month,passed,All parsed source dates aligned to the selected reporting month.
+2026-06,passed,True,0,2,source_files_in_selected_folder,passed,All selected source files came from the reporting folder.
+2026-07,passed,True,0,2,account_totals_match_cross_network_export,passed,Account summary metrics reconcile to the Hootsuite cross-network export plus tracked-click enrichments.
+2026-07,passed,True,0,2,account_vs_detail_rollup_gap,warning,"Cross-network account totals differ from detailed platform rollups. page_impressions: account=28,379, detail=27,748 | total_engagements: account=2,370, detail=779"
+2026-07,passed,True,0,2,additive_and_nonadditive_separation,passed,"Derived rates reconcile to additive totals, while native Hootsuite average engagement rates are preserved as source-provided metrics."
+2026-07,passed,True,0,2,engagements_follow_base_formula,passed,Report-facing engagements stay aligned to base engagement totals without adding clicks.
+2026-07,passed,True,0,2,month_label_correct,passed,Report month label is 2026-07.
+2026-07,passed,True,0,2,monthly_export_completeness,warning,"Monthly export completeness is partial. supplemental top-post files used for facebook; full post-performance exports present for instagram, linkedin"
+2026-07,passed,True,0,2,no_archive_or_test_files,passed,All selected source files avoided archive/test style paths.
+2026-07,passed,True,0,2,platform_totals_internal_consistency,passed,Detailed platform totals reconcile to the summed platform rows.
+2026-07,passed,True,0,2,source_data_loaded_for_reporting_month,passed,Required monthly source data loaded and standardized social rows were available.
+2026-07,passed,True,0,2,source_dates_match_reporting_month,passed,All parsed source dates aligned to the selected reporting month.
+2026-07,passed,True,0,2,source_files_in_selected_folder,passed,All selected source files came from the reporting folder.
+2026-08,passed,True,0,0,account_totals_match_cross_network_export,passed,Account summary metrics reconcile to platform-native Hootsuite engagement inputs plus tracked-click enrichments.
+2026-08,passed,True,0,0,additive_and_nonadditive_separation,passed,"Derived rates reconcile to additive totals, while native Hootsuite average engagement rates are preserved as source-provided metrics."
+2026-08,passed,True,0,0,month_label_correct,passed,Report month label is 2026-08.
+2026-08,passed,True,0,0,native_engagements_follow_platform_sum,passed,Report-facing engagements reconcile to the sum of platform-native Post engagement totals.
+2026-08,passed,True,0,0,native_post_engagement_source_identified,passed,Every platform-native engagement total has an identified source.
+2026-08,passed,True,0,0,no_archive_or_test_files,passed,All selected source files avoided archive/test style paths.
+2026-08,passed,True,0,0,no_duplicate_platform_post_ids,passed,No duplicate platform/post identifiers were detected.
+2026-08,passed,True,0,0,platform_totals_internal_consistency,passed,Detailed platform totals reconcile to the summed platform rows.
+2026-08,passed,True,0,0,report_close_date_declared,passed,Reporting close date is explicitly set to 2026-09-01.
+2026-08,passed,True,0,0,source_data_loaded_for_reporting_month,passed,Required monthly source data loaded and standardized social rows were available.
+2026-08,passed,True,0,0,source_dates_match_reporting_month,passed,All parsed source dates aligned to the selected reporting month.
+2026-08,passed,True,0,0,source_files_in_selected_folder,passed,All selected source files came from the reporting folder.
+2026-09,passed,True,0,0,account_totals_match_cross_network_export,passed,Account summary metrics reconcile to platform-native Hootsuite engagement inputs plus tracked-click enrichments.
+2026-09,passed,True,0,0,additive_and_nonadditive_separation,passed,"Derived rates reconcile to additive totals, while native Hootsuite average engagement rates are preserved as source-provided metrics."
+2026-09,passed,True,0,0,month_label_correct,passed,Report month label is 2026-09.
+2026-09,passed,True,0,0,native_engagements_follow_platform_sum,passed,Report-facing engagements reconcile to the sum of platform-native Post engagement totals.
+2026-09,passed,True,0,0,native_post_engagement_source_identified,passed,Every platform-native engagement total has an identified source.
+2026-09,passed,True,0,0,no_archive_or_test_files,passed,All selected source files avoided archive/test style paths.
+2026-09,passed,True,0,0,no_duplicate_platform_post_ids,passed,No duplicate platform/post identifiers were detected.
+2026-09,passed,True,0,0,platform_totals_internal_consistency,passed,Detailed platform totals reconcile to the summed platform rows.
+2026-09,passed,True,0,0,report_close_date_declared,passed,Reporting close date is explicitly set to 2026-10-01.
+2026-09,passed,True,0,0,source_data_loaded_for_reporting_month,passed,Required monthly source data loaded and standardized social rows were available.
+2026-09,passed,True,0,0,source_dates_match_reporting_month,passed,All parsed source dates aligned to the selected reporting month.
+2026-09,passed,True,0,0,source_files_in_selected_folder,passed,All selected source files came from the reporting folder.

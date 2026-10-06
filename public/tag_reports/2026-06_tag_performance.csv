@@ -1,0 +1,70 @@
+month,post_id,post_date,platform,post_url,tag_name,tag_category,report_dimension,reporting_priority,reach,impressions,clicks,engagement_rate,engagements_total
+2026-06,18100798271325139,2026-06-01 17:15:10,instagram,https://www.instagram.com/reel/DZDRhdvExTp/,Video Short,Asset Type,content_format,low,239,239,,2.51,6.0
+2026-06,18100798271325139,2026-06-01 17:15:10,instagram,https://www.instagram.com/reel/DZDRhdvExTp/,,,,,239,239,,2.51,6.0
+2026-06,18097971821146364,2026-06-05 19:10:43,instagram,https://www.instagram.com/p/DZNyb8nGhFT/,Graphics Carousel,Asset Type,content_format,low,105,105,,7.62,7.0
+2026-06,18097971821146364,2026-06-05 19:10:43,instagram,https://www.instagram.com/p/DZNyb8nGhFT/,Malaria,Disease Area,program,high,105,105,,7.62,7.0
+2026-06,18097971821146364,2026-06-05 19:10:43,instagram,https://www.instagram.com/p/DZNyb8nGhFT/,Holiday,Topic,org_topic,low,105,105,,7.62,7.0
+2026-06,17869735362623582,2026-06-16 20:00:17,instagram,https://www.instagram.com/reel/DZqMZ5UIOic/,Video Short,Asset Type,content_format,low,150,150,,2.67,4.0
+2026-06,17869735362623582,2026-06-16 20:00:17,instagram,https://www.instagram.com/reel/DZqMZ5UIOic/,Sabin Global Immunization,Team,team,medium,150,150,,2.67,4.0
+2026-06,18012420011714269,2026-06-18 18:15:22,instagram,https://www.instagram.com/p/DZvKdKMGrhx/,Single Photo,Asset Type,content_format,low,211,211,,6.16,12.0
+2026-06,18012420011714269,2026-06-18 18:15:22,instagram,https://www.instagram.com/p/DZvKdKMGrhx/,Dr. Sabin,Topic,org_topic,low,211,211,,6.16,12.0
+2026-06,17971555434066142,2026-06-23 19:57:01,instagram,https://www.instagram.com/p/DZ8OEFJmsLN/,Single Photo,Asset Type,content_format,low,77,77,,0.0,0.0
+2026-06,17971555434066142,2026-06-23 19:57:01,instagram,https://www.instagram.com/p/DZ8OEFJmsLN/,HPV,Disease Area,program,high,77,77,,0.0,0.0
+2026-06,17971555434066142,2026-06-23 19:57:01,instagram,https://www.instagram.com/p/DZ8OEFJmsLN/,External News Story,Promo Content,content_type,medium,77,77,,0.0,0.0
+2026-06,17893438473482855,2026-06-25 19:10:23,instagram,https://www.instagram.com/p/DaBSUQ5Gse-/,Single Photo,Asset Type,content_format,low,112,112,,2.68,2.0
+2026-06,17893438473482855,2026-06-25 19:10:23,instagram,https://www.instagram.com/p/DaBSUQ5Gse-/,General #VaccinesWork,Theme,theme,medium,112,112,,2.68,2.0
+2026-06,urn:li:ugcPost:7467262467203678209,2026-06-01 17:15:07,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7467262467203678209,Video Short,Asset Type,content_format,low,385,638,16.0,,13.0
+2026-06,urn:li:ugcPost:7467262467203678209,2026-06-01 17:15:07,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7467262467203678209,,,,,385,638,16.0,,13.0
+2026-06,7467661575831781377,2026-06-02 19:41:02,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7467661575831781377,Single Photo,Asset Type,content_format,low,323,458,6.0,,14.0
+2026-06,7467661575831781377,2026-06-02 19:41:02,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7467661575831781377,General #VaccinesWork,Theme,theme,medium,323,458,6.0,,14.0
+2026-06,7467661575831781377,2026-06-02 19:41:02,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7467661575831781377,Trust in Vaccines,Theme,theme,medium,323,458,6.0,,14.0
+2026-06,7467998735734743041,2026-06-03 18:00:47,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7467998735734743041,,,,,415,608,15.0,,20.0
+2026-06,7467998735734743041,2026-06-03 18:00:47,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7467998735734743041,Webinar,Promo Content,content_type,medium,415,608,15.0,,20.0
+2026-06,7467998735734743041,2026-06-03 18:00:47,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7467998735734743041,GCE/Boost,Team,team,medium,415,608,15.0,,20.0
+2026-06,7467998735734743041,2026-06-03 18:00:47,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7467998735734743041,Sabin Global Immunization,Team,team,medium,415,608,15.0,,20.0
+2026-06,7468371062905384960,2026-06-04 18:40:17,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7468371062905384960,,,,,319,519,15.0,,15.0
+2026-06,7468371062905384960,2026-06-04 18:40:17,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7468371062905384960,HPV,Disease Area,program,high,319,519,15.0,,15.0
+2026-06,7468371062905384960,2026-06-04 18:40:17,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7468371062905384960,Global HPV Consortium,Partner,partner,low,319,519,15.0,,15.0
+2026-06,7468371062905384960,2026-06-04 18:40:17,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7468371062905384960,Sabin Global Immunization,Team,team,medium,319,519,15.0,,15.0
+2026-06,urn:li:ugcPost:7468741040041127936,2026-06-05 19:10:26,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7468741040041127936,Graphics Carousel,Asset Type,content_format,low,495,684,160.0,,10.0
+2026-06,urn:li:ugcPost:7468741040041127936,2026-06-05 19:10:26,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7468741040041127936,Malaria,Disease Area,program,high,495,684,160.0,,10.0
+2026-06,urn:li:ugcPost:7468741040041127936,2026-06-05 19:10:26,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7468741040041127936,Holiday,Topic,org_topic,low,495,684,160.0,,10.0
+2026-06,7469810627054739459,2026-06-08 18:00:36,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7469810627054739459,,,,,331,516,10.0,,8.0
+2026-06,7469810627054739459,2026-06-08 18:00:36,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7469810627054739459,Webinar,Promo Content,content_type,medium,331,516,10.0,,8.0
+2026-06,7469810627054739459,2026-06-08 18:00:36,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7469810627054739459,GCE/Boost,Team,team,medium,331,516,10.0,,8.0
+2026-06,7469810627054739459,2026-06-08 18:00:36,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7469810627054739459,Sabin Global Immunization,Team,team,medium,331,516,10.0,,8.0
+2026-06,7470182681146753024,2026-06-09 18:39:00,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7470182681146753024,,,,,699,1069,36.0,,27.0
+2026-06,7470182681146753024,2026-06-09 18:39:00,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7470182681146753024,Marburg,Disease Area,program,high,699,1069,36.0,,27.0
+2026-06,7470182681146753024,2026-06-09 18:39:00,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7470182681146753024,Sabin R&D,Team,team,medium,699,1069,36.0,,27.0
+2026-06,7470495098896719872,2026-06-10 15:20:26,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7470495098896719872,,,,,648,976,27.0,,60.0
+2026-06,7470495098896719872,2026-06-10 15:20:26,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7470495098896719872,Individual Giving,Topic,org_topic,low,648,976,27.0,,60.0
+2026-06,7470881425790177280,2026-06-11 16:55:34,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7470881425790177280,Single Photo,Asset Type,content_format,low,249,405,11.0,,9.0
+2026-06,7470881425790177280,2026-06-11 16:55:34,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7470881425790177280,GCE/Boost,Team,team,medium,249,405,11.0,,9.0
+2026-06,7470881425790177280,2026-06-11 16:55:34,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7470881425790177280,Sabin Global Immunization,Team,team,medium,249,405,11.0,,9.0
+2026-06,7471262612517937152,2026-06-12 18:10:16,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7471262612517937152,HPV,Disease Area,program,high,228,383,2.0,,4.0
+2026-06,7471262612517937152,2026-06-12 18:10:16,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7471262612517937152,Global HPV Consortium,Partner,partner,low,228,383,2.0,,4.0
+2026-06,urn:li:ugcPost:7472362540690489344,2026-06-15 19:00:59,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7472362540690489344,Graphics Carousel,Asset Type,content_format,low,806,1082,213.0,,33.0
+2026-06,urn:li:ugcPost:7472362540690489344,2026-06-15 19:00:59,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7472362540690489344,Measles,Disease Area,program,high,806,1082,213.0,,33.0
+2026-06,urn:li:ugcPost:7472362540690489344,2026-06-15 19:00:59,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7472362540690489344,External News Story,Promo Content,content_type,medium,806,1082,213.0,,33.0
+2026-06,urn:li:ugcPost:7472739839151411200,2026-06-16 20:00:14,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7472739839151411200,Video Short,Asset Type,content_format,low,603,801,49.0,,21.0
+2026-06,urn:li:ugcPost:7472739839151411200,2026-06-16 20:00:14,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7472739839151411200,Sabin Global Immunization,Team,team,medium,603,801,49.0,,21.0
+2026-06,urn:li:ugcPost:7473015443159449600,2026-06-17 14:15:23,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7473015443159449600,Graphics Carousel,Asset Type,content_format,low,839,1199,319.0,,26.0
+2026-06,urn:li:ugcPost:7473015443159449600,2026-06-17 14:15:23,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7473015443159449600,Marburg,Disease Area,program,high,839,1199,319.0,,26.0
+2026-06,urn:li:ugcPost:7473015443159449600,2026-06-17 14:15:23,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7473015443159449600,Sabin R&D,Team,team,medium,839,1199,319.0,,26.0
+2026-06,urn:li:ugcPost:7473015443159449600,2026-06-17 14:15:23,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7473015443159449600,Outbreak Response,Theme,theme,medium,839,1199,319.0,,26.0
+2026-06,urn:li:ugcPost:7473015443159449600,2026-06-17 14:15:23,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7473015443159449600,Vaccine R&D,Theme,theme,medium,839,1199,319.0,,26.0
+2026-06,7473438199063908353,2026-06-18 18:15:16,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7473438199063908353,Single Photo,Asset Type,content_format,low,1724,2323,72.0,,132.0
+2026-06,7473438199063908353,2026-06-18 18:15:16,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7473438199063908353,Dr. Sabin,Topic,org_topic,low,1724,2323,72.0,,132.0
+2026-06,urn:li:ugcPost:7473718748378714112,2026-06-19 12:50:04,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7473718748378714112,Video Short,Asset Type,content_format,low,862,1196,89.0,,38.0
+2026-06,urn:li:ugcPost:7473718748378714112,2026-06-19 12:50:04,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7473718748378714112,Sabin R&D,Team,team,medium,862,1196,89.0,,38.0
+2026-06,urn:li:ugcPost:7473718748378714112,2026-06-19 12:50:04,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7473718748378714112,HR & Recruitment,Topic,org_topic,low,862,1196,89.0,,38.0
+2026-06,7475263980005990401,2026-06-23 19:10:16,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7475263980005990401,Single Photo,Asset Type,content_format,low,218,307,6.0,,19.0
+2026-06,7475263980005990401,2026-06-23 19:10:16,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7475263980005990401,HPV,Disease Area,program,high,218,307,6.0,,19.0
+2026-06,7475263980005990401,2026-06-23 19:10:16,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7475263980005990401,External News Story,Promo Content,content_type,medium,218,307,6.0,,19.0
+2026-06,7475631415469117440,2026-06-24 19:30:20,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7475631415469117440,GCE/Boost,Team,team,medium,503,723,13.0,,13.0
+2026-06,7475631415469117440,2026-06-24 19:30:20,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7475631415469117440,Sabin Global Immunization,Team,team,medium,503,723,13.0,,13.0
+2026-06,7475992531990790145,2026-06-25 19:25:17,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7475992531990790145,Single Photo,Asset Type,content_format,low,241,387,10.0,,17.0
+2026-06,7475992531990790145,2026-06-25 19:25:17,linkedin,https://www.linkedin.com/feed/update/urn:li:share:7475992531990790145,General #VaccinesWork,Theme,theme,medium,241,387,10.0,,17.0
+2026-06,urn:li:ugcPost:7477441781895237632,2026-06-29 19:24:05,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7477441781895237632,Photo Carousel,Asset Type,content_format,low,350,523,82.0,,25.0
+2026-06,urn:li:ugcPost:7477441781895237632,2026-06-29 19:24:05,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7477441781895237632,Sabin Global Immunization,Team,team,medium,350,523,82.0,,25.0
+2026-06,urn:li:ugcPost:7477441781895237632,2026-06-29 19:24:05,linkedin,https://www.linkedin.com/feed/update/urn:li:ugcPost:7477441781895237632,VAD/VARN,Team,team,medium,350,523,82.0,,25.0

@@ -1,0 +1,37 @@
+{
+  "month": "2026-09",
+  "captured_at": "2026-10-06T16:10:00-04:00",
+  "source_mode": "authenticated_hootsuite_and_native_post_ui",
+  "hootsuite_report_id": "18274371",
+  "ranking_note": "Facebook and Instagram use the first post in Hootsuite's Top posts tile; LinkedIn uses the highest-click post in that tile.",
+  "posts": {
+    "facebook": {
+      "platform": "facebook",
+      "Post Permalink": "https://www.facebook.com/368989981928740/posts/1513363697491357",
+      "asset_image_url": "assets/post-thumbnails/2026-09/facebook-top-post.jpg",
+      "asset_source": "Hootsuite native post preview"
+    },
+    "instagram": {
+      "platform": "instagram",
+      "Post Permalink": "https://www.instagram.com/p/DdXPLxzDrxn/",
+      "Post Message": "The Sabin Awards honor immunization innovators whose work protects some of the world's most vulnerable populations. Shine a spotlight on someone deserving today. Nominations are open until November 30 at the link in our bio.",
+      "Engagement Rate": 0.0669,
+      "Total Engagements": 20,
+      "Reach": 299,
+      "Clicks": null,
+      "Likes": 18,
+      "Comments": 0,
+      "Shares": 1,
+      "Saves": 1,
+      "Video Views": 553,
+      "asset_image_url": "assets/post-thumbnails/2026-09/instagram-top-post.jpg",
+      "asset_source": "Hootsuite native post preview"
+    },
+    "linkedin": {
+      "platform": "linkedin",
+      "Post Permalink": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7503800871487655936",
+      "asset_image_url": "assets/post-thumbnails/2026-09/linkedin-top-post.jpg",
+      "asset_source": "Authenticated LinkedIn document carousel cover"
+    }
+  }
+}

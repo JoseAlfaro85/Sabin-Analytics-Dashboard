@@ -1,0 +1,1077 @@
+{
+  "_meta": {
+    "month": "2026-09",
+    "generated_at": "2026-10-06T11:51:25"
+  },
+  "assumptions": [
+    "Reach and impressions are standardized into one visibility metric per platform, using impressions when available and otherwise reach.",
+    "Report-facing summary cards use Facebook, Instagram, and LinkedIn only so the dashboard and quarterly report share one scope.",
+    "Cross-network native post engagement is the sum of each reporting platform's Hootsuite-native Post engagement total: Facebook plus Instagram plus LinkedIn.",
+    "Native Post engagement definitions are preserved by platform; a separate harmonized interaction total keeps reactions, comments, and shares comparable across platforms.",
+    "The monthly reporting close is the first calendar day after month-end; August 2026 closes on September 1, 2026.",
+    "Owly tracked-click exports are the report-facing website-resource click metric for Facebook and LinkedIn posts; X/Twitter Owly tables are optional when present.",
+    "YouTube follower counts remain available in raw Hootsuite exports, but report-facing summary cards exclude YouTube until a matching platform detail layer is maintained.",
+    "Actual follower pace uses real January 1 follower counts when they can be recovered from January exports or saved January dashboard artifacts.",
+    "Target pace remains a separate benchmark derived from the stated year-end target and annual growth rate.",
+    "Monthly export completeness is complete only when the cross-platform aggregate export, Facebook/Instagram/LinkedIn full post-performance exports, and the expected Facebook/LinkedIn Owly website-click exports are present.",
+    "Email exports are excluded from social platform calculations to avoid mixing unlike metrics.",
+    "Follower pace is labeled slightly behind when actual performance is within 5% of the benchmark pace."
+  ],
+  "raw_data": {
+    "reporting_month": "2026-09",
+    "month_start": "2026-09-01",
+    "month_end": "2026-09-30",
+    "source_folder": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026",
+    "datasets_loaded": 7,
+    "export_completeness_status": "complete",
+    "post_data_sources": {
+      "facebook": "full_post_performance",
+      "instagram": "full_post_performance",
+      "linkedin": "full_post_performance",
+      "x": "missing"
+    },
+    "supplemental_top_post_files_used": false,
+    "monthly_export_completeness_report": "2026-09_monthly_export_completeness.json",
+    "datasets": {
+      "account_metrics": {
+        "loaded": true,
+        "rows": 30,
+        "source_file": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_account_metrics.csv",
+        "date_column": "post_date",
+        "source_min_date": "2026-09-01",
+        "source_max_date": "2026-09-30",
+        "rows_outside_month": 0
+      },
+      "custom_metrics": {
+        "loaded": true,
+        "rows": 30,
+        "source_file": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_custom_metrics.csv",
+        "date_column": "post_date",
+        "source_min_date": "2026-09-01",
+        "source_max_date": "2026-09-30",
+        "rows_outside_month": 0
+      },
+      "facebook_posts": {
+        "loaded": true,
+        "rows": 22,
+        "source_file": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\facebook_post_performance_2026-09-01_to_2026-09-30_created_on_20261006T1505Z_facebook_post_performance.csv",
+        "date_column": "post_date",
+        "source_min_date": "2026-09-01",
+        "source_max_date": "2026-09-30",
+        "rows_outside_month": 0
+      },
+      "instagram_posts": {
+        "loaded": true,
+        "rows": 1,
+        "source_file": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_ig_posts.csv",
+        "date_column": null,
+        "source_min_date": null,
+        "source_max_date": null,
+        "rows_outside_month": 0
+      },
+      "linkedin_posts": {
+        "loaded": true,
+        "rows": 22,
+        "source_file": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_li_pages_posts_table_date.csv",
+        "date_column": "post_date",
+        "source_min_date": "2026-09-01",
+        "source_max_date": "2026-09-30",
+        "rows_outside_month": 0
+      },
+      "x_posts": {
+        "loaded": false,
+        "rows": 0,
+        "source_file": null,
+        "date_column": null,
+        "source_min_date": null,
+        "source_max_date": null,
+        "rows_outside_month": 0
+      },
+      "email_posts": {
+        "loaded": false,
+        "rows": 0,
+        "source_file": null,
+        "date_column": null,
+        "source_min_date": null,
+        "source_max_date": null,
+        "rows_outside_month": 0
+      },
+      "facebook_top_posts": {
+        "loaded": false,
+        "rows": 0,
+        "source_file": null,
+        "date_column": null,
+        "source_min_date": null,
+        "source_max_date": null,
+        "rows_outside_month": 0
+      },
+      "instagram_top_posts": {
+        "loaded": false,
+        "rows": 0,
+        "source_file": null,
+        "date_column": null,
+        "source_min_date": null,
+        "source_max_date": null,
+        "rows_outside_month": 0
+      },
+      "linkedin_top_posts": {
+        "loaded": false,
+        "rows": 0,
+        "source_file": null,
+        "date_column": null,
+        "source_min_date": null,
+        "source_max_date": null,
+        "rows_outside_month": 0
+      },
+      "owly_facebook_posts": {
+        "loaded": true,
+        "rows": 18,
+        "source_file": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\owly_link_clicks_2026-09-01_to_2026-09-30_created_on_20261002T1048Z_fb_posts_with_owly_clicks_table.csv",
+        "date_column": "post_date",
+        "source_min_date": "2026-09-01",
+        "source_max_date": "2026-09-30",
+        "rows_outside_month": 0
+      },
+      "owly_linkedin_posts": {
+        "loaded": true,
+        "rows": 17,
+        "source_file": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\owly_link_clicks_2026-09-01_to_2026-09-30_created_on_20261002T1048Z_li_pages_posts_with_owly_clicks_table.csv",
+        "date_column": "post_date",
+        "source_min_date": "2026-09-01",
+        "source_max_date": "2026-09-30",
+        "rows_outside_month": 0
+      },
+      "owly_x_posts": {
+        "loaded": false,
+        "rows": 0,
+        "source_file": null,
+        "date_column": null,
+        "source_min_date": null,
+        "source_max_date": null,
+        "rows_outside_month": 0
+      }
+    }
+  },
+  "standardized_data": {
+    "reporting_month": "2026-09",
+    "rows": 45,
+    "post_data_sources": {
+      "facebook": "full_post_performance",
+      "instagram": "full_post_performance",
+      "linkedin": "full_post_performance",
+      "x": "missing"
+    },
+    "platforms": {
+      "facebook": {
+        "post_data_source": "full_post_performance",
+        "source_dataset": "facebook_posts",
+        "source_file": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\facebook_post_performance_2026-09-01_to_2026-09-30_created_on_20261006T1505Z_facebook_post_performance.csv",
+        "rows_loaded": 22,
+        "rows_in_month": 22,
+        "date_column": "post_date",
+        "source_min_date": "2026-09-01",
+        "source_max_date": "2026-09-30",
+        "rows_outside_month": 0
+      },
+      "instagram": {
+        "post_data_source": "full_post_performance",
+        "source_dataset": "instagram_posts",
+        "source_file": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_ig_posts.csv",
+        "rows_loaded": 1,
+        "rows_in_month": 1,
+        "date_column": null,
+        "source_min_date": null,
+        "source_max_date": null,
+        "rows_outside_month": 0
+      },
+      "linkedin": {
+        "post_data_source": "full_post_performance",
+        "source_dataset": "linkedin_posts",
+        "source_file": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_li_pages_posts_table_date.csv",
+        "rows_loaded": 22,
+        "rows_in_month": 22,
+        "date_column": "post_date",
+        "source_min_date": "2026-09-01",
+        "source_max_date": "2026-09-30",
+        "rows_outside_month": 0
+      }
+    },
+    "standardized_posts_csv": "2026-09_standardized_posts.csv"
+  },
+  "export_completeness": {
+    "month": "2026-09",
+    "status": "complete",
+    "status_reason": "All expected monthly export families were present without relying on supplemental top-post files.",
+    "report_file": "2026-09_monthly_export_completeness.json",
+    "rules": {
+      "complete": "Cross-platform aggregate export present, Facebook/Instagram/LinkedIn each have full post-performance exports, and all expected Facebook/LinkedIn Owly website-click exports are present. X is optional for report readiness.",
+      "partial": "The month uses a mix of full exports, supplemental top-post files, missing post exports, or missing Owly exports.",
+      "supplemental_only": "Cross-platform aggregate export is present, but only supplemental *_top_posts.csv files were available instead of full post-performance exports."
+    },
+    "cross_network_performance_monthly_export": {
+      "present": true,
+      "files": [
+        "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_account_metrics.csv"
+      ]
+    },
+    "post_performance_monthly_export": {
+      "any_present": true,
+      "all_expected_present": true,
+      "platforms": {
+        "facebook": {
+          "full_post_performance_export_present": true,
+          "full_post_performance_files": [
+            "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\facebook_post_performance_2026-09-01_to_2026-09-30_created_on_20261006T1505Z_facebook_post_performance.csv"
+          ],
+          "supplemental_top_post_file_present": true,
+          "supplemental_top_post_files": [
+            "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_fb_top_posts.csv"
+          ],
+          "post_data_source": "full_post_performance",
+          "source_file_used": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\facebook_post_performance_2026-09-01_to_2026-09-30_created_on_20261006T1505Z_facebook_post_performance.csv"
+        },
+        "instagram": {
+          "full_post_performance_export_present": true,
+          "full_post_performance_files": [
+            "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_ig_posts.csv",
+            "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_ig_posts.csv"
+          ],
+          "supplemental_top_post_file_present": true,
+          "supplemental_top_post_files": [
+            "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_ig_top_posts.csv"
+          ],
+          "post_data_source": "full_post_performance",
+          "source_file_used": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_ig_posts.csv"
+        },
+        "linkedin": {
+          "full_post_performance_export_present": true,
+          "full_post_performance_files": [
+            "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_li_pages_posts_table_date.csv",
+            "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_li_pages_posts_table_date.csv"
+          ],
+          "supplemental_top_post_file_present": true,
+          "supplemental_top_post_files": [
+            "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_li_pages_top_posts.csv"
+          ],
+          "post_data_source": "full_post_performance",
+          "source_file_used": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_li_pages_posts_table_date.csv"
+        },
+        "x": {
+          "full_post_performance_export_present": false,
+          "full_post_performance_files": [],
+          "supplemental_top_post_file_present": false,
+          "supplemental_top_post_files": [],
+          "post_data_source": "missing",
+          "source_file_used": null
+        }
+      }
+    },
+    "owly_link_click_monthly_export": {
+      "any_present": true,
+      "all_expected_present": true,
+      "expected_platforms": [
+        "facebook",
+        "linkedin"
+      ],
+      "optional_platforms": [
+        "x"
+      ],
+      "platforms": {
+        "facebook": {
+          "present": true,
+          "required": true,
+          "files": [
+            "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\owly_link_clicks_2026-09-01_to_2026-09-30_created_on_20261002T1048Z_fb_posts_with_owly_clicks_table.csv"
+          ]
+        },
+        "linkedin": {
+          "present": true,
+          "required": true,
+          "files": [
+            "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\owly_link_clicks_2026-09-01_to_2026-09-30_created_on_20261002T1048Z_li_pages_posts_with_owly_clicks_table.csv"
+          ]
+        },
+        "x": {
+          "present": false,
+          "required": false,
+          "files": []
+        }
+      }
+    },
+    "supplemental_top_post_files_used": false,
+    "supplemental_top_post_platforms": [],
+    "full_post_performance_platforms": [
+      "facebook",
+      "instagram",
+      "linkedin"
+    ],
+    "missing_post_data_platforms": [],
+    "missing_optional_post_data_platforms": [
+      "x"
+    ],
+    "post_data_sources": {
+      "facebook": "full_post_performance",
+      "instagram": "full_post_performance",
+      "linkedin": "full_post_performance",
+      "x": "missing"
+    }
+  },
+  "targets": {
+    "year": 2026,
+    "month": "2026-09",
+    "methodology": {
+      "actual_reporting_pace": "actual followers end minus real January 1 followers where available",
+      "target_benchmark_pace": "annual target net new followers multiplied by completed-year pace",
+      "status_basis": "Actual YTD net new followers compared with target benchmark YTD net new followers"
+    },
+    "platforms": {
+      "linkedin": {
+        "platform": "LinkedIn",
+        "year_end_followers_target": 35000,
+        "annual_growth_rate": 0.3,
+        "reporting_baseline_followers_start": 26216,
+        "reporting_baseline_source": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-01\\2026-01_reporting_framework.json",
+        "target_benchmark_start_followers": 26923,
+        "annual_net_new_target": 8077,
+        "target_benchmark_followers_to_date": 32981,
+        "target_benchmark_net_new_followers_to_date": 6058,
+        "actual_followers_end": 31033,
+        "actual_net_new_followers_ytd": 4817,
+        "gap_to_target_benchmark_followers": -1948,
+        "gap_to_target_benchmark_net_new_followers": -1241,
+        "status": "off_track",
+        "posts_actual": 22,
+        "posts_target_min": 13,
+        "posts_target_max": 21,
+        "posting_status": "off_track",
+        "gap_to_year_end_target": 3967
+      },
+      "facebook": {
+        "platform": "Facebook",
+        "year_end_followers_target": 8800,
+        "annual_growth_rate": 0.15,
+        "reporting_baseline_followers_start": 7579,
+        "reporting_baseline_source": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-01\\2026-01_reporting_framework.json",
+        "target_benchmark_start_followers": 7652,
+        "annual_net_new_target": 1148,
+        "target_benchmark_followers_to_date": 8513,
+        "target_benchmark_net_new_followers_to_date": 861,
+        "actual_followers_end": 7946,
+        "actual_net_new_followers_ytd": 367,
+        "gap_to_target_benchmark_followers": -567,
+        "gap_to_target_benchmark_net_new_followers": -494,
+        "status": "off_track",
+        "posts_actual": 22,
+        "posts_target_min": 13,
+        "posts_target_max": 21,
+        "posting_status": "off_track",
+        "gap_to_year_end_target": 854
+      },
+      "instagram": {
+        "platform": "Instagram",
+        "year_end_followers_target": 6300,
+        "annual_growth_rate": 0.3,
+        "reporting_baseline_followers_start": 4816,
+        "reporting_baseline_source": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-01\\2026-01_reporting_framework.json",
+        "target_benchmark_start_followers": 4846,
+        "annual_net_new_target": 1454,
+        "target_benchmark_followers_to_date": 5937,
+        "target_benchmark_net_new_followers_to_date": 1090,
+        "actual_followers_end": 4691,
+        "actual_net_new_followers_ytd": -125,
+        "gap_to_target_benchmark_followers": -1246,
+        "gap_to_target_benchmark_net_new_followers": -1215,
+        "status": "off_track",
+        "posts_actual": 6,
+        "posts_target_min": 5,
+        "posts_target_max": 8,
+        "posting_status": "on_track",
+        "gap_to_year_end_target": 1609
+      }
+    },
+    "summary": {
+      "tracked_platforms": 3,
+      "on_track": 0,
+      "slightly_behind": 0,
+      "off_track": 3,
+      "unknown": 0
+    }
+  },
+  "calculations": {
+    "formula_definitions": {
+      "net_new_followers": "followers_end - followers_start",
+      "visibility": "impressions when present, otherwise reach",
+      "base_engagements": "harmonized interactions: reactions/likes + comments + shares/replies/reposts, excluding clicks",
+      "engagements": "sum of each platform's native Hootsuite Post engagement metric",
+      "engagement_rate": "engagements / visibility",
+      "engagement_per_post": "engagements / posts",
+      "engagement_actions": "same as native Post engagement; retained for downstream report compatibility",
+      "engagement_actions_rate": "engagement_actions / visibility",
+      "engagement_actions_per_post": "engagement_actions / posts",
+      "follows_per_1000_impressions": "(net_new_followers / visibility) * 1000"
+    },
+    "account_summary": {
+      "month": "2026-09",
+      "reporting_scope_label": "Facebook, Instagram, and LinkedIn",
+      "reporting_scope_platforms": [
+        "facebook",
+        "instagram",
+        "linkedin"
+      ],
+      "followers_start": 43346,
+      "total_followers": 43670,
+      "net_new_followers": 324,
+      "page_visibility": 53256,
+      "page_reach": 53256,
+      "page_impressions": 53256,
+      "base_total_engagements": 9906,
+      "total_engagements": 9906,
+      "total_posts": 50,
+      "total_link_clicks": 887,
+      "total_website_resource_clicks": 887,
+      "engagement_rate_platform_average": 0.100672,
+      "engagement_rate_blended": 0.100672,
+      "engagement_per_post": 198.12,
+      "total_engagement_actions": 9906,
+      "engagement_actions_rate": 0.18600721045515997,
+      "engagement_actions_per_post": 198.12,
+      "follows_per_1000_impressions": 6.08382154123479,
+      "total_posts_source": "hootsuite_ui_report_total_posts",
+      "visibility_source": "hootsuite_ui_report_post_impressions",
+      "total_link_clicks_source": "owly_post_exports_facebook_linkedin",
+      "total_website_resource_clicks_source": "owly_post_exports_facebook_linkedin",
+      "base_total_engagements_source": "platform_native_post_engagement_sum[facebook:hootsuite_ui_report_platform_native_post_engagement,instagram:hootsuite_ui_report_platform_native_post_engagement,linkedin:hootsuite_ui_report_platform_native_post_engagement]",
+      "total_engagements_source": "platform_native_post_engagement_sum[facebook:hootsuite_ui_report_platform_native_post_engagement,instagram:hootsuite_ui_report_platform_native_post_engagement,linkedin:hootsuite_ui_report_platform_native_post_engagement]",
+      "total_engagement_actions_source": "same_as_total_engagements",
+      "engagement_rate_source": "hootsuite_ui_report_weighted_average_post_engagement_rate",
+      "detail_platform_posts_total": 50,
+      "detail_platform_visibility_total": 53256,
+      "detail_platform_clicks_total": 887,
+      "detail_platform_website_resource_clicks_total": 887,
+      "detail_platform_post_clicks_total": 3442,
+      "total_post_clicks_raw": 3442,
+      "total_post_clicks_raw_source": "hootsuite_ui_report_post_link_clicks",
+      "detail_platform_base_engagements_total": 5912,
+      "harmonized_interactions_total": 5912,
+      "harmonized_interactions_definition": "Reactions/likes, comments, and shares/replies/reposts across Facebook, Instagram, and LinkedIn; clicks excluded.",
+      "native_post_engagement_definition": "Sum of each platform's Hootsuite-native Post engagement metric; component definitions vary by platform and may include clicks.",
+      "report_close_date": "2026-10-01",
+      "detail_platform_engagements_total": 9906,
+      "detail_platform_engagement_actions_total": 9906
+    },
+    "platforms": {
+      "facebook": {
+        "platform": "facebook",
+        "post_data_source": "full_post_performance",
+        "calculation_source": "standardized_posts_with_hootsuite_ui_rollup",
+        "posts": 22,
+        "visibility": 28582,
+        "reach": 28582,
+        "impressions": 28582,
+        "clicks": 53,
+        "website_resource_clicks": 237,
+        "base_engagements": 5407,
+        "harmonized_interactions": 5407,
+        "native_post_engagement": 5947,
+        "native_post_engagement_source": "hootsuite_ui_report_platform_native_post_engagement",
+        "engagements": 5947,
+        "base_engagement_rate": 0.18917500524805822,
+        "engagement_rate": 0.0627,
+        "engagement_rate_source": "hootsuite_ui_report_average_post_engagement_rate",
+        "engagement_per_post": 270.3181818181818,
+        "engagement_actions": 5947,
+        "engagement_actions_rate": 0.20806801483451123,
+        "engagement_actions_per_post": 270.3181818181818,
+        "followers_start": 7904,
+        "followers_end": 7946,
+        "new_followers": 42,
+        "follows_per_1000_impressions": 1.4694563011685675
+      },
+      "instagram": {
+        "platform": "instagram",
+        "post_data_source": "full_post_performance",
+        "calculation_source": "standardized_posts_with_hootsuite_ui_rollup",
+        "posts": 6,
+        "visibility": 1478,
+        "reach": 1478,
+        "impressions": 1478,
+        "clicks": 0,
+        "website_resource_clicks": 0,
+        "base_engagements": 0,
+        "harmonized_interactions": 0,
+        "native_post_engagement": 42,
+        "native_post_engagement_source": "hootsuite_ui_report_platform_native_post_engagement",
+        "engagements": 42,
+        "base_engagement_rate": 0.0,
+        "engagement_rate": 0.0528,
+        "engagement_rate_source": "hootsuite_ui_report_average_post_engagement_rate",
+        "engagement_per_post": 7.0,
+        "engagement_actions": 42,
+        "engagement_actions_rate": 0.028416779431664412,
+        "engagement_actions_per_post": 7.0,
+        "followers_start": 4702,
+        "followers_end": 4691,
+        "new_followers": -11,
+        "follows_per_1000_impressions": -7.442489851150203
+      },
+      "linkedin": {
+        "platform": "linkedin",
+        "post_data_source": "full_post_performance",
+        "calculation_source": "standardized_posts_with_hootsuite_ui_rollup",
+        "posts": 22,
+        "visibility": 23196,
+        "reach": 23196,
+        "impressions": 23196,
+        "clicks": 3389,
+        "website_resource_clicks": 650,
+        "base_engagements": 505,
+        "harmonized_interactions": 505,
+        "native_post_engagement": 3917,
+        "native_post_engagement_source": "hootsuite_ui_report_platform_native_post_engagement",
+        "engagements": 3917,
+        "base_engagement_rate": 0.02177099499913778,
+        "engagement_rate": 0.1517,
+        "engagement_rate_source": "hootsuite_ui_report_average_post_engagement_rate",
+        "engagement_per_post": 178.04545454545453,
+        "engagement_actions": 3917,
+        "engagement_actions_rate": 0.16886532160717366,
+        "engagement_actions_per_post": 178.04545454545453,
+        "followers_start": 30740,
+        "followers_end": 31033,
+        "new_followers": 293,
+        "follows_per_1000_impressions": 12.631488187618555
+      }
+    }
+  },
+  "qa": {
+    "status": "passed",
+    "can_finalize": true,
+    "failed_checks": 0,
+    "warning_checks": 0,
+    "checks": [
+      {
+        "name": "no_archive_or_test_files",
+        "status": "passed",
+        "details": "All selected source files avoided archive/test style paths."
+      },
+      {
+        "name": "source_files_in_selected_folder",
+        "status": "passed",
+        "details": "All selected source files came from the reporting folder."
+      },
+      {
+        "name": "source_dates_match_reporting_month",
+        "status": "passed",
+        "details": "All parsed source dates aligned to the selected reporting month."
+      },
+      {
+        "name": "source_data_loaded_for_reporting_month",
+        "status": "passed",
+        "details": "Required monthly source data loaded and standardized social rows were available."
+      },
+      {
+        "name": "platform_totals_internal_consistency",
+        "status": "passed",
+        "details": "Detailed platform totals reconcile to the summed platform rows."
+      },
+      {
+        "name": "month_label_correct",
+        "status": "passed",
+        "details": "Report month label is 2026-09."
+      },
+      {
+        "name": "native_engagements_follow_platform_sum",
+        "status": "passed",
+        "details": "Report-facing engagements reconcile to the sum of platform-native Post engagement totals."
+      },
+      {
+        "name": "no_duplicate_platform_post_ids",
+        "status": "passed",
+        "details": "No duplicate platform/post identifiers were detected."
+      },
+      {
+        "name": "native_post_engagement_source_identified",
+        "status": "passed",
+        "details": "Every platform-native engagement total has an identified source."
+      },
+      {
+        "name": "report_close_date_declared",
+        "status": "passed",
+        "details": "Reporting close date is explicitly set to 2026-10-01."
+      },
+      {
+        "name": "account_totals_match_cross_network_export",
+        "status": "passed",
+        "details": "Account summary metrics reconcile to platform-native Hootsuite engagement inputs plus tracked-click enrichments."
+      },
+      {
+        "name": "additive_and_nonadditive_separation",
+        "status": "passed",
+        "details": "Derived rates reconcile to additive totals, while native Hootsuite average engagement rates are preserved as source-provided metrics."
+      }
+    ]
+  },
+  "validation_summary": {
+    "status": "ready",
+    "ready_for_teammate_share": true,
+    "summary": "Validation passed with complete exports and no warning checks.",
+    "export_completeness_status": "complete",
+    "export_completeness_reason": "All expected monthly export families were present without relying on supplemental top-post files.",
+    "qa_status": "passed",
+    "qa_failed_count": 0,
+    "qa_warning_count": 0,
+    "failed_checks": [],
+    "warning_checks": [],
+    "recommended_actions": [
+      "Use this month package for teammate review or publishing."
+    ]
+  },
+  "monthly_report": {
+    "executive_summary": {
+      "month": "2026-09",
+      "headline": "September 2026: 50 social posts generated 53,256 impressions and 9,906 engagements.",
+      "export_completeness_status": "complete",
+      "growth_target_status": {
+        "tracked_platforms": 3,
+        "on_track": 0,
+        "slightly_behind": 0,
+        "off_track": 3,
+        "unknown": 0
+      },
+      "total_followers": 43670,
+      "net_new_followers": 324,
+      "link_clicks": 887,
+      "website_resource_clicks": 887,
+      "engagement_rate": 0.100672,
+      "engagement_per_post": 198.12,
+      "engagement_actions": 9906,
+      "engagement_actions_rate": 0.18600721045515997,
+      "engagement_actions_per_post": 198.12,
+      "follows_per_1000_impressions": 6.08382154123479,
+      "adjustment_areas": [
+        "LinkedIn follower pace is off track.",
+        "LinkedIn posting cadence is off track.",
+        "Facebook follower pace is off track.",
+        "Facebook posting cadence is off track.",
+        "Instagram follower pace is off track."
+      ]
+    },
+    "export_completeness": {
+      "month": "2026-09",
+      "status": "complete",
+      "status_reason": "All expected monthly export families were present without relying on supplemental top-post files.",
+      "report_file": "2026-09_monthly_export_completeness.json",
+      "rules": {
+        "complete": "Cross-platform aggregate export present, Facebook/Instagram/LinkedIn each have full post-performance exports, and all expected Facebook/LinkedIn Owly website-click exports are present. X is optional for report readiness.",
+        "partial": "The month uses a mix of full exports, supplemental top-post files, missing post exports, or missing Owly exports.",
+        "supplemental_only": "Cross-platform aggregate export is present, but only supplemental *_top_posts.csv files were available instead of full post-performance exports."
+      },
+      "cross_network_performance_monthly_export": {
+        "present": true,
+        "files": [
+          "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_account_metrics.csv"
+        ]
+      },
+      "post_performance_monthly_export": {
+        "any_present": true,
+        "all_expected_present": true,
+        "platforms": {
+          "facebook": {
+            "full_post_performance_export_present": true,
+            "full_post_performance_files": [
+              "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\facebook_post_performance_2026-09-01_to_2026-09-30_created_on_20261006T1505Z_facebook_post_performance.csv"
+            ],
+            "supplemental_top_post_file_present": true,
+            "supplemental_top_post_files": [
+              "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_fb_top_posts.csv"
+            ],
+            "post_data_source": "full_post_performance",
+            "source_file_used": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\facebook_post_performance_2026-09-01_to_2026-09-30_created_on_20261006T1505Z_facebook_post_performance.csv"
+          },
+          "instagram": {
+            "full_post_performance_export_present": true,
+            "full_post_performance_files": [
+              "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_ig_posts.csv",
+              "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_ig_posts.csv"
+            ],
+            "supplemental_top_post_file_present": true,
+            "supplemental_top_post_files": [
+              "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_ig_top_posts.csv"
+            ],
+            "post_data_source": "full_post_performance",
+            "source_file_used": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_ig_posts.csv"
+          },
+          "linkedin": {
+            "full_post_performance_export_present": true,
+            "full_post_performance_files": [
+              "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_li_pages_posts_table_date.csv",
+              "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_li_pages_posts_table_date.csv"
+            ],
+            "supplemental_top_post_file_present": true,
+            "supplemental_top_post_files": [
+              "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_li_pages_top_posts.csv"
+            ],
+            "post_data_source": "full_post_performance",
+            "source_file_used": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_li_pages_posts_table_date.csv"
+          },
+          "x": {
+            "full_post_performance_export_present": false,
+            "full_post_performance_files": [],
+            "supplemental_top_post_file_present": false,
+            "supplemental_top_post_files": [],
+            "post_data_source": "missing",
+            "source_file_used": null
+          }
+        }
+      },
+      "owly_link_click_monthly_export": {
+        "any_present": true,
+        "all_expected_present": true,
+        "expected_platforms": [
+          "facebook",
+          "linkedin"
+        ],
+        "optional_platforms": [
+          "x"
+        ],
+        "platforms": {
+          "facebook": {
+            "present": true,
+            "required": true,
+            "files": [
+              "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\owly_link_clicks_2026-09-01_to_2026-09-30_created_on_20261002T1048Z_fb_posts_with_owly_clicks_table.csv"
+            ]
+          },
+          "linkedin": {
+            "present": true,
+            "required": true,
+            "files": [
+              "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Digital Comms Team\\Social & Digital Analytics\\Hootsuite Exports\\September 2026\\owly_link_clicks_2026-09-01_to_2026-09-30_created_on_20261002T1048Z_li_pages_posts_with_owly_clicks_table.csv"
+            ]
+          },
+          "x": {
+            "present": false,
+            "required": false,
+            "files": []
+          }
+        }
+      },
+      "supplemental_top_post_files_used": false,
+      "supplemental_top_post_platforms": [],
+      "full_post_performance_platforms": [
+        "facebook",
+        "instagram",
+        "linkedin"
+      ],
+      "missing_post_data_platforms": [],
+      "missing_optional_post_data_platforms": [
+        "x"
+      ],
+      "post_data_sources": {
+        "facebook": "full_post_performance",
+        "instagram": "full_post_performance",
+        "linkedin": "full_post_performance",
+        "x": "missing"
+      }
+    },
+    "growth_vs_targets": {
+      "year": 2026,
+      "month": "2026-09",
+      "methodology": {
+        "actual_reporting_pace": "actual followers end minus real January 1 followers where available",
+        "target_benchmark_pace": "annual target net new followers multiplied by completed-year pace",
+        "status_basis": "Actual YTD net new followers compared with target benchmark YTD net new followers"
+      },
+      "platforms": {
+        "linkedin": {
+          "platform": "LinkedIn",
+          "year_end_followers_target": 35000,
+          "annual_growth_rate": 0.3,
+          "reporting_baseline_followers_start": 26216,
+          "reporting_baseline_source": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-01\\2026-01_reporting_framework.json",
+          "target_benchmark_start_followers": 26923,
+          "annual_net_new_target": 8077,
+          "target_benchmark_followers_to_date": 32981,
+          "target_benchmark_net_new_followers_to_date": 6058,
+          "actual_followers_end": 31033,
+          "actual_net_new_followers_ytd": 4817,
+          "gap_to_target_benchmark_followers": -1948,
+          "gap_to_target_benchmark_net_new_followers": -1241,
+          "status": "off_track",
+          "posts_actual": 22,
+          "posts_target_min": 13,
+          "posts_target_max": 21,
+          "posting_status": "off_track",
+          "gap_to_year_end_target": 3967
+        },
+        "facebook": {
+          "platform": "Facebook",
+          "year_end_followers_target": 8800,
+          "annual_growth_rate": 0.15,
+          "reporting_baseline_followers_start": 7579,
+          "reporting_baseline_source": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-01\\2026-01_reporting_framework.json",
+          "target_benchmark_start_followers": 7652,
+          "annual_net_new_target": 1148,
+          "target_benchmark_followers_to_date": 8513,
+          "target_benchmark_net_new_followers_to_date": 861,
+          "actual_followers_end": 7946,
+          "actual_net_new_followers_ytd": 367,
+          "gap_to_target_benchmark_followers": -567,
+          "gap_to_target_benchmark_net_new_followers": -494,
+          "status": "off_track",
+          "posts_actual": 22,
+          "posts_target_min": 13,
+          "posts_target_max": 21,
+          "posting_status": "off_track",
+          "gap_to_year_end_target": 854
+        },
+        "instagram": {
+          "platform": "Instagram",
+          "year_end_followers_target": 6300,
+          "annual_growth_rate": 0.3,
+          "reporting_baseline_followers_start": 4816,
+          "reporting_baseline_source": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Sabin Communications - Performance Dashboard\\data\\2026-01\\2026-01_reporting_framework.json",
+          "target_benchmark_start_followers": 4846,
+          "annual_net_new_target": 1454,
+          "target_benchmark_followers_to_date": 5937,
+          "target_benchmark_net_new_followers_to_date": 1090,
+          "actual_followers_end": 4691,
+          "actual_net_new_followers_ytd": -125,
+          "gap_to_target_benchmark_followers": -1246,
+          "gap_to_target_benchmark_net_new_followers": -1215,
+          "status": "off_track",
+          "posts_actual": 6,
+          "posts_target_min": 5,
+          "posts_target_max": 8,
+          "posting_status": "on_track",
+          "gap_to_year_end_target": 1609
+        }
+      },
+      "summary": {
+        "tracked_platforms": 3,
+        "on_track": 0,
+        "slightly_behind": 0,
+        "off_track": 3,
+        "unknown": 0
+      }
+    },
+    "content_performance": {
+      "account": {
+        "posts": 50,
+        "engagements": 9906,
+        "link_clicks": 887,
+        "website_resource_clicks": 887,
+        "impressions": 53256,
+        "engagement_rate": 0.100672,
+        "engagement_per_post": 198.12,
+        "engagement_actions": 9906,
+        "engagement_actions_rate": 0.18600721045515997,
+        "engagement_actions_per_post": 198.12,
+        "follows_per_1000_impressions": 6.08382154123479
+      },
+      "platforms": {
+        "facebook": {
+          "platform": "facebook",
+          "post_data_source": "full_post_performance",
+          "calculation_source": "standardized_posts_with_hootsuite_ui_rollup",
+          "posts": 22,
+          "visibility": 28582,
+          "reach": 28582,
+          "impressions": 28582,
+          "clicks": 53,
+          "website_resource_clicks": 237,
+          "base_engagements": 5407,
+          "harmonized_interactions": 5407,
+          "native_post_engagement": 5947,
+          "native_post_engagement_source": "hootsuite_ui_report_platform_native_post_engagement",
+          "engagements": 5947,
+          "base_engagement_rate": 0.18917500524805822,
+          "engagement_rate": 0.0627,
+          "engagement_rate_source": "hootsuite_ui_report_average_post_engagement_rate",
+          "engagement_per_post": 270.3181818181818,
+          "engagement_actions": 5947,
+          "engagement_actions_rate": 0.20806801483451123,
+          "engagement_actions_per_post": 270.3181818181818,
+          "followers_start": 7904,
+          "followers_end": 7946,
+          "new_followers": 42,
+          "follows_per_1000_impressions": 1.4694563011685675
+        },
+        "instagram": {
+          "platform": "instagram",
+          "post_data_source": "full_post_performance",
+          "calculation_source": "standardized_posts_with_hootsuite_ui_rollup",
+          "posts": 6,
+          "visibility": 1478,
+          "reach": 1478,
+          "impressions": 1478,
+          "clicks": 0,
+          "website_resource_clicks": 0,
+          "base_engagements": 0,
+          "harmonized_interactions": 0,
+          "native_post_engagement": 42,
+          "native_post_engagement_source": "hootsuite_ui_report_platform_native_post_engagement",
+          "engagements": 42,
+          "base_engagement_rate": 0.0,
+          "engagement_rate": 0.0528,
+          "engagement_rate_source": "hootsuite_ui_report_average_post_engagement_rate",
+          "engagement_per_post": 7.0,
+          "engagement_actions": 42,
+          "engagement_actions_rate": 0.028416779431664412,
+          "engagement_actions_per_post": 7.0,
+          "followers_start": 4702,
+          "followers_end": 4691,
+          "new_followers": -11,
+          "follows_per_1000_impressions": -7.442489851150203
+        },
+        "linkedin": {
+          "platform": "linkedin",
+          "post_data_source": "full_post_performance",
+          "calculation_source": "standardized_posts_with_hootsuite_ui_rollup",
+          "posts": 22,
+          "visibility": 23196,
+          "reach": 23196,
+          "impressions": 23196,
+          "clicks": 3389,
+          "website_resource_clicks": 650,
+          "base_engagements": 505,
+          "harmonized_interactions": 505,
+          "native_post_engagement": 3917,
+          "native_post_engagement_source": "hootsuite_ui_report_platform_native_post_engagement",
+          "engagements": 3917,
+          "base_engagement_rate": 0.02177099499913778,
+          "engagement_rate": 0.1517,
+          "engagement_rate_source": "hootsuite_ui_report_average_post_engagement_rate",
+          "engagement_per_post": 178.04545454545453,
+          "engagement_actions": 3917,
+          "engagement_actions_rate": 0.16886532160717366,
+          "engagement_actions_per_post": 178.04545454545453,
+          "followers_start": 30740,
+          "followers_end": 31033,
+          "new_followers": 293,
+          "follows_per_1000_impressions": 12.631488187618555
+        }
+      }
+    },
+    "platform_insights": {
+      "top_engagement_platform": {
+        "platform": "linkedin",
+        "engagement_rate": 0.1517
+      },
+      "top_follower_efficiency_platform": {
+        "platform": "linkedin",
+        "follows_per_1000_impressions": 12.631488187618555
+      },
+      "highest_volume_platform": {
+        "platform": "facebook",
+        "posts": 22
+      },
+      "adjustment_areas": [
+        "LinkedIn follower pace is off track.",
+        "LinkedIn posting cadence is off track.",
+        "Facebook follower pace is off track.",
+        "Facebook posting cadence is off track.",
+        "Instagram follower pace is off track."
+      ]
+    },
+    "reconciliation_checks": {
+      "status": "passed",
+      "can_finalize": true,
+      "failed_checks": 0,
+      "warning_checks": 0,
+      "checks": [
+        {
+          "name": "no_archive_or_test_files",
+          "status": "passed",
+          "details": "All selected source files avoided archive/test style paths."
+        },
+        {
+          "name": "source_files_in_selected_folder",
+          "status": "passed",
+          "details": "All selected source files came from the reporting folder."
+        },
+        {
+          "name": "source_dates_match_reporting_month",
+          "status": "passed",
+          "details": "All parsed source dates aligned to the selected reporting month."
+        },
+        {
+          "name": "source_data_loaded_for_reporting_month",
+          "status": "passed",
+          "details": "Required monthly source data loaded and standardized social rows were available."
+        },
+        {
+          "name": "platform_totals_internal_consistency",
+          "status": "passed",
+          "details": "Detailed platform totals reconcile to the summed platform rows."
+        },
+        {
+          "name": "month_label_correct",
+          "status": "passed",
+          "details": "Report month label is 2026-09."
+        },
+        {
+          "name": "native_engagements_follow_platform_sum",
+          "status": "passed",
+          "details": "Report-facing engagements reconcile to the sum of platform-native Post engagement totals."
+        },
+        {
+          "name": "no_duplicate_platform_post_ids",
+          "status": "passed",
+          "details": "No duplicate platform/post identifiers were detected."
+        },
+        {
+          "name": "native_post_engagement_source_identified",
+          "status": "passed",
+          "details": "Every platform-native engagement total has an identified source."
+        },
+        {
+          "name": "report_close_date_declared",
+          "status": "passed",
+          "details": "Reporting close date is explicitly set to 2026-10-01."
+        },
+        {
+          "name": "account_totals_match_cross_network_export",
+          "status": "passed",
+          "details": "Account summary metrics reconcile to platform-native Hootsuite engagement inputs plus tracked-click enrichments."
+        },
+        {
+          "name": "additive_and_nonadditive_separation",
+          "status": "passed",
+          "details": "Derived rates reconcile to additive totals, while native Hootsuite average engagement rates are preserved as source-provided metrics."
+        }
+      ]
+    }
+  },
+  "ai_analysis": {
+    "status": "unavailable",
+    "month": "2026-09",
+    "source_mode": "openai_responses_api",
+    "generated_at": "2026-10-06T11:51:25",
+    "report_file": "2026-09_openai_analysis.json",
+    "prompt_version": "2026-03-23-v1",
+    "model": "gpt-4o-mini",
+    "reasoning_effort": "medium",
+    "config": {
+      "enabled": false,
+      "config_file": "C:\\Users\\JAlfaro\\OneDrive - Albert B. Sabin Vaccine Institute\\Desktop\\Python Scripts\\config\\openai_reporting_config.json",
+      "api_key_env_var": "OPENAI_API_KEY",
+      "api_key_configured": false,
+      "max_output_tokens": 1400,
+      "save_raw_response": false,
+      "sdk_available": true
+    },
+    "reason": "OpenAI reporting analysis is disabled in config.",
+    "analysis": {},
+    "notes": [
+      "Set enabled=true in openai_reporting_config.json to activate the AI analysis layer."
+    ],
+    "response": {},
+    "input_digest": {
+      "export_completeness_status": "complete",
+      "qa_status": "passed",
+      "qa_warning_checks": 0,
+      "qa_failed_checks": 0
+    }
+  }
+}

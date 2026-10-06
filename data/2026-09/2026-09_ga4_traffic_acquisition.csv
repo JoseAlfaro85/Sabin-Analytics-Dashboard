@@ -1,0 +1,21 @@
+# ----------------------------------------
+# Traffic acquisition: Session primary channel group (Default Channel Group)
+# Account: Sabin Analytics
+# Property: Sabin.org 2022
+# ----------------------------------------
+# 
+# All Users
+# Start date: 20260901
+# End date: 20260930
+Session primary channel group (Default Channel Group),Sessions,Engaged sessions,Engagement rate,Average engagement time per session,Events per session,Event count,Key events,Session key event rate,Total revenue
+Direct,10104,10077,0.9973277909738717,6.4684283452098175,3.83729216152019,38772,36619,1,0
+Organic Search,5098,4847,0.9507650058846606,38.95253040408003,4.579835229501765,23348,18283,1,0
+Unassigned,853,701,0.8218053927315357,7.481828839390387,3.511137162954279,2995,2881,0.9718640093786636,0
+Email,631,623,0.9873217115689382,8.19809825673534,4.03486529318542,2546,2447,1,0
+Referral,599,572,0.9549248747913188,25.36727879799666,5.015025041736227,3004,2380,1,0
+Organic Social,328,317,0.9664634146341463,32.201219512195124,4.9939024390243905,1638,1295,1,0
+AI Assistant,83,78,0.9397590361445783,18,4.289156626506024,356,305,1,0
+Display,28,28,1,87.17857142857143,8.214285714285714,230,152,1,0
+Paid Search,7,7,1,5.714285714285714,4,28,27,1,0
+Paid Other,2,2,1,8,4,8,7,1,0
+Organic Video,1,1,1,17,7,7,5,1,0

@@ -1,0 +1,989 @@
+# ----------------------------------------
+# Engagement overview
+# Account: Sabin Analytics
+# Property: Sabin.org 2022
+# ----------------------------------------
+#  
+# Start date: 20260801
+# End date: 20260831
+Nth day,Average engagement time per active user
+0000,8.68649885583524
+0001,10.369205298013245
+0002,17.16386554621849
+0003,15.566787003610107
+0004,17.37527114967462
+0005,24.04021937842779
+0006,22.526682134570766
+0007,13.405286343612335
+0008,14.578512396694215
+0009,17.5893536121673
+0010,11.602491506228766
+0011,27.458483754512635
+0012,23.84977908689249
+0013,16.26332288401254
+0014,15.06791569086651
+0015,20.26179245283019
+0016,27.019448946515396
+0017,12.789531079607416
+0018,20.623486682808718
+0019,18.556836902800658
+0020,16.898678414096917
+0021,9.403314917127071
+0022,9.812182741116752
+0023,20.862068965517242
+0024,27.475499092558984
+0025,27.86189683860233
+0026,21.95906432748538
+0027,21.60792079207921
+0028,13.879679144385026
+0029,10.192660550458715
+0030,21.75461254612546
+
+# Start date: 20260801
+# End date: 20260831
+Nth day,Engaged sessions per active user
+0000,1.0389016018306636
+0001,1.0165562913907285
+0002,1.0630252100840336
+0003,1.0722021660649819
+0004,1.0444685466377441
+0005,1.0548446069469835
+0006,1.048723897911833
+0007,1.0550660792951543
+0008,1.0433884297520661
+0009,1.0608365019011408
+0010,1.0407701019252549
+0011,1.0577617328519855
+0012,1.0706921944035346
+0013,1.0658307210031348
+0014,1.0304449648711944
+0015,1.054245283018868
+0016,1.0583468395461912
+0017,0.9858233369683751
+0018,1.0072639225181599
+0019,1.0395387149917628
+0020,1.0418502202643172
+0021,1.0055248618784531
+0022,1.0076142131979695
+0023,1.05989110707804
+0024,1.043557168784029
+0025,1.016638935108153
+0026,1.0545808966861598
+0027,1.0633663366336634
+0028,1.0508021390374331
+0029,1.0527522935779816
+0030,1.0867158671586716
+
+# Start date: 20260801
+# End date: 20260831
+Nth day,Average engagement time per session
+0000,8.324561403508772
+0001,10.036858974358974
+0002,15.328330206378986
+0003,14.091503267973856
+0004,16.231003039513677
+0005,22.17537942664418
+0006,20.879569892473118
+0007,12.548453608247423
+0008,13.83529411764706
+0009,16.404255319148938
+0010,10.910543130990416
+0011,25.185430463576157
+0012,21.592
+0013,14.696883852691219
+0014,14.078774617067834
+0015,18.635574837310195
+0016,24.408491947291363
+0017,11.991820040899796
+0018,19.18355855855856
+0019,17.040847201210287
+0020,15.282868525896415
+0021,8.705882352941176
+0022,9.075117370892018
+0023,18.600323624595468
+0024,24.5762987012987
+0025,25.76153846153846
+0026,19.42241379310345
+0027,19.73236889692586
+0028,13.075566750629722
+0029,9.577586206896552
+0030,19.553897180762853
+
+#  
+# Start date: 20260801
+# End date: 20260831
+Nth day,Views
+0000,483
+0001,670
+0002,618
+0003,762
+0004,1175
+0005,758
+0006,604
+0007,543
+0008,581
+0009,729
+0010,1065
+0011,802
+0012,919
+0013,831
+0014,501
+0015,575
+0016,897
+0017,1084
+0018,1091
+0019,764
+0020,591
+0021,419
+0022,465
+0023,786
+0024,753
+0025,904
+0026,728
+0027,673
+0028,466
+0029,540
+0030,748
+
+# Start date: 20260801
+# End date: 20260831
+Nth day,Event count
+0000,1785
+0001,2512
+0002,2175
+0003,2564
+0004,4151
+0005,2630
+0006,2025
+0007,1948
+0008,2101
+0009,2459
+0010,3914
+0011,2654
+0012,3239
+0013,2969
+0014,1859
+0015,2034
+0016,3011
+0017,3931
+0018,3714
+0019,2705
+0020,2041
+0021,1513
+0022,1633
+0023,2574
+0024,2572
+0025,2926
+0026,2497
+0027,2352
+0028,1666
+0029,1872
+0030,2553
+
+#  
+# Start date: 20260801
+# End date: 20260831
+Event name,Event count
+page_view,22525
+session_start,18404
+first_visit,15977
+scroll,10764
+user_engagement,8157
+click,1932
+video_engagement,331
+video_progress,145
+form_submit,110
+file_download,109
+video_start,55
+form_start,48
+video_complete,20
+ow_click_nomination,1
+view_search_results,1
+
+#  
+# Start date: 20260801
+# End date: 20260831
+Page title and screen class,Views
+Sabin Vaccine Institute | Extending Vaccine Accessibility & Innovation,5144
+Careers – Sabin Vaccine Institute,2016
+The Albert B. Sabin Gold Medal – Sabin Vaccine Institute,1008
+Dr. Albert B. Sabin – Sabin Vaccine Institute,722
+People – Sabin Vaccine Institute,554
+Sabin Newsletter Archive – Sabin Vaccine Institute,465
+Understanding Pentavalent and Hexavalent Vaccines – Sabin Vaccine Institute,428
+Internships – Sabin Vaccine Institute,421
+"Vaccines 101: Their History, How They Work, and Their Impact – Sabin Vaccine Institute",393
+Resources – Sabin Vaccine Institute,348
+Page not found – Sabin Vaccine Institute,311
+About – Sabin Vaccine Institute,303
+All About Different Vaccine Delivery Methods – Sabin Vaccine Institute,284
+Contact Us – Sabin Vaccine Institute,260
+Vaccine Research & Development – Sabin Vaccine Institute,194
+Our Impact – Sabin Vaccine Institute,192
+Our History – Sabin Vaccine Institute,182
+Bright Spot Stories – Sabin Vaccine Institute,177
+Research Grants – Sabin Vaccine Institute,172
+Boost Community – Sabin Vaccine Institute,165
+The Global HPV Consortium – Sabin Vaccine Institute,165
+Sabin Vaccine Institute Completes Enrollment in All Phase 2 Clinical Trials for cAd3-Marburg Vaccine and cAd3-Sudan Ebolavirus Vaccine – Sabin Vaccine Institute,164
+Factsheet: From Vaccines to Vaccinations – Sabin Vaccine Institute,150
+Understanding Vaccine Types: How They Protect Against Disease – Sabin Vaccine Institute,146
+Immunization Advocates – Sabin Vaccine Institute,144
+Global Immunization – Sabin Vaccine Institute,143
+News – Sabin Vaccine Institute,140
+Clinical Partnership Framework: Setting a Strong and Clear Foundation for R&D Alliances – Sabin Vaccine Institute,130
+Events – Sabin Vaccine Institute,128
+From COVID-19 to Typhoid: 2026 Sabin Awards Spotlight Vaccine Pioneers – Sabin Vaccine Institute,128
+Partners – Sabin Vaccine Institute,123
+The Sabin Awards – Sabin Vaccine Institute,123
+Sabin Vaccine Institute Makes New Board Appointments As Two Trustees Complete Terms – Sabin Vaccine Institute,121
+Generating Evidence – Sabin Vaccine Institute,120
+Newsletters – Sabin Vaccine Institute,120
+Financials – Sabin Vaccine Institute,118
+Our Culture – Sabin Vaccine Institute,115
+Annual Report – Sabin Vaccine Institute,114
+Sabin Awarded Three-Year Gates Foundation Grant for RSV Immunization Initiative – Sabin Vaccine Institute,114
+Privacy Policy 1/16/2024 – Sabin Vaccine Institute,105
+Insights from the Hexavalent Switch: A Process Point Risk Mitigation Compendium – Sabin Vaccine Institute,100
+How Vaccines Protect You and Your Loved Ones – Sabin Vaccine Institute,94
+Why Do Vaccines Take So Long to Develop?  – Sabin Vaccine Institute,94
+The Humanitarian Face of Vaccination in Cameroon’s Crisis-Hit Northwest and Southwest – Sabin Vaccine Institute,83
+Programs – Sabin Vaccine Institute,78
+Next-Generation Vaccinologists: Dr. Sue Ann Costa Clemens on Training Future Global Health Leaders – Sabin Vaccine Institute,77
+Marburg Vaccine Development Program – Sabin Vaccine Institute,76
+Vaccination Acceptance Research Network – Sabin Vaccine Institute,73
+Sudan Ebolavirus Vaccine Development Program – Sabin Vaccine Institute,72
+Sabin Begins Marburg Vaccine Trial in U.S. – Sabin Vaccine Institute,71
+Sabin Vaccine Institute’s Investigational Marburg Vaccine Delivered to Ethiopia for Outbreak Response – Sabin Vaccine Institute,68
+"Veteran Global Health Leader, Dr. Rebecca Martin, Named President of Global Immunization at Sabin – Sabin Vaccine Institute",68
+Sabin’s Outbreak Response – Sabin Vaccine Institute,62
+Reaching Zero-Dose Children in India: Four Family Archetypes – Sabin Vaccine Institute,59
+Marburg – Sabin Vaccine Institute,56
+From Silos to Synergy: First TB–EPI Communities Partnership to Support New TB Vaccines Introduction – Sabin Vaccine Institute,55
+Disease Focus Areas – Sabin Vaccine Institute,54
+Noted Vaccine Researcher and Leader Kate O’Brien Awarded Sabin’s Gold Medal; Physician Livancliff Mbianke of Cameroon Receives Rising Star Award – Sabin Vaccine Institute,54
+Amy Finan – Sabin Vaccine Institute,52
+Research and Development Resources – Sabin Vaccine Institute,51
+HPV and Cervical Cancer Resources – Sabin Vaccine Institute,50
+Accelerating Malaria Vaccine Uptake – Sabin Vaccine Institute,49
+Getting to Zero – Sabin Vaccine Institute,49
+Organization of African First Ladies for Development Signs Agreement with Sabin Vaccine Institute to Develop Cervical Cancer Elimination Strategy – Sabin Vaccine Institute,49
+Coalition Against Typhoid – Sabin Vaccine Institute,48
+Nadia Afrin – Sabin Vaccine Institute,48
+Noted Vaccine Researchers Uğur Şahin and Özlem Türeci Awarded Sabin Vaccine Institute’s Albert B. Sabin Gold Medal; Genomic Scientist Senjuti Saha of Bangladesh Receives Rising Star Award – Sabin Vaccine Institute,48
+Rebecca Martin – Sabin Vaccine Institute,48
+A 21st Century Take on Typhoid – Sabin Vaccine Institute,45
+"Catch-up Routine Immunization to Restore Childhood Immunization Coverage Following COVID-Induced Declines in Zamboanga Peninsula, Philippines – Sabin Vaccine Institute",45
+2026 Gold Medal and Rising Star Award Nominations are Open – Sabin Vaccine Institute,44
+Sabin Vaccine Institute Announces Leadership Changes: Anuradha Gupta to step away; New members join Sabin Board of Trustees – Sabin Vaccine Institute,44
+Introducing the Vaccination Acceptance Research Network (VARN) Online Community – Sabin Vaccine Institute,43
+Jason Maguire – Sabin Vaccine Institute,43
+Sabin-Aspen Vaccine Science & Policy Group – Sabin Vaccine Institute,43
+Sabin Sends More Marburg Vaccines for Rwanda’s Outbreak – Sabin Vaccine Institute,42
+Denise Garrett – Sabin Vaccine Institute,41
+Opportunities – Sabin Vaccine Institute,41
+15th International Rotavirus Symposium – Sabin Vaccine Institute,40
+Cholera – Sabin Vaccine Institute,39
+Gold Medal and Rising Star Nominations – Sabin Vaccine Institute,39
+Our Favorite Podcast Episodes About Vaccines – Sabin Vaccine Institute,37
+Matthew Osborne-Smith – Sabin Vaccine Institute,36
+Exploring Vaccine Acceptance – Sabin Vaccine Institute,35
+Navigating Global Childhood Vaccination Challenges Amidst COVID-19 – Sabin Vaccine Institute,35
+Noel Decker – Sabin Vaccine Institute,35
+Kelly Warfield – Sabin Vaccine Institute,34
+The Twenty-Year Road to Ending Cervical Cancer in China – Sabin Vaccine Institute,33
+Global Immunization Insights Dashboard – Sabin Vaccine Institute,32
+Heloisa Sabin – Sabin Vaccine Institute,31
+International Rotavirus Symposium – Sabin Vaccine Institute,31
+Understanding Structural Determinants of Zero-Dose Children in Urban Slum Communities of Pakistan – Sabin Vaccine Institute,30
+2023-2024 Case Studies – Sabin Vaccine Institute,28
+Hexavalent Snapshot – Sabin Vaccine Institute,28
+Thomas King – Sabin Vaccine Institute,28
+Jennifer Raymond – Sabin Vaccine Institute,27
+Kiju deLeon – Sabin Vaccine Institute,27
+Sabin Vaccine Institute Scholarship – Sabin Vaccine Institute,27
+15th International Rotavirus Symposium Presentations – Sabin Vaccine Institute,26
+How Do Vaccines Work? – Sabin Vaccine Institute,26
+Influence of the Stars: An Influenza Documentary – Sabin Vaccine Institute,26
+Respiratory Syncytial Virus (RSV) Factsheet – Sabin Vaccine Institute,26
+"Fighting Malaria in the Democratic Republic of Congo: Pathways, Challenges, and Successes – Sabin Vaccine Institute",25
+Marburg Vaccine Development Timeline – Sabin Vaccine Institute,25
+Orin Levine  – Sabin Vaccine Institute,25
+"Reaching Zero-Dose Children in Garowe, Somalia – Sabin Vaccine Institute",25
+Sabin Vaccine Institute Delivers Marburg Vaccines to Combat Outbreak in Rwanda – Sabin Vaccine Institute,25
+2026 Sabin Awards Ceremony – Sabin Vaccine Institute,24
+Applying Design Thinking to Improve Microplanning Processes for Zero-Dose Children and Missed Communities in Nigeria – Sabin Vaccine Institute,24
+Global Immunization Insights Dashboard - PowerBI – Sabin Vaccine Institute,24
+Sabin Vaccine Institute -,24
+Filip Dubovsky – Sabin Vaccine Institute,23
+How Vaccines are Made Safe and Effective – Sabin Vaccine Institute,23
+Nadia Tornieporth – Sabin Vaccine Institute,23
+Richard A. Adegbola – Sabin Vaccine Institute,23
+Effectiveness of Community-Based Surveillance and Referral Slips in Reducing Zero-Dose and Under-Immunized Children in Ethiopia – Sabin Vaccine Institute,22
+GSK Grants Exclusive Technology License For Clinical-Stage Ebola Vaccines To Sabin Vaccine Institute – Sabin Vaccine Institute,22
+Reaching the Unreached: Exploring Factors Affecting Vaccine Uptake and Acceptance Amongst Zero-dose Children and Women in Bangladesh Using the World Health Organization’s Behavioral and Social Drivers Framework – Sabin Vaccine Institute,22
+Six in One: How Sabin is Supporting Hexavalent Vaccine Adoption – Sabin Vaccine Institute,22
+The Sabin Rising Star Award – Sabin Vaccine Institute,22
+Firdausi Qadri – Sabin Vaccine Institute,21
+Gold Medal – Sabin Vaccine Institute,21
+Norman Baylor – Sabin Vaccine Institute,21
+Regina Rabinovich – Sabin Vaccine Institute,21
+The Global HPV Consortium Partnerships – Sabin Vaccine Institute,21
+John Paul Clark – Sabin Vaccine Institute,20
+Philip K. Russell – Sabin Vaccine Institute,20
+14th International Conference on Typhoid & Other Invasive Salmonelloses – Sabin Vaccine Institute,19
+"Diving into Dengue with Dr. Thomas Monath, Developer of One of the First Dengue Vaccines – Sabin Vaccine Institute",19
+Dr. Carol Baker Receives 2019 Albert B. Sabin Gold Medal – Sabin Vaccine Institute,19
+Elizabeth Fox – Sabin Vaccine Institute,19
+"Integrating Immunization with Community-Based Management of Acute Malnutrition to Reduce Zero-Dose Children in Kano State, Nigeria – Sabin Vaccine Institute",19
+Jeffrey P. Libson – Sabin Vaccine Institute,19
+Pakistan’s HPV and Cervical Cancer Elimination Efforts: Keeping Girls and Women in Focus – Sabin Vaccine Institute,19
+Q&A: The Role of Nonclinical Research and Immunobridging in Vaccine Development – Sabin Vaccine Institute,19
+Strengthening Immunization Capacity – Sabin Vaccine Institute,19
+Sudan Ebolavirus – Sabin Vaccine Institute,19
+The Influenzer Initiative – Sabin Vaccine Institute,19
+Tuberculosis Factsheet – Sabin Vaccine Institute,19
+Compendium of Resources to Accelerate Cervical Cancer Elimination in Latin America & the Caribbean – Sabin Vaccine Institute,18
+Malaria Vaccine Introduction in Cameroon – Sabin Vaccine Institute,18
+Vaccinologists Keith Klugman and Shabir Madhi Awarded Sabin’s Prestigious Gold Medal; Infectious Diseases Epidemiologist Nicole Basta Receives Rising Star Award – Sabin Vaccine Institute,18
+Advocating for Women’s Health in Saudi Arabia – Sabin Vaccine Institute,17
+Applied Epidemiology – Sabin Vaccine Institute,17
+David Salisbury – Sabin Vaccine Institute,17
+Get Your Shots: Vaccines Keep Antibiotic Resistance at Bay – Sabin Vaccine Institute,17
+How Typhoid Conjugate Vaccine is Transforming the Fight Against Typhoid – Sabin Vaccine Institute,17
+Immunization in Conflict Zones: The Work Must Go On – Sabin Vaccine Institute,17
+"Prestigious Sabin Gold Medal Awarded to Physician William S. Jordan, MD – Sabin Vaccine Institute",17
+Recipients – Sabin Vaccine Institute,17
+VARN2023 Conference – Sabin Vaccine Institute,17
+JoAnn Suzich – Sabin Vaccine Institute,16
+Behind the Scenes of Sabin’s Marburg and Sudan Ebolavirus Vaccine Clinical Trials – Sabin Vaccine Institute,15
+Disparity in Access to Routine Immunization Services Among Children Under 5-Years Old in Myanmar – Sabin Vaccine Institute,15
+Grant Partners – Sabin Vaccine Institute,15
+Increasing HPV Vaccine Uptake: Overcoming Barriers for Rural Mothers in Nigeria – Sabin Vaccine Institute,15
+Sudan Ebolavirus Vaccine Development Timeline – Sabin Vaccine Institute,15
+The Data Quality Breakthrough: How Immunization Programs in Bihar and Uttar Pradesh are Setting New Standards – Sabin Vaccine Institute,15
+Yacine Djibo – Sabin Vaccine Institute,15
+"A Year of Progress, Preparedness, and Partnership – Sabin Vaccine Institute",14
+COVID-19 Recovery for Routine Immunization Programs Fellowship  – Sabin Vaccine Institute,14
+Rene Salas – Sabin Vaccine Institute,14
+The Challenges of Protecting Against HPV in LMICs – Sabin Vaccine Institute,14
+2025 Spotlight: Reflections on Outbreak Response and Generating Meaningful Data – Sabin Vaccine Institute,13
+"Four Key Recommendations For Vaccine Acceptance, Demand, and Delivery  – Sabin Vaccine Institute",13
+Global HPV Action Plan – Sabin Vaccine Institute,13
+9 Helpful HPV Resources for Patients and Health Workers – Sabin Vaccine Institute,12
+Finding Direction in a Disrupted Global Immunization Landscape – Sabin Vaccine Institute,12
+How the Netherlands Used Real-Time COVID-19 Vaccine Delivery Planning – Sabin Vaccine Institute,12
+Kate Hopkins – Sabin Vaccine Institute,12
+Lessons from the Bundibugyo outbreak for the Americas – Sabin Vaccine Institute,12
+Malaria – Sabin Vaccine Institute,12
+Marburg Virus Disease: What To Know Now – Sabin Vaccine Institute,12
+Measles – Sabin Vaccine Institute,12
+Q&A: Behind the Marburg Virus Outbreak in Rwanda – Sabin Vaccine Institute,12
+Rising Star – Sabin Vaccine Institute,12
+The Increasing Challenges of Cholera Outbreaks – Sabin Vaccine Institute,12
+Three Strategies to Combat Increasing Risks from Vaccine Hesitancy – Sabin Vaccine Institute,12
+Typhoid – Sabin Vaccine Institute,12
+Vaccine R&D Leader Kathrin Jansen and Immunologist Kizzmekia Corbett Awarded Sabin’s Gold Medal and Rising Star Respectively – Sabin Vaccine Institute,12
+10 Things To Know About the Growing Global Cholera Outbreak – Sabin Vaccine Institute,11
+14th International Rotavirus Symposium – Sabin Vaccine Institute,11
+First Deaths as Mutated Virus Spreads From Amazon – Sabin Vaccine Institute,11
+Gold Medal Recipient – Sabin Vaccine Institute,11
+H. R. Shepherd – Sabin Vaccine Institute,11
+Increasing Childhood Vaccination Rates: The Success of Mobile Clinics in Nigeria – Sabin Vaccine Institute,11
+Intro to Vaccine R&D – Pre-Clinical Studies – Sabin Vaccine Institute,11
+Local Research Could Curb Cholera at Global Scale – Sabin Vaccine Institute,11
+Mohammad Tahir Yousafzai – Sabin Vaccine Institute,11
+No Waiting Until Tomorrow: A Q&A with PAHO Director Dr. Jarbas Barbosa – Sabin Vaccine Institute,11
+Sabin Vaccine Institute Receives $35 Million from BARDA with Potential of up to $214 Million for Ebola Sudan and Marburg Vaccines – Sabin Vaccine Institute,11
+Tikakaran Chakra: A Tool to Increase Awareness on Timely Vaccination – Sabin Vaccine Institute,11
+Understanding and Addressing Challenges to Ensuring Everyone Fully Benefits from Vaccines – Sabin Vaccine Institute,11
+Digitized Supply Chain Delivers Vaccines to the Last Mile – Sabin Vaccine Institute,10
+Evaluating an Integrated Family-Based Vaccination Program in Sierra Leone – Sabin Vaccine Institute,10
+Infectious Diseases and Vaccines: Our Book Recommendations – Sabin Vaccine Institute,10
+Influenza – Sabin Vaccine Institute,10
+Noted Vaccine Researcher Thomas P. Monath Awarded Sabin’s Gold Medal; Cameroon Physician Sangwe Clovis Nchinjoh Receives Rising Star Award – Sabin Vaccine Institute,10
+Pertussis in 2025: A Conversation with Prof. Gordon Dougan – Sabin Vaccine Institute,10
+SBRG Resources – Sabin Vaccine Institute,10
+The Global HPV Consortium: Mission and Values – Sabin Vaccine Institute,10
+The Impact of Trust & Patient-Centered Care on Vaccination Rates in Kenya – Sabin Vaccine Institute,10
+A New Country-Level Consortium Aims to Drive Down Cervical Cancer in India – Sabin Vaccine Institute,9
+Benson Wamalwa – Sabin Vaccine Institute,9
+"Catching Up on Cholera with the Inventor of the First Effective Oral Vaccine, Dr. Jan Holmgren – Sabin Vaccine Institute",9
+Dr. Paul Offit Receives 2018 Albert B. Sabin Gold Medal – Sabin Vaccine Institute,9
+"Expanding Human Papillomavirus (HPV) Vaccination Coverage through School and Community Engagement in Nylon Health District, Cameroon – Sabin Vaccine Institute",9
+OPS/OMS Colabora para fortalecer la respuesta al COVID-19 en la Republica Dominicana – Sabin Vaccine Institute,9
+Overcoming Challenges to Immunization in Northern Nigeria – Sabin Vaccine Institute,9
+Sabin Vaccine Institute Begins Phase 2 Clinical Trial for Sudan Ebolavirus Vaccine – Sabin Vaccine Institute,9
+"Sabin’s Boost Community at Five: Advancing Immunization Impact Through Connection, Leadership, and Learning – Sabin Vaccine Institute",9
+Sunita Sheel Bandewar – Sabin Vaccine Institute,9
+The Rising Threat of Measles and Vaccine Hesitancy: Q&A with Sabin Gold Medal Winner Dr. Paul Offit – Sabin Vaccine Institute,9
+20 Years of Rotavirus Vaccines: Q&A with Dr. Michelle Groome – Sabin Vaccine Institute,8
+"Addressing Missed Vaccination Opportunities in Conakry, Guinea – Sabin Vaccine Institute",8
+Africa’s Cholera Resurgence Exposes Funding Failures – Sabin Vaccine Institute,8
+Clinical Vaccine Development – Sabin Vaccine Institute,8
+Creating New Opportunities for HPV Vaccination in Cameroon – Sabin Vaccine Institute,8
+"Dr. Carol Baker, Champion of Maternal and Newborn Health, Awarded 2019 Sabin Gold Medal – Sabin Vaccine Institute",8
+Intro to Vaccine R&D – How Vaccines Are Made – Sabin Vaccine Institute,8
+Leveraging the Power of Storytelling to Increase Vaccine Demand – Sabin Vaccine Institute,8
+"Looking Back, Looking Forward: Sustaining Momentum for Cervical Cancer Elimination – Sabin Vaccine Institute",8
+Md Saiful Islam – Sabin Vaccine Institute,8
+My Village My Home: A Tool to Strengthen Community Involvement in Immunization – Sabin Vaccine Institute,8
+"Nearly 1,000 Futures Protected in 48 Hours: Lessons from School-Based HPV Vaccination in Nairobi – Sabin Vaccine Institute",8
+Partner With Us – Sabin Vaccine Institute,8
+Racing Against Polio: Meet Frontline Workers Protecting Warawa’s Children  – Sabin Vaccine Institute,8
+Ways to Give – Sabin Vaccine Institute,8
+2024 Albert B. Sabin Gold Medal Ceremony – Sabin Vaccine Institute,7
+A Decade of Sustainable Immunization Financing – Sabin Vaccine Institute,7
+Accelerating Universal Influenza Vaccine Development – Sabin Vaccine Institute,7
+Advocating for Maternal and Child Health in Nigeria and England – Sabin Vaccine Institute,7
+"Antimicrobial Resistance (AMR) Explained: FAQs on Global Impact, Vaccination, and Solutions – Sabin Vaccine Institute",7
+Breaking the Silence Can Break the Stigma – Sabin Vaccine Institute,7
+Chizoba Wonodi – Sabin Vaccine Institute,7
+Dengue – Sabin Vaccine Institute,7
+Disease Burden Surveillance Studies – Sabin Vaccine Institute,7
+Email Subscription Confirmation – Sabin Vaccine Institute,7
+Empowering Action: CAPED India and the Path to Cervical Cancer Elimination – Sabin Vaccine Institute,7
+Grant Partners – Page 3 of 3 – Sabin Vaccine Institute,7
+Influenza is Nothing to Sneeze At – Sabin Vaccine Institute,7
+Listen to Indigenous Voices for Effective Immunization – Sabin Vaccine Institute,7
+Mónica Berger Gonzàlez – Sabin Vaccine Institute,7
+Rajeev Seth – Sabin Vaccine Institute,7
+Re-envisioning the Future of Immunization in Mumbai – Sabin Vaccine Institute,7
+"Reaching Zero-Dose Children in Bauchi State, Nigeria – Sabin Vaccine Institute",7
+Remembering why vaccines matter: By Dr. Ruchi Kaushik – Sabin Vaccine Institute,7
+Sabin Vaccine Institute Begins Phase 2 Clinical Trial for Marburg Vaccine in Uganda – Sabin Vaccine Institute,7
+Sabin Welcomes 10 Partners to the 2021 Social and Behavioral Grants Program – Sabin Vaccine Institute,7
+Strengthening Data Triangulation for Reaching Zero-Dose Children in Sudan – Sabin Vaccine Institute,7
+Supporting Journalists to Report Accurately on Immunization and Vaccines – Sabin Vaccine Institute,7
+Supporting Vaccination Efforts through Geospatial Solutions – Sabin Vaccine Institute,7
+The Other Fight of the Yungueña Coca Farmers: Debunking The Myths About the Papilloma Vaccine – Sabin Vaccine Institute,7
+Vaccine Acceptance & Delivery – Sabin Vaccine Institute,7
+Adults and Teens Need Vaccines Too – Sabin Vaccine Institute,6
+"Barney S. Graham, MD, PhD receives the 2021 Albert B. Sabin Gold Medal; Sabin Vaccine Institute’s Rising Star Award presented to Nginache Nampota-Nkomba, MBBS, MSc – Sabin Vaccine Institute",6
+Caroline Van Gemert – Sabin Vaccine Institute,6
+Climate Change and Vaccines: What Have We Learned to Tackle Misinformation? – Sabin Vaccine Institute,6
+Community Insights to Identify Determinants of Zero-Dose Children in Melanesia: A BeSD Tool Adaptation – Sabin Vaccine Institute,6
+Empowering Futures – Advancing NCD and HPV Awareness in Nepal – Sabin Vaccine Institute,6
+Equity in Vaccination: Bhakti Ghatole on Disability-Inclusive Immunization Campaigns – Sabin Vaccine Institute,6
+Focusing on the Global Nursing Workforce for International Nurses Day and Beyond – Sabin Vaccine Institute,6
+Freddy Kitutu – Sabin Vaccine Institute,6
+Grant Partners – Page 2 of 3 – Sabin Vaccine Institute,6
+HPV Newsletter Archive – Sabin Vaccine Institute,6
+Health for All Ages: Life-Course Immunization – Sabin Vaccine Institute,6
+How Equimundo — an Organization Focused on Engaging Men and Boys — is Working to Eliminate Cervical Cancer – Sabin Vaccine Institute,6
+Immunization Champion Increases Access to Women's Health in Northern Uganda,6
+Increasing HPV Vaccine Awareness in Nepal’s Schools – Sabin Vaccine Institute,6
+"Integrating Health Services into Education: School-Based Vaccination in Lagos, Nigeria – Sabin Vaccine Institute",6
+Legesse Kidanne – Sabin Vaccine Institute,6
+Mounting Cholera Crisis is a Problem We Can Solve – Sabin Vaccine Institute,6
+Mpox Vaccine Production Could Put Africa First in Line – Sabin Vaccine Institute,6
+New Technical Paper on Participatory Immunization Research Aims to Empower Communities – Sabin Vaccine Institute,6
+Partnerships Powering Digital Progress – Sabin Vaccine Institute,6
+Professor Gordon Dougan Receives the 2020 Albert B. Sabin Gold Medal; Sabin Vaccine Institute’s New Rising Star Award Presented to Dr. Katherine E. Gallagher – Sabin Vaccine Institute,6
+"Q&A with Sir Brian Greenwood on Malaria Vaccines, Elimination Goals, & Implementation Challenges – Sabin Vaccine Institute",6
+Sabin Dispatches Additional Vaccines to Rwanda for Marburg Outbreak – Sabin Vaccine Institute,6
+Sabin Welcomes 7 New Partners into Its 2023-2024 Social and Behavioral Research Grants Program – Sabin Vaccine Institute,6
+Scientists Encourage Vaccination for Kids - Here's Why – Sabin Vaccine Institute,6
+Shaping the Future of Typhoid Prevention – Sabin Vaccine Institute,6
+Tarandeep Anand – Sabin Vaccine Institute,6
+Three Student Nurses Win Innovation Challenge for HPV Prevention – Sabin Vaccine Institute,6
+VARN2022 Conference – Sabin Vaccine Institute,6
+Why These Doctors and Nurses Want You to Vaccinate Your Kids – Sabin Vaccine Institute,6
+10 Days From Marburg Outbreak Declaration to Vaccination: A High-Level Timeline – Sabin Vaccine Institute,5
+2025 Albert B. Sabin Gold Medal Ceremony – Sabin Vaccine Institute,5
+Abdul Momin Kazi – Sabin Vaccine Institute,5
+"Advanced Community Activation Training, One Year Later – Sabin Vaccine Institute",5
+Anant Bhan – Sabin Vaccine Institute,5
+Best Immunization Practices from a Medical Professional & Mother – Sabin Vaccine Institute,5
+Boost Member Spotlight: Introducing Dr. Navneet Bichha – Sabin Vaccine Institute,5
+"Catching Up Children Who Missed Immunizations In Kumasi Metropolis, Ghana – Sabin Vaccine Institute",5
+Catching Up With 2021 Rising Star Awardee Nginache Nampota-Nkomba – Sabin Vaccine Institute,5
+Creating Connections for HPV Prevention and Cervical Cancer Elimination in Africa – Sabin Vaccine Institute,5
+"Discover Immunization Advocates' Resources To Help Address Vaccine, Immunization Misinformation – Sabin Vaccine Institute",5
+Dr. Roger Glass Receives 2015 Albert B. Sabin Gold Medal Award – Sabin Vaccine Institute,5
+Eight Years of Vaccinology: 2011-2019 – Sabin Vaccine Institute,5
+Global HPV Consortium Launch Event: Videos of All Sessions – Sabin Vaccine Institute,5
+Harikeerthan Raghuram – Sabin Vaccine Institute,5
+"In Memoriam: John B. Robbins, M.D. – Sabin Vaccine Institute",5
+Indian Ocean Temperature Index Signals Dengue Outbreaks – Sabin Vaccine Institute,5
+Making A Difference in Kenya: Research Nurse Melanie Abongo – Sabin Vaccine Institute,5
+Malaria Elimination Chances Receding in Asia Pacific – Sabin Vaccine Institute,5
+Marissa Malchione – Sabin Vaccine Institute,5
+Nurse-Midwife On a Mission to Prevent Preventable Diseases – Sabin Vaccine Institute,5
+PAHO/WHO Collaborates to Strengthen the Covid-19 Response in the Dominican Republic – Sabin Vaccine Institute,5
+Powering Vaccine R&D – Sabin Vaccine Institute,5
+Q&A: Malaria Fight Needs Whole-of-Society Approach – Sabin Vaccine Institute,5
+"Reducing Zero-Dose of Penta1 immunization in Umbada locality in Khartoum state, Sudan 2022 – Sabin Vaccine Institute",5
+Research Shows Community-Based Approach Increased Vaccination,5
+Rising Star Recipient – Sabin Vaccine Institute,5
+Rotavirus – Sabin Vaccine Institute,5
+Saad Omer – Sabin Vaccine Institute,5
+Sabin Vaccine Institute,5
+Sabin Vaccine Institute Receives Additional $34.5 Million from BARDA for Further Development of Ebola Sudan and Marburg Vaccines – Sabin Vaccine Institute,5
+Sabin Vaccine Institute Strengthens Ebola Sudan and Marburg Vaccines Program with Additional NIAID Partnership – Sabin Vaccine Institute,5
+Sabin Vaccine Institute and Indonesia Sign Agreement to Develop and Operationalize Cervical Cancer Elimination Strategy – Sabin Vaccine Institute,5
+Social and Behavioral Grants 2020-2021 Case Study Report – Sabin Vaccine Institute,5
+The Flu Vaccine Forum Series – Sabin Vaccine Institute,5
+"Vaccine Developer Albert Z. Kapikian, MD, Awarded the Sabin Gold Medal – Sabin Vaccine Institute",5
+Wastewater Helps Monitor Cancer-Causing HPV – Sabin Vaccine Institute,5
+Why a Global HPV Consortium Now? – Sabin Vaccine Institute,5
+You searched for supply – Sabin Vaccine Institute,5
+13th International Conference on Typhoid & Other Invasive Salmonelloses – Sabin Vaccine Institute,4
+2022 Albert B. Sabin Gold Medal Ceremony – Sabin Vaccine Institute,4
+2023 Albert B. Sabin Gold Medal Ceremony – Sabin Vaccine Institute,4
+"Addressing Missed Opportunities for Vaccination in N’Gabacoro Droit, Mali – Sabin Vaccine Institute",4
+BARDA Provides the Sabin Vaccine Institute with an Additional $20 Million for Further Development of Ebola Sudan and Marburg Vaccines – Sabin Vaccine Institute,4
+"Beyond Morbidity and Mortality, Understanding the Burden of Enteric Fever in South Asia: New Results from Phase II of the Surveillance for Enteric Fever in Asia Project (SEAP) – Sabin Vaccine Institute",4
+Bolstering Health Worker Immunization Communications & Advocacy – Sabin Vaccine Institute,4
+COVID-19 – Sabin Vaccine Institute,4
+Catching-Up in Islamabad: Identifying and Reaching Zero-Dose Children Following the COVID-19 Pandemic – Sabin Vaccine Institute,4
+Cervical Cancer: Access To Vaccine Will Save Nigerian Women – Sabin Vaccine Institute,4
+Community Conversations on Vaccines Episode 2: Dr. Marina Shikhashvili – Sabin Vaccine Institute,4
+Community Health Volunteers as Immunization Advocates – Sabin Vaccine Institute,4
+"Connecting Gender and Immunization in Bauchi State, Nigeria – Sabin Vaccine Institute",4
+"Coronavirus: A Vaccine, Then What? With Bill Nye – Sabin Vaccine Institute",4
+Corrina Moucheraud – Sabin Vaccine Institute,4
+Dr. Albert B. Sabin – Instituto de Vacinas Sabin,4
+Dr. Mathuram Santosham Receives 2014 Albert B. Sabin Gold Medal Award – Sabin Vaccine Institute,4
+Drs. Douglas R. Lowy and John T. Schiller Receive 2011 Albert B. Sabin Gold Medal Award – Sabin Vaccine Institute,4
+ESWI Satellite Symposium – Sabin Vaccine Institute,4
+Effects of Ownership Text Message Wording and Reminders on Receipt of an Influenza Vaccination: A Randomized Clinical Trial – Sabin Vaccine Institute,4
+"Episode 1: To Beat the Next Pandemic, Sustain and Grow Incentives for Collaborative Innovation – Sabin Vaccine Institute",4
+Gagandeep Kang – Sabin Vaccine Institute,4
+Global Progress Toward Ending Measles & Rubella: Expert Insights from Dr. Natasha Crowcroft – Sabin Vaccine Institute,4
+HPV Vaccine: A Positive Hope for the Future in the Battle Against Cervical Cancer – Sabin Vaccine Institute,4
+Infectious Disease Expert Kelly Warfield Named Sabin’s New R&D President – Sabin Vaccine Institute,4
+Integrating Nutrition and Vaccination Efforts in Crisis-Affected Regions of Cameroon – Sabin Vaccine Institute,4
+Low-Cost Virus Test Offers Rapid Results in Africa – Sabin Vaccine Institute,4
+Meet the 2024-2025 Social and Behavioral Grant Partners: African Region – Sabin Vaccine Institute,4
+Meet the Award-Winning Nurse from Ghana Advocating for Women – Sabin Vaccine Institute,4
+"Monthly Roundup: Immunization Advocates in the Media, Global Vaccination Stakeholders Gather for Inaugural VARN2022 Conference – Sabin Vaccine Institute",4
+Negussie Deyessa – Sabin Vaccine Institute,4
+Opportunities and Optimism at WHO Africa Regional Meeting – Sabin Vaccine Institute,4
+Pioneering Health Leader Named President Of Global Immunization At Sabin– Sabin Vaccine Institute,4
+Powering Vaccine R&D: Opportunities for Transformation – Sabin Vaccine Institute,4
+Profound Potential in Affiliation With African First Ladies – Sabin Vaccine Institute,4
+Q and A with Dr. Carol Baker – Sabin Vaccine Institute,4
+Raising the Voice of Young Community Health Advocates – Sabin Vaccine Institute,4
+"Research - A Tool For Unlocking Assumptions Among Nomadic Populations In Juba, South Sudan – Sabin Vaccine Institute",4
+Sabin Statement on the End of the Uganda Ebola Outbreak – Sabin Vaccine Institute,4
+Sabin Vaccine Institute Delivers Ebola Sudan Vaccine to Fight Outbreak in Uganda – Sabin Vaccine Institute,4
+Sabin Vaccine Institute Leads Public and Private Sector Fight to Prevent HPV and End Cervical Cancer with Global HPV Consortium Launch in Kuala Lumpur – Sabin Vaccine Institute,4
+"Sabin Vaccine Institute Names David Salisbury, Jeffrey P. Libson to Board of Trustees, Philip K. Russell Retires to Advisory Role – Sabin Vaccine Institute",4
+Sabin Vaccine Institute Receives $10M Grant to Raise Confidence in Vaccines – Sabin Vaccine Institute,4
+Sabin Vaccine Institute Receives $20.5 Million from BARDA with Potential of up to $128 Million to Develop Ebola Sudan and Marburg Vaccines – Sabin Vaccine Institute,4
+Sabin Vaccine Institute To Partner with Kenya Medical Research Institute (KEMRI) on Critical Cholera Vaccine Research – Sabin Vaccine Institute,4
+Sabin and WHO Announce 60 Projects to Boost Immunization – Sabin Vaccine Institute,4
+"Sabin’s Global Health Impact: Marburg Vaccine Delivery, Cancer Elimination & More",4
+Sazzad Hossain Khan – Sabin Vaccine Institute,4
+Stefanie Vaccher – Sabin Vaccine Institute,4
+Strengthening Immunization Systems in Africa: Insights from UNICEF’s Dr. Paul Ngwakum – Sabin Vaccine Institute,4
+Supporting “The Backbone of Public Health” in Somalia  – Sabin Vaccine Institute,4
+The Global HPV Consortium Launch Event – Sabin Vaccine Institute,4
+The International and Intercontinental Spread and Expansion of Antimicrobial-resistant Salmonella Typhi – Sabin Vaccine Institute,4
+The Other Gold Medal This Summer – Sabin Vaccine Institute,4
+The Sabin Vaccine Institute Announces Dr. Rino Rappuoli as the 2009 Recipient of the Albert B. Sabin Gold Medal Award – Sabin Vaccine Institute,4
+"To Build Back Immunity, Health Workforce Advocates Must Lead the Way – Sabin Vaccine Institute",4
+Transformation Through Collaboration: Lasting Impacts of the SEAP Project  – Sabin Vaccine Institute,4
+Typhoid-causing Bacteria Showing Increasing Resistance to Drug Treatments – Sabin Vaccine Institute,4
+VARN2022: Shaping Global Vaccine Acceptance with Localized Knowledge – Sabin Vaccine Institute,4
+"Vaccine Equity, Acceptance at Center of Immunization Advocates New Activities – Sabin Vaccine Institute",4
+Vaccines a Valuable Tool in Fight Against Antibiotic Resistance,4
+Vaccines as a Critical Yet Underutilized Tool in the Fight Against Antimicrobial Resistance – Sabin Vaccine Institute,4
+Wadhae-Mai Harmon-Gray – Sabin Vaccine Institute,4
+2020 Albert B. Sabin Gold Medal Ceremony – Sabin Vaccine Institute,3
+2023 Gold Medal and Rising Star Nominations Open – Sabin Vaccine Institute,3
+2025 Sabin Gold Medal and Rising Star Nomination Portal – Sabin Vaccine Institute,3
+A Journey from Capacity Building to Community Engagement and Beyond – Sabin Vaccine Institute,3
+A Powerful Partnership Comes Together to Accelerate Cervical Cancer Elimination – Sabin Vaccine Institute,3
+Adapting Strategies to Realities in Togo for Catch-Up Vaccination – Sabin Vaccine Institute,3
+Breakthroughs in Influenza Vaccination: Highlights from the Sabin IVI Program – Sabin Vaccine Institute,3
+Building Awareness of Life-Course Immunization – Sabin Vaccine Institute,3
+Building an Immunization Movement: Introducing the Global HPV Consortium – Sabin Vaccine Institute,3
+Call for Proposals: Social & Behavioral Research Grants 2023-2024 – Sabin Vaccine Institute,3
+Communities Must Be at Heart of Reversing Decline in Routine Immunization Rates – Sabin Vaccine Institute,3
+Community Conversations on Vaccines Episode 16: Pakistan and Ghana – Sabin Vaccine Institute,3
+Conducting Clinical Trials for Sabin’s Marburg Vaccine in Uganda – Sabin Vaccine Institute,3
+Dr. F. Marc LaForce Receives 2012 Albert B. Sabin Gold Medal Award – Sabin Vaccine Institute,3
+Dr. George R. Siber Receives 2016 Albert B. Sabin Gold Medal Award – Sabin Vaccine Institute,3
+"Dr. Regina Rabinovich Succeeds Dr. Axel Hoos as Sabin Vaccine Institute Board Chair, Drs. Norman Baylor and JoAnn Suzich Join the Board – Sabin Vaccine Institute",3
+"Driving Immunization Efforts in Kathmandu, Nepal – Sabin Vaccine Institute",3
+El sistema de salud de Bolivia se adapta en respuesta al COVID-19 – Sabin Vaccine Institute,3
+Episode 5: The game-changing potential of mRNA vaccines – Sabin Vaccine Institute,3
+Episode 6: Outwitting the Evasive Influenza Virus – Sabin Vaccine Institute,3
+Exploring Determinants of Response-Ready Influenza Vaccination Programs in Middle-Income Countries – Sabin Vaccine Institute,3
+GWL Voices Endorses the Global HPV Consortium – Sabin Vaccine Institute,3
+Geospatial Data – Unlocking the Unseen – Sabin Vaccine Institute,3
+Ghana’s Cranky Uncle Game: Tackling Vaccine Hesitancy in West Africa – Sabin Vaccine Institute,3
+Global Typhoid Challenges in Focus at International Conference in Rwanda – Sabin Vaccine Institute,3
+Immunization data and statistics – Sabin Vaccine Institute,3
+"In Mizoram, a Struggle to Protect Women From Cervical Cancer – Sabin Vaccine Institute",3
+Increasing Vaccine Uptake Through Community Activation – Sabin Vaccine Institute,3
+"Introducción a las vacunas: su historia, cómo funcionan y su impacto – Instituto Sabin de Vacunas",3
+Keynote Address: Helen Clark at Launch of the Global HPV Consortium – Sabin Vaccine Institute,3
+Latin American Pertussis Workshop Meeting Report – Sabin Vaccine Institute,3
+Launching IPA’s Vaccine Trust Online Course and IPA-Sabin Vaccine Institute Collaboration – Sabin Vaccine Institute,3
+Laura Skrip – Sabin Vaccine Institute,3
+Leading Nurses Through Crises in Lebanon – Sabin Vaccine Institute,3
+Legislative Approaches to Immunization Across the European Region – Sabin Vaccine Institute,3
+Lessons from COVID-19: Advancing Development of Universal Influenza Vaccines – Sabin Vaccine Institute,3
+Malaria Vaccine Pioneer Awarded the Albert B. Sabin Gold Medal in Vaccinology – Sabin Vaccine Institute,3
+Meet the 2023-2024 Social and Behavioral Research Grant Partners: Operationalizing of the WHO BeSD Framework – Sabin Vaccine Institute,3
+Misinformation: A Strategic Approach – Sabin Vaccine Institute,3
+"Monthly Roundup: Deepening Vaccine Acceptance Knowledge, Influence Among Journalists, Health Workers, Researchers – Sabin Vaccine Institute",3
+"Moonlight Community Cinema to Combat Low Risk Perception of COVID-19 in Makueni County, Kenya – Sabin Vaccine Institute",3
+More Than 50 Journalists Across Brazil Join COVID-19 Vaccine Workshop – Sabin Vaccine Institute,3
+Multiple Battles: Vaccinating Zero-Dose Children in Conflict Zones in Niger – Sabin Vaccine Institute,3
+Pivoting in a Pandemic: Sabin Staff Adapt to the Pandemic – Sabin Vaccine Institute,3
+Putting Communities Back in the Picture: Baby Photos Generate Demand for Immunization – Sabin Vaccine Institute,3
+Rebuilding Trust in Vaccination through Community Health Workers in Cameroon – Sabin Vaccine Institute,3
+Sabin Receives Additional $21.8 Million From BARDA to Advance Marburg Vaccine – Sabin Vaccine Institute,3
+Sabin Vaccine Institute Elects New Trustees Bringing Expertise to Support Program Growth – Sabin Vaccine Institute,3
+Sabin Vaccine Institute Receives up to $6.3 Million from CEPI for Dose-Optimizing COVID-19 Vaccine Clinical Trial – Sabin Vaccine Institute,3
+Sabin Vaccine Institute Statement on the Passing of Sabin Founder and Trustee Philip Russell – Sabin Vaccine Institute,3
+"Sabin Vaccine Institute and The Aspen Institute Release Report Calling for Bold, New, and Coordinated Commitments to Making Universal Influenza Vaccines a Reality – Sabin Vaccine Institute",3
+Sabin Vaccine Institute’s Boost Community Prepares Immunization Professionals to Lead During the COVID-19 Crisis – Sabin Vaccine Institute,3
+Salvia Zeeshan – Sabin Vaccine Institute,3
+Statement on COVID-19 Vaccine Equity – Sabin Vaccine Institute,3
+Statement on Global COVID-19 Summit: Our Message to World Leaders – Sabin Vaccine Institute,3
+Storytelling Training: The Story Of Self – Sabin Vaccine Institute,3
+Testing the Waters – New Surveillance Methods for Typhoid Detection in Côte d’Ivoire – Sabin Vaccine Institute,3
+The Economic Case for Vaccination – Sabin Vaccine Institute,3
+Towards Deeper Understanding of the Typhoid Conjugate Vaccine – Sabin Vaccine Institute,3
+Trust that Drives Tech – Sabin Vaccine Institute,3
+"Unpacking the Burden of Enteric Fever in Bangladesh, Nepal, and Pakistan: Findings From SEAP Phase II – Sabin Vaccine Institute",3
+Vaccinating 30 Million Habitants of the Amazon Against COVID-19 – Sabin Vaccine Institute,3
+Vaccins et immunisation – Sabin Vaccine Institute,3
+Vacunas e inmunización – Sabin Vaccine Institute,3
+Volunteer Health Workers Restore Immunization Services In Burkina Faso's Conflict Zones – Sabin Vaccine Institute,3
+Why “Winging It” on Surveillance Won’t Work for Bird Flu: A Conversation with Dr. Barney Graham – Sabin Vaccine Institute,3
+You searched for Foyeth Eugène – Sabin Vaccine Institute,3
+You searched for Foyeth-K Eugène-L – Sabin Vaccine Institute,3
+You searched for Michelle Saylor – Sabin Vaccine Institute,3
+You searched for careers – Sabin Vaccine Institute,3
+Zephon D. Lister – Sabin Vaccine Institute,3
+2021 Albert B. Sabin Gold Medal Ceremony – Sabin Vaccine Institute,2
+2022 Impact Report – Sabin Vaccine Institute,2
+A Timely Plan for Ending Cervical Cancer – Sabin Vaccine Institute,2
+Abisoye Oyeyemi – Sabin Vaccine Institute,2
+"Amid COVID-19 Vaccine Race, Sabin Vaccine Institute and the Aspen Institute Release Report on Vaccine Hesitancy; A Call to Improve Vaccine Acceptance – Sabin Vaccine Institute",2
+Aqsa Shaikh – Sabin Vaccine Institute,2
+Baldeep Dhaliwal – Sabin Vaccine Institute,2
+Boost Community Archives – Sabin Vaccine Institute,2
+"Boosting Vaccine Confidence Through Storytelling, Immunization Advocates New Activities – Sabin Vaccine Institute",2
+Cervical Cancer: A Public Health Problem in Venezuela – Sabin Vaccine Institute,2
+Challenges to Routine Immunizations in Brazil – Sabin Vaccine Institute,2
+Chattiya Nitpolprasert – Sabin Vaccine Institute,2
+Community Conversations on Vaccines Episode 10 – Sabin Vaccine Institute,2
+Community Conversations on Vaccines Episode 11 – Sabin Vaccine Institute,2
+Community Conversations on Vaccines Episode 13 – Sabin Vaccine Institute,2
+Community Conversations on Vaccines: Catching up with Our Season 1 Guests – Sabin Vaccine Institute,2
+Desmond Maada Kangbai – Sabin Vaccine Institute,2
+Doreen Tuhebwe – Sabin Vaccine Institute,2
+Dr. Jan Holmgren Receives 2017 Albert B. Sabin Gold Medal Award – Sabin Vaccine Institute,2
+Enteric Fever in the Time of COVID-19: SEAP Phase III Findings – Sabin Vaccine Institute,2
+Episode 10: Valuing Vaccines: Ensuring Economic Health and Security for All – Sabin Vaccine Institute,2
+"Episode 2: In the Age of Emerging Pandemics, Influenza is the Devil We Know – Sabin Vaccine Institute",2
+Eventos – Instituto de Vacunas Sabin,2
+Five Reasons to Get Your Flu Shot – Sabin Vaccine Institute,2
+Ganiyat Eshikhena – Sabin Vaccine Institute,2
+Get to Know Three of Our 2021 Social and Behavioral Research Grant Partners – Sabin Vaccine Institute,2
+Girls at Risk of HPV transmission: Vaccinations Eliminate Cervical Cancer – Sabin Vaccine Institute,2
+Hidden Lassa Fever Cases Spur Vaccination Plans – Sabin Vaccine Institute,2
+How is storytelling helping health workers vaccinate people in rural Uganda? – Sabin Vaccine Institute,2
+IPA-SABIN Webinar on COVID-19 and Immunization: Challenges Facing Health Workers in Eastern Europe – Sabin Vaccine Institute,2
+"If Not Us, Who? If Not Now, When? – Sabin Vaccine Institute",2
+Immunization Advocacy Work Resumes as Liberian Ebola Outbreak Recedes – Sabin Vaccine Institute,2
+"Incidence of Typhoid and Paratyphoid Fever in Bangladesh, Nepal, and Pakistan: Results of the Surveillance for Enteric Fever in Asia Project – Sabin Vaccine Institute",2
+Increased uptake of childhood vaccines – Sabin Vaccine Institute,2
+Influenza Vaccine Innovation Program Impact Report – Sabin Vaccine Institute,2
+Insights from Nurses on the Frontlines of COVID-19 Vaccine Delivery – Sabin Vaccine Institute,2
+Keeping Clinical Trials Going in Uganda – Sabin Vaccine Institute,2
+Keeping Preventable Diseases At Bay in Nigeria – Sabin Vaccine Institute,2
+Learning to Prevent the Next Pandemic: VaxHunt Game Earns STEM.org Educational Trustmark – Sabin Vaccine Institute,2
+Leveraging infodemiologists to counteract online misinformation: Experience with COVID-19 vaccines – Sabin Vaccine Institute,2
+Meet the 2024-2025 Social and Behavioral Grant Partners: Asian and Western Pacific Region – Sabin Vaccine Institute,2
+Milena Dalton – Sabin Vaccine Institute,2
+Nature Article Series: Stopping the Next Pandemic – Sabin Vaccine Institute,2
+New R&D President Kelly Warfield: Energized to Drive Vaccine Innovation for Global Health – Sabin Vaccine Institute,2
+Omera Naseer – Sabin Vaccine Institute,2
+Preparing For Nigeria's HPV Vaccine Rollout – Sabin Vaccine Institute,2
+"Pursuing Collaboration To Further Vaccine Acceptance, Immunization Advocates New Activities – Sabin Vaccine Institute",2
+Reaching Vaccination Targets in Liberia – Sabin Vaccine Institute,2
+"Reducing Zero-Dose Children in Gbarpolu County, Liberia – Sabin Vaccine Institute",2
+Resources – Page 4 of 33 – Sabin Vaccine Institute,2
+Responding to COVID-19 – A Statement by the Sabin Vaccine Institute – Sabin Vaccine Institute,2
+Restoring Confidence in Immunization During COVID-19 – Sabin Vaccine Institute,2
+"Sabin Vaccine Institute Funds Researchers to Investigate COVID-19 Misinformation, Design Solutions to Increase Vaccine Acceptance – Sabin Vaccine Institute",2
+Sabin Vaccine Institute Names Richard Adegbola and Yacine Djibo to Board of Trustees – Sabin Vaccine Institute,2
+Sabin Welcomes 7 New Partners Into the Social and Behavioral Research Grants Program – Sabin Vaccine Institute,2
+Single-Dose Typhoid Conjugate Vaccine Safe and Effective for Kids 6 Months and Older – Sabin Vaccine Institute,2
+Social and Behavioral Grants 2021-2022 Case Study Reports – Sabin Vaccine Institute,2
+Social media strategies to affect vaccine acceptance: a systematic literature review – Sabin Vaccine Institute,2
+Susanne B. Montgomery – Sabin Vaccine Institute,2
+The Future of Routine Immunization During COVID-19 – Sabin Vaccine Institute,2
+The Impact of the COVID-19 Pandemic on Immunization Programs in Kaduna State Nigeria – Sabin Vaccine Institute,2
+The March Towards Resilience and Readiness – Sabin Vaccine Institute,2
+The Possibilities of Pooled Procurement to Accelerate HPV Testing   – Sabin Vaccine Institute,2
+The Power of Data to Reach Vulnerable Communities in Ghana – Sabin Vaccine Institute,2
+The Twists and Turns of Cervical Cancer Prevention – Sabin Vaccine Institute,2
+Titilope Adedeji – Sabin Vaccine Institute,2
+Tudo sobre os diferentes métodos de administração de vacinas – Instituto Sabin de Vacinas,2
+VIII Ciro de Quadros Vaccinology Course for Latin America – Sabin Vaccine Institute,2
+Vaccine IQ – Sabin Vaccine Institute,2
+Vaccine IQ: Why Do Some Vaccines Require Multiple Doses? – Sabin Vaccine Institute,2
+Vaccine Science and Policy Experts Call for Transformation of Vaccine R&D Enterprise – Sabin Vaccine Institute,2
+Vaccines Work and Do Save Lives: Sharyn Pitman – Sabin Vaccine Institute,2
+Voices of Leadership Episode 1 - Indah Kusumawati – Sabin Vaccine Institute,2
+You searched for Chris Morello – Sabin Vaccine Institute,2
+You searched for Noreen – Sabin Vaccine Institute,2
+You searched for gold medal – Sabin Vaccine Institute,2
+You searched for intern – Sabin Vaccine Institute,2
+You searched for jobs – Sabin Vaccine Institute,2
+You searched for ku leuven – Sabin Vaccine Institute,2
+You searched for nomination – Sabin Vaccine Institute,2
+You searched for rising star – Sabin Vaccine Institute,2
+You searched for rotavirus – Sabin Vaccine Institute,2
+2021 International Conference on Typhoid & Other Invasive Salmonelloses – Sabin Vaccine Institute,1
+A BRAVE and BOLD Approach to Global Immunization,1
+A Vaccine is Only as Good as its Ability to Reach People – Sabin Vaccine Institute,1
+A Visionary Leader in Immunization Advocacy – Sabin Vaccine Institute,1
+Aamer Ikram – Sabin Vaccine Institute,1
+Advocating for Public Health Worldwide: the World Federation of Public Health Associations – Sabin Vaccine Institute,1
+Africa Archives – Sabin Vaccine Institute,1
+An Age-Old Tradition Solving Modern Challenges – Sabin Vaccine Institute,1
+Anita Shet – Sabin Vaccine Institute,1
+Applying Lessons I Learned from Polio Eradication to HPV – Sabin Vaccine Institute,1
+BRAVE & BOLD Heroes: Activating Communities in Pakistan – Sabin Vaccine Institute,1
+BRAVE New Approach To Reverse Declines In Global Immunization – Sabin Vaccine Institute,1
+Better Collaboration Needed To Reverse Immunization Decline – Sabin Vaccine Institute,1
+Bilingual Training Advances Vaccination Efforts Through Community Building – Sabin Vaccine Institute,1
+COVID-19 Response in West and Central Africa – Sabin Vaccine Institute,1
+Celebrating a Decade of Dedication to Cervical Cancer Elimination in India – Sabin Vaccine Institute,1
+Changing Minds to Change Numbers - It's Not Always About Resources – Sabin Vaccine Institute,1
+Chisom Obi-Jeff – Sabin Vaccine Institute,1
+Community Conversations on Vaccines Episode 15: Uganda and India – Sabin Vaccine Institute,1
+"Community Conversations on Vaccines, Episode 14 – Sabin Vaccine Institute",1
+"Community Conversations on Vaccines, Episode 1: Dr. Naveen Thacker – Sabin Vaccine Institute",1
+Community Resilience in a Conflict Zone: Engaging Women’s Associations to Support Immunization – Sabin Vaccine Institute,1
+Comprender los tipos de vacunas: cómo protegen contra las enfermedades – Instituto de Vacunas Sabin,1
+Cómo las vacunas te protegen a ti y a tus seres queridos – Instituto de Vacunas Sabin,1
+Delivering Trust in Vaccines on Immunization’s Front Lines – Sabin Vaccine Institute,1
+Demonstrating the Power of PEI/EPI Synergies – Sabin Vaccine Institute,1
+Designing an SMS reminder intervention to improve vaccination uptake in Northern Nigeria: a qualitative study – Sabin Vaccine Institute,1
+"Discover Immunization Advocates’ Resources To Help Address Vaccine, Immunization Misinformation – Sabin Vaccine Institute",1
+Dr. Albert B. Sabin – Instituto de Vacunas Sabin,1
+Dr. Anne Gershon Receives 2013 Albert B. Sabin Gold Medal Award – Sabin Vaccine Institute,1
+EPI LAMP Breakthrough Project – Sabin Vaccine Institute,1
+Empowering Change: From Economic Insights to Innovative Health Solutions,1
+Ensuring vaccine self-sufficiency for every global region: Influenzer's Guardian Article – Sabin Vaccine Institute,1
+Entendendo as vacinas pentavalentes e hexavalentes – Instituto Sabin de Vacinas,1
+Episode 3: Now is the Time to Protect the World from Influenza – Sabin Vaccine Institute,1
+Episode 4: Applying Lessons Learned from COVID-19 to Prevent Influenza Pandemics – Sabin Vaccine Institute,1
+Episode 9: Roadmap to a Flu-Free Future – Sabin Vaccine Institute,1
+Everyone Together: Leveraging Resources from the Bottom Up – Sabin Vaccine Institute,1
+Filimona Bisrat – Sabin Vaccine Institute,1
+Finding New Effective Ways to Engage Communities on Life-Saving Vaccinations in Kenya – Sabin Vaccine Institute,1
+Focusing on Social Media/Messaging Strategies – Sabin Vaccine Institute,1
+Genius | Sabin Vaccine Institute | Extending Vaccine Accessibility & Innovation,1
+Get to Know Five of Our 2021 Social and Behavioral Research Grant Partners – Sabin Vaccine Institute,1
+Global Burden of Bacterial Antimicrobial Resistance in 2019: A Systematic Analysis – Sabin Vaccine Institute,1
+Going the Extra Miles in Rural Nigeria To Find Children Missing Vaccines – Sabin Vaccine Institute,1
+"HPV Vaccine Success Spurs Enthusiasm About Cancer Elimination, but True Eradication Requires Progress on Three Pillars – Sabin Vaccine Institute",1
+HPV and Cervical Cancer Action Plan; Single-Dose Typhoid Vaccine; Rebuilding Faith in Immunization; VARN2023 Conference Report,1
+How Rising Star Awardee Dr. Sangwe Clovis Nchinjoh is Transforming Vaccine Outreach in Remote Cameroon – Sabin Vaccine Institute,1
+IX Ciro de Quadros Vaccinology Course for Latin America – Sabin Vaccine Institute,1
+Immunization Advocates Launches Podcast to Explore Vaccines in Low- and Middle-Income Countries – Sabin Vaccine Institute,1
+Immunization Coverage in 2023: Stalled Progress and Missed Targets   – Sabin Vaccine Institute,1
+Immunization schedules for all ages – Sabin Vaccine Institute,1
+"Innovative Adaptations in Pakistan, Bangladesh and Nepal – Sabin Vaccine Institute",1
+Integrating COVID-19 Vaccination into Routine Immunization & Service Delivery – Sabin Vaccine Institute,1
+"Introducing the Global HPV Consortium: Sabin Global Immunization President, Anuradha Gupta – Sabin Vaccine Institute",1
+"Key Insights from Sabin 2020-2021 Grant Partners Inform Action, Investment in Vaccine Acceptance – Sabin Vaccine Institute",1
+Latin America Regional Pertussis Workshop – Sabin Vaccine Institute,1
+Lessons Learned from Past Outbreaks – Bridging Interdisciplinary Insights to Strengthen COVID-19 Vaccination Acceptance and Demand – Sabin Vaccine Institute,1
+Lessons from the Frontline - COVID-19 Mass Vaccination – Sabin Vaccine Institute,1
+Lest We Forget: Pandemic Preparation Requires Health Workforce Reinforcements – Sabin Vaccine Institute,1
+"Leveraging Local Insights to Drive COVID-19 Vaccine Uptake in Njombe, Tanzania – Sabin Vaccine Institute",1
+"Looking Back, Looking Forward on HPV Prevention",1
+Luisa Enria – Sabin Vaccine Institute,1
+Mapping in Malawi: Identifying and Vaccinating Zero-Dose Children – Sabin Vaccine Institute,1
+Meeting the Challenge of Vaccination Hesitancy and Acceptance – Sabin Vaccine Institute,1
+Meeting the Challenge of Vaccination Hesitancy – Sabin Vaccine Institute,1
+Mpox – Sabin Vaccine Institute,1
+Multidisciplinary Experts Leverage Global Action for Local Impact to Protect Communities at Risk of Typhoid and Related Diseases – Sabin Vaccine Institute,1
+Multifaceted Challenges: Increasing Vaccine Coverage in Burundi – Sabin Vaccine Institute,1
+New Report Proposes Five “Big Ideas” to Transform Vaccine R&D – Sabin Vaccine Institute,1
+"On Father's Day, Dads Share Why They Give their Kids a Shot! – Sabin Vaccine Institute",1
+Partners Collaborate for Progress,1
+People – Page 2 of 12 – Sabin Vaccine Institute,1
+Presentations – Sabin Vaccine Institute,1
+Preventing Cervical Cancer with TogetHER for Health – Sabin Vaccine Institute,1
+Prevention Is Possible: HPV Vaccination And Cervical Cancer Elimination – Sabin Vaccine Institute,1
+PriorityVax precursor published in BMJ Global Health – Sabin Vaccine Institute,1
+PriorityVax: Considering New Vaccines for Introduction in Uganda – Sabin Vaccine Institute,1
+PriorityVax: Selection of Pneumococcal Conjugate Vaccine Products in Papua New Guinea – Sabin Vaccine Institute,1
+Progress in the quest for a Sudan ebolavirus vaccine,1
+R&D Key Opinion Leaders Conference – Sabin Vaccine Institute,1
+Reaching Every Child with the COVID-19 Recovery Fellowship in Ghana – Sabin Vaccine Institute,1
+Recognizing Ten Years of Covington & Burling Pro Bono Services – Sabin Vaccine Institute,1
+Resources – Page 2 of 33 – Sabin Vaccine Institute,1
+Retos de Inmunización Durante la Pandemia de COVID-19 y Cómo Estos Han Sido Enfrentados por Profesionales de la Salud en Países Latinoamericanosen Transición de Recibir Apoyo de Gavi – Sabin Vaccine Institute,1
+Roma Solomon – Sabin Vaccine Institute,1
+Rubina Qasim – Sabin Vaccine Institute,1
+S2 Episode 1: Placing Health Atop the World’s Investment Agenda – Sabin Vaccine Institute,1
+SMART Vaccines 2.0 Decision-support Platform: A Tool To Facilitate and Promote Priority Setting for Sustainable Vaccination in Resource-limited Settings – Sabin Vaccine Institute,1
+"Sabin Initiates Locally-Led Vaccination Acceptance Research Program In Uganda, India and Sierra Leone – Sabin Vaccine Institute",1
+Sabin Teams with WHO for Second Round of Highly Successful COVID-19 Recovery Fellowship – Sabin Vaccine Institute,1
+Sabin Vaccine Institute - Create a New Account,1
+Sabin Vaccine Institute - My Nominations,1
+Sabin’s New Director of Research Embraces Challenge of Global Vaccine Equity – Sabin Vaccine Institute,1
+Satendra Singh – Sabin Vaccine Institute,1
+Save the date! 2026 International Conference on Typhoid & Other Invasive Salmonelloses,1
+"Session 5: How to Build, Maintain and Strengthen Trust During COVID-19 – Sabin Vaccine Institute",1
+"Skoll Foundation Funds Sabin Vaccine Institute, Dalberg and JSI Research & Training Institute, Inc. to Establish COVID-19 Vaccine Equity Project – Sabin Vaccine Institute",1
+South Africa's Response to COVID-19 – Sabin Vaccine Institute,1
+South America Archives – Sabin Vaccine Institute,1
+Tanzeel Zohra – Sabin Vaccine Institute,1
+The Difference One Nurse Makes: Chiricahua’s Innovative Approach to Increasing Vaccinations – Sabin Vaccine Institute,1
+The Global HPV Consortium Brochure – Sabin Vaccine Institute,1
+"This Mother's Day, Give Your Kids a Shot at a Healthy Future – Sabin Vaccine Institute",1
+Transforming Labs to Test for COVID-19 in Bangladesh – Sabin Vaccine Institute,1
+Unmasking the Challenges and Solutions of Global Immunization with Dr. Ephrem and Anuradha Gupta – Sabin Vaccine Institute,1
+Untouched: How 284 Liberian Communities Remained Ebola-Free – Sabin Vaccine Institute,1
+Utilizing Data for the People: South Africa’s Electronic Vaccination Data System – Sabin Vaccine Institute,1
+Vaccinology in Latin America: A Resource for Immunization Managers – Sabin Vaccine Institute,1
+Voices for Vaccine: Storytelling Challenge Webinar #2 – Sabin Vaccine Institute,1
+Voices for Vaccines: Sharing the Experiences of Nurses & Midwives to Promote Vaccine Equity & Acceptance – Sabin Vaccine Institute,1
+WHO Digital Intelligence Analysis for Tracking Narratives and Information Voids in the COVID-19 Infodemic – Sabin Vaccine Institute,1
+WHO Operational guidance: Acceptance and uptake of COVID-19 vaccines – Sabin Vaccine Institute,1
+Welcome Boost for Routine Vaccination through Pragmatic Financial Management – Sabin Vaccine Institute,1
+Why Conflict Doesn’t Need to Mean Cut-Off – Sabin Vaccine Institute,1
+Women's Health: A Shot In the Arm Can Prevent Cervical Cancer – Sabin Vaccine Institute,1
+You searched for ASAN DEVELOPMENT – Sabin Vaccine Institute,1
+You searched for Albert Sabin Biography – Sabin Vaccine Institute,1
+You searched for Albert Sabin – Sabin Vaccine Institute,1
+You searched for Contact – Sabin Vaccine Institute,1
+You searched for FACT SHEET – Sabin Vaccine Institute,1
+You searched for Foyeth Kamdem Eugene – Sabin Vaccine Institute,1
+You searched for INFLUENZA – Sabin Vaccine Institute,1
+"You searched for In the Philippines, the national-level Fully-Immunized Child coverage decreased from 70% in 2015 to 61.5% – Sabin Vaccine Institute",1
+You searched for Internship – Sabin Vaccine Institute,1
+You searched for Katherine Gallgher – Sabin Vaccine Institute,1
+You searched for Lenguaje – Sabin Vaccine Institute,1
+You searched for Noreen Zafar – Sabin Vaccine Institute,1
+You searched for Pipeline – Sabin Vaccine Institute,1
+You searched for RSV – Sabin Vaccine Institute,1
+"You searched for Senior Manager, Events & Operations – Sabin Vaccine Institute",1
+You searched for actors Associated with Zero-Dose Status Among Children Aged 12–23 Months in somlia – Sabin Vaccine Institute,1
+You searched for albert sabin autobiography – Sabin Vaccine Institute,1
+You searched for albert sabin memoir – Sabin Vaccine Institute,1
+You searched for career – Sabin Vaccine Institute,1
+You searched for dashboard – Sabin Vaccine Institute,1
+You searched for email – Sabin Vaccine Institute,1
+You searched for end 7 – Sabin Vaccine Institute,1
+You searched for end7 – Sabin Vaccine Institute,1
+You searched for events – Sabin Vaccine Institute,1
+You searched for factsheet – Sabin Vaccine Institute,1
+You searched for first ladies – Sabin Vaccine Institute,1
+You searched for fundraising – Sabin Vaccine Institute,1
+You searched for hiring – Sabin Vaccine Institute,1
+You searched for https:/www.sabin.org/global-immunization/boost-community/covid-19-recovery-for-routine-immunization-programs-fellowship/?utm_source=chatgpt.com – Sabin Vaccine Institute,1
+You searched for insights dasbhoard – Sabin Vaccine Institute,1
+You searched for interns – Sabin Vaccine Institute,1
+You searched for internship – Sabin Vaccine Institute,1
+You searched for intership application – Sabin Vaccine Institute,1
+You searched for jelle – Sabin Vaccine Institute,1
+You searched for job – Sabin Vaccine Institute,1
+You searched for lyme – Sabin Vaccine Institute,1
+You searched for malaria – Page 2 of 4 – Sabin Vaccine Institute,1
+You searched for malaria – Sabin Vaccine Institute,1
+You searched for maternal immunisation – Sabin Vaccine Institute,1
+You searched for mbla – Sabin Vaccine Institute,1
+You searched for mvla – Sabin Vaccine Institute,1
+You searched for neglected tropical diseases – Sabin Vaccine Institute,1
+You searched for our mission – Sabin Vaccine Institute,1
+You searched for phone number – Sabin Vaccine Institute,1
+You searched for project coordinator – Sabin Vaccine Institute,1
+You searched for rising star award – Sabin Vaccine Institute,1
+You searched for rwanda – Sabin Vaccine Institute,1
+You searched for ryp – Sabin Vaccine Institute,1
+You searched for side effects – Page 2 of 4 – Sabin Vaccine Institute,1
+You searched for side effects – Sabin Vaccine Institute,1
+You searched for vaccine – Sabin Vaccine Institute,1
+You searched for vaccines – Sabin Vaccine Institute,1
+You searched for worms – Sabin Vaccine Institute,1
+"వ్యాక్సిన్‌లు 101: వాటి చరిత్ర, అవి పనిచేసే విధానం మరియు వాటి ప్రభావం – సాబిన్ వ్యాక్సిన్ ఇన్‌స్టిట్యూట్",1
+ดร. อัลเบิร์ต บี. ซาบิน – สถาบันวัคซีนซาบิน,1
+
+# How are active users trending?
+# Start date: 20260801
+# End date: 20260831
+Nth day,30 days,7 days,1 day
+0000,11524,2918,437
+0001,11888,3201,604
+0002,12077,3170,476
+0003,12277,3246,554
+0004,12706,3737,922
+0005,12811,3903,547
+0006,12708,3892,431
+0007,12634,3908,454
+0008,12672,3790,484
+0009,12867,3846,526
+0010,13448,4176,883
+0011,13516,3806,554
+0012,13832,3935,679
+0013,14044,4126,638
+0014,14113,4097,427
+0015,14244,4038,424
+0016,14497,4119,617
+0017,15059,4158,917
+0018,15532,4426,826
+0019,15688,4363,607
+0020,15658,4179,454
+0021,15727,4121,362
+0022,15718,4094,394
+0023,15920,4032,551
+0024,16114,3664,551
+0025,16251,3441,601
+0026,16306,3347,513
+0027,16367,3383,505
+0028,16344,3399,374
+0029,16370,3439,436
+0030,16372,3431,542
+
+#  
+# Start date: 20260801
+# End date: 20260831
+Nth day,DAU / MAU,DAU / WAU,WAU / MAU
+0000,0.03792086081221798,0.14976010966415354,0.2532106907323846
+0001,0.05080753701211305,0.1886910340518588,0.26926312247644685
+0002,0.03941376169578538,0.1501577287066246,0.2624824045706715
+0003,0.045125030544921396,0.17067159581022798,0.2643968396187994
+0004,0.07256414292460255,0.2467219694942467,0.2941130174720604
+0005,0.042697681679806414,0.140148603638227,0.30466005776286004
+0006,0.03391564368901479,0.11073997944501542,0.306263770853006
+0007,0.035934779167326264,0.11617195496417605,0.3093240462244736
+0008,0.03819444444444445,0.12770448548812666,0.29908459595959597
+0009,0.040879769954146265,0.13676547061882474,0.29890417346700865
+0010,0.06566032123735871,0.2114463601532567,0.3105294467578822
+0011,0.04098845812370524,0.14555964266946925,0.2815921870375851
+0012,0.04908906882591093,0.17255400254129605,0.28448525159051474
+0013,0.045428652805468525,0.1546291808046534,0.29379094275135287
+0014,0.030255792531708355,0.10422260190383208,0.2902997236590378
+0015,0.029766919404661613,0.10500247647350174,0.2834877843302443
+0016,0.04256052976477892,0.1497936392328235,0.28412775056908324
+0017,0.06089381765057441,0.22053872053872053,0.27611395178962744
+0018,0.053180530517640996,0.18662449164030728,0.28496008241050735
+0019,0.038691993880673126,0.13912445564978226,0.27811065782763894
+0020,0.0289947630604164,0.10863843024647045,0.2668923234129518
+0021,0.023017740192026452,0.0878427566124727,0.26203344566668785
+0022,0.025066802392161854,0.09623839765510503,0.2604657081053569
+0023,0.034610552763819094,0.13665674603174602,0.25326633165829143
+0024,0.03419386868561499,0.150382096069869,0.22737991808365396
+0025,0.036982339548335484,0.17465852949723917,0.2117408159497877
+0026,0.0314608119710536,0.15327158649536898,0.20526186679749786
+0027,0.030854768741980815,0.14927579071829736,0.2066964012952893
+0028,0.022883015173764072,0.11003236245954692,0.2079662261380323
+0029,0.026634086744043984,0.12678104100029078,0.21007941356139279
+0030,0.03310530173466895,0.1579714368988633,0.20956511116540436

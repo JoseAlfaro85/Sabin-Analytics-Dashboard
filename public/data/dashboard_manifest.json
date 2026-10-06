@@ -1,6 +1,58 @@
 {
-  "latest_month": "2026-05",
+  "latest_month": "2026-09",
   "months": [
+    {
+      "key": "2026-09",
+      "label": "September 2026",
+      "has_dashboard": true,
+      "has_listening": false,
+      "has_validation_summary": true,
+      "validation_source": "validation_summary",
+      "validation_status": "ready",
+      "ready_for_teammate_share": true,
+      "qa_warning_count": 0,
+      "qa_failed_count": 0,
+      "export_completeness_status": "complete"
+    },
+    {
+      "key": "2026-08",
+      "label": "August 2026",
+      "has_dashboard": true,
+      "has_listening": true,
+      "has_validation_summary": true,
+      "validation_source": "validation_summary",
+      "validation_status": "ready",
+      "ready_for_teammate_share": true,
+      "qa_warning_count": 0,
+      "qa_failed_count": 0,
+      "export_completeness_status": "complete"
+    },
+    {
+      "key": "2026-07",
+      "label": "July 2026",
+      "has_dashboard": true,
+      "has_listening": false,
+      "has_validation_summary": true,
+      "validation_source": "validation_summary",
+      "validation_status": "review_required",
+      "ready_for_teammate_share": false,
+      "qa_warning_count": 2,
+      "qa_failed_count": 0,
+      "export_completeness_status": "partial"
+    },
+    {
+      "key": "2026-06",
+      "label": "June 2026",
+      "has_dashboard": true,
+      "has_listening": true,
+      "has_validation_summary": true,
+      "validation_source": "validation_summary",
+      "validation_status": "review_required",
+      "ready_for_teammate_share": false,
+      "qa_warning_count": 2,
+      "qa_failed_count": 0,
+      "export_completeness_status": "partial"
+    },
     {
       "key": "2026-05",
       "label": "May 2026",
@@ -36,22 +88,22 @@
       "validation_source": "validation_summary",
       "validation_status": "review_required",
       "ready_for_teammate_share": false,
-      "qa_warning_count": 2,
+      "qa_warning_count": 1,
       "qa_failed_count": 0,
-      "export_completeness_status": "partial"
+      "export_completeness_status": "complete"
     },
     {
       "key": "2026-02",
       "label": "February 2026",
       "has_dashboard": true,
       "has_listening": true,
-      "has_validation_summary": false,
-      "validation_source": "reporting_framework_fallback",
+      "has_validation_summary": true,
+      "validation_source": "validation_summary",
       "validation_status": "review_required",
       "ready_for_teammate_share": false,
-      "qa_warning_count": 2,
+      "qa_warning_count": 1,
       "qa_failed_count": 0,
-      "export_completeness_status": "supplemental_only"
+      "export_completeness_status": "complete"
     },
     {
       "key": "2026-01",
@@ -67,5 +119,5 @@
       "export_completeness_status": "partial"
     }
   ],
-  "generated_at": "2026-06-17T12:39:56"
+  "generated_at": "2026-10-06T11:51:26"
 }

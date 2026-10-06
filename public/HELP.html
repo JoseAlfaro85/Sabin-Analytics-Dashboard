@@ -3,24 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#196BAC">
+  <meta name="theme-color" content="#25303A">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="app-icon.svg" type="image/svg+xml">
   <title>Sabin Dashboard | Help</title>
   <style>
 :root {
-  --bg: #f3f4f4;
-  --text: #333333;
-  --muted: #6d8197;
-  --shadow: 0 18px 44px rgba(5, 67, 114, 0.14);
-  --blue: #32a0da;
-  --navy: #196bac;
-  --navy-deep: #054372;
-  --orange: #ec881d;
-  --green: #60a443;
-  --pink: #985f99;
+  --bg: #f6f4ef;
+  --surface: #ffffff;
+  --surface-soft: #fbfaf7;
+  --text: #202733;
+  --muted: #66717e;
+  --border: rgba(35, 45, 55, 0.12);
+  --shadow: 0 16px 34px rgba(35, 45, 55, 0.09);
+  --shadow-soft: 0 8px 22px rgba(35, 45, 55, 0.06);
+  --blue: #196bac;
+  --navy: #25303a;
+  --navy-deep: #111827;
+  --orange: #d77a1f;
+  --green: #5f8f58;
+  --pink: #b86165;
   --yellow: #ffba00;
-  --slate: #6f7c8f;
+  --slate: #717985;
+  --teal: #2f8a83;
+  --surface-accent: var(--orange);
 }
 
 *,
@@ -34,7 +40,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+  background: linear-gradient(180deg, #fffdf8 0%, var(--bg) 100%);
   color: var(--text);
   font-family: "Museo Sans", Aptos, "Segoe UI", Tahoma, sans-serif;
 }
@@ -50,22 +56,22 @@ a {
 
 .app-shell {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 224px 1fr;
   min-height: 100vh;
 }
 
 .sidebar {
-  background: rgba(255, 255, 255, 0.9);
-  border-right: 3px solid var(--orange);
-  padding: 32px 16px 24px;
+  background: rgba(255, 255, 255, 0.94);
+  border-right: 1px solid var(--border);
+  padding: 30px 16px 24px;
   backdrop-filter: blur(14px);
-  box-shadow: 12px 0 30px rgba(5, 67, 114, 0.07);
+  box-shadow: 10px 0 30px rgba(35, 45, 55, 0.05);
 }
 
 .brand-lockup {
   display: flex;
   align-items: center;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
   padding: 0 6px;
 }
 
@@ -83,7 +89,7 @@ a {
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: 0.02em;
-  color: var(--navy);
+  color: var(--text);
 }
 
 .brand-text .submark {
@@ -103,21 +109,21 @@ a {
   align-items: center;
   gap: 10px;
   padding: 12px 14px;
-  border-radius: 12px;
-  color: #51677f;
+  border-radius: 8px;
+  color: #596574;
   font-weight: 600;
   border: 1px solid transparent;
 }
 
 .nav-link:hover {
-  background: rgba(25, 107, 172, 0.06);
-  border-color: rgba(25, 107, 172, 0.1);
+  background: rgba(37, 48, 58, 0.05);
+  border-color: rgba(37, 48, 58, 0.08);
 }
 
 .nav-link.active {
   color: #ffffff;
-  background: linear-gradient(135deg, var(--navy), var(--navy-deep));
-  box-shadow: 0 12px 24px rgba(5, 67, 114, 0.24);
+  background: var(--navy);
+  box-shadow: 0 12px 22px rgba(17, 24, 39, 0.18);
 }
 
 .nav-icon {
@@ -129,7 +135,7 @@ a {
 }
 
 .main-panel {
-  padding: 26px 30px 32px;
+  padding: 28px 32px 34px;
 }
 
 .topbar {
@@ -137,7 +143,7 @@ a {
   justify-content: space-between;
   gap: 18px;
   align-items: flex-start;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .title-wrap {
@@ -151,7 +157,7 @@ a {
   font-size: 1.95rem;
   line-height: 1.12;
   letter-spacing: 0;
-  color: var(--navy);
+  color: var(--text);
 }
 
 .page-title .accent {
@@ -174,12 +180,12 @@ a {
 
 .status-pill {
   border-radius: 999px;
-  border: 1px solid rgba(25, 107, 172, 0.08);
+  border: 1px solid var(--border);
   padding: 7px 12px;
   font-size: 0.78rem;
   font-weight: 700;
-  color: var(--navy);
-  background: rgba(255, 255, 255, 0.78);
+  color: #3f4a56;
+  background: rgba(255, 255, 255, 0.82);
 }
 
 .status-pill.warn {
@@ -209,13 +215,13 @@ a {
   display: inline-flex;
   padding: 3px;
   background: var(--navy);
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
 .mode-btn {
   border: 0;
-  border-radius: 9px;
+  border-radius: 6px;
   padding: 9px 14px;
   font-size: 0.84rem;
   font-weight: 800;
@@ -232,8 +238,8 @@ a {
 
 .month-select {
   min-width: 188px;
-  border-radius: 12px;
-  border: 2px solid rgba(25, 107, 172, 0.9);
+  border-radius: 8px;
+  border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.96);
   padding: 10px 14px;
   font-size: 0.92rem;
@@ -247,7 +253,7 @@ a {
 
 .export-btn {
   border: 0;
-  border-radius: 12px;
+  border-radius: 8px;
   background: var(--orange);
   color: #ffffff;
   font-size: 0.9rem;
@@ -259,37 +265,88 @@ a {
 
 .dashboard-stack {
   display: grid;
-  gap: 18px;
+  gap: 20px;
 }
 
 .metric-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: start;
   gap: 18px;
+}
+
+.metric-grid:has(> .metric-card:nth-child(4):last-child) {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .panel-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  gap: 20px;
 }
 
 .panel-grid .panel.span-2 {
   grid-column: 1 / -1;
 }
 
+.panel-grid.assets-grid {
+  grid-template-columns: minmax(0, 1.16fr) minmax(320px, 0.84fr);
+}
+
+.trend-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.trend-chart-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  padding: 16px;
+}
+
+.trend-chart-title {
+  margin: 0 0 2px;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.trend-chart-summary {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.trend-chart-svg {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  overflow: visible;
+}
+
+.trend-chart-line {
+  fill: none;
+  stroke: var(--surface-accent);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.trend-chart-area { fill: color-mix(in srgb, var(--surface-accent) 14%, transparent); }
+.trend-chart-point { fill: var(--surface); stroke: var(--surface-accent); stroke-width: 3; }
+.trend-chart-axis { stroke: var(--border); stroke-width: 1; }
+.trend-chart-label { fill: var(--muted); font-size: 11px; font-weight: 700; }
+
 .metric-card,
 .panel {
   position: relative;
   overflow: hidden;
-  border-radius: 18px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0)),
-    linear-gradient(135deg, var(--navy), var(--navy-deep));
-  color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
   padding: 22px 26px;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
 }
 
 .metric-card {
@@ -303,20 +360,331 @@ a {
   position: absolute;
   inset: 0 0 auto;
   height: 4px;
-  background: var(--orange);
+  background: var(--surface-accent);
   opacity: 0.95;
 }
 
-.accent-green::before {
-  background: var(--green);
+.asset-decision-matrix {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
 }
 
-.accent-pink::before {
-  background: var(--pink);
+.asset-quadrant {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--surface-accent);
+  background: var(--surface-soft);
+  padding: 16px;
+  min-height: 168px;
 }
 
-.accent-slate::before {
-  background: #b7c2d0;
+.asset-quadrant h3,
+.asset-insight h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.asset-quadrant .hint,
+.asset-insight p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.asset-mini-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.asset-mini-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+  font-size: 0.9rem;
+}
+
+.asset-mini-row .metric {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.asset-insight-stack {
+  display: grid;
+  gap: 12px;
+}
+
+.asset-insight {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--blue);
+  background: var(--surface-soft);
+  padding: 16px;
+}
+
+.asset-bar-list {
+  display: grid;
+  gap: 12px;
+}
+
+.asset-bar-row {
+  display: grid;
+  grid-template-columns: minmax(126px, 0.55fr) minmax(0, 1fr) 70px;
+  gap: 12px;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.asset-bar-track {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(37, 48, 58, 0.12);
+  overflow: hidden;
+}
+
+.asset-bar-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--surface-accent);
+}
+
+.asset-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.asset-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.asset-card {
+  display: grid;
+  align-content: start;
+  gap: 11px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-soft);
+  padding: 14px;
+  min-height: 240px;
+}
+
+.asset-preview {
+  display: grid;
+  place-items: center;
+  min-height: 92px;
+  border-radius: 8px;
+  color: #ffffff;
+  background:
+    linear-gradient(135deg, rgba(37, 48, 58, 0.92), rgba(25, 107, 172, 0.78)),
+    var(--navy);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px;
+}
+
+.asset-preview img {
+  width: 100%;
+  height: 100%;
+  min-height: 92px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.asset-preview-link {
+  padding: 0;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.asset-preview .asset-preview-label {
+  display: grid;
+  gap: 5px;
+}
+
+.asset-preview .asset-preview-label span {
+  display: block;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.asset-card:nth-child(2n) .asset-preview {
+  background:
+    linear-gradient(135deg, rgba(95, 143, 88, 0.92), rgba(47, 138, 131, 0.76)),
+    var(--green);
+}
+
+.asset-card:nth-child(3n) .asset-preview {
+  background:
+    linear-gradient(135deg, rgba(215, 122, 31, 0.92), rgba(184, 97, 101, 0.72)),
+    var(--orange);
+}
+
+.asset-card-title {
+  font-weight: 800;
+  line-height: 1.28;
+}
+
+.asset-card-copy {
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.asset-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.asset-card-meta span {
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  color: #45515f;
+  padding: 5px 8px;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.asset-card-kpis {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.asset-card-kpi {
+  border-top: 1px solid var(--border);
+  padding-top: 7px;
+}
+
+.asset-card-kpi .label {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.asset-card-kpi .value {
+  margin-top: 3px;
+  font-size: 0.92rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.asset-table th,
+.asset-table td {
+  padding: 11px 9px;
+  border-top: 1px solid var(--border);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.asset-table th {
+  color: var(--muted);
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.asset-table .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.asset-link {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.asset-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  margin-top: 12px;
+}
+
+.brandfolder-resource-panel {
+  margin-bottom: 18px;
+}
+
+.brandfolder-resource-list {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brandfolder-resource-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+}
+
+.brandfolder-resource-list li > div {
+  display: grid;
+  grid-template-columns: minmax(180px, auto) minmax(0, 1fr);
+  align-items: baseline;
+  gap: 10px 18px;
+  width: 100%;
+}
+
+.brandfolder-resource-list span {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 760px) {
+  .brandfolder-resource-list li > div {
+    grid-template-columns: 1fr;
+  }
+}
+
+.asset-verdict {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 5px 9px;
+  background: rgba(95, 143, 88, 0.14);
+  color: #355f30;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.accent-orange {
+  --surface-accent: var(--orange);
+}
+
+.accent-green {
+  --surface-accent: var(--green);
+}
+
+.accent-pink {
+  --surface-accent: var(--pink);
+}
+
+.accent-slate {
+  --surface-accent: var(--slate);
 }
 
 .metric-label {
@@ -324,7 +692,7 @@ a {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--surface-accent);
 }
 
 .metric-value {
@@ -332,33 +700,34 @@ a {
   font-size: 3rem;
   line-height: 1;
   font-weight: 800;
+  color: var(--text);
 }
 
 .metric-sub {
   margin-top: 10px;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.76);
+  color: var(--muted);
   min-height: 1.35em;
 }
 
 .metric-description {
   margin-top: 10px;
   max-width: 92%;
-  color: rgba(255, 255, 255, 0.88);
+  color: #45515f;
   font-size: 0.86rem;
   font-weight: 700;
   line-height: 1.35;
 }
 
 .metric-card[role="button"] {
-  border: 0;
+  border: 1px solid var(--border);
   font: inherit;
   text-align: left;
   cursor: pointer;
 }
 
 .metric-card.is-expandable {
-  transition: transform 160ms ease, box-shadow 160ms ease, outline-color 160ms ease;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
 
 .metric-card.is-expandable::after {
@@ -371,8 +740,9 @@ a {
   width: 28px;
   height: 28px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.14);
-  color: #ffffff;
+  background: rgba(37, 48, 58, 0.06);
+  border: 1px solid var(--border);
+  color: var(--surface-accent);
   font-size: 1.25rem;
   font-weight: 800;
   line-height: 1;
@@ -381,9 +751,9 @@ a {
 .metric-card.is-expandable:hover,
 .metric-card.is-expandable:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 22px 46px rgba(9, 45, 78, 0.28);
-  outline: 3px solid rgba(255, 255, 255, 0.7);
-  outline-offset: 3px;
+  border-color: color-mix(in srgb, var(--surface-accent) 40%, var(--border));
+  box-shadow: var(--shadow);
+  outline: none;
 }
 
 .metric-card.is-expanded::after {
@@ -393,7 +763,7 @@ a {
 .metric-card .kpi-breakdown-panel {
   margin-top: 20px;
   padding-top: 18px;
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-top: 1px solid var(--border);
 }
 
 .kpi-breakdown-panel {
@@ -401,7 +771,7 @@ a {
   border-radius: 0;
   background: transparent;
   box-shadow: none;
-  color: #ffffff;
+  color: var(--text);
   padding: 0;
 }
 
@@ -413,20 +783,21 @@ a {
 .kpi-breakdown-head {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 18px;
+  margin-bottom: 10px;
 }
 
 .kpi-breakdown-title {
   margin: 0;
-  color: #ffffff;
+  color: var(--text);
   font-size: 1rem;
   font-weight: 800;
 }
 
 .kpi-breakdown-subtitle {
   margin: 5px 0 0;
-  color: rgba(255, 255, 255, 0.74);
+  color: var(--muted);
   font-size: 0.86rem;
   font-weight: 650;
 }
@@ -434,12 +805,13 @@ a {
 .kpi-breakdown-close {
   display: grid;
   place-items: center;
+  flex: 0 0 auto;
   width: 28px;
   height: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
-  color: #ffffff;
+  background: var(--surface-soft);
+  color: var(--text);
   cursor: pointer;
   font-size: 0.95rem;
   font-weight: 800;
@@ -458,13 +830,13 @@ a {
 .kpi-breakdown-table th,
 .kpi-breakdown-table td {
   padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
-  color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
   text-align: left;
 }
 
 .kpi-breakdown-table th {
-  color: rgba(255, 255, 255, 0.64);
+  color: var(--muted);
   font-size: 0.66rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -477,20 +849,28 @@ a {
 }
 
 .kpi-share {
-  color: #ffffff;
+  color: var(--text);
   font-weight: 800;
   text-align: right;
+}
+
+.kpi-row-note {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
 }
 
 .panel-title {
   margin: 0;
   font-size: 1.45rem;
   font-weight: 800;
+  color: var(--text);
 }
 
 .panel-subtitle {
   margin-top: 6px;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
   font-size: 0.95rem;
   font-weight: 600;
 }
@@ -506,10 +886,17 @@ a {
   align-items: baseline;
   justify-content: space-between;
   gap: 16px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+
+.summary-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 .summary-label {
-  color: rgba(255, 255, 255, 0.76);
+  color: var(--muted);
   font-size: 1rem;
   font-weight: 700;
 }
@@ -517,7 +904,7 @@ a {
 .summary-value {
   font-size: 1.65rem;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--text);
   text-align: right;
 }
 
@@ -536,7 +923,7 @@ a {
 .network-table td {
   padding: 12px 14px;
   text-align: left;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid var(--border);
 }
 
 .network-table th {
@@ -544,12 +931,16 @@ a {
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
 }
 
 .network-table td {
   font-size: 0.94rem;
-  color: #ffffff;
+  color: var(--text);
+}
+
+.network-table tbody tr:hover {
+  background: var(--surface-soft);
 }
 
 .network-table .num {
@@ -595,9 +986,33 @@ a {
 }
 
 .highlight-card {
-  background: rgba(255, 255, 255, 0.09);
-  border: 1px solid rgba(255, 255, 255, 0.11);
-  border-radius: 14px;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.highlight-card.has-asset {
+  padding: 0;
+}
+
+.highlight-media {
+  display: block;
+  height: 190px;
+  background: #e7ebf0;
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.highlight-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.highlight-card.has-asset .highlight-copy {
   padding: 16px;
 }
 
@@ -606,7 +1021,7 @@ a {
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.68);
+  color: var(--surface-accent);
 }
 
 .highlight-title {
@@ -614,12 +1029,13 @@ a {
   font-size: 0.96rem;
   font-weight: 800;
   line-height: 1.4;
+  color: var(--text);
 }
 
 .highlight-meta {
   margin-top: 10px;
   font-size: 0.84rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--muted);
 }
 
 .mini-kpi-grid {
@@ -632,12 +1048,12 @@ a {
 .mini-kpi {
   border-radius: 8px;
   padding: 8px 9px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #ffffff;
+  border: 1px solid var(--border);
 }
 
 .mini-kpi-label {
-  color: rgba(255, 255, 255, 0.64);
+  color: var(--muted);
   font-size: 0.68rem;
   font-weight: 800;
   line-height: 1.1;
@@ -647,7 +1063,7 @@ a {
 
 .mini-kpi-value {
   margin-top: 4px;
-  color: #ffffff;
+  color: var(--text);
   font-size: 0.95rem;
   font-weight: 900;
   line-height: 1.18;
@@ -658,7 +1074,7 @@ a {
   margin-top: 10px;
   font-size: 0.84rem;
   font-weight: 700;
-  color: #ffd8aa;
+  color: var(--blue);
 }
 
 .page-tabs {
@@ -671,10 +1087,10 @@ a {
 .page-tab {
   display: inline-flex;
   align-items: center;
-  border-radius: 12px;
-  border: 1px solid rgba(25, 107, 172, 0.12);
+  border-radius: 8px;
+  border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.88);
-  color: var(--navy);
+  color: var(--text);
   padding: 10px 14px;
   font-size: 0.84rem;
   font-weight: 800;
@@ -685,7 +1101,7 @@ a {
   background: var(--navy);
   border-color: var(--navy);
   color: #ffffff;
-  box-shadow: 0 12px 24px rgba(25, 107, 172, 0.18);
+  box-shadow: 0 12px 24px rgba(17, 24, 39, 0.14);
 }
 
 .deck-report-stack {
@@ -696,9 +1112,9 @@ a {
 .deck-slide {
   background: #ffffff;
   color: #151f2a;
-  border-radius: 10px;
-  border: 1px solid rgba(25, 107, 172, 0.1);
-  box-shadow: 0 14px 34px rgba(18, 59, 99, 0.11);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
   padding: 22px 28px 26px;
 }
 
@@ -708,9 +1124,11 @@ a {
   justify-content: space-between;
   gap: 16px;
   min-height: 34px;
-  border: 2px solid var(--navy);
-  border-radius: 999px;
-  padding: 5px 14px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--orange);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  padding: 8px 14px;
   color: #111827;
   font-weight: 800;
 }
@@ -734,13 +1152,13 @@ a {
 .deck-readout {
   margin-top: 14px;
   border-radius: 8px;
-  border: 2px solid rgba(11, 111, 179, 0.22);
-  background: #f8fbfd;
+  border: 1px solid var(--border);
+  background: #fffdf8;
   padding: 18px 20px 20px;
 }
 
 .deck-readout-kicker {
-  color: var(--navy);
+  color: var(--orange);
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -763,7 +1181,7 @@ a {
 }
 
 .deck-readout-cell {
-  border-top: 4px solid #8fcdeb;
+  border-top: 4px solid var(--teal);
   padding-top: 10px;
 }
 
@@ -772,11 +1190,11 @@ a {
 }
 
 .deck-readout-cell:nth-child(3) {
-  border-color: #c9add0;
+  border-color: var(--pink);
 }
 
 .deck-readout-label {
-  color: var(--navy);
+  color: var(--text);
   font-size: 0.86rem;
   font-weight: 900;
 }
@@ -809,7 +1227,9 @@ a {
 .deck-kpi-band {
   margin-top: 14px;
   border-radius: 8px;
-  background: #ffbc05;
+  border: 1px solid rgba(226, 181, 63, 0.36);
+  border-left: 4px solid var(--yellow);
+  background: #fff7dc;
   padding: 14px 14px 16px;
   text-align: center;
 }
@@ -829,7 +1249,8 @@ a {
 
 .deck-kpi-cell {
   border-radius: 8px;
-  background: rgba(255, 235, 180, 0.92);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(80, 71, 44, 0.1);
   padding: 10px 12px;
   min-height: 68px;
 }
@@ -867,10 +1288,10 @@ a {
 }
 
 .deck-panel {
-  background: #f2f2f2;
+  background: #ffffff;
   color: #151f2a;
   border-radius: 8px;
-  border: 1px solid rgba(15, 70, 119, 0.08);
+  border: 1px solid var(--border);
   padding: 18px 20px;
   min-height: 100%;
 }
@@ -895,29 +1316,30 @@ a {
   text-align: center;
   font-size: 0.86rem;
   font-weight: 800;
-  color: var(--navy);
+  color: var(--text);
 }
 
 .deck-panel.blue-tab::before {
   content: attr(data-tab-title);
-  background: #8fcdeb;
+  background: rgba(47, 138, 131, 0.16);
+  color: #236b66;
 }
 
 .deck-panel.orange-tab::before {
   content: attr(data-tab-title);
   color: #111827;
-  background: var(--orange);
+  background: rgba(215, 122, 31, 0.18);
 }
 
 .deck-panel.purple-tab::before {
   content: attr(data-tab-title);
-  color: #111827;
-  background: #c9add0;
+  color: #6f383c;
+  background: rgba(184, 97, 101, 0.16);
 }
 
 .deck-panel-title {
   margin: 0;
-  color: var(--navy);
+  color: var(--text);
   font-size: 1.04rem;
   line-height: 1.16;
   font-weight: 800;
@@ -925,7 +1347,7 @@ a {
 
 .deck-panel-subtitle {
   margin-top: 4px;
-  color: var(--orange);
+  color: var(--muted);
   font-size: 0.88rem;
   font-weight: 800;
 }
@@ -933,6 +1355,33 @@ a {
 .deck-panel .body-copy,
 .deck-panel .inline-note {
   color: #243447;
+}
+
+.campaign-outcomes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.campaign-outcomes-followup {
+  margin-top: 22px;
+}
+
+.campaign-outcomes-grid .summary-list {
+  margin-top: 10px;
+}
+
+.campaign-outcomes-grid .inline-note {
+  margin: 14px 0 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .campaign-outcomes-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .deck-panel .insight-list li {
@@ -945,7 +1394,7 @@ a {
 }
 
 .deck-panel .summary-row {
-  border-bottom: 1px solid rgba(25, 107, 172, 0.12);
+  border-bottom: 1px solid var(--border);
   padding-bottom: 8px;
 }
 
@@ -961,7 +1410,7 @@ a {
 
 .deck-panel .highlight-card {
   background: #ffffff;
-  border: 1px solid rgba(25, 107, 172, 0.12);
+  border: 1px solid var(--border);
   color: #151f2a;
 }
 
@@ -976,7 +1425,7 @@ a {
   overflow: hidden;
   border-radius: 8px;
   background: #e5e7eb;
-  border: 1px solid rgba(25, 107, 172, 0.12);
+  border: 1px solid var(--border);
   min-height: 170px;
 }
 
@@ -997,8 +1446,7 @@ a {
   color: var(--navy);
   font-size: 0.84rem;
   font-weight: 800;
-  background:
-    linear-gradient(135deg, rgba(143, 205, 235, 0.34), rgba(255, 188, 5, 0.2));
+  background: linear-gradient(135deg, rgba(47, 138, 131, 0.12), rgba(226, 181, 63, 0.18));
 }
 
 .deck-panel .highlight-title {
@@ -1011,7 +1459,7 @@ a {
 
 .deck-panel .mini-kpi {
   background: #f7fbfe;
-  border-color: rgba(25, 107, 172, 0.12);
+  border-color: var(--border);
 }
 
 .deck-panel .mini-kpi-label {
@@ -1023,25 +1471,25 @@ a {
 }
 
 .deck-panel .section-kicker {
-  color: var(--navy);
+  color: var(--orange);
 }
 
 .deck-panel .empty-state {
   color: #34495e;
   background: #ffffff;
-  border: 1px solid rgba(25, 107, 172, 0.12);
+  border: 1px solid var(--border);
 }
 
 .deck-panel .meta-chip {
-  color: var(--navy);
-  background: rgba(143, 205, 235, 0.28);
-  border-color: rgba(11, 111, 179, 0.16);
+  color: #236b66;
+  background: rgba(47, 138, 131, 0.12);
+  border-color: rgba(47, 138, 131, 0.2);
 }
 
 .deck-panel .link-btn.secondary {
-  color: var(--navy);
-  background: rgba(143, 205, 235, 0.25);
-  border-color: rgba(11, 111, 179, 0.2);
+  color: var(--text);
+  background: rgba(37, 48, 58, 0.05);
+  border-color: var(--border);
 }
 
 .deck-takeaways {
@@ -1052,7 +1500,7 @@ a {
 }
 
 .deck-takeaway-title {
-  color: var(--navy);
+  color: var(--text);
   font-size: 0.96rem;
   font-weight: 800;
   margin: 0 0 8px;
@@ -1080,7 +1528,7 @@ a {
 
 .body-copy {
   margin: 0;
-  color: rgba(255, 255, 255, 0.84);
+  color: #45515f;
   font-size: 0.96rem;
   line-height: 1.6;
 }
@@ -1100,7 +1548,7 @@ a {
 .insight-list li {
   position: relative;
   padding-left: 18px;
-  color: rgba(255, 255, 255, 0.84);
+  color: #45515f;
   font-size: 0.94rem;
   line-height: 1.55;
 }
@@ -1122,7 +1570,7 @@ a {
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.66);
+  color: var(--surface-accent);
 }
 
 .link-btn {
@@ -1130,7 +1578,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-top: 18px;
-  border-radius: 12px;
+  border-radius: 8px;
   background: var(--orange);
   color: #ffffff;
   padding: 10px 14px;
@@ -1141,8 +1589,9 @@ a {
 }
 
 .link-btn.secondary {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: var(--surface-soft);
+  color: var(--text);
+  border: 1px solid var(--border);
   box-shadow: none;
 }
 
@@ -1158,9 +1607,9 @@ a {
   padding: 6px 10px;
   font-size: 0.76rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.84);
-  background: rgba(255, 255, 255, 0.11);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #45515f;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
 }
 
 .topic-cloud {
@@ -1173,9 +1622,9 @@ a {
 .topic-chip {
   border-radius: 999px;
   padding: 7px 12px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #ffffff;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  color: #45515f;
   font-size: 0.82rem;
   font-weight: 700;
 }
@@ -1183,10 +1632,10 @@ a {
 .mono-block {
   margin-top: 18px;
   padding: 14px 16px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: rgba(255, 255, 255, 0.84);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  color: #45515f;
   font-family: Consolas, "Courier New", monospace;
   font-size: 0.84rem;
   line-height: 1.5;
@@ -1197,15 +1646,16 @@ a {
 .inline-note {
   margin-top: 14px;
   font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
 }
 
 .empty-state {
   margin-top: 24px;
   padding: 18px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.76);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  color: var(--muted);
   font-weight: 600;
 }
 
@@ -1215,6 +1665,10 @@ a {
   }
 
   .highlights {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .asset-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1226,7 +1680,37 @@ a {
 
   .sidebar {
     border-right: 0;
-    border-bottom: 3px solid var(--orange);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 16px 14px;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .brand-lockup {
+    margin-bottom: 16px;
+  }
+
+  .nav {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-link {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 10px 12px;
   }
 }
 
@@ -1240,10 +1724,15 @@ a {
   }
 
   .panel-grid,
+  .panel-grid.assets-grid,
   .highlights,
   .deck-grid,
   .deck-grid.three,
   .deck-takeaways {
+    grid-template-columns: 1fr;
+  }
+
+  .asset-card-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1263,6 +1752,39 @@ a {
 @media (max-width: 700px) {
   .main-panel {
     padding: 18px 16px 24px;
+    min-width: 0;
+  }
+
+  .topbar,
+  .title-wrap,
+  .controls {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .page-sub {
+    overflow-wrap: anywhere;
+  }
+
+  .controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+
+  .mode-toggle {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .mode-btn {
+    flex: 1 1 0;
+  }
+
+  .month-select,
+  .export-btn {
+    width: 100%;
+    min-width: 0;
   }
 
   .metric-grid {
@@ -1347,12 +1869,12 @@ a {
       </div>
       <div class="controls"></div>
     </div>
-    <div id="page-content"><div class="dashboard-stack"><section class="panel-grid"><section class="panel accent-orange"><h2 class="panel-title">Using the Dashboard</h2><div class="panel-subtitle">Where to start</div><p class="body-copy">Organic Analytics is the KPI-first view. Stakeholder Reports breaks the same package into Programs, Executive, and Board pages. Social Listening carries the Talkwalker fallback package for earned and adjacent conversation.</p><ul class="insight-list"><li>Use the month selector on any analytic page to switch the entire report suite to a new saved package.</li><li>Use Ads for Downloads-backed paid spend, monthly results, quarterly rollups, and campaign detail.</li><li>Use the Month, Quarter, and YTD toggle on Organic Analytics when you need cumulative organic performance.</li><li>Use Stakeholder Reports when you need quarter-framed, audience-specific reporting rather than platform-first KPIs.</li></ul></section><section class="panel accent-green"><h2 class="panel-title">Metric Rules</h2><div class="panel-subtitle">Standardized definitions</div><ul class="insight-list"><li>Reach uses impressions when available and falls back to platform reach.</li><li>Account summary cards use Facebook, Instagram, and LinkedIn as the shared report scope.</li><li>Cross-network post engagements come from Hootsuite Post engagement, with X removed when legacy X totals are present.</li><li>Detailed platform and post views keep post-specific metrics from the underlying post exports.</li><li>Monthly resource-click exports enrich Facebook and LinkedIn posts when available; X is optional when present.</li><li>Sabin.org Resource Clicks is a separate metric for clicks from social posts to Sabin-owned resource pages.</li><li>Ads reads campaign-level impact paid content exports from Downloads and assigns monthly spend by campaign start month.</li><li>After Q1 2026, YouTube is treated as a video repository; raw history remains available, but report-facing summary cards stay aligned to Facebook, Instagram, and LinkedIn.</li><li>CTR is calculated as link clicks divided by reach.</li><li>Clicks stay separate from engagements to avoid double counting.</li></ul></section><section class="panel accent-slate span-2"><h2 class="panel-title">Refresh Tips</h2><div class="panel-subtitle">When something looks stale</div><p class="body-copy">If local HTML looks inconsistent when opened directly from disk, launch the lightweight local server from the dashboard root.</p><div class="mono-block">C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\Open Dashboard.cmd</div></section><section class="panel accent-pink span-2"><h2 class="panel-title">Repair Notes</h2><div class="panel-subtitle">What changed in this rebuild</div><ul class="insight-list"><li>The legacy reports pages were replaced with generated pages that share one brand shell.</li><li>Programs classification now reads from standardized posts instead of an obsolete LinkedIn field name.</li><li>Month links are preserved as you move between dashboard, reports, and listening pages.</li></ul></section></section></div></div>
+    <div id="page-content"><div class="dashboard-stack"><section class="panel-grid"><section class="panel accent-orange"><h2 class="panel-title">Using the Dashboard</h2><div class="panel-subtitle">Where to start</div><p class="body-copy">Organic Analytics is the KPI-first view. Stakeholder Reports breaks the same package into Programs, Executive, and Board pages. Social Listening carries the Talkwalker fallback package for earned and adjacent conversation.</p><ul class="insight-list"><li>Use the month selector on any analytic page to switch the entire report suite to a new saved package.</li><li>Use Ads for source-backed paid spend, monthly results, quarterly rollups, and campaign detail when the source provides it.</li><li>Use the Month, Quarter, and YTD toggle on Organic Analytics when you need cumulative organic performance.</li><li>Use Stakeholder Reports when you need quarter-framed, audience-specific reporting rather than platform-first KPIs.</li></ul></section><section class="panel accent-green"><h2 class="panel-title">Metric Rules</h2><div class="panel-subtitle">Standardized definitions</div><ul class="insight-list"><li>Reach uses impressions when available and falls back to platform reach.</li><li>Account summary cards use Facebook, Instagram, and LinkedIn as the shared report scope.</li><li>Cross-network post engagements come from Hootsuite Post engagement, with X removed when legacy X totals are present.</li><li>Detailed platform and post views keep post-specific metrics from the underlying post exports.</li><li>Monthly resource-click exports enrich Facebook and LinkedIn posts when available; X is optional when present.</li><li>Sabin.org Resource Clicks is a separate metric for clicks from social posts to Sabin-owned resource pages.</li><li>Ads uses the Hootsuite LinkedIn Ads daily overview for monthly account totals and campaign exports when campaign-level detail is available.</li><li>After Q1 2026, YouTube is treated as a video repository; raw history remains available, but report-facing summary cards stay aligned to Facebook, Instagram, and LinkedIn.</li><li>CTR is calculated as link clicks divided by reach.</li><li>Clicks stay separate from engagements to avoid double counting.</li></ul></section><section class="panel accent-slate span-2"><h2 class="panel-title">Refresh Tips</h2><div class="panel-subtitle">When something looks stale</div><p class="body-copy">If local HTML looks inconsistent when opened directly from disk, launch the lightweight local server from the dashboard root.</p><div class="mono-block">C:\Users\JAlfaro\OneDrive - Albert B. Sabin Vaccine Institute\Sabin Communications - Performance Dashboard\Open Dashboard.cmd</div></section><section class="panel accent-pink span-2"><h2 class="panel-title">Repair Notes</h2><div class="panel-subtitle">What changed in this rebuild</div><ul class="insight-list"><li>The legacy reports pages were replaced with generated pages that share one brand shell.</li><li>Programs classification now reads from standardized posts instead of an obsolete LinkedIn field name.</li><li>Month links are preserved as you move between dashboard, reports, and listening pages.</li></ul></section></section></div></div>
   </main>
 </div>
 <script>
-const PAGE_TARGETS = {"dashboard": "DASHBOARD_PREVIEW.html", "reports": "REPORTS.html", "ads": "ADS.html", "programs": "PROGRAMS_REPORT.html", "executive": "EXECUTIVE_REPORT.html", "board": "BOARD_REPORT.html", "social-listening": "SOCIAL_LISTENING.html", "settings": "SETTINGS.html", "help": "HELP.html"};
-const DEFAULT_MONTH = "2026-05";
+const PAGE_TARGETS = {"dashboard": "DASHBOARD_PREVIEW.html", "reports": "REPORTS.html", "assets": "ASSETS.html", "ads": "ADS.html", "programs": "PROGRAMS_REPORT.html", "executive": "EXECUTIVE_REPORT.html", "board": "BOARD_REPORT.html", "social-listening": "SOCIAL_LISTENING.html", "settings": "SETTINGS.html", "help": "HELP.html"};
+const DEFAULT_MONTH = "2026-09";
 const params = new URLSearchParams(window.location.search);
 const activeMonth = params.get('month') || DEFAULT_MONTH;
 const activeMode = params.get('mode');

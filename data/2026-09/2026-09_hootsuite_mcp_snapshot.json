@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "queried_at": "2026-10-06",
+  "workspace": {
+    "name": "Sabin Vaccine Institute",
+    "tenant_type": "ORGANIZATION"
+  },
+  "reporting_period": {
+    "since": "2026-09-01",
+    "until": "2026-09-30"
+  },
+  "status": "connector_rate_limited_export_fallback_used",
+  "report_close": {
+    "policy": "first calendar day after the reporting month",
+    "close_date": "2026-10-01",
+    "current_backfill_exception": "The Hootsuite MCP OAuth metadata endpoint returned HTTP 429 on October 6, 2026. No failed MCP request was treated as zero; September Hootsuite exports were retained as the reporting fallback."
+  },
+  "providers_returned": [],
+  "sources": [],
+  "missing_required_dashboard_sources": [
+    "Facebook MCP metrics",
+    "Instagram MCP metrics",
+    "LinkedIn MCP metrics"
+  ],
+  "queries": [],
+  "export_fallback": {
+    "used": true,
+    "source_directory": "C:\\Users\\JAlfaro\\Downloads",
+    "linkedin_export": "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z.zip",
+    "additional_exports": [
+      "facebook_post_performance_2026-09-01_to_2026-09-30_created_on_20261006T1505Z.zip",
+      "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z.zip",
+      "owly_link_clicks_2026-09-01_to_2026-09-30_created_on_20261002T1048Z.zip",
+      "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z.zip",
+      "audience_growth_2_2026-09-01_to_2026-09-30_created_on_20261002T1236Z.zip"
+    ],
+    "manual_unzip_complete": true,
+    "locked_files_skipped_initially": [
+      "audience_growth_2_2026-09-01_to_2026-09-30_created_on_20261002T1236Z_account_metrics.csv",
+      "audience_growth_2_2026-09-01_to_2026-09-30_created_on_20261002T1236Z_ig_engaged_audience_country.csv"
+    ],
+    "locked_files_unresolved": []
+  },
+  "connector_observations": [
+    "Hootsuite MCP startup could not complete because OAuth metadata discovery returned HTTP 429 Too Many Requests.",
+    "The connector was retried once after a cooldown and returned the same 429 response.",
+    "LinkedIn metrics were downloaded directly from Hootsuite because LinkedIn analytics are not exposed by the MCP.",
+    "No connector failure was interpreted as a zero-value metric."
+  ]
+}

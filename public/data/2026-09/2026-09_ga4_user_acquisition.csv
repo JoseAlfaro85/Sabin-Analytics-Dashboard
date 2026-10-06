@@ -1,0 +1,21 @@
+# ----------------------------------------
+# User acquisition: First user primary channel group (Default Channel Group)
+# Account: Sabin Analytics
+# Property: Sabin.org 2022
+# ----------------------------------------
+# 
+# All Users
+# Start date: 20260901
+# End date: 20260930
+First user primary channel group (Default Channel Group),Total users,New users,Returning users,Average engagement time per active user,Engaged sessions per active user,Event count,Key events,User key event rate
+Direct,10118,9827,178,8.042574257425743,1.0144554455445545,40671,37893,0.9993069306930693
+Organic Search,3739,3478,661,52.65427408412483,1.2985074626865671,22991,18032,1
+Unassigned,688,686,1,5.414847161572053,1.0116448326055314,2720,2683,1
+Email,572,570,18,8.264448336252189,1.0455341506129596,2435,2352,1
+Referral,447,430,30,23.735763097949885,1.1480637813211845,2343,1971,1
+Organic Social,243,233,22,38.56846473029046,1.112033195020747,1315,1090,1
+AI Assistant,64,57,8,30.103448275862068,1.3448275862068966,391,318,1
+Paid Search,7,7,0,5.714285714285714,1,28,27,1
+Display,6,6,0,3.8333333333333335,1,23,23,1
+Paid Other,2,2,0,8,1,8,7,1
+Organic Video,1,1,0,17,1,7,5,1

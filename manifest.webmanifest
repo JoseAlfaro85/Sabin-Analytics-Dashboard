@@ -10,8 +10,8 @@
     "standalone",
     "browser"
   ],
-  "background_color": "#f4f7fb",
-  "theme_color": "#196BAC",
+  "background_color": "#f6f4ef",
+  "theme_color": "#25303A",
   "categories": [
     "business",
     "productivity"

@@ -3,24 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#196BAC">
+  <meta name="theme-color" content="#25303A">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="app-icon.svg" type="image/svg+xml">
-  <title>Sabin Dashboard | May 2026 Social Listening</title>
+  <title>Sabin Dashboard | September 2026 Social Listening</title>
   <style>
 :root {
-  --bg: #f3f4f4;
-  --text: #333333;
-  --muted: #6d8197;
-  --shadow: 0 18px 44px rgba(5, 67, 114, 0.14);
-  --blue: #32a0da;
-  --navy: #196bac;
-  --navy-deep: #054372;
-  --orange: #ec881d;
-  --green: #60a443;
-  --pink: #985f99;
+  --bg: #f6f4ef;
+  --surface: #ffffff;
+  --surface-soft: #fbfaf7;
+  --text: #202733;
+  --muted: #66717e;
+  --border: rgba(35, 45, 55, 0.12);
+  --shadow: 0 16px 34px rgba(35, 45, 55, 0.09);
+  --shadow-soft: 0 8px 22px rgba(35, 45, 55, 0.06);
+  --blue: #196bac;
+  --navy: #25303a;
+  --navy-deep: #111827;
+  --orange: #d77a1f;
+  --green: #5f8f58;
+  --pink: #b86165;
   --yellow: #ffba00;
-  --slate: #6f7c8f;
+  --slate: #717985;
+  --teal: #2f8a83;
+  --surface-accent: var(--orange);
 }
 
 *,
@@ -34,7 +40,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+  background: linear-gradient(180deg, #fffdf8 0%, var(--bg) 100%);
   color: var(--text);
   font-family: "Museo Sans", Aptos, "Segoe UI", Tahoma, sans-serif;
 }
@@ -50,22 +56,22 @@ a {
 
 .app-shell {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 224px 1fr;
   min-height: 100vh;
 }
 
 .sidebar {
-  background: rgba(255, 255, 255, 0.9);
-  border-right: 3px solid var(--orange);
-  padding: 32px 16px 24px;
+  background: rgba(255, 255, 255, 0.94);
+  border-right: 1px solid var(--border);
+  padding: 30px 16px 24px;
   backdrop-filter: blur(14px);
-  box-shadow: 12px 0 30px rgba(5, 67, 114, 0.07);
+  box-shadow: 10px 0 30px rgba(35, 45, 55, 0.05);
 }
 
 .brand-lockup {
   display: flex;
   align-items: center;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
   padding: 0 6px;
 }
 
@@ -83,7 +89,7 @@ a {
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: 0.02em;
-  color: var(--navy);
+  color: var(--text);
 }
 
 .brand-text .submark {
@@ -103,21 +109,21 @@ a {
   align-items: center;
   gap: 10px;
   padding: 12px 14px;
-  border-radius: 12px;
-  color: #51677f;
+  border-radius: 8px;
+  color: #596574;
   font-weight: 600;
   border: 1px solid transparent;
 }
 
 .nav-link:hover {
-  background: rgba(25, 107, 172, 0.06);
-  border-color: rgba(25, 107, 172, 0.1);
+  background: rgba(37, 48, 58, 0.05);
+  border-color: rgba(37, 48, 58, 0.08);
 }
 
 .nav-link.active {
   color: #ffffff;
-  background: linear-gradient(135deg, var(--navy), var(--navy-deep));
-  box-shadow: 0 12px 24px rgba(5, 67, 114, 0.24);
+  background: var(--navy);
+  box-shadow: 0 12px 22px rgba(17, 24, 39, 0.18);
 }
 
 .nav-icon {
@@ -129,7 +135,7 @@ a {
 }
 
 .main-panel {
-  padding: 26px 30px 32px;
+  padding: 28px 32px 34px;
 }
 
 .topbar {
@@ -137,7 +143,7 @@ a {
   justify-content: space-between;
   gap: 18px;
   align-items: flex-start;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .title-wrap {
@@ -151,7 +157,7 @@ a {
   font-size: 1.95rem;
   line-height: 1.12;
   letter-spacing: 0;
-  color: var(--navy);
+  color: var(--text);
 }
 
 .page-title .accent {
@@ -174,12 +180,12 @@ a {
 
 .status-pill {
   border-radius: 999px;
-  border: 1px solid rgba(25, 107, 172, 0.08);
+  border: 1px solid var(--border);
   padding: 7px 12px;
   font-size: 0.78rem;
   font-weight: 700;
-  color: var(--navy);
-  background: rgba(255, 255, 255, 0.78);
+  color: #3f4a56;
+  background: rgba(255, 255, 255, 0.82);
 }
 
 .status-pill.warn {
@@ -209,13 +215,13 @@ a {
   display: inline-flex;
   padding: 3px;
   background: var(--navy);
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
 .mode-btn {
   border: 0;
-  border-radius: 9px;
+  border-radius: 6px;
   padding: 9px 14px;
   font-size: 0.84rem;
   font-weight: 800;
@@ -232,8 +238,8 @@ a {
 
 .month-select {
   min-width: 188px;
-  border-radius: 12px;
-  border: 2px solid rgba(25, 107, 172, 0.9);
+  border-radius: 8px;
+  border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.96);
   padding: 10px 14px;
   font-size: 0.92rem;
@@ -247,7 +253,7 @@ a {
 
 .export-btn {
   border: 0;
-  border-radius: 12px;
+  border-radius: 8px;
   background: var(--orange);
   color: #ffffff;
   font-size: 0.9rem;
@@ -259,37 +265,88 @@ a {
 
 .dashboard-stack {
   display: grid;
-  gap: 18px;
+  gap: 20px;
 }
 
 .metric-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: start;
   gap: 18px;
+}
+
+.metric-grid:has(> .metric-card:nth-child(4):last-child) {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .panel-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  gap: 20px;
 }
 
 .panel-grid .panel.span-2 {
   grid-column: 1 / -1;
 }
 
+.panel-grid.assets-grid {
+  grid-template-columns: minmax(0, 1.16fr) minmax(320px, 0.84fr);
+}
+
+.trend-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.trend-chart-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  padding: 16px;
+}
+
+.trend-chart-title {
+  margin: 0 0 2px;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.trend-chart-summary {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.trend-chart-svg {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  overflow: visible;
+}
+
+.trend-chart-line {
+  fill: none;
+  stroke: var(--surface-accent);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.trend-chart-area { fill: color-mix(in srgb, var(--surface-accent) 14%, transparent); }
+.trend-chart-point { fill: var(--surface); stroke: var(--surface-accent); stroke-width: 3; }
+.trend-chart-axis { stroke: var(--border); stroke-width: 1; }
+.trend-chart-label { fill: var(--muted); font-size: 11px; font-weight: 700; }
+
 .metric-card,
 .panel {
   position: relative;
   overflow: hidden;
-  border-radius: 18px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0)),
-    linear-gradient(135deg, var(--navy), var(--navy-deep));
-  color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
   padding: 22px 26px;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
 }
 
 .metric-card {
@@ -303,20 +360,331 @@ a {
   position: absolute;
   inset: 0 0 auto;
   height: 4px;
-  background: var(--orange);
+  background: var(--surface-accent);
   opacity: 0.95;
 }
 
-.accent-green::before {
-  background: var(--green);
+.asset-decision-matrix {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
 }
 
-.accent-pink::before {
-  background: var(--pink);
+.asset-quadrant {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--surface-accent);
+  background: var(--surface-soft);
+  padding: 16px;
+  min-height: 168px;
 }
 
-.accent-slate::before {
-  background: #b7c2d0;
+.asset-quadrant h3,
+.asset-insight h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.asset-quadrant .hint,
+.asset-insight p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.asset-mini-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.asset-mini-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+  font-size: 0.9rem;
+}
+
+.asset-mini-row .metric {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.asset-insight-stack {
+  display: grid;
+  gap: 12px;
+}
+
+.asset-insight {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--blue);
+  background: var(--surface-soft);
+  padding: 16px;
+}
+
+.asset-bar-list {
+  display: grid;
+  gap: 12px;
+}
+
+.asset-bar-row {
+  display: grid;
+  grid-template-columns: minmax(126px, 0.55fr) minmax(0, 1fr) 70px;
+  gap: 12px;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.asset-bar-track {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(37, 48, 58, 0.12);
+  overflow: hidden;
+}
+
+.asset-bar-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--surface-accent);
+}
+
+.asset-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.asset-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.asset-card {
+  display: grid;
+  align-content: start;
+  gap: 11px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-soft);
+  padding: 14px;
+  min-height: 240px;
+}
+
+.asset-preview {
+  display: grid;
+  place-items: center;
+  min-height: 92px;
+  border-radius: 8px;
+  color: #ffffff;
+  background:
+    linear-gradient(135deg, rgba(37, 48, 58, 0.92), rgba(25, 107, 172, 0.78)),
+    var(--navy);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px;
+}
+
+.asset-preview img {
+  width: 100%;
+  height: 100%;
+  min-height: 92px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.asset-preview-link {
+  padding: 0;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.asset-preview .asset-preview-label {
+  display: grid;
+  gap: 5px;
+}
+
+.asset-preview .asset-preview-label span {
+  display: block;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.asset-card:nth-child(2n) .asset-preview {
+  background:
+    linear-gradient(135deg, rgba(95, 143, 88, 0.92), rgba(47, 138, 131, 0.76)),
+    var(--green);
+}
+
+.asset-card:nth-child(3n) .asset-preview {
+  background:
+    linear-gradient(135deg, rgba(215, 122, 31, 0.92), rgba(184, 97, 101, 0.72)),
+    var(--orange);
+}
+
+.asset-card-title {
+  font-weight: 800;
+  line-height: 1.28;
+}
+
+.asset-card-copy {
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.asset-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.asset-card-meta span {
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  color: #45515f;
+  padding: 5px 8px;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.asset-card-kpis {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.asset-card-kpi {
+  border-top: 1px solid var(--border);
+  padding-top: 7px;
+}
+
+.asset-card-kpi .label {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.asset-card-kpi .value {
+  margin-top: 3px;
+  font-size: 0.92rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.asset-table th,
+.asset-table td {
+  padding: 11px 9px;
+  border-top: 1px solid var(--border);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.asset-table th {
+  color: var(--muted);
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.asset-table .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.asset-link {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.asset-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  margin-top: 12px;
+}
+
+.brandfolder-resource-panel {
+  margin-bottom: 18px;
+}
+
+.brandfolder-resource-list {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brandfolder-resource-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+}
+
+.brandfolder-resource-list li > div {
+  display: grid;
+  grid-template-columns: minmax(180px, auto) minmax(0, 1fr);
+  align-items: baseline;
+  gap: 10px 18px;
+  width: 100%;
+}
+
+.brandfolder-resource-list span {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 760px) {
+  .brandfolder-resource-list li > div {
+    grid-template-columns: 1fr;
+  }
+}
+
+.asset-verdict {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 5px 9px;
+  background: rgba(95, 143, 88, 0.14);
+  color: #355f30;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.accent-orange {
+  --surface-accent: var(--orange);
+}
+
+.accent-green {
+  --surface-accent: var(--green);
+}
+
+.accent-pink {
+  --surface-accent: var(--pink);
+}
+
+.accent-slate {
+  --surface-accent: var(--slate);
 }
 
 .metric-label {
@@ -324,7 +692,7 @@ a {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--surface-accent);
 }
 
 .metric-value {
@@ -332,33 +700,34 @@ a {
   font-size: 3rem;
   line-height: 1;
   font-weight: 800;
+  color: var(--text);
 }
 
 .metric-sub {
   margin-top: 10px;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.76);
+  color: var(--muted);
   min-height: 1.35em;
 }
 
 .metric-description {
   margin-top: 10px;
   max-width: 92%;
-  color: rgba(255, 255, 255, 0.88);
+  color: #45515f;
   font-size: 0.86rem;
   font-weight: 700;
   line-height: 1.35;
 }
 
 .metric-card[role="button"] {
-  border: 0;
+  border: 1px solid var(--border);
   font: inherit;
   text-align: left;
   cursor: pointer;
 }
 
 .metric-card.is-expandable {
-  transition: transform 160ms ease, box-shadow 160ms ease, outline-color 160ms ease;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
 
 .metric-card.is-expandable::after {
@@ -371,8 +740,9 @@ a {
   width: 28px;
   height: 28px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.14);
-  color: #ffffff;
+  background: rgba(37, 48, 58, 0.06);
+  border: 1px solid var(--border);
+  color: var(--surface-accent);
   font-size: 1.25rem;
   font-weight: 800;
   line-height: 1;
@@ -381,9 +751,9 @@ a {
 .metric-card.is-expandable:hover,
 .metric-card.is-expandable:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 22px 46px rgba(9, 45, 78, 0.28);
-  outline: 3px solid rgba(255, 255, 255, 0.7);
-  outline-offset: 3px;
+  border-color: color-mix(in srgb, var(--surface-accent) 40%, var(--border));
+  box-shadow: var(--shadow);
+  outline: none;
 }
 
 .metric-card.is-expanded::after {
@@ -393,7 +763,7 @@ a {
 .metric-card .kpi-breakdown-panel {
   margin-top: 20px;
   padding-top: 18px;
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-top: 1px solid var(--border);
 }
 
 .kpi-breakdown-panel {
@@ -401,7 +771,7 @@ a {
   border-radius: 0;
   background: transparent;
   box-shadow: none;
-  color: #ffffff;
+  color: var(--text);
   padding: 0;
 }
 
@@ -413,20 +783,21 @@ a {
 .kpi-breakdown-head {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 18px;
+  margin-bottom: 10px;
 }
 
 .kpi-breakdown-title {
   margin: 0;
-  color: #ffffff;
+  color: var(--text);
   font-size: 1rem;
   font-weight: 800;
 }
 
 .kpi-breakdown-subtitle {
   margin: 5px 0 0;
-  color: rgba(255, 255, 255, 0.74);
+  color: var(--muted);
   font-size: 0.86rem;
   font-weight: 650;
 }
@@ -434,12 +805,13 @@ a {
 .kpi-breakdown-close {
   display: grid;
   place-items: center;
+  flex: 0 0 auto;
   width: 28px;
   height: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
-  color: #ffffff;
+  background: var(--surface-soft);
+  color: var(--text);
   cursor: pointer;
   font-size: 0.95rem;
   font-weight: 800;
@@ -458,13 +830,13 @@ a {
 .kpi-breakdown-table th,
 .kpi-breakdown-table td {
   padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
-  color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
   text-align: left;
 }
 
 .kpi-breakdown-table th {
-  color: rgba(255, 255, 255, 0.64);
+  color: var(--muted);
   font-size: 0.66rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -477,20 +849,28 @@ a {
 }
 
 .kpi-share {
-  color: #ffffff;
+  color: var(--text);
   font-weight: 800;
   text-align: right;
+}
+
+.kpi-row-note {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
 }
 
 .panel-title {
   margin: 0;
   font-size: 1.45rem;
   font-weight: 800;
+  color: var(--text);
 }
 
 .panel-subtitle {
   margin-top: 6px;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
   font-size: 0.95rem;
   font-weight: 600;
 }
@@ -506,10 +886,17 @@ a {
   align-items: baseline;
   justify-content: space-between;
   gap: 16px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+
+.summary-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 .summary-label {
-  color: rgba(255, 255, 255, 0.76);
+  color: var(--muted);
   font-size: 1rem;
   font-weight: 700;
 }
@@ -517,7 +904,7 @@ a {
 .summary-value {
   font-size: 1.65rem;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--text);
   text-align: right;
 }
 
@@ -536,7 +923,7 @@ a {
 .network-table td {
   padding: 12px 14px;
   text-align: left;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid var(--border);
 }
 
 .network-table th {
@@ -544,12 +931,16 @@ a {
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
 }
 
 .network-table td {
   font-size: 0.94rem;
-  color: #ffffff;
+  color: var(--text);
+}
+
+.network-table tbody tr:hover {
+  background: var(--surface-soft);
 }
 
 .network-table .num {
@@ -595,9 +986,33 @@ a {
 }
 
 .highlight-card {
-  background: rgba(255, 255, 255, 0.09);
-  border: 1px solid rgba(255, 255, 255, 0.11);
-  border-radius: 14px;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.highlight-card.has-asset {
+  padding: 0;
+}
+
+.highlight-media {
+  display: block;
+  height: 190px;
+  background: #e7ebf0;
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.highlight-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.highlight-card.has-asset .highlight-copy {
   padding: 16px;
 }
 
@@ -606,7 +1021,7 @@ a {
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.68);
+  color: var(--surface-accent);
 }
 
 .highlight-title {
@@ -614,12 +1029,13 @@ a {
   font-size: 0.96rem;
   font-weight: 800;
   line-height: 1.4;
+  color: var(--text);
 }
 
 .highlight-meta {
   margin-top: 10px;
   font-size: 0.84rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--muted);
 }
 
 .mini-kpi-grid {
@@ -632,12 +1048,12 @@ a {
 .mini-kpi {
   border-radius: 8px;
   padding: 8px 9px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #ffffff;
+  border: 1px solid var(--border);
 }
 
 .mini-kpi-label {
-  color: rgba(255, 255, 255, 0.64);
+  color: var(--muted);
   font-size: 0.68rem;
   font-weight: 800;
   line-height: 1.1;
@@ -647,7 +1063,7 @@ a {
 
 .mini-kpi-value {
   margin-top: 4px;
-  color: #ffffff;
+  color: var(--text);
   font-size: 0.95rem;
   font-weight: 900;
   line-height: 1.18;
@@ -658,7 +1074,7 @@ a {
   margin-top: 10px;
   font-size: 0.84rem;
   font-weight: 700;
-  color: #ffd8aa;
+  color: var(--blue);
 }
 
 .page-tabs {
@@ -671,10 +1087,10 @@ a {
 .page-tab {
   display: inline-flex;
   align-items: center;
-  border-radius: 12px;
-  border: 1px solid rgba(25, 107, 172, 0.12);
+  border-radius: 8px;
+  border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.88);
-  color: var(--navy);
+  color: var(--text);
   padding: 10px 14px;
   font-size: 0.84rem;
   font-weight: 800;
@@ -685,7 +1101,7 @@ a {
   background: var(--navy);
   border-color: var(--navy);
   color: #ffffff;
-  box-shadow: 0 12px 24px rgba(25, 107, 172, 0.18);
+  box-shadow: 0 12px 24px rgba(17, 24, 39, 0.14);
 }
 
 .deck-report-stack {
@@ -696,9 +1112,9 @@ a {
 .deck-slide {
   background: #ffffff;
   color: #151f2a;
-  border-radius: 10px;
-  border: 1px solid rgba(25, 107, 172, 0.1);
-  box-shadow: 0 14px 34px rgba(18, 59, 99, 0.11);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
   padding: 22px 28px 26px;
 }
 
@@ -708,9 +1124,11 @@ a {
   justify-content: space-between;
   gap: 16px;
   min-height: 34px;
-  border: 2px solid var(--navy);
-  border-radius: 999px;
-  padding: 5px 14px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--orange);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  padding: 8px 14px;
   color: #111827;
   font-weight: 800;
 }
@@ -734,13 +1152,13 @@ a {
 .deck-readout {
   margin-top: 14px;
   border-radius: 8px;
-  border: 2px solid rgba(11, 111, 179, 0.22);
-  background: #f8fbfd;
+  border: 1px solid var(--border);
+  background: #fffdf8;
   padding: 18px 20px 20px;
 }
 
 .deck-readout-kicker {
-  color: var(--navy);
+  color: var(--orange);
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -763,7 +1181,7 @@ a {
 }
 
 .deck-readout-cell {
-  border-top: 4px solid #8fcdeb;
+  border-top: 4px solid var(--teal);
   padding-top: 10px;
 }
 
@@ -772,11 +1190,11 @@ a {
 }
 
 .deck-readout-cell:nth-child(3) {
-  border-color: #c9add0;
+  border-color: var(--pink);
 }
 
 .deck-readout-label {
-  color: var(--navy);
+  color: var(--text);
   font-size: 0.86rem;
   font-weight: 900;
 }
@@ -809,7 +1227,9 @@ a {
 .deck-kpi-band {
   margin-top: 14px;
   border-radius: 8px;
-  background: #ffbc05;
+  border: 1px solid rgba(226, 181, 63, 0.36);
+  border-left: 4px solid var(--yellow);
+  background: #fff7dc;
   padding: 14px 14px 16px;
   text-align: center;
 }
@@ -829,7 +1249,8 @@ a {
 
 .deck-kpi-cell {
   border-radius: 8px;
-  background: rgba(255, 235, 180, 0.92);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(80, 71, 44, 0.1);
   padding: 10px 12px;
   min-height: 68px;
 }
@@ -867,10 +1288,10 @@ a {
 }
 
 .deck-panel {
-  background: #f2f2f2;
+  background: #ffffff;
   color: #151f2a;
   border-radius: 8px;
-  border: 1px solid rgba(15, 70, 119, 0.08);
+  border: 1px solid var(--border);
   padding: 18px 20px;
   min-height: 100%;
 }
@@ -895,29 +1316,30 @@ a {
   text-align: center;
   font-size: 0.86rem;
   font-weight: 800;
-  color: var(--navy);
+  color: var(--text);
 }
 
 .deck-panel.blue-tab::before {
   content: attr(data-tab-title);
-  background: #8fcdeb;
+  background: rgba(47, 138, 131, 0.16);
+  color: #236b66;
 }
 
 .deck-panel.orange-tab::before {
   content: attr(data-tab-title);
   color: #111827;
-  background: var(--orange);
+  background: rgba(215, 122, 31, 0.18);
 }
 
 .deck-panel.purple-tab::before {
   content: attr(data-tab-title);
-  color: #111827;
-  background: #c9add0;
+  color: #6f383c;
+  background: rgba(184, 97, 101, 0.16);
 }
 
 .deck-panel-title {
   margin: 0;
-  color: var(--navy);
+  color: var(--text);
   font-size: 1.04rem;
   line-height: 1.16;
   font-weight: 800;
@@ -925,7 +1347,7 @@ a {
 
 .deck-panel-subtitle {
   margin-top: 4px;
-  color: var(--orange);
+  color: var(--muted);
   font-size: 0.88rem;
   font-weight: 800;
 }
@@ -933,6 +1355,33 @@ a {
 .deck-panel .body-copy,
 .deck-panel .inline-note {
   color: #243447;
+}
+
+.campaign-outcomes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.campaign-outcomes-followup {
+  margin-top: 22px;
+}
+
+.campaign-outcomes-grid .summary-list {
+  margin-top: 10px;
+}
+
+.campaign-outcomes-grid .inline-note {
+  margin: 14px 0 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .campaign-outcomes-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .deck-panel .insight-list li {
@@ -945,7 +1394,7 @@ a {
 }
 
 .deck-panel .summary-row {
-  border-bottom: 1px solid rgba(25, 107, 172, 0.12);
+  border-bottom: 1px solid var(--border);
   padding-bottom: 8px;
 }
 
@@ -961,7 +1410,7 @@ a {
 
 .deck-panel .highlight-card {
   background: #ffffff;
-  border: 1px solid rgba(25, 107, 172, 0.12);
+  border: 1px solid var(--border);
   color: #151f2a;
 }
 
@@ -976,7 +1425,7 @@ a {
   overflow: hidden;
   border-radius: 8px;
   background: #e5e7eb;
-  border: 1px solid rgba(25, 107, 172, 0.12);
+  border: 1px solid var(--border);
   min-height: 170px;
 }
 
@@ -997,8 +1446,7 @@ a {
   color: var(--navy);
   font-size: 0.84rem;
   font-weight: 800;
-  background:
-    linear-gradient(135deg, rgba(143, 205, 235, 0.34), rgba(255, 188, 5, 0.2));
+  background: linear-gradient(135deg, rgba(47, 138, 131, 0.12), rgba(226, 181, 63, 0.18));
 }
 
 .deck-panel .highlight-title {
@@ -1011,7 +1459,7 @@ a {
 
 .deck-panel .mini-kpi {
   background: #f7fbfe;
-  border-color: rgba(25, 107, 172, 0.12);
+  border-color: var(--border);
 }
 
 .deck-panel .mini-kpi-label {
@@ -1023,25 +1471,25 @@ a {
 }
 
 .deck-panel .section-kicker {
-  color: var(--navy);
+  color: var(--orange);
 }
 
 .deck-panel .empty-state {
   color: #34495e;
   background: #ffffff;
-  border: 1px solid rgba(25, 107, 172, 0.12);
+  border: 1px solid var(--border);
 }
 
 .deck-panel .meta-chip {
-  color: var(--navy);
-  background: rgba(143, 205, 235, 0.28);
-  border-color: rgba(11, 111, 179, 0.16);
+  color: #236b66;
+  background: rgba(47, 138, 131, 0.12);
+  border-color: rgba(47, 138, 131, 0.2);
 }
 
 .deck-panel .link-btn.secondary {
-  color: var(--navy);
-  background: rgba(143, 205, 235, 0.25);
-  border-color: rgba(11, 111, 179, 0.2);
+  color: var(--text);
+  background: rgba(37, 48, 58, 0.05);
+  border-color: var(--border);
 }
 
 .deck-takeaways {
@@ -1052,7 +1500,7 @@ a {
 }
 
 .deck-takeaway-title {
-  color: var(--navy);
+  color: var(--text);
   font-size: 0.96rem;
   font-weight: 800;
   margin: 0 0 8px;
@@ -1080,7 +1528,7 @@ a {
 
 .body-copy {
   margin: 0;
-  color: rgba(255, 255, 255, 0.84);
+  color: #45515f;
   font-size: 0.96rem;
   line-height: 1.6;
 }
@@ -1100,7 +1548,7 @@ a {
 .insight-list li {
   position: relative;
   padding-left: 18px;
-  color: rgba(255, 255, 255, 0.84);
+  color: #45515f;
   font-size: 0.94rem;
   line-height: 1.55;
 }
@@ -1122,7 +1570,7 @@ a {
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.66);
+  color: var(--surface-accent);
 }
 
 .link-btn {
@@ -1130,7 +1578,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-top: 18px;
-  border-radius: 12px;
+  border-radius: 8px;
   background: var(--orange);
   color: #ffffff;
   padding: 10px 14px;
@@ -1141,8 +1589,9 @@ a {
 }
 
 .link-btn.secondary {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: var(--surface-soft);
+  color: var(--text);
+  border: 1px solid var(--border);
   box-shadow: none;
 }
 
@@ -1158,9 +1607,9 @@ a {
   padding: 6px 10px;
   font-size: 0.76rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.84);
-  background: rgba(255, 255, 255, 0.11);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #45515f;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
 }
 
 .topic-cloud {
@@ -1173,9 +1622,9 @@ a {
 .topic-chip {
   border-radius: 999px;
   padding: 7px 12px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #ffffff;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  color: #45515f;
   font-size: 0.82rem;
   font-weight: 700;
 }
@@ -1183,10 +1632,10 @@ a {
 .mono-block {
   margin-top: 18px;
   padding: 14px 16px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: rgba(255, 255, 255, 0.84);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  color: #45515f;
   font-family: Consolas, "Courier New", monospace;
   font-size: 0.84rem;
   line-height: 1.5;
@@ -1197,15 +1646,16 @@ a {
 .inline-note {
   margin-top: 14px;
   font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
 }
 
 .empty-state {
   margin-top: 24px;
   padding: 18px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.76);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  color: var(--muted);
   font-weight: 600;
 }
 
@@ -1215,6 +1665,10 @@ a {
   }
 
   .highlights {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .asset-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1226,7 +1680,37 @@ a {
 
   .sidebar {
     border-right: 0;
-    border-bottom: 3px solid var(--orange);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 16px 14px;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .brand-lockup {
+    margin-bottom: 16px;
+  }
+
+  .nav {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-link {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 10px 12px;
   }
 }
 
@@ -1240,10 +1724,15 @@ a {
   }
 
   .panel-grid,
+  .panel-grid.assets-grid,
   .highlights,
   .deck-grid,
   .deck-grid.three,
   .deck-takeaways {
+    grid-template-columns: 1fr;
+  }
+
+  .asset-card-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1263,6 +1752,39 @@ a {
 @media (max-width: 700px) {
   .main-panel {
     padding: 18px 16px 24px;
+    min-width: 0;
+  }
+
+  .topbar,
+  .title-wrap,
+  .controls {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .page-sub {
+    overflow-wrap: anywhere;
+  }
+
+  .controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+
+  .mode-toggle {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .mode-btn {
+    flex: 1 1 0;
+  }
+
+  .month-select,
+  .export-btn {
+    width: 100%;
+    min-width: 0;
   }
 
   .metric-grid {
@@ -1341,19 +1863,19 @@ a {
       <div class="title-wrap">
         <div>
           <h1 class="page-title">Social <span class="accent">Listening</span></h1>
-          <div class="page-sub" id="report-date">Talkwalker listening package - May 2026</div>
+          <div class="page-sub" id="report-date">Talkwalker listening package - September 2026</div>
           <div class="status-pills" id="status-pills"><span class="status-pill">Social listening</span></div>
         </div>
       </div>
-      <div class="controls"><select id="month-selector" class="month-select" aria-label="Select report month"><option value="2026-05" selected>May 2026</option><option value="2026-04">April 2026</option><option value="2026-03">March 2026</option><option value="2026-02">February 2026</option><option value="2026-01">January 2026</option></select></div>
+      <div class="controls"><select id="month-selector" class="month-select" aria-label="Select report month"><option value="2026-09" selected>September 2026</option><option value="2026-08">August 2026</option><option value="2026-07">July 2026</option><option value="2026-06">June 2026</option><option value="2026-05">May 2026</option><option value="2026-04">April 2026</option><option value="2026-03">March 2026</option><option value="2026-02">February 2026</option><option value="2026-01">January 2026</option></select></div>
     </div>
-    <div id="page-content"><div class="dashboard-stack"><section class="metric-grid"><div class="metric-card accent-orange"><div class="metric-label">Brand signals</div><div class="metric-value">8</div><div class="metric-sub">Reputation and issue themes</div></div><div class="metric-card accent-green"><div class="metric-label">Readout lens</div><div class="metric-value">Outside-in</div><div class="metric-sub">Public conversation context</div></div><div class="metric-card accent-pink"><div class="metric-label">Review rhythm</div><div class="metric-value">Monthly + spike</div><div class="metric-sub">Baseline plus emerging issues</div></div><div class="metric-card accent-slate"><div class="metric-label">Action focus</div><div class="metric-value">Clarify or amplify</div><div class="metric-sub">Turn signals into response choices</div></div></section><section class="panel-grid"><section class="panel accent-orange span-2"><h2 class="panel-title">Conversation Readout</h2><div class="panel-subtitle">What the outside conversation means</div><p class="body-copy">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.</p><div class="summary-list"><div class="summary-row"><div class="summary-label">Brand signals</div><div class="summary-value">8</div></div><div class="summary-row"><div class="summary-label">Readout lens</div><div class="summary-value">Outside-in</div></div><div class="summary-row"><div class="summary-label">Review rhythm</div><div class="summary-value">Monthly + spike</div></div><div class="summary-row"><div class="summary-label">Action focus</div><div class="summary-value">Clarify or amplify</div></div></div><ul class="insight-list"><li>Identify the one emerging issue that deserves attention before the next monthly report.</li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.</li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.</li></ul></section><section class="panel accent-slate"><h2 class="panel-title">Listening Lenses</h2><div class="panel-subtitle">Themes being monitored</div><p class="body-copy">These lenses organize the outside conversation before it becomes a recommendation.</p><div class="topic-cloud"><span class="topic-chip">Sabin brand clean</span><span class="topic-chip">Ebola / Filovirus Early Warning</span><span class="topic-chip">Crisis / Rapid Response</span><span class="topic-chip">Vaccine Confidence &amp; Trust</span><span class="topic-chip">Outbreak Preparedness &amp; Response</span><span class="topic-chip">Research / Innovation / R&amp;D</span><span class="topic-chip">Routine Immunization</span><span class="topic-chip">Policy &amp; Financing</span></div></section><section class="panel accent-pink"><h2 class="panel-title">Signals to Watch</h2><div class="panel-subtitle">When a mention becomes meaningful</div><ul class="insight-list"><li>Escalate an outbreak, misinformation, or policy story when volume rises and credible local sources appear in the same window.</li><li>Separate owned Sabin activity, partner amplification, and earned conversation before describing reputation health.</li><li>Use curated examples to explain why a signal matters, not just that it appeared.</li><li>Turn repeated questions, criticism, or confusion into a recommendation for owned content or partner amplification.</li></ul></section><section class="panel accent-orange span-2"><h2 class="panel-title">Readout Questions</h2><div class="panel-subtitle">What the listening layer should answer</div><ul class="insight-list"><li>What is newly emerging that Sabin should know before it becomes a broader story?</li><li>Where is Sabin being mentioned by credible third parties, and does the mention support what we want to be known for?</li><li>Which vaccine confidence or outbreak-response narratives need a proactive message, partner share, or briefing?</li><li>Which topics are overperforming in listening but underrepresented in owned content?</li></ul></section><section class="panel accent-orange span-2"><h2 class="panel-title">Listening Summary</h2><div class="panel-subtitle">Talkwalker fallback package</div><p class="body-copy">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.</p><div class="summary-list"><div class="summary-row"><div class="summary-label">Results change</div><div class="summary-value">0.0%</div></div><div class="summary-row"><div class="summary-label">Engagement</div><div class="summary-value">0</div></div><div class="summary-row"><div class="summary-label">Engagement change</div><div class="summary-value">0.0%</div></div><div class="summary-row"><div class="summary-label">Sample age cluster</div><div class="summary-value">Not available</div></div></div></section><section class="panel accent-green"><h2 class="panel-title">Trending Topics</h2><div class="panel-subtitle">Theme concentration</div><p class="body-copy">Themes most visible in the listening package for the selected month.</p><div class="empty-state">Theme detail will appear here when the monthly listening readout is attached.</div></section><section class="panel accent-slate"><h2 class="panel-title">Media Mix</h2><div class="panel-subtitle">Where the conversation is appearing</div><div class="empty-state">No media-mix breakdown is available for this month.</div></section><section class="panel accent-green"><h2 class="panel-title">Strengths</h2><div class="panel-subtitle">Positive listening signals</div><div class="empty-state">No strength notes are available for this month.</div></section><section class="panel accent-pink"><h2 class="panel-title">Vulnerabilities</h2><div class="panel-subtitle">Watchlist items</div><div class="empty-state">No vulnerability notes are available for this month.</div></section><section class="panel accent-orange span-2"><h2 class="panel-title">Opportunities</h2><div class="panel-subtitle">Recommended follow-up angles</div><div class="empty-state">No opportunity notes are available for this month.</div></section></section></div></div>
+    <div id="page-content"><div class="dashboard-stack"><section class="metric-grid"><div class="metric-card accent-orange"><div class="metric-label">Brand signals</div><div class="metric-value">8</div><div class="metric-sub">Reputation and issue themes</div></div><div class="metric-card accent-green"><div class="metric-label">Readout lens</div><div class="metric-value">Outside-in</div><div class="metric-sub">Public conversation context</div></div><div class="metric-card accent-pink"><div class="metric-label">Review rhythm</div><div class="metric-value">Monthly + spike</div><div class="metric-sub">Baseline plus emerging issues</div></div><div class="metric-card accent-slate"><div class="metric-label">Action focus</div><div class="metric-value">Clarify or amplify</div><div class="metric-sub">Turn signals into response choices</div></div></section><section class="panel-grid"><section class="panel accent-orange span-2"><h2 class="panel-title">Conversation Readout</h2><div class="panel-subtitle">What the outside conversation means</div><p class="body-copy">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.</p><div class="summary-list"><div class="summary-row"><div class="summary-label">Brand signals</div><div class="summary-value">8</div></div><div class="summary-row"><div class="summary-label">Readout lens</div><div class="summary-value">Outside-in</div></div><div class="summary-row"><div class="summary-label">Review rhythm</div><div class="summary-value">Monthly + spike</div></div><div class="summary-row"><div class="summary-label">Action focus</div><div class="summary-value">Clarify or amplify</div></div></div><ul class="insight-list"><li>Identify the one emerging issue that deserves attention before the next monthly report.</li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.</li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.</li></ul></section><section class="panel accent-slate"><h2 class="panel-title">Listening Lenses</h2><div class="panel-subtitle">Themes being monitored</div><p class="body-copy">These lenses organize the outside conversation before it becomes a recommendation.</p><div class="topic-cloud"><span class="topic-chip">Sabin brand clean</span><span class="topic-chip">Ebola / Filovirus Early Warning</span><span class="topic-chip">Crisis / Rapid Response</span><span class="topic-chip">Vaccine Confidence &amp; Trust</span><span class="topic-chip">Outbreak Preparedness &amp; Response</span><span class="topic-chip">Research / Innovation / R&amp;D</span><span class="topic-chip">Routine Immunization</span><span class="topic-chip">Policy &amp; Financing</span></div></section><section class="panel accent-pink"><h2 class="panel-title">What the Evidence Establishes</h2><div class="panel-subtitle">Month-specific listening conclusions</div><div class="empty-state">No month-specific listening findings are available.</div></section><section class="panel accent-orange span-2"><h2 class="panel-title">Recommended Communications Response</h2><div class="panel-subtitle">What Sabin should do next</div><ul class="insight-list"><li>Identify the one emerging issue that deserves attention before the next monthly report.</li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.</li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.</li></ul></section><section class="panel accent-orange span-2"><h2 class="panel-title">Listening Summary</h2><div class="panel-subtitle">Talkwalker fallback package</div><p class="body-copy">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.</p><div class="summary-list"><div class="summary-row"><div class="summary-label">Results change</div><div class="summary-value">0.0%</div></div><div class="summary-row"><div class="summary-label">Engagement</div><div class="summary-value">0</div></div><div class="summary-row"><div class="summary-label">Engagement change</div><div class="summary-value">0.0%</div></div><div class="summary-row"><div class="summary-label">Sample age cluster</div><div class="summary-value">Not available</div></div></div></section><section class="panel accent-green"><h2 class="panel-title">Trending Topics</h2><div class="panel-subtitle">Theme concentration</div><p class="body-copy">Themes most visible in the listening package for the selected month.</p><div class="empty-state">Theme detail will appear here when the monthly listening readout is attached.</div></section><section class="panel accent-slate"><h2 class="panel-title">Media Mix</h2><div class="panel-subtitle">Where the conversation is appearing</div><div class="empty-state">No media-mix breakdown is available for this month.</div></section><section class="panel accent-green"><h2 class="panel-title">Strengths</h2><div class="panel-subtitle">Positive listening signals</div><div class="empty-state">No strength notes are available for this month.</div></section><section class="panel accent-pink"><h2 class="panel-title">Vulnerabilities</h2><div class="panel-subtitle">Watchlist items</div><div class="empty-state">No vulnerability notes are available for this month.</div></section><section class="panel accent-orange span-2"><h2 class="panel-title">Opportunities</h2><div class="panel-subtitle">Recommended follow-up angles</div><div class="empty-state">No opportunity notes are available for this month.</div></section></section></div></div>
   </main>
 </div>
 <script>
-const VIEW_MODELS = {"2026-05": {"subtitle": "Talkwalker listening package - May 2026", "status_html": "<span class=\"status-pill\">Social listening<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"metric-grid\"><div class=\"metric-card accent-orange\"><div class=\"metric-label\">Brand signals<\/div><div class=\"metric-value\">8<\/div><div class=\"metric-sub\">Reputation and issue themes<\/div><\/div><div class=\"metric-card accent-green\"><div class=\"metric-label\">Readout lens<\/div><div class=\"metric-value\">Outside-in<\/div><div class=\"metric-sub\">Public conversation context<\/div><\/div><div class=\"metric-card accent-pink\"><div class=\"metric-label\">Review rhythm<\/div><div class=\"metric-value\">Monthly + spike<\/div><div class=\"metric-sub\">Baseline plus emerging issues<\/div><\/div><div class=\"metric-card accent-slate\"><div class=\"metric-label\">Action focus<\/div><div class=\"metric-value\">Clarify or amplify<\/div><div class=\"metric-sub\">Turn signals into response choices<\/div><\/div><\/section><section class=\"panel-grid\"><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Conversation Readout<\/h2><div class=\"panel-subtitle\">What the outside conversation means<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Brand signals<\/div><div class=\"summary-value\">8<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Readout lens<\/div><div class=\"summary-value\">Outside-in<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Review rhythm<\/div><div class=\"summary-value\">Monthly + spike<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Action focus<\/div><div class=\"summary-value\">Clarify or amplify<\/div><\/div><\/div><ul class=\"insight-list\"><li>Identify the one emerging issue that deserves attention before the next monthly report.<\/li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.<\/li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.<\/li><\/ul><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Listening Lenses<\/h2><div class=\"panel-subtitle\">Themes being monitored<\/div><p class=\"body-copy\">These lenses organize the outside conversation before it becomes a recommendation.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin brand clean<\/span><span class=\"topic-chip\">Ebola / Filovirus Early Warning<\/span><span class=\"topic-chip\">Crisis / Rapid Response<\/span><span class=\"topic-chip\">Vaccine Confidence &amp; Trust<\/span><span class=\"topic-chip\">Outbreak Preparedness &amp; Response<\/span><span class=\"topic-chip\">Research / Innovation / R&amp;D<\/span><span class=\"topic-chip\">Routine Immunization<\/span><span class=\"topic-chip\">Policy &amp; Financing<\/span><\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Signals to Watch<\/h2><div class=\"panel-subtitle\">When a mention becomes meaningful<\/div><ul class=\"insight-list\"><li>Escalate an outbreak, misinformation, or policy story when volume rises and credible local sources appear in the same window.<\/li><li>Separate owned Sabin activity, partner amplification, and earned conversation before describing reputation health.<\/li><li>Use curated examples to explain why a signal matters, not just that it appeared.<\/li><li>Turn repeated questions, criticism, or confusion into a recommendation for owned content or partner amplification.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Readout Questions<\/h2><div class=\"panel-subtitle\">What the listening layer should answer<\/div><ul class=\"insight-list\"><li>What is newly emerging that Sabin should know before it becomes a broader story?<\/li><li>Where is Sabin being mentioned by credible third parties, and does the mention support what we want to be known for?<\/li><li>Which vaccine confidence or outbreak-response narratives need a proactive message, partner share, or briefing?<\/li><li>Which topics are overperforming in listening but underrepresented in owned content?<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Listening Summary<\/h2><div class=\"panel-subtitle\">Talkwalker fallback package<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">0<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Sample age cluster<\/div><div class=\"summary-value\">Not available<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Trending Topics<\/h2><div class=\"panel-subtitle\">Theme concentration<\/div><p class=\"body-copy\">Themes most visible in the listening package for the selected month.<\/p><div class=\"empty-state\">Theme detail will appear here when the monthly listening readout is attached.<\/div><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Media Mix<\/h2><div class=\"panel-subtitle\">Where the conversation is appearing<\/div><div class=\"empty-state\">No media-mix breakdown is available for this month.<\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Strengths<\/h2><div class=\"panel-subtitle\">Positive listening signals<\/div><div class=\"empty-state\">No strength notes are available for this month.<\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Vulnerabilities<\/h2><div class=\"panel-subtitle\">Watchlist items<\/div><div class=\"empty-state\">No vulnerability notes are available for this month.<\/div><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Opportunities<\/h2><div class=\"panel-subtitle\">Recommended follow-up angles<\/div><div class=\"empty-state\">No opportunity notes are available for this month.<\/div><\/section><\/section><\/div>", "title": "Sabin Dashboard | May 2026 Social Listening"}, "2026-04": {"subtitle": "Talkwalker listening package - April 2026", "status_html": "<span class=\"status-pill\">Social listening<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"metric-grid\"><div class=\"metric-card accent-orange\"><div class=\"metric-label\">Results<\/div><div class=\"metric-value\">127<\/div><div class=\"metric-sub\">Listening volume<\/div><\/div><div class=\"metric-card accent-green\"><div class=\"metric-label\">Engagement<\/div><div class=\"metric-value\">284<\/div><div class=\"metric-sub\">Interactions captured<\/div><\/div><div class=\"metric-card accent-pink\"><div class=\"metric-label\">Unique Authors<\/div><div class=\"metric-value\">92<\/div><div class=\"metric-sub\">Conversation breadth<\/div><\/div><div class=\"metric-card accent-slate\"><div class=\"metric-label\">Unique Sites<\/div><div class=\"metric-value\">32<\/div><div class=\"metric-sub\">Publishing environments<\/div><\/div><\/section><section class=\"panel-grid\"><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Conversation Readout<\/h2><div class=\"panel-subtitle\">What the outside conversation means<\/div><p class=\"body-copy\">The April Talkwalker Brand Management report is now attached. Use it as the monthly source for brand listening volume, engagement, author breadth, site breadth, sentiment, and influencer context, while keeping the configured IQ apps as the live early-warning layer.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results<\/div><div class=\"summary-value\">127<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">284<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Unique authors<\/div><div class=\"summary-value\">92<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Unique sites<\/div><div class=\"summary-value\">32<\/div><\/div><\/div><ul class=\"insight-list\"><li>Use the shared report to confirm monthly baseline numbers: 127 results, 284 engagements, 92 unique authors, and 32 unique sites.<\/li><li>Review sentiment key drivers before repeating the positive/negative split outside the Comms team.<\/li><li>Use Results Curation to save the most useful positive, negative, and influential results for the weekly digest.<\/li><li>Attach a raw Talkwalker export later if Comms needs chart-level detail for media mix, top themes, or top hashtags.<\/li><\/ul><a class=\"link-btn secondary\" href=\"https://app.talkwalker.com/app/project/f3190b5e-b0bf-4579-a562-1287c371b4ae/shared_report/mk5wd4x9_1670v2druq2lq/7b47f84c-4a4d-4b67-a086-072514aec7d1\" target=\"_blank\" rel=\"noopener noreferrer\">Open source report<\/a><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Listening Lenses<\/h2><div class=\"panel-subtitle\">Themes being monitored<\/div><p class=\"body-copy\">These lenses organize the outside conversation before it becomes a recommendation.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin brand clean<\/span><span class=\"topic-chip\">Ebola / Filovirus Early Warning<\/span><span class=\"topic-chip\">Crisis / Rapid Response<\/span><span class=\"topic-chip\">Vaccine Confidence &amp; Trust<\/span><span class=\"topic-chip\">Outbreak Preparedness &amp; Response<\/span><span class=\"topic-chip\">Research / Innovation / R&amp;D<\/span><span class=\"topic-chip\">Routine Immunization<\/span><span class=\"topic-chip\">Policy &amp; Financing<\/span><\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Signals to Watch<\/h2><div class=\"panel-subtitle\">When a mention becomes meaningful<\/div><ul class=\"insight-list\"><li>Treat the attached Talkwalker report as the monthly brand-listening source, but use Crisis and Trends Analysis for live issue monitoring.<\/li><li>Escalate outbreak or vaccine-confidence spikes when volume rises and credible local sources appear in the same window.<\/li><li>Keep owned Sabin posts, partner amplification, and earned third-party sentiment separate before reporting reputation health.<\/li><li>Turn repeated questions, criticism, or confusion into recommended owned-channel content or partner amplification.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Readout Questions<\/h2><div class=\"panel-subtitle\">What the listening layer should answer<\/div><ul class=\"insight-list\"><li>Did any signal emerge that Sabin should know before it becomes a broader public story?<\/li><li>Are the 42% negative and 41% positive sentiment shares being driven by real Sabin reputation signals or by topic/context artifacts?<\/li><li>Which authors or sites are actually worth engaging, briefing, or watching?<\/li><li>Which topics are rising in listening but underrepresented in owned content?<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Listening Summary<\/h2><div class=\"panel-subtitle\">Talkwalker fallback package<\/div><p class=\"body-copy\">April&#x27;s Talkwalker Brand Management report is attached. The report shows stable volume at 127 results, engagement down slightly to 284, and broader conversation breadth through 92 unique authors and 32 unique sites. The biggest Comms takeaway is not volume; it is that the conversation spread wider while sentiment stayed mixed, so the next step is driver review and curated interpretation.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">284<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement change<\/div><div class=\"summary-value\">-3.1%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Sample age cluster<\/div><div class=\"summary-value\">Not available<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Trending Topics<\/h2><div class=\"panel-subtitle\">Theme concentration<\/div><p class=\"body-copy\">Themes most visible in the listening package for the selected month.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin Vaccine Institute<\/span><span class=\"topic-chip\">HPV / cervical cancer elimination<\/span><span class=\"topic-chip\">Polio<\/span><span class=\"topic-chip\">Outbreak response<\/span><span class=\"topic-chip\">Vaccine confidence<\/span><span class=\"topic-chip\">Global immunization<\/span><\/div><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Media Mix<\/h2><div class=\"panel-subtitle\">Where the conversation is appearing<\/div><div class=\"empty-state\">No media-mix breakdown is available for this month.<\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Strengths<\/h2><div class=\"panel-subtitle\">Positive listening signals<\/div><ul class=\"insight-list\"><li>The report gives April a confirmed monthly listening baseline: 127 results, 284 engagements, 92 unique authors, and 32 unique sites.<\/li><li>Conversation breadth improved: unique authors rose 12.2% and unique sites rose 52.4% compared with the prior period.<\/li><li>Sabin&#x27;s owned presence is visible in the influencer section, with Sabin Vaccine Institute listed as the most active author on X and most influential author on LinkedIn.<\/li><\/ul><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Vulnerabilities<\/h2><div class=\"panel-subtitle\">Watchlist items<\/div><ul class=\"insight-list\"><li>Engagement declined 3.1% even while author and site breadth increased, so the conversation spread wider but did not become more interactive.<\/li><li>Sentiment is nearly split between positive and negative, with 42% negative and 41% positive; this needs driver review before being used as a reputation headline.<\/li><li>The report mixes owned Sabin activity with broader conversation signals, so earned sentiment should be separated from owned and partner amplification before executive reporting.<\/li><li>The cleaned-topic preview later showed 416 results for 04/19/26 to 05/18/26, which should not be compared directly with this 30-day report.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Opportunities<\/h2><div class=\"panel-subtitle\">Recommended follow-up angles<\/div><ul class=\"insight-list\"><li>Use the author and site breadth increase as a prompt to find new credible voices, not just as a volume win.<\/li><li>Create a weekly curated digest that includes one emerging issue, one reputation signal, one influential result, and one recommended action.<\/li><li>Use the negative sentiment driver review to identify whether Sabin needs a response, partner amplification, or just monitoring.<\/li><\/ul><\/section><\/section><\/div>", "title": "Sabin Dashboard | April 2026 Social Listening"}, "2026-03": {"subtitle": "Talkwalker listening package - March 2026", "status_html": "<span class=\"status-pill\">Social listening<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"metric-grid\"><div class=\"metric-card accent-orange\"><div class=\"metric-label\">Brand signals<\/div><div class=\"metric-value\">8<\/div><div class=\"metric-sub\">Reputation and issue themes<\/div><\/div><div class=\"metric-card accent-green\"><div class=\"metric-label\">Readout lens<\/div><div class=\"metric-value\">Outside-in<\/div><div class=\"metric-sub\">Public conversation context<\/div><\/div><div class=\"metric-card accent-pink\"><div class=\"metric-label\">Review rhythm<\/div><div class=\"metric-value\">Monthly + spike<\/div><div class=\"metric-sub\">Baseline plus emerging issues<\/div><\/div><div class=\"metric-card accent-slate\"><div class=\"metric-label\">Action focus<\/div><div class=\"metric-value\">Clarify or amplify<\/div><div class=\"metric-sub\">Turn signals into response choices<\/div><\/div><\/section><section class=\"panel-grid\"><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Conversation Readout<\/h2><div class=\"panel-subtitle\">What the outside conversation means<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Brand signals<\/div><div class=\"summary-value\">8<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Readout lens<\/div><div class=\"summary-value\">Outside-in<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Review rhythm<\/div><div class=\"summary-value\">Monthly + spike<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Action focus<\/div><div class=\"summary-value\">Clarify or amplify<\/div><\/div><\/div><ul class=\"insight-list\"><li>Identify the one emerging issue that deserves attention before the next monthly report.<\/li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.<\/li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.<\/li><\/ul><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Listening Lenses<\/h2><div class=\"panel-subtitle\">Themes being monitored<\/div><p class=\"body-copy\">These lenses organize the outside conversation before it becomes a recommendation.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin brand clean<\/span><span class=\"topic-chip\">Ebola / Filovirus Early Warning<\/span><span class=\"topic-chip\">Crisis / Rapid Response<\/span><span class=\"topic-chip\">Vaccine Confidence &amp; Trust<\/span><span class=\"topic-chip\">Outbreak Preparedness &amp; Response<\/span><span class=\"topic-chip\">Research / Innovation / R&amp;D<\/span><span class=\"topic-chip\">Routine Immunization<\/span><span class=\"topic-chip\">Policy &amp; Financing<\/span><\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Signals to Watch<\/h2><div class=\"panel-subtitle\">When a mention becomes meaningful<\/div><ul class=\"insight-list\"><li>Escalate an outbreak, misinformation, or policy story when volume rises and credible local sources appear in the same window.<\/li><li>Separate owned Sabin activity, partner amplification, and earned conversation before describing reputation health.<\/li><li>Use curated examples to explain why a signal matters, not just that it appeared.<\/li><li>Turn repeated questions, criticism, or confusion into a recommendation for owned content or partner amplification.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Readout Questions<\/h2><div class=\"panel-subtitle\">What the listening layer should answer<\/div><ul class=\"insight-list\"><li>What is newly emerging that Sabin should know before it becomes a broader story?<\/li><li>Where is Sabin being mentioned by credible third parties, and does the mention support what we want to be known for?<\/li><li>Which vaccine confidence or outbreak-response narratives need a proactive message, partner share, or briefing?<\/li><li>Which topics are overperforming in listening but underrepresented in owned content?<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Listening Summary<\/h2><div class=\"panel-subtitle\">Talkwalker fallback package<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">0<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Sample age cluster<\/div><div class=\"summary-value\">Not available<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Trending Topics<\/h2><div class=\"panel-subtitle\">Theme concentration<\/div><p class=\"body-copy\">Themes most visible in the listening package for the selected month.<\/p><div class=\"empty-state\">Theme detail will appear here when the monthly listening readout is attached.<\/div><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Media Mix<\/h2><div class=\"panel-subtitle\">Where the conversation is appearing<\/div><div class=\"empty-state\">No media-mix breakdown is available for this month.<\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Strengths<\/h2><div class=\"panel-subtitle\">Positive listening signals<\/div><div class=\"empty-state\">No strength notes are available for this month.<\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Vulnerabilities<\/h2><div class=\"panel-subtitle\">Watchlist items<\/div><div class=\"empty-state\">No vulnerability notes are available for this month.<\/div><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Opportunities<\/h2><div class=\"panel-subtitle\">Recommended follow-up angles<\/div><div class=\"empty-state\">No opportunity notes are available for this month.<\/div><\/section><\/section><\/div>", "title": "Sabin Dashboard | March 2026 Social Listening"}, "2026-02": {"subtitle": "Talkwalker listening package - February 2026", "status_html": "<span class=\"status-pill\">Social listening<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"metric-grid\"><div class=\"metric-card accent-orange\"><div class=\"metric-label\">Results<\/div><div class=\"metric-value\">145<\/div><div class=\"metric-sub\">Listening volume<\/div><\/div><div class=\"metric-card accent-green\"><div class=\"metric-label\">Engagement<\/div><div class=\"metric-value\">464<\/div><div class=\"metric-sub\">Interactions captured<\/div><\/div><div class=\"metric-card accent-pink\"><div class=\"metric-label\">Unique Authors<\/div><div class=\"metric-value\">98<\/div><div class=\"metric-sub\">Conversation breadth<\/div><\/div><div class=\"metric-card accent-slate\"><div class=\"metric-label\">Unique Sites<\/div><div class=\"metric-value\">21<\/div><div class=\"metric-sub\">Publishing environments<\/div><\/div><\/section><section class=\"panel-grid\"><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Conversation Readout<\/h2><div class=\"panel-subtitle\">What the outside conversation means<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Brand signals<\/div><div class=\"summary-value\">8<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Readout lens<\/div><div class=\"summary-value\">Outside-in<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Review rhythm<\/div><div class=\"summary-value\">Monthly + spike<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Action focus<\/div><div class=\"summary-value\">Clarify or amplify<\/div><\/div><\/div><ul class=\"insight-list\"><li>Identify the one emerging issue that deserves attention before the next monthly report.<\/li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.<\/li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.<\/li><\/ul><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Listening Lenses<\/h2><div class=\"panel-subtitle\">Themes being monitored<\/div><p class=\"body-copy\">These lenses organize the outside conversation before it becomes a recommendation.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin brand clean<\/span><span class=\"topic-chip\">Ebola / Filovirus Early Warning<\/span><span class=\"topic-chip\">Crisis / Rapid Response<\/span><span class=\"topic-chip\">Vaccine Confidence &amp; Trust<\/span><span class=\"topic-chip\">Outbreak Preparedness &amp; Response<\/span><span class=\"topic-chip\">Research / Innovation / R&amp;D<\/span><span class=\"topic-chip\">Routine Immunization<\/span><span class=\"topic-chip\">Policy &amp; Financing<\/span><\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Signals to Watch<\/h2><div class=\"panel-subtitle\">When a mention becomes meaningful<\/div><ul class=\"insight-list\"><li>Escalate an outbreak, misinformation, or policy story when volume rises and credible local sources appear in the same window.<\/li><li>Separate owned Sabin activity, partner amplification, and earned conversation before describing reputation health.<\/li><li>Use curated examples to explain why a signal matters, not just that it appeared.<\/li><li>Turn repeated questions, criticism, or confusion into a recommendation for owned content or partner amplification.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Readout Questions<\/h2><div class=\"panel-subtitle\">What the listening layer should answer<\/div><ul class=\"insight-list\"><li>What is newly emerging that Sabin should know before it becomes a broader story?<\/li><li>Where is Sabin being mentioned by credible third parties, and does the mention support what we want to be known for?<\/li><li>Which vaccine confidence or outbreak-response narratives need a proactive message, partner share, or briefing?<\/li><li>Which topics are overperforming in listening but underrepresented in owned content?<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Listening Summary<\/h2><div class=\"panel-subtitle\">Talkwalker fallback package<\/div><p class=\"body-copy\">Brand-management listening shows a more concentrated but more engaged conversation around Sabin. Results fell from 154 to 145, but engagement rose from 407 to 464. X remains the dominant media type, LinkedIn is the clear secondary platform, and blogs are growing sharply. The clearest strategic theme is HPV and cervical-cancer-elimination content, with supporting signals around polio, outbreak response, and global vaccine work.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results change<\/div><div class=\"summary-value\">-5.8%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">464<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement change<\/div><div class=\"summary-value\">+14.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Sample age cluster<\/div><div class=\"summary-value\">25-34<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Trending Topics<\/h2><div class=\"panel-subtitle\">Theme concentration<\/div><p class=\"body-copy\">Themes most visible in the listening package for the selected month.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">vaccine<\/span><span class=\"topic-chip\">sabin<\/span><span class=\"topic-chip\">polio<\/span><span class=\"topic-chip\">HPV<\/span><span class=\"topic-chip\">cervical cancer<\/span><span class=\"topic-chip\">India<\/span><span class=\"topic-chip\">Sudan<\/span><span class=\"topic-chip\">Kenya<\/span><span class=\"topic-chip\">South Africa<\/span><\/div><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Media Mix<\/h2><div class=\"panel-subtitle\">Where the conversation is appearing<\/div><ul class=\"insight-list\"><li>X: 49.7% share (+14.0%)<\/li><li>LinkedIn: 21.4% share (+7.0%)<\/li><li>Blogs: 8.3% share (+71.0%)<\/li><li>Instagram: 5.5% share (-11.0%)<\/li><li>Reddit: 4.0% share (+20.0%)<\/li><\/ul><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Strengths<\/h2><div class=\"panel-subtitle\">Positive listening signals<\/div><ul class=\"insight-list\"><li>Engagement is up 14% even though total results are down 5.8%, which indicates the conversation is concentrating but becoming more interactive.<\/li><li>Sabin owned social delivered 2,027 engagements at a 6.61% engagement rate, giving the brand a strong owned-media base to amplify earned attention.<\/li><li>X and LinkedIn account for most visible conversation share, which aligns well with Sabin’s strongest current social channels for reach and engagement.<\/li><\/ul><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Vulnerabilities<\/h2><div class=\"panel-subtitle\">Watchlist items<\/div><ul class=\"insight-list\"><li>Unique sites are down 36.4%, suggesting the conversation is appearing in fewer publishing environments and may be narrowing in breadth.<\/li><li>Audience analysis is based on small samples for age and occupations, so those demographics should be treated as directional rather than decision-grade.<\/li><li>The strongest conversation themes are concentrated around HPV, cervical-cancer elimination, polio, and outbreak-response language; other priority narratives may be underrepresented.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Opportunities<\/h2><div class=\"panel-subtitle\">Recommended follow-up angles<\/div><ul class=\"insight-list\"><li>Lean into HPV and cervical-cancer-elimination storytelling because those topics are clearly driving the current theme and hashtag clouds.<\/li><li>Use the growth in blog and LinkedIn share to place more substantive thought-leadership content where the conversation is showing depth rather than just volume.<\/li><li>Review the most active author and influential site lists to separate earned advocacy from owned or adjacent amplification.<\/li><\/ul><\/section><\/section><\/div>", "title": "Sabin Dashboard | February 2026 Social Listening"}, "2026-01": {"subtitle": "Talkwalker listening package - January 2026", "status_html": "<span class=\"status-pill\">Social listening<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"metric-grid\"><div class=\"metric-card accent-orange\"><div class=\"metric-label\">Brand signals<\/div><div class=\"metric-value\">8<\/div><div class=\"metric-sub\">Reputation and issue themes<\/div><\/div><div class=\"metric-card accent-green\"><div class=\"metric-label\">Readout lens<\/div><div class=\"metric-value\">Outside-in<\/div><div class=\"metric-sub\">Public conversation context<\/div><\/div><div class=\"metric-card accent-pink\"><div class=\"metric-label\">Review rhythm<\/div><div class=\"metric-value\">Monthly + spike<\/div><div class=\"metric-sub\">Baseline plus emerging issues<\/div><\/div><div class=\"metric-card accent-slate\"><div class=\"metric-label\">Action focus<\/div><div class=\"metric-value\">Clarify or amplify<\/div><div class=\"metric-sub\">Turn signals into response choices<\/div><\/div><\/section><section class=\"panel-grid\"><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Conversation Readout<\/h2><div class=\"panel-subtitle\">What the outside conversation means<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Brand signals<\/div><div class=\"summary-value\">8<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Readout lens<\/div><div class=\"summary-value\">Outside-in<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Review rhythm<\/div><div class=\"summary-value\">Monthly + spike<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Action focus<\/div><div class=\"summary-value\">Clarify or amplify<\/div><\/div><\/div><ul class=\"insight-list\"><li>Identify the one emerging issue that deserves attention before the next monthly report.<\/li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.<\/li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.<\/li><\/ul><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Listening Lenses<\/h2><div class=\"panel-subtitle\">Themes being monitored<\/div><p class=\"body-copy\">These lenses organize the outside conversation before it becomes a recommendation.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin brand clean<\/span><span class=\"topic-chip\">Ebola / Filovirus Early Warning<\/span><span class=\"topic-chip\">Crisis / Rapid Response<\/span><span class=\"topic-chip\">Vaccine Confidence &amp; Trust<\/span><span class=\"topic-chip\">Outbreak Preparedness &amp; Response<\/span><span class=\"topic-chip\">Research / Innovation / R&amp;D<\/span><span class=\"topic-chip\">Routine Immunization<\/span><span class=\"topic-chip\">Policy &amp; Financing<\/span><\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Signals to Watch<\/h2><div class=\"panel-subtitle\">When a mention becomes meaningful<\/div><ul class=\"insight-list\"><li>Escalate an outbreak, misinformation, or policy story when volume rises and credible local sources appear in the same window.<\/li><li>Separate owned Sabin activity, partner amplification, and earned conversation before describing reputation health.<\/li><li>Use curated examples to explain why a signal matters, not just that it appeared.<\/li><li>Turn repeated questions, criticism, or confusion into a recommendation for owned content or partner amplification.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Readout Questions<\/h2><div class=\"panel-subtitle\">What the listening layer should answer<\/div><ul class=\"insight-list\"><li>What is newly emerging that Sabin should know before it becomes a broader story?<\/li><li>Where is Sabin being mentioned by credible third parties, and does the mention support what we want to be known for?<\/li><li>Which vaccine confidence or outbreak-response narratives need a proactive message, partner share, or briefing?<\/li><li>Which topics are overperforming in listening but underrepresented in owned content?<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Listening Summary<\/h2><div class=\"panel-subtitle\">Talkwalker fallback package<\/div><p class=\"body-copy\">January listening has been backfilled as a placeholder month so the dashboard can load it consistently. It does not contain archived Talkwalker results yet; the narrative is based on January owned social performance only.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">0<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Sample age cluster<\/div><div class=\"summary-value\">Not available<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Trending Topics<\/h2><div class=\"panel-subtitle\">Theme concentration<\/div><p class=\"body-copy\">Themes most visible in the listening package for the selected month.<\/p><div class=\"empty-state\">Theme detail will appear here when the monthly listening readout is attached.<\/div><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Media Mix<\/h2><div class=\"panel-subtitle\">Where the conversation is appearing<\/div><div class=\"empty-state\">No media-mix breakdown is available for this month.<\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Strengths<\/h2><div class=\"panel-subtitle\">Positive listening signals<\/div><ul class=\"insight-list\"><li>Owned social performance in January was solid, with 843 total engagements and a 5.95% weighted engagement rate.<\/li><li>LinkedIn drove the clearest interaction signal with 287 engagements and 720 link clicks.<\/li><li>Instagram delivered 2,003 views while Facebook added 78 reactions, showing multi-platform support even without archived listening data.<\/li><\/ul><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Vulnerabilities<\/h2><div class=\"panel-subtitle\">Watchlist items<\/div><ul class=\"insight-list\"><li>No January Talkwalker report is currently archived in the dashboard data folder, so this month can only show social-performance-led interpretation.<\/li><li>Without a month-specific listening export, media-type mix, unique authors, and site breadth cannot be measured for January.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Opportunities<\/h2><div class=\"panel-subtitle\">Recommended follow-up angles<\/div><ul class=\"insight-list\"><li>Backfill the January Talkwalker export later if it is recovered from Outlook or Downloads so month-over-month listening trends can start from January.<\/li><li>Use January as the baseline owned-media month when comparing February and March listening concentration and engagement quality.<\/li><\/ul><\/section><\/section><\/div>", "title": "Sabin Dashboard | January 2026 Social Listening"}};
-const PAGE_TARGETS = {"dashboard": "DASHBOARD_PREVIEW.html", "reports": "REPORTS.html", "ads": "ADS.html", "programs": "PROGRAMS_REPORT.html", "executive": "EXECUTIVE_REPORT.html", "board": "BOARD_REPORT.html", "social-listening": "SOCIAL_LISTENING.html", "settings": "SETTINGS.html", "help": "HELP.html"};
-const DEFAULT_MONTH = "2026-05";
+const VIEW_MODELS = {"2026-09": {"subtitle": "Talkwalker listening package - September 2026", "status_html": "<span class=\"status-pill\">Social listening<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"metric-grid\"><div class=\"metric-card accent-orange\"><div class=\"metric-label\">Brand signals<\/div><div class=\"metric-value\">8<\/div><div class=\"metric-sub\">Reputation and issue themes<\/div><\/div><div class=\"metric-card accent-green\"><div class=\"metric-label\">Readout lens<\/div><div class=\"metric-value\">Outside-in<\/div><div class=\"metric-sub\">Public conversation context<\/div><\/div><div class=\"metric-card accent-pink\"><div class=\"metric-label\">Review rhythm<\/div><div class=\"metric-value\">Monthly + spike<\/div><div class=\"metric-sub\">Baseline plus emerging issues<\/div><\/div><div class=\"metric-card accent-slate\"><div class=\"metric-label\">Action focus<\/div><div class=\"metric-value\">Clarify or amplify<\/div><div class=\"metric-sub\">Turn signals into response choices<\/div><\/div><\/section><section class=\"panel-grid\"><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Conversation Readout<\/h2><div class=\"panel-subtitle\">What the outside conversation means<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Brand signals<\/div><div class=\"summary-value\">8<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Readout lens<\/div><div class=\"summary-value\">Outside-in<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Review rhythm<\/div><div class=\"summary-value\">Monthly + spike<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Action focus<\/div><div class=\"summary-value\">Clarify or amplify<\/div><\/div><\/div><ul class=\"insight-list\"><li>Identify the one emerging issue that deserves attention before the next monthly report.<\/li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.<\/li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.<\/li><\/ul><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Listening Lenses<\/h2><div class=\"panel-subtitle\">Themes being monitored<\/div><p class=\"body-copy\">These lenses organize the outside conversation before it becomes a recommendation.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin brand clean<\/span><span class=\"topic-chip\">Ebola / Filovirus Early Warning<\/span><span class=\"topic-chip\">Crisis / Rapid Response<\/span><span class=\"topic-chip\">Vaccine Confidence &amp; Trust<\/span><span class=\"topic-chip\">Outbreak Preparedness &amp; Response<\/span><span class=\"topic-chip\">Research / Innovation / R&amp;D<\/span><span class=\"topic-chip\">Routine Immunization<\/span><span class=\"topic-chip\">Policy &amp; Financing<\/span><\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">What the Evidence Establishes<\/h2><div class=\"panel-subtitle\">Month-specific listening conclusions<\/div><div class=\"empty-state\">No month-specific listening findings are available.<\/div><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Recommended Communications Response<\/h2><div class=\"panel-subtitle\">What Sabin should do next<\/div><ul class=\"insight-list\"><li>Identify the one emerging issue that deserves attention before the next monthly report.<\/li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.<\/li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Listening Summary<\/h2><div class=\"panel-subtitle\">Talkwalker fallback package<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">0<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Sample age cluster<\/div><div class=\"summary-value\">Not available<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Trending Topics<\/h2><div class=\"panel-subtitle\">Theme concentration<\/div><p class=\"body-copy\">Themes most visible in the listening package for the selected month.<\/p><div class=\"empty-state\">Theme detail will appear here when the monthly listening readout is attached.<\/div><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Media Mix<\/h2><div class=\"panel-subtitle\">Where the conversation is appearing<\/div><div class=\"empty-state\">No media-mix breakdown is available for this month.<\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Strengths<\/h2><div class=\"panel-subtitle\">Positive listening signals<\/div><div class=\"empty-state\">No strength notes are available for this month.<\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Vulnerabilities<\/h2><div class=\"panel-subtitle\">Watchlist items<\/div><div class=\"empty-state\">No vulnerability notes are available for this month.<\/div><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Opportunities<\/h2><div class=\"panel-subtitle\">Recommended follow-up angles<\/div><div class=\"empty-state\">No opportunity notes are available for this month.<\/div><\/section><\/section><\/div>", "title": "Sabin Dashboard | September 2026 Social Listening"}, "2026-08": {"subtitle": "Talkwalker listening package - August 2026", "status_html": "<span class=\"status-pill\">Social listening<\/span><span class=\"status-pill good\">Attached<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"metric-grid\"><div class=\"metric-card accent-orange\"><div class=\"metric-label\">Results<\/div><div class=\"metric-value\">85<\/div><div class=\"metric-sub\">Listening volume<\/div><\/div><div class=\"metric-card accent-green\"><div class=\"metric-label\">Engagement<\/div><div class=\"metric-value\">N/A<\/div><div class=\"metric-sub\">Not returned by MCP<\/div><\/div><div class=\"metric-card accent-pink\"><div class=\"metric-label\">Unique Authors<\/div><div class=\"metric-value\">53<\/div><div class=\"metric-sub\">Conversation breadth<\/div><\/div><div class=\"metric-card accent-slate\"><div class=\"metric-label\">Unique Sites<\/div><div class=\"metric-value\">N/A<\/div><div class=\"metric-sub\">Not returned by MCP<\/div><\/div><\/section><section class=\"panel-grid\"><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Conversation Readout<\/h2><div class=\"panel-subtitle\">What the outside conversation means<\/div><p class=\"body-copy\">August listening found 85 Sabin mentions from 53 authors. Conversation centered on vaccine confidence training, HPV vaccination, typhoid evidence, and Sabin&#x27;s institutional mission. The main communications risk was association with anti-vaccine misinformation and corruption narratives; the opportunity is to use trusted experts and practical evidence to answer those narratives without amplifying them.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Mentions<\/div><div class=\"summary-value\">85<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Unique authors<\/div><div class=\"summary-value\">53<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Positive<\/div><div class=\"summary-value\">29.4%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Negative<\/div><div class=\"summary-value\">34.1%<\/div><\/div><\/div><ul class=\"insight-list\"><li>Make vaccine-confidence content practical and expert-led, using concrete guidance for health workers and community leaders.<\/li><li>Prepare concise response language for corruption and vaccine-harm narratives before they directly target Sabin.<\/li><li>Track earned corrective coverage separately from owned posts so reputation impact is not inferred from publishing volume.<\/li><\/ul><a class=\"link-btn secondary\" href=\"https://app.talkwalker.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Open source report<\/a><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Listening Lenses<\/h2><div class=\"panel-subtitle\">Themes being monitored<\/div><p class=\"body-copy\">These lenses organize the outside conversation before it becomes a recommendation.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin brand clean<\/span><span class=\"topic-chip\">Ebola / Filovirus Early Warning<\/span><span class=\"topic-chip\">Crisis / Rapid Response<\/span><span class=\"topic-chip\">Vaccine Confidence &amp; Trust<\/span><span class=\"topic-chip\">Outbreak Preparedness &amp; Response<\/span><span class=\"topic-chip\">Research / Innovation / R&amp;D<\/span><span class=\"topic-chip\">Routine Immunization<\/span><span class=\"topic-chip\">Policy &amp; Financing<\/span><\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">What the Evidence Establishes<\/h2><div class=\"panel-subtitle\">Month-specific listening conclusions<\/div><ul class=\"insight-list\"><li>The August dataset does not establish a sustained misinformation narrative aimed directly at Sabin. The more immediate risk is association: Sabin is being mentioned within broader anti-vaccine and institutional-corruption narratives.<\/li><li>Sabin experts have the clearest corrective role in vaccine confidence, HPV vaccination, typhoid prevention, and outbreak preparedness, where practical evidence can add context without repeating harmful claims.<\/li><li>Evidence-led conversation gained visibility around vaccine-confidence training, HPV vaccination, typhoid evidence, and vaccine research. Source-level classification is still needed before ranking partner and earned-media amplification by impact.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Recommended Communications Response<\/h2><div class=\"panel-subtitle\">What Sabin should do next<\/div><ul class=\"insight-list\"><li>Prioritize practical, expert-led vaccine-confidence content for health workers and community leaders.<\/li><li>Prepare concise response language for vaccine-harm and corruption narratives so Sabin can respond without restating or amplifying the claim.<\/li><li>Strengthen pathways from earned expert coverage to Sabin-owned evidence and track partner, earned, owned, and critical mentions separately.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Listening Summary<\/h2><div class=\"panel-subtitle\">Talkwalker fallback package<\/div><p class=\"body-copy\">August&#x27;s strongest strategic signal is a trust opportunity paired with association risk. Sabin&#x27;s practical, expert-led vaccine-confidence and evidence content has clear relevance, while anti-vaccine misinformation can pull the organization into broader distrust narratives. The communications response should emphasize credible experts, practical guidance, and owned-resource pathways.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">0<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Sample age cluster<\/div><div class=\"summary-value\">Not available<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Trending Topics<\/h2><div class=\"panel-subtitle\">Theme concentration<\/div><p class=\"body-copy\">Themes most visible in the listening package for the selected month.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">vaccine confidence and hesitancy<\/span><span class=\"topic-chip\">HPV vaccination<\/span><span class=\"topic-chip\">typhoid surveillance and prevention<\/span><span class=\"topic-chip\">vaccine research and development<\/span><span class=\"topic-chip\">anti-vaccine misinformation<\/span><\/div><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Media Mix<\/h2><div class=\"panel-subtitle\">Where the conversation is appearing<\/div><div class=\"empty-state\">No media-mix breakdown is available for this month.<\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Strengths<\/h2><div class=\"panel-subtitle\">Positive listening signals<\/div><ul class=\"insight-list\"><li>Sabin appeared as a practical source on vaccine confidence, HPV vaccination, typhoid prevention, and vaccine research.<\/li><li>Corrective coverage used Sabin expertise to challenge political misinformation about COVID-19.<\/li><\/ul><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Vulnerabilities<\/h2><div class=\"panel-subtitle\">Watchlist items<\/div><ul class=\"insight-list\"><li>Anti-vaccine and institutional-corruption narratives can create association risk even when they do not directly criticize Sabin.<\/li><li>A raw negative-share headline would overstate what automated sentiment can establish about reputation.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Opportunities<\/h2><div class=\"panel-subtitle\">Recommended follow-up angles<\/div><ul class=\"insight-list\"><li>Turn vaccine-confidence training into an evidence-led content series for health workers and community leaders.<\/li><li>Use trusted Sabin experts in timely corrective media where misinformation is already attracting attention.<\/li><\/ul><\/section><\/section><\/div>", "title": "Sabin Dashboard | August 2026 Social Listening"}, "2026-07": {"subtitle": "Talkwalker listening package - July 2026", "status_html": "<span class=\"status-pill\">Social listening<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"metric-grid\"><div class=\"metric-card accent-orange\"><div class=\"metric-label\">Brand signals<\/div><div class=\"metric-value\">8<\/div><div class=\"metric-sub\">Reputation and issue themes<\/div><\/div><div class=\"metric-card accent-green\"><div class=\"metric-label\">Readout lens<\/div><div class=\"metric-value\">Outside-in<\/div><div class=\"metric-sub\">Public conversation context<\/div><\/div><div class=\"metric-card accent-pink\"><div class=\"metric-label\">Review rhythm<\/div><div class=\"metric-value\">Monthly + spike<\/div><div class=\"metric-sub\">Baseline plus emerging issues<\/div><\/div><div class=\"metric-card accent-slate\"><div class=\"metric-label\">Action focus<\/div><div class=\"metric-value\">Clarify or amplify<\/div><div class=\"metric-sub\">Turn signals into response choices<\/div><\/div><\/section><section class=\"panel-grid\"><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Conversation Readout<\/h2><div class=\"panel-subtitle\">What the outside conversation means<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Brand signals<\/div><div class=\"summary-value\">8<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Readout lens<\/div><div class=\"summary-value\">Outside-in<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Review rhythm<\/div><div class=\"summary-value\">Monthly + spike<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Action focus<\/div><div class=\"summary-value\">Clarify or amplify<\/div><\/div><\/div><ul class=\"insight-list\"><li>Identify the one emerging issue that deserves attention before the next monthly report.<\/li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.<\/li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.<\/li><\/ul><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Listening Lenses<\/h2><div class=\"panel-subtitle\">Themes being monitored<\/div><p class=\"body-copy\">These lenses organize the outside conversation before it becomes a recommendation.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin brand clean<\/span><span class=\"topic-chip\">Ebola / Filovirus Early Warning<\/span><span class=\"topic-chip\">Crisis / Rapid Response<\/span><span class=\"topic-chip\">Vaccine Confidence &amp; Trust<\/span><span class=\"topic-chip\">Outbreak Preparedness &amp; Response<\/span><span class=\"topic-chip\">Research / Innovation / R&amp;D<\/span><span class=\"topic-chip\">Routine Immunization<\/span><span class=\"topic-chip\">Policy &amp; Financing<\/span><\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">What the Evidence Establishes<\/h2><div class=\"panel-subtitle\">Month-specific listening conclusions<\/div><div class=\"empty-state\">No month-specific listening findings are available.<\/div><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Recommended Communications Response<\/h2><div class=\"panel-subtitle\">What Sabin should do next<\/div><ul class=\"insight-list\"><li>Identify the one emerging issue that deserves attention before the next monthly report.<\/li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.<\/li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Listening Summary<\/h2><div class=\"panel-subtitle\">Talkwalker fallback package<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">0<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Sample age cluster<\/div><div class=\"summary-value\">Not available<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Trending Topics<\/h2><div class=\"panel-subtitle\">Theme concentration<\/div><p class=\"body-copy\">Themes most visible in the listening package for the selected month.<\/p><div class=\"empty-state\">Theme detail will appear here when the monthly listening readout is attached.<\/div><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Media Mix<\/h2><div class=\"panel-subtitle\">Where the conversation is appearing<\/div><div class=\"empty-state\">No media-mix breakdown is available for this month.<\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Strengths<\/h2><div class=\"panel-subtitle\">Positive listening signals<\/div><div class=\"empty-state\">No strength notes are available for this month.<\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Vulnerabilities<\/h2><div class=\"panel-subtitle\">Watchlist items<\/div><div class=\"empty-state\">No vulnerability notes are available for this month.<\/div><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Opportunities<\/h2><div class=\"panel-subtitle\">Recommended follow-up angles<\/div><div class=\"empty-state\">No opportunity notes are available for this month.<\/div><\/section><\/section><\/div>", "title": "Sabin Dashboard | July 2026 Social Listening"}, "2026-06": {"subtitle": "Talkwalker listening package - June 2026", "status_html": "<span class=\"status-pill\">Social listening<\/span><span class=\"status-pill good\">Attached<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"metric-grid\"><div class=\"metric-card accent-orange\"><div class=\"metric-label\">Results<\/div><div class=\"metric-value\">73<\/div><div class=\"metric-sub\">Listening volume<\/div><\/div><div class=\"metric-card accent-green\"><div class=\"metric-label\">Engagement<\/div><div class=\"metric-value\">318<\/div><div class=\"metric-sub\">Interactions captured<\/div><\/div><div class=\"metric-card accent-pink\"><div class=\"metric-label\">Unique Authors<\/div><div class=\"metric-value\">60<\/div><div class=\"metric-sub\">Conversation breadth<\/div><\/div><div class=\"metric-card accent-slate\"><div class=\"metric-label\">Unique Sites<\/div><div class=\"metric-value\">9<\/div><div class=\"metric-sub\">Publishing environments<\/div><\/div><\/section><section class=\"panel-grid\"><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Conversation Readout<\/h2><div class=\"panel-subtitle\">What the outside conversation means<\/div><p class=\"body-copy\">June Brand Listening is verified for June 1-30, 2026. Talkwalker shows 73 results, 318 engagements, 60 unique authors, and 9 unique sites. Raw sentiment is mixed, with 39.7% negative, 37.0% positive, and 23.3% neutral, but manual review shows the negative bucket is dominated by Ebola/Marburg outbreak context rather than direct criticism of Sabin.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results<\/div><div class=\"summary-value\">73<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">318<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Unique authors<\/div><div class=\"summary-value\">60<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Unique sites<\/div><div class=\"summary-value\">9<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Negative review<\/div><div class=\"summary-value\">Low criticism<\/div><\/div><\/div><ul class=\"insight-list\"><li>Use the June Brand Listening metrics as the monthly listening baseline.<\/li><li>Add a sentiment caveat in any executive readout: June negativity is issue-context driven, not observed reputational criticism.<\/li><li>Monitor CIDRAP-style outbreak amplification separately from brand sentiment.<\/li><li>For future months, export negative results directly from Talkwalker and archive the raw CSV with the dashboard source package.<\/li><\/ul><a class=\"link-btn secondary\" href=\"https://app.talkwalker.com/app/page#/BRAND_LISTENING#cid=f3190b5e-b0bf-4579-a562-1287c371b4ae&amp;co=project&amp;activePageId=PERFORMANCE\" target=\"_blank\" rel=\"noopener noreferrer\">Open source report<\/a><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Listening Lenses<\/h2><div class=\"panel-subtitle\">Themes being monitored<\/div><p class=\"body-copy\">These lenses organize the outside conversation before it becomes a recommendation.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin brand clean<\/span><span class=\"topic-chip\">Ebola / Filovirus Early Warning<\/span><span class=\"topic-chip\">Crisis / Rapid Response<\/span><span class=\"topic-chip\">Vaccine Confidence &amp; Trust<\/span><span class=\"topic-chip\">Outbreak Preparedness &amp; Response<\/span><span class=\"topic-chip\">Research / Innovation / R&amp;D<\/span><span class=\"topic-chip\">Routine Immunization<\/span><span class=\"topic-chip\">Policy &amp; Financing<\/span><\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">What the Evidence Establishes<\/h2><div class=\"panel-subtitle\">Month-specific listening conclusions<\/div><ul class=\"insight-list\"><li>The dashboard now has verified June Talkwalker source coverage instead of stale shared-report placeholders.<\/li><li>Conversation volume is small enough for meaningful manual review: 73 total results and 29 negative-labeled results.<\/li><li>Owned Sabin channels remain prominent in the influencer view, with Sabin LinkedIn producing the strongest author engagement signal.<\/li><li>LinkedIn is the largest media-type share at 30.1%, followed by X at 20.5% and Bluesky at 13.7%.<\/li><li>Raw listening volume, engagement, author breadth, and site breadth were all down sharply against the prior period.<\/li><li>Talkwalker labels 39.7% of the conversation negative, but that number is easy to misread without manual context.<\/li><li>Negative labels are concentrated around outbreak severity, fatality, security, and vaccine availability language, so the dashboard should avoid presenting the raw split as public disapproval of Sabin.<\/li><li>The generated CSV export could not be retained locally, so the June negative-review audit relies on the expanded in-app view rather than a durable row-level file.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Recommended Communications Response<\/h2><div class=\"panel-subtitle\">What Sabin should do next<\/div><ul class=\"insight-list\"><li>Use the negative review as an internal method improvement: sentiment needs driver review before it becomes a reputation claim.<\/li><li>Separate issue-monitoring from brand sentiment in monthly reporting, especially for Ebola, Marburg, outbreak response, and vaccine-pipeline conversations.<\/li><li>Use Sabin&#x27;s owned Marburg and outbreak-response content to clarify expertise while avoiding unnecessarily alarming framing.<\/li><li>Archive future Talkwalker CSV exports immediately so result-level classification can be reproduced.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Listening Summary<\/h2><div class=\"panel-subtitle\">Talkwalker fallback package<\/div><p class=\"body-copy\">June Brand Listening is now verified from the authenticated Talkwalker app for June 1-30, 2026. The month shows 73 results, 318 engagements, 60 unique authors, and 9 unique sites. Raw sentiment is 37.0% positive, 23.3% neutral, and 39.7% negative, but manual review shows the negative set is dominated by Ebola/Marburg outbreak context, CIDRAP repost amplification, and vaccine-pipeline references rather than direct criticism of Sabin. Report the raw sentiment only with that caveat.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results change<\/div><div class=\"summary-value\">-79.6%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">318<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement change<\/div><div class=\"summary-value\">-92.4%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Sample age cluster<\/div><div class=\"summary-value\">25-34<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Trending Topics<\/h2><div class=\"panel-subtitle\">Theme concentration<\/div><p class=\"body-copy\">Themes most visible in the listening package for the selected month.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin<\/span><span class=\"topic-chip\">vaccine<\/span><span class=\"topic-chip\">health<\/span><span class=\"topic-chip\">Ebola<\/span><span class=\"topic-chip\">Marburg<\/span><span class=\"topic-chip\">global health<\/span><span class=\"topic-chip\">immunization<\/span><span class=\"topic-chip\">routine immunization<\/span><span class=\"topic-chip\">TB vaccines<\/span><span class=\"topic-chip\">HPV vaccination<\/span><\/div><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Media Mix<\/h2><div class=\"panel-subtitle\">Where the conversation is appearing<\/div><ul class=\"insight-list\"><li>LinkedIn: 30.1% share (-33.0%)<\/li><li>X: 20.5% share (-58.0%)<\/li><li>Bluesky: 13.7% share (+67.0%)<\/li><li>Facebook: 11.0% share (-50.0%)<\/li><li>Blogs: 8.2% share (-88.0%)<\/li><\/ul><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Strengths<\/h2><div class=\"panel-subtitle\">Positive listening signals<\/div><ul class=\"insight-list\"><li>The dashboard now has verified June Talkwalker source coverage instead of stale shared-report placeholders.<\/li><li>Conversation volume is small enough for meaningful manual review: 73 total results and 29 negative-labeled results.<\/li><li>Owned Sabin channels remain prominent in the influencer view, with Sabin LinkedIn producing the strongest author engagement signal.<\/li><li>LinkedIn is the largest media-type share at 30.1%, followed by X at 20.5% and Bluesky at 13.7%.<\/li><\/ul><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Vulnerabilities<\/h2><div class=\"panel-subtitle\">Watchlist items<\/div><ul class=\"insight-list\"><li>Raw listening volume, engagement, author breadth, and site breadth were all down sharply against the prior period.<\/li><li>Talkwalker labels 39.7% of the conversation negative, but that number is easy to misread without manual context.<\/li><li>Negative labels are concentrated around outbreak severity, fatality, security, and vaccine availability language, so the dashboard should avoid presenting the raw split as public disapproval of Sabin.<\/li><li>The generated CSV export could not be retained locally, so the June negative-review audit relies on the expanded in-app view rather than a durable row-level file.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Opportunities<\/h2><div class=\"panel-subtitle\">Recommended follow-up angles<\/div><ul class=\"insight-list\"><li>Use the negative review as an internal method improvement: sentiment needs driver review before it becomes a reputation claim.<\/li><li>Separate issue-monitoring from brand sentiment in monthly reporting, especially for Ebola, Marburg, outbreak response, and vaccine-pipeline conversations.<\/li><li>Use Sabin&#x27;s owned Marburg and outbreak-response content to clarify expertise while avoiding unnecessarily alarming framing.<\/li><li>Archive future Talkwalker CSV exports immediately so result-level classification can be reproduced.<\/li><\/ul><\/section><\/section><\/div>", "title": "Sabin Dashboard | June 2026 Social Listening"}, "2026-05": {"subtitle": "Talkwalker listening package - May 2026", "status_html": "<span class=\"status-pill\">Social listening<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"metric-grid\"><div class=\"metric-card accent-orange\"><div class=\"metric-label\">Brand signals<\/div><div class=\"metric-value\">8<\/div><div class=\"metric-sub\">Reputation and issue themes<\/div><\/div><div class=\"metric-card accent-green\"><div class=\"metric-label\">Readout lens<\/div><div class=\"metric-value\">Outside-in<\/div><div class=\"metric-sub\">Public conversation context<\/div><\/div><div class=\"metric-card accent-pink\"><div class=\"metric-label\">Review rhythm<\/div><div class=\"metric-value\">Monthly + spike<\/div><div class=\"metric-sub\">Baseline plus emerging issues<\/div><\/div><div class=\"metric-card accent-slate\"><div class=\"metric-label\">Action focus<\/div><div class=\"metric-value\">Clarify or amplify<\/div><div class=\"metric-sub\">Turn signals into response choices<\/div><\/div><\/section><section class=\"panel-grid\"><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Conversation Readout<\/h2><div class=\"panel-subtitle\">What the outside conversation means<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Brand signals<\/div><div class=\"summary-value\">8<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Readout lens<\/div><div class=\"summary-value\">Outside-in<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Review rhythm<\/div><div class=\"summary-value\">Monthly + spike<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Action focus<\/div><div class=\"summary-value\">Clarify or amplify<\/div><\/div><\/div><ul class=\"insight-list\"><li>Identify the one emerging issue that deserves attention before the next monthly report.<\/li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.<\/li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.<\/li><\/ul><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Listening Lenses<\/h2><div class=\"panel-subtitle\">Themes being monitored<\/div><p class=\"body-copy\">These lenses organize the outside conversation before it becomes a recommendation.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin brand clean<\/span><span class=\"topic-chip\">Ebola / Filovirus Early Warning<\/span><span class=\"topic-chip\">Crisis / Rapid Response<\/span><span class=\"topic-chip\">Vaccine Confidence &amp; Trust<\/span><span class=\"topic-chip\">Outbreak Preparedness &amp; Response<\/span><span class=\"topic-chip\">Research / Innovation / R&amp;D<\/span><span class=\"topic-chip\">Routine Immunization<\/span><span class=\"topic-chip\">Policy &amp; Financing<\/span><\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">What the Evidence Establishes<\/h2><div class=\"panel-subtitle\">Month-specific listening conclusions<\/div><div class=\"empty-state\">No month-specific listening findings are available.<\/div><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Recommended Communications Response<\/h2><div class=\"panel-subtitle\">What Sabin should do next<\/div><ul class=\"insight-list\"><li>Identify the one emerging issue that deserves attention before the next monthly report.<\/li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.<\/li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Listening Summary<\/h2><div class=\"panel-subtitle\">Talkwalker fallback package<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">0<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Sample age cluster<\/div><div class=\"summary-value\">Not available<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Trending Topics<\/h2><div class=\"panel-subtitle\">Theme concentration<\/div><p class=\"body-copy\">Themes most visible in the listening package for the selected month.<\/p><div class=\"empty-state\">Theme detail will appear here when the monthly listening readout is attached.<\/div><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Media Mix<\/h2><div class=\"panel-subtitle\">Where the conversation is appearing<\/div><div class=\"empty-state\">No media-mix breakdown is available for this month.<\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Strengths<\/h2><div class=\"panel-subtitle\">Positive listening signals<\/div><div class=\"empty-state\">No strength notes are available for this month.<\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Vulnerabilities<\/h2><div class=\"panel-subtitle\">Watchlist items<\/div><div class=\"empty-state\">No vulnerability notes are available for this month.<\/div><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Opportunities<\/h2><div class=\"panel-subtitle\">Recommended follow-up angles<\/div><div class=\"empty-state\">No opportunity notes are available for this month.<\/div><\/section><\/section><\/div>", "title": "Sabin Dashboard | May 2026 Social Listening"}, "2026-04": {"subtitle": "Talkwalker listening package - April 2026", "status_html": "<span class=\"status-pill\">Social listening<\/span><span class=\"status-pill good\">Attached<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"metric-grid\"><div class=\"metric-card accent-orange\"><div class=\"metric-label\">Results<\/div><div class=\"metric-value\">127<\/div><div class=\"metric-sub\">Listening volume<\/div><\/div><div class=\"metric-card accent-green\"><div class=\"metric-label\">Engagement<\/div><div class=\"metric-value\">284<\/div><div class=\"metric-sub\">Interactions captured<\/div><\/div><div class=\"metric-card accent-pink\"><div class=\"metric-label\">Unique Authors<\/div><div class=\"metric-value\">92<\/div><div class=\"metric-sub\">Conversation breadth<\/div><\/div><div class=\"metric-card accent-slate\"><div class=\"metric-label\">Unique Sites<\/div><div class=\"metric-value\">32<\/div><div class=\"metric-sub\">Publishing environments<\/div><\/div><\/section><section class=\"panel-grid\"><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Conversation Readout<\/h2><div class=\"panel-subtitle\">What the outside conversation means<\/div><p class=\"body-copy\">The April Talkwalker Brand Management report is now attached. Use it as the monthly source for brand listening volume, engagement, author breadth, site breadth, sentiment, and influencer context, while keeping the configured IQ apps as the live early-warning layer.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results<\/div><div class=\"summary-value\">127<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">284<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Unique authors<\/div><div class=\"summary-value\">92<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Unique sites<\/div><div class=\"summary-value\">32<\/div><\/div><\/div><ul class=\"insight-list\"><li>Use the shared report to confirm monthly baseline numbers: 127 results, 284 engagements, 92 unique authors, and 32 unique sites.<\/li><li>Review sentiment key drivers before repeating the positive/negative split outside the Comms team.<\/li><li>Use Results Curation to save the most useful positive, negative, and influential results for the weekly digest.<\/li><li>Attach a raw Talkwalker export later if Comms needs chart-level detail for media mix, top themes, or top hashtags.<\/li><\/ul><a class=\"link-btn secondary\" href=\"https://app.talkwalker.com/app/project/f3190b5e-b0bf-4579-a562-1287c371b4ae/shared_report/mk5wd4x9_1670v2druq2lq/7b47f84c-4a4d-4b67-a086-072514aec7d1\" target=\"_blank\" rel=\"noopener noreferrer\">Open source report<\/a><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Listening Lenses<\/h2><div class=\"panel-subtitle\">Themes being monitored<\/div><p class=\"body-copy\">These lenses organize the outside conversation before it becomes a recommendation.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin brand clean<\/span><span class=\"topic-chip\">Ebola / Filovirus Early Warning<\/span><span class=\"topic-chip\">Crisis / Rapid Response<\/span><span class=\"topic-chip\">Vaccine Confidence &amp; Trust<\/span><span class=\"topic-chip\">Outbreak Preparedness &amp; Response<\/span><span class=\"topic-chip\">Research / Innovation / R&amp;D<\/span><span class=\"topic-chip\">Routine Immunization<\/span><span class=\"topic-chip\">Policy &amp; Financing<\/span><\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">What the Evidence Establishes<\/h2><div class=\"panel-subtitle\">Month-specific listening conclusions<\/div><ul class=\"insight-list\"><li>The report gives April a confirmed monthly listening baseline: 127 results, 284 engagements, 92 unique authors, and 32 unique sites.<\/li><li>Conversation breadth improved: unique authors rose 12.2% and unique sites rose 52.4% compared with the prior period.<\/li><li>Sabin&#x27;s owned presence is visible in the influencer section, with Sabin Vaccine Institute listed as the most active author on X and most influential author on LinkedIn.<\/li><li>Engagement declined 3.1% even while author and site breadth increased, so the conversation spread wider but did not become more interactive.<\/li><li>Sentiment is nearly split between positive and negative, with 42% negative and 41% positive; this needs driver review before being used as a reputation headline.<\/li><li>The report mixes owned Sabin activity with broader conversation signals, so earned sentiment should be separated from owned and partner amplification before executive reporting.<\/li><li>The cleaned-topic preview later showed 416 results for 04/19/26 to 05/18/26, which should not be compared directly with this 30-day report.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Recommended Communications Response<\/h2><div class=\"panel-subtitle\">What Sabin should do next<\/div><ul class=\"insight-list\"><li>Use the author and site breadth increase as a prompt to find new credible voices, not just as a volume win.<\/li><li>Create a weekly curated digest that includes one emerging issue, one reputation signal, one influential result, and one recommended action.<\/li><li>Use the negative sentiment driver review to identify whether Sabin needs a response, partner amplification, or just monitoring.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Listening Summary<\/h2><div class=\"panel-subtitle\">Talkwalker fallback package<\/div><p class=\"body-copy\">April&#x27;s Talkwalker Brand Management report is attached. The report shows stable volume at 127 results, engagement down slightly to 284, and broader conversation breadth through 92 unique authors and 32 unique sites. The biggest Comms takeaway is not volume; it is that the conversation spread wider while sentiment stayed mixed, so the next step is driver review and curated interpretation.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">284<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement change<\/div><div class=\"summary-value\">-3.1%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Sample age cluster<\/div><div class=\"summary-value\">Not available<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Trending Topics<\/h2><div class=\"panel-subtitle\">Theme concentration<\/div><p class=\"body-copy\">Themes most visible in the listening package for the selected month.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin Vaccine Institute<\/span><span class=\"topic-chip\">HPV / cervical cancer elimination<\/span><span class=\"topic-chip\">Polio<\/span><span class=\"topic-chip\">Outbreak response<\/span><span class=\"topic-chip\">Vaccine confidence<\/span><span class=\"topic-chip\">Global immunization<\/span><\/div><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Media Mix<\/h2><div class=\"panel-subtitle\">Where the conversation is appearing<\/div><div class=\"empty-state\">No media-mix breakdown is available for this month.<\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Strengths<\/h2><div class=\"panel-subtitle\">Positive listening signals<\/div><ul class=\"insight-list\"><li>The report gives April a confirmed monthly listening baseline: 127 results, 284 engagements, 92 unique authors, and 32 unique sites.<\/li><li>Conversation breadth improved: unique authors rose 12.2% and unique sites rose 52.4% compared with the prior period.<\/li><li>Sabin&#x27;s owned presence is visible in the influencer section, with Sabin Vaccine Institute listed as the most active author on X and most influential author on LinkedIn.<\/li><\/ul><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Vulnerabilities<\/h2><div class=\"panel-subtitle\">Watchlist items<\/div><ul class=\"insight-list\"><li>Engagement declined 3.1% even while author and site breadth increased, so the conversation spread wider but did not become more interactive.<\/li><li>Sentiment is nearly split between positive and negative, with 42% negative and 41% positive; this needs driver review before being used as a reputation headline.<\/li><li>The report mixes owned Sabin activity with broader conversation signals, so earned sentiment should be separated from owned and partner amplification before executive reporting.<\/li><li>The cleaned-topic preview later showed 416 results for 04/19/26 to 05/18/26, which should not be compared directly with this 30-day report.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Opportunities<\/h2><div class=\"panel-subtitle\">Recommended follow-up angles<\/div><ul class=\"insight-list\"><li>Use the author and site breadth increase as a prompt to find new credible voices, not just as a volume win.<\/li><li>Create a weekly curated digest that includes one emerging issue, one reputation signal, one influential result, and one recommended action.<\/li><li>Use the negative sentiment driver review to identify whether Sabin needs a response, partner amplification, or just monitoring.<\/li><\/ul><\/section><\/section><\/div>", "title": "Sabin Dashboard | April 2026 Social Listening"}, "2026-03": {"subtitle": "Talkwalker listening package - March 2026", "status_html": "<span class=\"status-pill\">Social listening<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"metric-grid\"><div class=\"metric-card accent-orange\"><div class=\"metric-label\">Brand signals<\/div><div class=\"metric-value\">8<\/div><div class=\"metric-sub\">Reputation and issue themes<\/div><\/div><div class=\"metric-card accent-green\"><div class=\"metric-label\">Readout lens<\/div><div class=\"metric-value\">Outside-in<\/div><div class=\"metric-sub\">Public conversation context<\/div><\/div><div class=\"metric-card accent-pink\"><div class=\"metric-label\">Review rhythm<\/div><div class=\"metric-value\">Monthly + spike<\/div><div class=\"metric-sub\">Baseline plus emerging issues<\/div><\/div><div class=\"metric-card accent-slate\"><div class=\"metric-label\">Action focus<\/div><div class=\"metric-value\">Clarify or amplify<\/div><div class=\"metric-sub\">Turn signals into response choices<\/div><\/div><\/section><section class=\"panel-grid\"><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Conversation Readout<\/h2><div class=\"panel-subtitle\">What the outside conversation means<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Brand signals<\/div><div class=\"summary-value\">8<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Readout lens<\/div><div class=\"summary-value\">Outside-in<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Review rhythm<\/div><div class=\"summary-value\">Monthly + spike<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Action focus<\/div><div class=\"summary-value\">Clarify or amplify<\/div><\/div><\/div><ul class=\"insight-list\"><li>Identify the one emerging issue that deserves attention before the next monthly report.<\/li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.<\/li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.<\/li><\/ul><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Listening Lenses<\/h2><div class=\"panel-subtitle\">Themes being monitored<\/div><p class=\"body-copy\">These lenses organize the outside conversation before it becomes a recommendation.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin brand clean<\/span><span class=\"topic-chip\">Ebola / Filovirus Early Warning<\/span><span class=\"topic-chip\">Crisis / Rapid Response<\/span><span class=\"topic-chip\">Vaccine Confidence &amp; Trust<\/span><span class=\"topic-chip\">Outbreak Preparedness &amp; Response<\/span><span class=\"topic-chip\">Research / Innovation / R&amp;D<\/span><span class=\"topic-chip\">Routine Immunization<\/span><span class=\"topic-chip\">Policy &amp; Financing<\/span><\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">What the Evidence Establishes<\/h2><div class=\"panel-subtitle\">Month-specific listening conclusions<\/div><div class=\"empty-state\">No month-specific listening findings are available.<\/div><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Recommended Communications Response<\/h2><div class=\"panel-subtitle\">What Sabin should do next<\/div><ul class=\"insight-list\"><li>Identify the one emerging issue that deserves attention before the next monthly report.<\/li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.<\/li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Listening Summary<\/h2><div class=\"panel-subtitle\">Talkwalker fallback package<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">0<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Sample age cluster<\/div><div class=\"summary-value\">Not available<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Trending Topics<\/h2><div class=\"panel-subtitle\">Theme concentration<\/div><p class=\"body-copy\">Themes most visible in the listening package for the selected month.<\/p><div class=\"empty-state\">Theme detail will appear here when the monthly listening readout is attached.<\/div><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Media Mix<\/h2><div class=\"panel-subtitle\">Where the conversation is appearing<\/div><div class=\"empty-state\">No media-mix breakdown is available for this month.<\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Strengths<\/h2><div class=\"panel-subtitle\">Positive listening signals<\/div><div class=\"empty-state\">No strength notes are available for this month.<\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Vulnerabilities<\/h2><div class=\"panel-subtitle\">Watchlist items<\/div><div class=\"empty-state\">No vulnerability notes are available for this month.<\/div><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Opportunities<\/h2><div class=\"panel-subtitle\">Recommended follow-up angles<\/div><div class=\"empty-state\">No opportunity notes are available for this month.<\/div><\/section><\/section><\/div>", "title": "Sabin Dashboard | March 2026 Social Listening"}, "2026-02": {"subtitle": "Talkwalker listening package - February 2026", "status_html": "<span class=\"status-pill\">Social listening<\/span><span class=\"status-pill good\">Attached<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"metric-grid\"><div class=\"metric-card accent-orange\"><div class=\"metric-label\">Results<\/div><div class=\"metric-value\">145<\/div><div class=\"metric-sub\">Listening volume<\/div><\/div><div class=\"metric-card accent-green\"><div class=\"metric-label\">Engagement<\/div><div class=\"metric-value\">464<\/div><div class=\"metric-sub\">Interactions captured<\/div><\/div><div class=\"metric-card accent-pink\"><div class=\"metric-label\">Unique Authors<\/div><div class=\"metric-value\">98<\/div><div class=\"metric-sub\">Conversation breadth<\/div><\/div><div class=\"metric-card accent-slate\"><div class=\"metric-label\">Unique Sites<\/div><div class=\"metric-value\">21<\/div><div class=\"metric-sub\">Publishing environments<\/div><\/div><\/section><section class=\"panel-grid\"><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Conversation Readout<\/h2><div class=\"panel-subtitle\">What the outside conversation means<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Brand signals<\/div><div class=\"summary-value\">8<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Readout lens<\/div><div class=\"summary-value\">Outside-in<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Review rhythm<\/div><div class=\"summary-value\">Monthly + spike<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Action focus<\/div><div class=\"summary-value\">Clarify or amplify<\/div><\/div><\/div><ul class=\"insight-list\"><li>Identify the one emerging issue that deserves attention before the next monthly report.<\/li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.<\/li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.<\/li><\/ul><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Listening Lenses<\/h2><div class=\"panel-subtitle\">Themes being monitored<\/div><p class=\"body-copy\">These lenses organize the outside conversation before it becomes a recommendation.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin brand clean<\/span><span class=\"topic-chip\">Ebola / Filovirus Early Warning<\/span><span class=\"topic-chip\">Crisis / Rapid Response<\/span><span class=\"topic-chip\">Vaccine Confidence &amp; Trust<\/span><span class=\"topic-chip\">Outbreak Preparedness &amp; Response<\/span><span class=\"topic-chip\">Research / Innovation / R&amp;D<\/span><span class=\"topic-chip\">Routine Immunization<\/span><span class=\"topic-chip\">Policy &amp; Financing<\/span><\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">What the Evidence Establishes<\/h2><div class=\"panel-subtitle\">Month-specific listening conclusions<\/div><ul class=\"insight-list\"><li>Engagement is up 14% even though total results are down 5.8%, which indicates the conversation is concentrating but becoming more interactive.<\/li><li>Sabin owned social delivered 2,027 engagements at a 6.61% engagement rate, giving the brand a strong owned-media base to amplify earned attention.<\/li><li>X and LinkedIn account for most visible conversation share, which aligns well with Sabin’s strongest current social channels for reach and engagement.<\/li><li>Unique sites are down 36.4%, suggesting the conversation is appearing in fewer publishing environments and may be narrowing in breadth.<\/li><li>Audience analysis is based on small samples for age and occupations, so those demographics should be treated as directional rather than decision-grade.<\/li><li>The strongest conversation themes are concentrated around HPV, cervical-cancer elimination, polio, and outbreak-response language; other priority narratives may be underrepresented.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Recommended Communications Response<\/h2><div class=\"panel-subtitle\">What Sabin should do next<\/div><ul class=\"insight-list\"><li>Lean into HPV and cervical-cancer-elimination storytelling because those topics are clearly driving the current theme and hashtag clouds.<\/li><li>Use the growth in blog and LinkedIn share to place more substantive thought-leadership content where the conversation is showing depth rather than just volume.<\/li><li>Review the most active author and influential site lists to separate earned advocacy from owned or adjacent amplification.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Listening Summary<\/h2><div class=\"panel-subtitle\">Talkwalker fallback package<\/div><p class=\"body-copy\">Brand-management listening shows a more concentrated but more engaged conversation around Sabin. Results fell from 154 to 145, but engagement rose from 407 to 464. X remains the dominant media type, LinkedIn is the clear secondary platform, and blogs are growing sharply. The clearest strategic theme is HPV and cervical-cancer-elimination content, with supporting signals around polio, outbreak response, and global vaccine work.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results change<\/div><div class=\"summary-value\">-5.8%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">464<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement change<\/div><div class=\"summary-value\">+14.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Sample age cluster<\/div><div class=\"summary-value\">25-34<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Trending Topics<\/h2><div class=\"panel-subtitle\">Theme concentration<\/div><p class=\"body-copy\">Themes most visible in the listening package for the selected month.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">vaccine<\/span><span class=\"topic-chip\">sabin<\/span><span class=\"topic-chip\">polio<\/span><span class=\"topic-chip\">HPV<\/span><span class=\"topic-chip\">cervical cancer<\/span><span class=\"topic-chip\">India<\/span><span class=\"topic-chip\">Sudan<\/span><span class=\"topic-chip\">Kenya<\/span><span class=\"topic-chip\">South Africa<\/span><\/div><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Media Mix<\/h2><div class=\"panel-subtitle\">Where the conversation is appearing<\/div><ul class=\"insight-list\"><li>X: 49.7% share (+14.0%)<\/li><li>LinkedIn: 21.4% share (+7.0%)<\/li><li>Blogs: 8.3% share (+71.0%)<\/li><li>Instagram: 5.5% share (-11.0%)<\/li><li>Reddit: 4.0% share (+20.0%)<\/li><\/ul><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Strengths<\/h2><div class=\"panel-subtitle\">Positive listening signals<\/div><ul class=\"insight-list\"><li>Engagement is up 14% even though total results are down 5.8%, which indicates the conversation is concentrating but becoming more interactive.<\/li><li>Sabin owned social delivered 2,027 engagements at a 6.61% engagement rate, giving the brand a strong owned-media base to amplify earned attention.<\/li><li>X and LinkedIn account for most visible conversation share, which aligns well with Sabin’s strongest current social channels for reach and engagement.<\/li><\/ul><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Vulnerabilities<\/h2><div class=\"panel-subtitle\">Watchlist items<\/div><ul class=\"insight-list\"><li>Unique sites are down 36.4%, suggesting the conversation is appearing in fewer publishing environments and may be narrowing in breadth.<\/li><li>Audience analysis is based on small samples for age and occupations, so those demographics should be treated as directional rather than decision-grade.<\/li><li>The strongest conversation themes are concentrated around HPV, cervical-cancer elimination, polio, and outbreak-response language; other priority narratives may be underrepresented.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Opportunities<\/h2><div class=\"panel-subtitle\">Recommended follow-up angles<\/div><ul class=\"insight-list\"><li>Lean into HPV and cervical-cancer-elimination storytelling because those topics are clearly driving the current theme and hashtag clouds.<\/li><li>Use the growth in blog and LinkedIn share to place more substantive thought-leadership content where the conversation is showing depth rather than just volume.<\/li><li>Review the most active author and influential site lists to separate earned advocacy from owned or adjacent amplification.<\/li><\/ul><\/section><\/section><\/div>", "title": "Sabin Dashboard | February 2026 Social Listening"}, "2026-01": {"subtitle": "Talkwalker listening package - January 2026", "status_html": "<span class=\"status-pill\">Social listening<\/span>", "content_html": "<div class=\"dashboard-stack\"><section class=\"metric-grid\"><div class=\"metric-card accent-orange\"><div class=\"metric-label\">Brand signals<\/div><div class=\"metric-value\">8<\/div><div class=\"metric-sub\">Reputation and issue themes<\/div><\/div><div class=\"metric-card accent-green\"><div class=\"metric-label\">Readout lens<\/div><div class=\"metric-value\">Outside-in<\/div><div class=\"metric-sub\">Public conversation context<\/div><\/div><div class=\"metric-card accent-pink\"><div class=\"metric-label\">Review rhythm<\/div><div class=\"metric-value\">Monthly + spike<\/div><div class=\"metric-sub\">Baseline plus emerging issues<\/div><\/div><div class=\"metric-card accent-slate\"><div class=\"metric-label\">Action focus<\/div><div class=\"metric-value\">Clarify or amplify<\/div><div class=\"metric-sub\">Turn signals into response choices<\/div><\/div><\/section><section class=\"panel-grid\"><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Conversation Readout<\/h2><div class=\"panel-subtitle\">What the outside conversation means<\/div><p class=\"body-copy\">Social listening adds the outside-in view of Sabin&#x27;s reputation: what people are saying, which themes are gaining attention, and where the communications response should reinforce or clarify the story.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Brand signals<\/div><div class=\"summary-value\">8<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Readout lens<\/div><div class=\"summary-value\">Outside-in<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Review rhythm<\/div><div class=\"summary-value\">Monthly + spike<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Action focus<\/div><div class=\"summary-value\">Clarify or amplify<\/div><\/div><\/div><ul class=\"insight-list\"><li>Identify the one emerging issue that deserves attention before the next monthly report.<\/li><li>Separate earned mentions from owned or partner content before using sentiment as a reputation claim.<\/li><li>Curate five to ten notable examples that explain the signal behind the monthly summary.<\/li><\/ul><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Listening Lenses<\/h2><div class=\"panel-subtitle\">Themes being monitored<\/div><p class=\"body-copy\">These lenses organize the outside conversation before it becomes a recommendation.<\/p><div class=\"topic-cloud\"><span class=\"topic-chip\">Sabin brand clean<\/span><span class=\"topic-chip\">Ebola / Filovirus Early Warning<\/span><span class=\"topic-chip\">Crisis / Rapid Response<\/span><span class=\"topic-chip\">Vaccine Confidence &amp; Trust<\/span><span class=\"topic-chip\">Outbreak Preparedness &amp; Response<\/span><span class=\"topic-chip\">Research / Innovation / R&amp;D<\/span><span class=\"topic-chip\">Routine Immunization<\/span><span class=\"topic-chip\">Policy &amp; Financing<\/span><\/div><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">What the Evidence Establishes<\/h2><div class=\"panel-subtitle\">Month-specific listening conclusions<\/div><ul class=\"insight-list\"><li>Owned social performance in January was solid, with 843 total engagements and a 5.95% weighted engagement rate.<\/li><li>LinkedIn drove the clearest interaction signal with 287 engagements and 720 link clicks.<\/li><li>Instagram delivered 2,003 views while Facebook added 78 reactions, showing multi-platform support even without archived listening data.<\/li><li>No January Talkwalker report is currently archived in the dashboard data folder, so this month can only show social-performance-led interpretation.<\/li><li>Without a month-specific listening export, media-type mix, unique authors, and site breadth cannot be measured for January.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Recommended Communications Response<\/h2><div class=\"panel-subtitle\">What Sabin should do next<\/div><ul class=\"insight-list\"><li>Backfill the January Talkwalker export later if it is recovered from Outlook or Downloads so month-over-month listening trends can start from January.<\/li><li>Use January as the baseline owned-media month when comparing February and March listening concentration and engagement quality.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Listening Summary<\/h2><div class=\"panel-subtitle\">Talkwalker fallback package<\/div><p class=\"body-copy\">January listening has been backfilled as a placeholder month so the dashboard can load it consistently. It does not contain archived Talkwalker results yet; the narrative is based on January owned social performance only.<\/p><div class=\"summary-list\"><div class=\"summary-row\"><div class=\"summary-label\">Results change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement<\/div><div class=\"summary-value\">0<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Engagement change<\/div><div class=\"summary-value\">0.0%<\/div><\/div><div class=\"summary-row\"><div class=\"summary-label\">Sample age cluster<\/div><div class=\"summary-value\">Not available<\/div><\/div><\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Trending Topics<\/h2><div class=\"panel-subtitle\">Theme concentration<\/div><p class=\"body-copy\">Themes most visible in the listening package for the selected month.<\/p><div class=\"empty-state\">Theme detail will appear here when the monthly listening readout is attached.<\/div><\/section><section class=\"panel accent-slate\"><h2 class=\"panel-title\">Media Mix<\/h2><div class=\"panel-subtitle\">Where the conversation is appearing<\/div><div class=\"empty-state\">No media-mix breakdown is available for this month.<\/div><\/section><section class=\"panel accent-green\"><h2 class=\"panel-title\">Strengths<\/h2><div class=\"panel-subtitle\">Positive listening signals<\/div><ul class=\"insight-list\"><li>Owned social performance in January was solid, with 843 total engagements and a 5.95% weighted engagement rate.<\/li><li>LinkedIn drove the clearest interaction signal with 287 engagements and 720 link clicks.<\/li><li>Instagram delivered 2,003 views while Facebook added 78 reactions, showing multi-platform support even without archived listening data.<\/li><\/ul><\/section><section class=\"panel accent-pink\"><h2 class=\"panel-title\">Vulnerabilities<\/h2><div class=\"panel-subtitle\">Watchlist items<\/div><ul class=\"insight-list\"><li>No January Talkwalker report is currently archived in the dashboard data folder, so this month can only show social-performance-led interpretation.<\/li><li>Without a month-specific listening export, media-type mix, unique authors, and site breadth cannot be measured for January.<\/li><\/ul><\/section><section class=\"panel accent-orange span-2\"><h2 class=\"panel-title\">Opportunities<\/h2><div class=\"panel-subtitle\">Recommended follow-up angles<\/div><ul class=\"insight-list\"><li>Backfill the January Talkwalker export later if it is recovered from Outlook or Downloads so month-over-month listening trends can start from January.<\/li><li>Use January as the baseline owned-media month when comparing February and March listening concentration and engagement quality.<\/li><\/ul><\/section><\/section><\/div>", "title": "Sabin Dashboard | January 2026 Social Listening"}};
+const PAGE_TARGETS = {"dashboard": "DASHBOARD_PREVIEW.html", "reports": "REPORTS.html", "assets": "ASSETS.html", "ads": "ADS.html", "programs": "PROGRAMS_REPORT.html", "executive": "EXECUTIVE_REPORT.html", "board": "BOARD_REPORT.html", "social-listening": "SOCIAL_LISTENING.html", "settings": "SETTINGS.html", "help": "HELP.html"};
+const DEFAULT_MONTH = "2026-09";
 const monthSelector = document.getElementById('month-selector');
 const reportDate = document.getElementById('report-date');
 const statusPills = document.getElementById('status-pills');

@@ -9,26 +9,46 @@ month,page_group,title,path,metric_label,metric_value,secondary_label,secondary_
 2026-01,top_pages,People – Sabin Vaccine Institute,People – Sabin Vaccine Institute,Sessions,502,Active Users,417,0,0.0219123505976095,48s,0,pages_and_screens
 2026-01,top_pages,Sabin Newsletter Archive – Sabin Vaccine Institute,Sabin Newsletter Archive – Sabin Vaccine Institute,Sessions,462,Active Users,460,0,0.0043290043290043,1s,0,pages_and_screens
 2026-01,top_pages,Sabin Vaccine Institute | Extending Vaccine Accessibility & Innovation,Sabin Vaccine Institute | Extending Vaccine Accessibility & Innovation,Sessions,2186,Active Users,1751,0,0.0242451967063129,16s,0,pages_and_screens
-2026-02,resource_pages,"A Year of Progress, Preparedness, and Partnership",/resources/a-year-of-progress-preparedness-and-partnership,Sessions,585,Active Users,485,480,0.0,4s,1751,landing_page
-2026-02,resource_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,371,Active Users,337,333,0.0053908355795148,38s,1184,landing_page
-2026-02,resource_pages,Empowering Futures – Advancing NCD and HPV Awareness in Nepal,/resources/empowering-futures-advancing-ncd-and-hpv-awareness-in-nepal,Sessions,61,Active Users,41,38,0.0,16s,212,landing_page
-2026-02,resource_pages,How Vaccines Protect You and Your Loved Ones,/resources/how-vaccines-protect-you-and-your-loved-ones,Sessions,119,Active Users,95,92,0.0,28s,359,landing_page
-2026-02,resource_pages,Sabin Begins Marburg Vaccine Trial in U.S.,/resources/sabin-begins-marburg-vaccine-trial-in-u-s,Sessions,84,Active Users,82,79,0.0,15s,286,landing_page
-2026-02,resource_pages,Sabin Vaccine Institute’s Investigational Marburg Vaccine Delivered to Ethiopia for Outbreak Response,/resources/sabin-vaccine-institutes-investigational-marburg-vaccine-delivered-to-ethiopia-for-outbreak-response,Sessions,101,Active Users,93,89,0.0,10s,340,landing_page
-2026-02,resource_pages,The Rising Threat of Measles and Vaccine Hesitancy: Q&A with Sabin Gold Medal Winner Dr. Paul Offit,/resources/the-rising-threat-of-measles-vaccine-hesitancy-and-public-health-qa-with-sabin-gold-medal-winner-dr-paul-offit,Sessions,57,Active Users,54,54,0.0,2m 3s,192,landing_page
-2026-02,resource_pages,Understanding Pentavalent and Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,251,Active Users,234,232,0.0,44s,794,landing_page
-2026-02,resource_pages,Understanding Vaccine Types: How They Protect Against Disease,/resources/understanding-vaccine-types-how-they-protect-against-disease,Sessions,103,Active Users,97,95,0.0,1m 9s,348,landing_page
-2026-02,resource_pages,"Vaccines 101: Their History, How They Work, and Their Impact",/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,308,Active Users,273,271,0.0,1m 3s,977,landing_page
-2026-02,top_pages,"A Year of Progress, Preparedness, and Partnership",/resources/a-year-of-progress-preparedness-and-partnership,Sessions,585,Active Users,485,480,0.0,4s,1751,landing_page
-2026-02,top_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,371,Active Users,337,333,0.0053908355795148,38s,1184,landing_page
-2026-02,top_pages,Empowering Futures – Advancing NCD and HPV Awareness in Nepal,/resources/empowering-futures-advancing-ncd-and-hpv-awareness-in-nepal,Sessions,61,Active Users,41,38,0.0,16s,212,landing_page
-2026-02,top_pages,How Vaccines Protect You and Your Loved Ones,/resources/how-vaccines-protect-you-and-your-loved-ones,Sessions,119,Active Users,95,92,0.0,28s,359,landing_page
-2026-02,top_pages,Sabin Begins Marburg Vaccine Trial in U.S.,/resources/sabin-begins-marburg-vaccine-trial-in-u-s,Sessions,84,Active Users,82,79,0.0,15s,286,landing_page
-2026-02,top_pages,Sabin Vaccine Institute’s Investigational Marburg Vaccine Delivered to Ethiopia for Outbreak Response,/resources/sabin-vaccine-institutes-investigational-marburg-vaccine-delivered-to-ethiopia-for-outbreak-response,Sessions,101,Active Users,93,89,0.0,10s,340,landing_page
-2026-02,top_pages,The Rising Threat of Measles and Vaccine Hesitancy: Q&A with Sabin Gold Medal Winner Dr. Paul Offit,/resources/the-rising-threat-of-measles-vaccine-hesitancy-and-public-health-qa-with-sabin-gold-medal-winner-dr-paul-offit,Sessions,57,Active Users,54,54,0.0,2m 3s,192,landing_page
-2026-02,top_pages,Understanding Pentavalent and Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,251,Active Users,234,232,0.0,44s,794,landing_page
-2026-02,top_pages,Understanding Vaccine Types: How They Protect Against Disease,/resources/understanding-vaccine-types-how-they-protect-against-disease,Sessions,103,Active Users,97,95,0.0,1m 9s,348,landing_page
-2026-02,top_pages,"Vaccines 101: Their History, How They Work, and Their Impact",/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,308,Active Users,273,271,0.0,1m 3s,977,landing_page
+2026-02,resource_pages,/resources,/resources,Sessions,122,Active Users,120,114,0.0,5s,432,landing_page
+2026-02,resource_pages,A Year Of Progress Preparedness And Partnership,/resources/a-year-of-progress-preparedness-and-partnership,Sessions,585,Active Users,485,480,0.0,4s,1751,landing_page
+2026-02,resource_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,371,Active Users,337,333,0.005390835579514825,38s,1184,landing_page
+2026-02,resource_pages,Empowering Futures Advancing Ncd And Hpv Awareness In Nepal,/resources/empowering-futures-advancing-ncd-and-hpv-awareness-in-nepal,Sessions,61,Active Users,41,38,0.0,16s,212,landing_page
+2026-02,resource_pages,How Vaccines Protect You And Your Loved Ones,/resources/how-vaccines-protect-you-and-your-loved-ones,Sessions,119,Active Users,95,92,0.0,28s,359,landing_page
+2026-02,resource_pages,Sabin Begins Marburg Vaccine Trial In U S,/resources/sabin-begins-marburg-vaccine-trial-in-u-s,Sessions,84,Active Users,82,79,0.0,15s,286,landing_page
+2026-02,resource_pages,Sabin Vaccine Institutes Investigational Marburg Vaccine Delivered To Ethiopia For Outbreak Response,/resources/sabin-vaccine-institutes-investigational-marburg-vaccine-delivered-to-ethiopia-for-outbreak-response,Sessions,101,Active Users,93,89,0.0,10s,340,landing_page
+2026-02,resource_pages,Understanding Pentavalent And Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,251,Active Users,234,232,0.0,44s,794,landing_page
+2026-02,resource_pages,Understanding Vaccine Types How They Protect Against Disease,/resources/understanding-vaccine-types-how-they-protect-against-disease,Sessions,103,Active Users,97,95,0.0,1m 9s,348,landing_page
+2026-02,resource_pages,Vaccines 101 Their History How They Work And Their Impact,/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,308,Active Users,273,271,0.0,1m 3s,977,landing_page
+2026-02,top_pages,/,/,Sessions,2175,Active Users,1911,1773,0.001379310344827586,35s,9526,landing_page
+2026-02,top_pages,/about/opportunities/careers,/about/opportunities/careers,Sessions,805,Active Users,570,446,0.002484472049689441,31s,3348,landing_page
+2026-02,top_pages,/about/our-history/dr-albert-b-sabin,/about/our-history/dr-albert-b-sabin,Sessions,215,Active Users,187,186,0.0,35s,689,landing_page
+2026-02,top_pages,/about/our-people,/about/our-people,Sessions,169,Active Users,157,128,0.0,39s,785,landing_page
+2026-02,top_pages,/global-immunization/immunization-advocates,/global-immunization/immunization-advocates,Sessions,151,Active Users,148,145,0.0,5s,584,landing_page
+2026-02,top_pages,A Year Of Progress Preparedness And Partnership,/resources/a-year-of-progress-preparedness-and-partnership,Sessions,585,Active Users,485,480,0.0,4s,1751,landing_page
+2026-02,top_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,371,Active Users,337,333,0.005390835579514825,38s,1184,landing_page
+2026-02,top_pages,Understanding Pentavalent And Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,251,Active Users,234,232,0.0,44s,794,landing_page
+2026-02,top_pages,Vaccines 101 Their History How They Work And Their Impact,/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,308,Active Users,273,271,0.0,1m 3s,977,landing_page
+2026-02,top_pages,/sabin-newsletter-archive,/sabin-newsletter-archive,Sessions,391,Active Users,390,389,0.0,1s,1488,landing_page
+2026-03,resource_pages,/resources,/resources,Sessions,141,Active Users,142,138,0.0,6s,512,landing_page
+2026-03,resource_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,306,Active Users,279,275,0.0,34s,983,landing_page
+2026-03,resource_pages,From Covid 19 To Typhoid 2026 Sabin Awards Spotlight Vaccine Pioneers,/resources/from-covid-19-to-typhoid-2026-sabin-awards-spotlight-vaccine-pioneers,Sessions,1668,Active Users,1370,1328,0.0017985611510791368,9s,5090,landing_page
+2026-03,resource_pages,How Vaccines Protect You And Your Loved Ones,/resources/how-vaccines-protect-you-and-your-loved-ones,Sessions,315,Active Users,275,275,0.0,15s,948,landing_page
+2026-03,resource_pages,Sabin Vaccine Institute Completes Enrollment In All Phase 2 Clinical Trials For Cad3 Marburg Vaccine And Cad3 Sudan Ebolavirus Vaccine,/resources/sabin-vaccine-institute-completes-enrollment-in-all-phase-2-clinical-trials-for-cad3-marburg-vaccine-and-cad3-sudan-ebolavirus-vaccine,Sessions,235,Active Users,193,167,0.0,24s,743,landing_page
+2026-03,resource_pages,Sabin Vaccine Institutes Investigational Marburg Vaccine Delivered To Ethiopia For Outbreak Response,/resources/sabin-vaccine-institutes-investigational-marburg-vaccine-delivered-to-ethiopia-for-outbreak-response,Sessions,82,Active Users,73,72,0.0,7s,255,landing_page
+2026-03,resource_pages,Shaping The Future Of Typhoid Prevention,/resources/shaping-the-future-of-typhoid-prevention,Sessions,68,Active Users,64,57,0.0,15s,259,landing_page
+2026-03,resource_pages,Understanding Pentavalent And Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,293,Active Users,260,257,0.006825938566552901,32s,905,landing_page
+2026-03,resource_pages,Understanding Vaccine Types How They Protect Against Disease,/resources/understanding-vaccine-types-how-they-protect-against-disease,Sessions,193,Active Users,170,168,0.0,33s,618,landing_page
+2026-03,resource_pages,Vaccines 101 Their History How They Work And Their Impact,/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,384,Active Users,323,321,0.0,29s,1226,landing_page
+2026-03,top_pages,/,/,Sessions,2819,Active Users,2467,2324,0.002128414331323164,31s,12273,landing_page
+2026-03,top_pages,/about/opportunities/careers,/about/opportunities/careers,Sessions,781,Active Users,528,427,0.0012804097311139564,25s,2912,landing_page
+2026-03,top_pages,/about/our-history/dr-albert-b-sabin,/about/our-history/dr-albert-b-sabin,Sessions,297,Active Users,264,254,0.0,31s,954,landing_page
+2026-03,top_pages,/about/our-people,/about/our-people,Sessions,237,Active Users,201,156,0.008438818565400843,37s,1012,landing_page
+2026-03,top_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,306,Active Users,279,275,0.0,34s,983,landing_page
+2026-03,top_pages,From Covid 19 To Typhoid 2026 Sabin Awards Spotlight Vaccine Pioneers,/resources/from-covid-19-to-typhoid-2026-sabin-awards-spotlight-vaccine-pioneers,Sessions,1668,Active Users,1370,1328,0.0017985611510791368,9s,5090,landing_page
+2026-03,top_pages,How Vaccines Protect You And Your Loved Ones,/resources/how-vaccines-protect-you-and-your-loved-ones,Sessions,315,Active Users,275,275,0.0,15s,948,landing_page
+2026-03,top_pages,Understanding Pentavalent And Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,293,Active Users,260,257,0.006825938566552901,32s,905,landing_page
+2026-03,top_pages,Vaccines 101 Their History How They Work And Their Impact,/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,384,Active Users,323,321,0.0,29s,1226,landing_page
+2026-03,top_pages,/sabin-newsletter-archive,/sabin-newsletter-archive,Sessions,376,Active Users,374,373,0.0,1s,1444,landing_page
 2026-04,resource_pages,/resources,/resources,Sessions,78,Active Users,76,71,0.0,11s,260,landing_page
 2026-04,resource_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,350,Active Users,318,315,0.0,34s,1120,landing_page
 2026-04,resource_pages,From COVID-19 to Typhoid: 2026 Sabin Awards Spotlight Vaccine Pioneers,/resources/from-covid-19-to-typhoid-2026-sabin-awards-spotlight-vaccine-pioneers,Sessions,343,Active Users,115,93,0.0058309037900874635,4s,820,landing_page
@@ -51,21 +71,101 @@ month,page_group,title,path,metric_label,metric_value,secondary_label,secondary_
 2026-04,top_pages,/sabin-newsletter-archive,/sabin-newsletter-archive,Sessions,405,Active Users,404,407,0.0,1s,1509,landing_page
 2026-05,resource_pages,/resources,/resources,Sessions,113,Active Users,102,97,0.0,16s,387,landing_page
 2026-05,resource_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,294,Active Users,262,257,0.003401360544217687,27s,924,landing_page
-2026-05,resource_pages,From COVID-19 to Typhoid: 2026 Sabin Awards Spotlight Vaccine Pioneers,/resources/from-covid-19-to-typhoid-2026-sabin-awards-spotlight-vaccine-pioneers,Sessions,160,Active Users,115,99,0.0,25s,519,landing_page
-2026-05,resource_pages,From Silos to Synergy: First TB–EPI Communities Partnership to Support New TB Vaccines Introduction,/resources/from-silos-to-synergy-first-tb-epi-communities-partnership-to-support-new-tb-vaccines-introduction,Sessions,107,Active Users,89,76,0.0,21s,337,landing_page
-2026-05,resource_pages,How Vaccines Protect You and Your Loved Ones,/resources/how-vaccines-protect-you-and-your-loved-ones,Sessions,165,Active Users,146,142,0.0,16s,509,landing_page
-2026-05,resource_pages,Noted Vaccine Researchers Uğur Şahin and Özlem Türeci Awarded Sabin Vaccine Institute’s Albert B. Sabin Gold Medal; Genomic Scientist Senjuti Saha of Bangladesh Receives Rising Star Award,/resources/noted-vaccine-researchers-ugur-sahin-and-ozlem-tureci-awarded-sabin-vaccine-institutes-albert-b-sabin-gold-medal-genomic-scientist-senjuti-saha-of-bangladesh-receives-rising-star-award,Sessions,78,Active Users,77,71,0.0,23s,261,landing_page
-2026-05,resource_pages,Sabin Vaccine Institute Completes Enrollment in All Phase 2 Clinical Trials for cAd3-Marburg Vaccine and cAd3-Sudan Ebolavirus Vaccine,/resources/sabin-vaccine-institute-completes-enrollment-in-all-phase-2-clinical-trials-for-cad3-marburg-vaccine-and-cad3-sudan-ebolavirus-vaccine,Sessions,129,Active Users,118,108,0.007751937984496124,47s,483,landing_page
-2026-05,resource_pages,Understanding Pentavalent and Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,337,Active Users,322,320,0.0,33s,1072,landing_page
-2026-05,resource_pages,Understanding Vaccine Types: How They Protect Against Disease,/resources/understanding-vaccine-types-how-they-protect-against-disease,Sessions,153,Active Users,115,112,0.0,20s,452,landing_page
-2026-05,resource_pages,"Vaccines 101: Their History, How They Work, and Their Impact",/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,422,Active Users,334,329,0.0071090047393364926,38s,1313,landing_page
+2026-05,resource_pages,From Covid 19 To Typhoid 2026 Sabin Awards Spotlight Vaccine Pioneers,/resources/from-covid-19-to-typhoid-2026-sabin-awards-spotlight-vaccine-pioneers,Sessions,160,Active Users,115,99,0.0,25s,519,landing_page
+2026-05,resource_pages,From Silos To Synergy First Tb Epi Communities Partnership To Support New Tb Vaccines Introduction,/resources/from-silos-to-synergy-first-tb-epi-communities-partnership-to-support-new-tb-vaccines-introduction,Sessions,107,Active Users,89,76,0.0,21s,337,landing_page
+2026-05,resource_pages,How Vaccines Protect You And Your Loved Ones,/resources/how-vaccines-protect-you-and-your-loved-ones,Sessions,165,Active Users,146,142,0.0,16s,509,landing_page
+2026-05,resource_pages,Noted Vaccine Researchers Ugur Sahin And Ozlem Tureci Awarded Sabin Vaccine Institutes Albert B Sabin Gold Medal Genomic Scientist Senjuti Saha Of Bangladesh Receives Rising Star Award,/resources/noted-vaccine-researchers-ugur-sahin-and-ozlem-tureci-awarded-sabin-vaccine-institutes-albert-b-sabin-gold-medal-genomic-scientist-senjuti-saha-of-bangladesh-receives-rising-star-award,Sessions,78,Active Users,77,71,0.0,23s,261,landing_page
+2026-05,resource_pages,Sabin Vaccine Institute Completes Enrollment In All Phase 2 Clinical Trials For Cad3 Marburg Vaccine And Cad3 Sudan Ebolavirus Vaccine,/resources/sabin-vaccine-institute-completes-enrollment-in-all-phase-2-clinical-trials-for-cad3-marburg-vaccine-and-cad3-sudan-ebolavirus-vaccine,Sessions,129,Active Users,118,108,0.007751937984496124,47s,483,landing_page
+2026-05,resource_pages,Understanding Pentavalent And Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,337,Active Users,322,320,0.0,33s,1072,landing_page
+2026-05,resource_pages,Understanding Vaccine Types How They Protect Against Disease,/resources/understanding-vaccine-types-how-they-protect-against-disease,Sessions,153,Active Users,115,112,0.0,20s,452,landing_page
+2026-05,resource_pages,Vaccines 101 Their History How They Work And Their Impact,/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,422,Active Users,334,329,0.0071090047393364926,38s,1313,landing_page
 2026-05,top_pages,/,/,Sessions,1855,Active Users,1587,1482,0.0,34s,7868,landing_page
 2026-05,top_pages,/about/opportunities/careers,/about/opportunities/careers,Sessions,571,Active Users,383,281,0.0,26s,2050,landing_page
 2026-05,top_pages,/about/our-history/dr-albert-b-sabin,/about/our-history/dr-albert-b-sabin,Sessions,271,Active Users,229,221,0.0,38s,908,landing_page
 2026-05,top_pages,/about/our-people,/about/our-people,Sessions,295,Active Users,276,242,0.003389830508474576,34s,1330,landing_page
 2026-05,top_pages,/events/2026-sabin-awards-ceremony,/events/2026-sabin-awards-ceremony,Sessions,259,Active Users,176,133,0.003861003861003861,39s,916,landing_page
 2026-05,top_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,294,Active Users,262,257,0.003401360544217687,27s,924,landing_page
-2026-05,top_pages,How Vaccines Protect You and Your Loved Ones,/resources/how-vaccines-protect-you-and-your-loved-ones,Sessions,165,Active Users,146,142,0.0,16s,509,landing_page
-2026-05,top_pages,Understanding Pentavalent and Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,337,Active Users,322,320,0.0,33s,1072,landing_page
-2026-05,top_pages,"Vaccines 101: Their History, How They Work, and Their Impact",/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,422,Active Users,334,329,0.0071090047393364926,38s,1313,landing_page
+2026-05,top_pages,How Vaccines Protect You And Your Loved Ones,/resources/how-vaccines-protect-you-and-your-loved-ones,Sessions,165,Active Users,146,142,0.0,16s,509,landing_page
+2026-05,top_pages,Understanding Pentavalent And Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,337,Active Users,322,320,0.0,33s,1072,landing_page
+2026-05,top_pages,Vaccines 101 Their History How They Work And Their Impact,/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,422,Active Users,334,329,0.0071090047393364926,38s,1313,landing_page
 2026-05,top_pages,/sabin-newsletter-archive,/sabin-newsletter-archive,Sessions,376,Active Users,377,377,0.0,1s,1499,landing_page
+2026-06,resource_pages,/resources,/resources,Sessions,154,Active Users,153,148,0.0,15s,619,landing_page
+2026-06,resource_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,209,Active Users,178,176,0.0,28s,643,landing_page
+2026-06,resource_pages,From Covid 19 To Typhoid 2026 Sabin Awards Spotlight Vaccine Pioneers,/resources/from-covid-19-to-typhoid-2026-sabin-awards-spotlight-vaccine-pioneers,Sessions,82,Active Users,80,80,0.0,8s,277,landing_page
+2026-06,resource_pages,How Vaccines Protect You And Your Loved Ones,/resources/how-vaccines-protect-you-and-your-loved-ones,Sessions,122,Active Users,115,114,0.0,21s,380,landing_page
+2026-06,resource_pages,Sabin Vaccine Institute Completes Enrollment In All Phase 2 Clinical Trials For Cad3 Marburg Vaccine And Cad3 Sudan Ebolavirus Vaccine,/resources/sabin-vaccine-institute-completes-enrollment-in-all-phase-2-clinical-trials-for-cad3-marburg-vaccine-and-cad3-sudan-ebolavirus-vaccine,Sessions,109,Active Users,104,103,0.0,7s,381,landing_page
+2026-06,resource_pages,Sabin Vaccine Institute Makes New Board Appointments As Two Trustees Complete Terms,/resources/sabin-vaccine-institute-makes-new-board-appointments-as-two-trustees-complete-terms,Sessions,74,Active Users,74,73,0.0,0s,246,landing_page
+2026-06,resource_pages,Sabin Vaccine Institutes Investigational Marburg Vaccine Delivered To Ethiopia For Outbreak Response,/resources/sabin-vaccine-institutes-investigational-marburg-vaccine-delivered-to-ethiopia-for-outbreak-response,Sessions,77,Active Users,71,67,0.012987012987012988,4s,230,landing_page
+2026-06,resource_pages,Understanding Pentavalent And Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,226,Active Users,219,217,0.0,45s,715,landing_page
+2026-06,resource_pages,Understanding Vaccine Types How They Protect Against Disease,/resources/understanding-vaccine-types-how-they-protect-against-disease,Sessions,125,Active Users,121,119,0.0,32s,398,landing_page
+2026-06,resource_pages,Vaccines 101 Their History How They Work And Their Impact,/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,274,Active Users,235,232,0.0036496350364963502,1m 1s,887,landing_page
+2026-06,top_pages,/,/,Sessions,2307,Active Users,2027,1927,0.002167316861725184,28s,9792,landing_page
+2026-06,top_pages,/about/awards-recognition/the-albert-b-sabin-gold-medal,/about/awards-recognition/the-albert-b-sabin-gold-medal,Sessions,180,Active Users,179,178,0.0,3s,648,landing_page
+2026-06,top_pages,/about/opportunities/careers,/about/opportunities/careers,Sessions,720,Active Users,483,390,0.002777777777777778,27s,2741,landing_page
+2026-06,top_pages,/about/our-history/dr-albert-b-sabin,/about/our-history/dr-albert-b-sabin,Sessions,204,Active Users,190,188,0.0,36s,713,landing_page
+2026-06,top_pages,/about/our-people,/about/our-people,Sessions,275,Active Users,261,233,0.0036363636363636364,25s,1198,landing_page
+2026-06,top_pages,/forward,/forward,Sessions,1415,Active Users,1414,1439,0.0,0s,4319,landing_page
+2026-06,top_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,209,Active Users,178,176,0.0,28s,643,landing_page
+2026-06,top_pages,Understanding Pentavalent And Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,226,Active Users,219,217,0.0,45s,715,landing_page
+2026-06,top_pages,Vaccines 101 Their History How They Work And Their Impact,/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,274,Active Users,235,232,0.0036496350364963502,1m 1s,887,landing_page
+2026-06,top_pages,/sabin-newsletter-archive,/sabin-newsletter-archive,Sessions,395,Active Users,394,394,0.0,1s,1555,landing_page
+2026-07,resource_pages,/resources,/resources,Sessions,135,Active Users,132,128,0.0,7s,488,landing_page
+2026-07,resource_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,267,Active Users,248,242,0.0,35s,836,landing_page
+2026-07,resource_pages,From Covid 19 To Typhoid 2026 Sabin Awards Spotlight Vaccine Pioneers,/resources/from-covid-19-to-typhoid-2026-sabin-awards-spotlight-vaccine-pioneers,Sessions,82,Active Users,80,78,0.0,0s,280,landing_page
+2026-07,resource_pages,How Vaccines Protect You And Your Loved Ones,/resources/how-vaccines-protect-you-and-your-loved-ones,Sessions,80,Active Users,73,73,0.0,15s,237,landing_page
+2026-07,resource_pages,Sabin Awarded Grant For Rsv Immunization Initiative,/resources/sabin-awarded-grant-for-rsv-immunization-initiative,Sessions,230,Active Users,192,175,0.004347826086956522,24s,797,landing_page
+2026-07,resource_pages,Sabin Vaccine Institute Completes Enrollment In All Phase 2 Clinical Trials For Cad3 Marburg Vaccine And Cad3 Sudan Ebolavirus Vaccine,/resources/sabin-vaccine-institute-completes-enrollment-in-all-phase-2-clinical-trials-for-cad3-marburg-vaccine-and-cad3-sudan-ebolavirus-vaccine,Sessions,112,Active Users,109,105,0.0,2s,380,landing_page
+2026-07,resource_pages,Sabin Vaccine Institute Makes New Board Appointments As Two Trustees Complete Terms,/resources/sabin-vaccine-institute-makes-new-board-appointments-as-two-trustees-complete-terms,Sessions,81,Active Users,81,80,0.0,3s,282,landing_page
+2026-07,resource_pages,Understanding Pentavalent And Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,312,Active Users,289,283,0.0,28s,987,landing_page
+2026-07,resource_pages,Understanding Vaccine Types How They Protect Against Disease,/resources/understanding-vaccine-types-how-they-protect-against-disease,Sessions,101,Active Users,95,95,0.0,43s,325,landing_page
+2026-07,resource_pages,Vaccines 101 Their History How They Work And Their Impact,/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,254,Active Users,224,222,0.0,40s,799,landing_page
+2026-07,top_pages,/,/,Sessions,2955,Active Users,2635,2503,0.0013536379018612521,33s,12932,landing_page
+2026-07,top_pages,/about/awards-recognition/the-albert-b-sabin-gold-medal,/about/awards-recognition/the-albert-b-sabin-gold-medal,Sessions,306,Active Users,306,304,0.0,1s,1122,landing_page
+2026-07,top_pages,/about/opportunities/careers,/about/opportunities/careers,Sessions,1433,Active Users,973,785,0.0034891835310537334,25s,5684,landing_page
+2026-07,top_pages,/about/our-history/dr-albert-b-sabin,/about/our-history/dr-albert-b-sabin,Sessions,278,Active Users,256,254,0.0,33s,933,landing_page
+2026-07,top_pages,/about/our-people,/about/our-people,Sessions,243,Active Users,217,172,0.00411522633744856,36s,1114,landing_page
+2026-07,top_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,267,Active Users,248,242,0.0,35s,836,landing_page
+2026-07,top_pages,Sabin Awarded Grant For Rsv Immunization Initiative,/resources/sabin-awarded-grant-for-rsv-immunization-initiative,Sessions,230,Active Users,192,175,0.004347826086956522,24s,797,landing_page
+2026-07,top_pages,Understanding Pentavalent And Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,312,Active Users,289,283,0.0,28s,987,landing_page
+2026-07,top_pages,Vaccines 101 Their History How They Work And Their Impact,/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,254,Active Users,224,222,0.0,40s,799,landing_page
+2026-07,top_pages,/sabin-newsletter-archive,/sabin-newsletter-archive,Sessions,406,Active Users,405,405,0.0,0s,1606,landing_page
+2026-08,resource_pages,/resources,/resources,Sessions,243,Active Users,240,235,0.0,4s,915,landing_page
+2026-08,resource_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,255,Active Users,228,227,0.0,39s,807,landing_page
+2026-08,resource_pages,Clinical Partnership Framework,/resources/clinical-partnership-framework,Sessions,104,Active Users,101,99,0.0,2s,397,landing_page
+2026-08,resource_pages,From Covid 19 To Typhoid 2026 Sabin Awards Spotlight Vaccine Pioneers,/resources/from-covid-19-to-typhoid-2026-sabin-awards-spotlight-vaccine-pioneers,Sessions,122,Active Users,122,122,0.0,0s,451,landing_page
+2026-08,resource_pages,Sabin Factsheet 2026,/resources/sabin-factsheet-2026,Sessions,115,Active Users,112,106,0.0,4s,434,landing_page
+2026-08,resource_pages,Sabin Vaccine Institute Completes Enrollment In All Phase 2 Clinical Trials For Cad3 Marburg Vaccine And Cad3 Sudan Ebolavirus Vaccine,/resources/sabin-vaccine-institute-completes-enrollment-in-all-phase-2-clinical-trials-for-cad3-marburg-vaccine-and-cad3-sudan-ebolavirus-vaccine,Sessions,151,Active Users,147,144,0.0,2s,548,landing_page
+2026-08,resource_pages,Sabin Vaccine Institute Makes New Board Appointments As Two Trustees Complete Terms,/resources/sabin-vaccine-institute-makes-new-board-appointments-as-two-trustees-complete-terms,Sessions,114,Active Users,114,114,0.0,0s,418,landing_page
+2026-08,resource_pages,Understanding Pentavalent And Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,400,Active Users,364,363,0.0,39s,1234,landing_page
+2026-08,resource_pages,Understanding Vaccine Types How They Protect Against Disease,/resources/understanding-vaccine-types-how-they-protect-against-disease,Sessions,141,Active Users,126,126,0.0,34s,463,landing_page
+2026-08,resource_pages,Vaccines 101 Their History How They Work And Their Impact,/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,344,Active Users,300,295,0.0029069767441860465,46s,1121,landing_page
+2026-08,top_pages,/,/,Sessions,4915,Active Users,4400,4253,0.0,23s,20183,landing_page
+2026-08,top_pages,/about/awards-recognition/the-albert-b-sabin-gold-medal,/about/awards-recognition/the-albert-b-sabin-gold-medal,Sessions,993,Active Users,992,989,0.002014098690835851,1s,3928,landing_page
+2026-08,top_pages,/about/opportunities/careers,/about/opportunities/careers,Sessions,1123,Active Users,739,572,0.0017809439002671415,28s,4335,landing_page
+2026-08,top_pages,/about/our-history/dr-albert-b-sabin,/about/our-history/dr-albert-b-sabin,Sessions,604,Active Users,553,555,0.0,32s,2044,landing_page
+2026-08,top_pages,/about/our-people,/about/our-people,Sessions,247,Active Users,231,203,0.0,24s,1141,landing_page
+2026-08,top_pages,/resources,/resources,Sessions,243,Active Users,240,235,0.0,4s,915,landing_page
+2026-08,top_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,255,Active Users,228,227,0.0,39s,807,landing_page
+2026-08,top_pages,Understanding Pentavalent And Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,400,Active Users,364,363,0.0,39s,1234,landing_page
+2026-08,top_pages,Vaccines 101 Their History How They Work And Their Impact,/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,344,Active Users,300,295,0.0029069767441860465,46s,1121,landing_page
+2026-08,top_pages,/sabin-newsletter-archive,/sabin-newsletter-archive,Sessions,458,Active Users,456,455,0.0,0s,1825,landing_page
+2026-09,resource_pages,/resources,/resources,Sessions,244,Active Users,243,241,0.0,2s,847,landing_page
+2026-09,resource_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,314,Active Users,292,290,0.0,33s,1000,landing_page
+2026-09,resource_pages,From Covid 19 To Typhoid 2026 Sabin Awards Spotlight Vaccine Pioneers,/resources/from-covid-19-to-typhoid-2026-sabin-awards-spotlight-vaccine-pioneers,Sessions,98,Active Users,98,98,0.0,2s,358,landing_page
+2026-09,resource_pages,How Vaccines Protect You And Your Loved Ones,/resources/how-vaccines-protect-you-and-your-loved-ones,Sessions,159,Active Users,146,147,0.006289308176100629,25s,505,landing_page
+2026-09,resource_pages,Sabin And Population Services International Psi Partner To Advance Community Based Immunization And Primary Healthcare Delivery,/resources/sabin-and-population-services-international-psi-partner-to-advance-community-based-immunization-and-primary-healthcare-delivery,Sessions,116,Active Users,106,96,0.008620689655172414,15s,369,landing_page
+2026-09,resource_pages,Sabin Factsheet 2026,/resources/sabin-factsheet-2026,Sessions,153,Active Users,151,144,0.0,8s,560,landing_page
+2026-09,resource_pages,Sabin Vaccine Institute Completes Enrollment In All Phase 2 Clinical Trials For Cad3 Marburg Vaccine And Cad3 Sudan Ebolavirus Vaccine,/resources/sabin-vaccine-institute-completes-enrollment-in-all-phase-2-clinical-trials-for-cad3-marburg-vaccine-and-cad3-sudan-ebolavirus-vaccine,Sessions,136,Active Users,129,129,0.0,5s,492,landing_page
+2026-09,resource_pages,Understanding Pentavalent And Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,448,Active Users,417,405,0.0,33s,1376,landing_page
+2026-09,resource_pages,Understanding Vaccine Types How They Protect Against Disease,/resources/understanding-vaccine-types-how-they-protect-against-disease,Sessions,141,Active Users,133,132,0.0,32s,462,landing_page
+2026-09,resource_pages,Vaccines 101 Their History How They Work And Their Impact,/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,680,Active Users,543,540,0.0,47s,2143,landing_page
+2026-09,top_pages,/,/,Sessions,3762,Active Users,3519,3399,0.003189792663476874,20s,15530,landing_page
+2026-09,top_pages,/about/awards-recognition/the-albert-b-sabin-gold-medal,/about/awards-recognition/the-albert-b-sabin-gold-medal,Sessions,367,Active Users,362,359,0.0,10s,1505,landing_page
+2026-09,top_pages,/about/opportunities/careers,/about/opportunities/careers,Sessions,996,Active Users,672,543,0.004016064257028112,26s,3759,landing_page
+2026-09,top_pages,/about/our-history/dr-albert-b-sabin,/about/our-history/dr-albert-b-sabin,Sessions,369,Active Users,311,303,0.0,46s,1207,landing_page
+2026-09,top_pages,/about/our-people,/about/our-people,Sessions,304,Active Users,282,244,0.0,21s,1251,landing_page
+2026-09,top_pages,/resources,/resources,Sessions,244,Active Users,243,241,0.0,2s,847,landing_page
+2026-09,top_pages,All About Different Vaccine Delivery Methods,/resources/all-about-different-vaccine-delivery-methods,Sessions,314,Active Users,292,290,0.0,33s,1000,landing_page
+2026-09,top_pages,Understanding Pentavalent And Hexavalent Vaccines,/resources/understanding-pentavalent-and-hexavalent-vaccines,Sessions,448,Active Users,417,405,0.0,33s,1376,landing_page
+2026-09,top_pages,Vaccines 101 Their History How They Work And Their Impact,/resources/vaccines-101-their-history-how-they-work-and-their-impact,Sessions,680,Active Users,543,540,0.0,47s,2143,landing_page
+2026-09,top_pages,/sabin-newsletter-archive,/sabin-newsletter-archive,Sessions,467,Active Users,466,466,0.0,1s,1807,landing_page

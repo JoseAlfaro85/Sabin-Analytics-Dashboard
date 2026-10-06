@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "queried_at": "2026-09-24",
+  "workspace": {
+    "name": "Sabin Vaccine Institute",
+    "tenant_type": "ORGANIZATION"
+  },
+  "reporting_period": {
+    "since": "2026-08-01",
+    "until": "2026-08-31"
+  },
+  "status": "reporting_input_partial_coverage",
+  "report_close": {
+    "policy": "first calendar day after the reporting month",
+    "close_date": "2026-09-01",
+    "current_backfill_exception": "Facebook and Instagram post engagement were queried on 2026-09-24 because the September 1 MCP snapshot was not captured. Future monthly reports must capture and freeze MCP results on the first day after month-end."
+  },
+  "providers_returned": [
+    "CROSSPLATFORM",
+    "FACEBOOKPAGE",
+    "INSTAGRAMBUSINESS",
+    "PINTEREST",
+    "THREADS",
+    "TIKTOKBUSINESS",
+    "YOUTUBECHANNEL"
+  ],
+  "sources": [
+    {"id": "123249786", "provider": "FACEBOOKPAGE", "label": "Sabin Vaccine Institute", "active": true},
+    {"id": "123251294", "provider": "INSTAGRAMBUSINESS", "label": "sabinvaccine", "active": true},
+    {"id": "125903039", "provider": "YOUTUBECHANNEL", "label": "Sabin Vaccine Institute", "active": true},
+    {"id": "140253819", "provider": "THREADS", "label": "sabinvaccine", "active": true}
+  ],
+  "missing_required_dashboard_sources": ["LinkedIn"],
+  "queries": [
+    {
+      "metric_id": "post_engagement",
+      "provider": "CROSSPLATFORM",
+      "resolution": "AGGREGATED",
+      "source_ids": ["123249786"],
+      "platform": "facebook",
+      "total": 151,
+      "use_in_dashboard": true,
+      "reason": "MCP-native Facebook post engagement for posts published August 1-31, 2026."
+    },
+    {
+      "metric_id": "post_engagement",
+      "provider": "CROSSPLATFORM",
+      "resolution": "AGGREGATED",
+      "source_ids": ["123251294"],
+      "platform": "instagram",
+      "total": 58,
+      "use_in_dashboard": true,
+      "reason": "MCP-native Instagram post engagement replaces the September 2 export aggregate of 53."
+    },
+    {
+      "metric_id": "profile_followers",
+      "provider": "CROSSPLATFORM",
+      "source_ids": ["123249786", "123251294", "125903039", "140253819"],
+      "resolution": "DAILY",
+      "first_value": {"date": "2026-08-01", "value": 14568},
+      "last_value": {"date": "2026-08-31", "value": 14538},
+      "use_in_dashboard": false,
+      "reason": "Source scope includes YouTube and Threads but excludes required LinkedIn; it is not comparable with the dashboard's Facebook, Instagram, and LinkedIn follower total."
+    },
+    {
+      "metric_id": "profile_new_followers",
+      "provider": "CROSSPLATFORM",
+      "source_ids": ["123249786", "123251294", "125903039", "140253819"],
+      "resolution": "DAILY",
+      "daily_value_sum": 57,
+      "notes": ["Threads source 140253819 was skipped by Hootsuite as unsupported for this metric."],
+      "use_in_dashboard": false,
+      "reason": "Source scope does not match the dashboard's Facebook, Instagram, and LinkedIn reporting scope."
+    }
+  ],
+  "connector_observations": [
+    "LinkedIn analytics was not returned by list_providers/search_sources.",
+    "LinkedIn native post engagement remains sourced from the retained post-level export: 429 reactions + 5 comments + 36 shares + 1,785 clicks = 2,255.",
+    "Several catalog and batch requests returned HTTP 429; successful responses were retained and failed requests were not treated as zero."
+  ]
+}

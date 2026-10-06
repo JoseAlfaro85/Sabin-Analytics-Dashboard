@@ -1,0 +1,518 @@
+{
+  "generated_at": "2026-07-06T11:02:17-04:00",
+  "report_date": "2026-07-06T11:02:17-04:00",
+  "month_key": "2026-06",
+  "source_file": "Talkwalker Brand Listening authenticated app",
+  "source_url": "https://app.talkwalker.com/app/page#/BRAND_LISTENING#cid=f3190b5e-b0bf-4579-a562-1287c371b4ae&co=project&activePageId=THEME",
+  "report_url": "https://app.talkwalker.com/app/page#/BRAND_LISTENING#cid=f3190b5e-b0bf-4579-a562-1287c371b4ae&co=project&activePageId=THEME",
+  "report_title": "Brand Listening - Sabin",
+  "report_sections": [
+    "Brand Performance",
+    "Sentiment",
+    "Audience Analysis",
+    "Influencers",
+    "Location",
+    "Conversations",
+    "Negative result review"
+  ],
+  "status": "ATTACHED",
+  "data_quality": {
+    "coverage_status": "ready",
+    "period_status": "verified",
+    "visible_period": "06/01/26 - 06/30/26",
+    "timezone": "Eastern Time (US & Canada)",
+    "source_mode": "authenticated Talkwalker Brand Listening app",
+    "extraction_notes": [
+      "Date picker was manually set to June 1, 2026 00:00:00 through June 30, 2026 23:59:59.",
+      "Brand Performance, Sentiment, Audience Analysis, Influencers, Location, and Conversations widgets were reviewed in the live app.",
+      "Talkwalker generated a CSV export for the negative result set, but Chrome blocked the direct file download. The negative review is based on the expanded in-app result view, visible result rows, and Talkwalker's widget AI summary."
+    ],
+    "sentiment_caveat": "Talkwalker's negative sentiment labels are topic-sensitive. June negative labels are mostly driven by outbreak, fatality, security, and vaccine-pipeline language rather than observed criticism of Sabin."
+  },
+  "source_reports": [
+    {
+      "label": "Talkwalker Brand Listening - Brand Performance",
+      "url": "https://app.talkwalker.com/app/page#/BRAND_LISTENING#cid=f3190b5e-b0bf-4579-a562-1287c371b4ae&co=project&activePageId=PERFORMANCE",
+      "visible_period": "06/01/26 - 06/30/26",
+      "extraction_status": "rendered in authenticated app"
+    },
+    {
+      "label": "Talkwalker Brand Listening - Sentiment",
+      "url": "https://app.talkwalker.com/app/page#/BRAND_LISTENING#cid=f3190b5e-b0bf-4579-a562-1287c371b4ae&co=project&activePageId=SENTIMENTS",
+      "visible_period": "06/01/26 - 06/30/26",
+      "extraction_status": "rendered in authenticated app"
+    },
+    {
+      "label": "Talkwalker Brand Listening - Influencers",
+      "url": "https://app.talkwalker.com/app/page#/BRAND_LISTENING#cid=f3190b5e-b0bf-4579-a562-1287c371b4ae&co=project&activePageId=INFLUENCERS",
+      "visible_period": "06/01/26 - 06/30/26",
+      "extraction_status": "rendered in authenticated app"
+    }
+  ],
+  "metrics": {
+    "positive_mentions": 27,
+    "neutral_mentions": 17,
+    "negative_mentions": 29,
+    "sabin_mentions": 73,
+    "results": 73,
+    "results_change_percent": -79.6,
+    "results_previous": 357,
+    "performance_results": 73,
+    "unique_authors": 60,
+    "unique_authors_change_percent": -76.7,
+    "unique_authors_previous": 258,
+    "unique_sites": 9,
+    "unique_sites_change_percent": -96.3,
+    "unique_sites_previous": 246,
+    "competitor_mentions": {},
+    "trending_topics": [
+      "Sabin",
+      "vaccine",
+      "health",
+      "Ebola",
+      "Marburg",
+      "global health",
+      "immunization",
+      "routine immunization",
+      "TB vaccines",
+      "HPV vaccination"
+    ],
+    "media_types": [
+      "LinkedIn",
+      "X",
+      "Bluesky",
+      "Facebook",
+      "Blogs",
+      "Instagram",
+      "YouTube",
+      "Online News Other",
+      "Newspaper",
+      "Substack"
+    ],
+    "media_type_breakdown": [
+      {
+        "label": "LinkedIn",
+        "share": 30.1,
+        "change_percent": -33.0
+      },
+      {
+        "label": "X",
+        "share": 20.5,
+        "change_percent": -58.0
+      },
+      {
+        "label": "Bluesky",
+        "share": 13.7,
+        "change_percent": 67.0
+      },
+      {
+        "label": "Facebook",
+        "share": 11.0,
+        "change_percent": -50.0
+      },
+      {
+        "label": "Blogs",
+        "share": 8.2,
+        "change_percent": -88.0
+      },
+      {
+        "label": "Instagram",
+        "share": 6.8,
+        "change_percent": -38.0
+      },
+      {
+        "label": "YouTube",
+        "share": 5.5,
+        "change_percent": -33.0
+      },
+      {
+        "label": "Online News Other",
+        "share": 1.4,
+        "change_percent": -99.0
+      },
+      {
+        "label": "Newspaper",
+        "share": 1.4,
+        "change_percent": -80.0
+      },
+      {
+        "label": "Substack",
+        "share": 1.4,
+        "change_percent": -75.0
+      }
+    ],
+    "reach": 0,
+    "impressions": 0,
+    "engagement": 318,
+    "engagement_change_percent": -92.4,
+    "engagement_previous": 4200,
+    "sentiment_source": "Talkwalker Sentiment page donut plus expanded negative-results review",
+    "gender_distribution": [
+      {
+        "label": "Female",
+        "percent": 34.6
+      },
+      {
+        "label": "Male",
+        "percent": 65.4
+      }
+    ],
+    "age_distribution": [
+      {
+        "label": "18-24",
+        "percent": 22.2
+      },
+      {
+        "label": "25-34",
+        "percent": 33.3
+      },
+      {
+        "label": "35-44",
+        "percent": 22.2
+      },
+      {
+        "label": "45-54",
+        "percent": 11.1
+      },
+      {
+        "label": "55-64",
+        "percent": 0.0
+      },
+      {
+        "label": "65+",
+        "percent": 11.1
+      }
+    ],
+    "age_sample_note": "Age percentages are inferred by Talkwalker and should be treated directionally.",
+    "top_languages": [
+      {
+        "label": "English",
+        "percent": 98.6
+      },
+      {
+        "label": "Portuguese",
+        "percent": 1.4
+      }
+    ],
+    "top_occupations": [
+      {
+        "label": "Teacher",
+        "percent": 33.3
+      },
+      {
+        "label": "Author/Writer",
+        "percent": 16.7
+      },
+      {
+        "label": "Journalist",
+        "percent": 16.7
+      },
+      {
+        "label": "Scientist",
+        "percent": 16.7
+      },
+      {
+        "label": "Student",
+        "percent": 16.7
+      }
+    ],
+    "top_interests": [
+      {
+        "label": "Employment",
+        "percent": 12.5
+      },
+      {
+        "label": "Colleges & Universities",
+        "percent": 10.0
+      },
+      {
+        "label": "Global News",
+        "percent": 10.0
+      },
+      {
+        "label": "Social Media",
+        "percent": 10.0
+      },
+      {
+        "label": "Fitness & Health",
+        "percent": 7.5
+      },
+      {
+        "label": "Legal",
+        "percent": 7.5
+      },
+      {
+        "label": "Art",
+        "percent": 5.0
+      },
+      {
+        "label": "Science",
+        "percent": 5.0
+      },
+      {
+        "label": "Advertising & Marketing",
+        "percent": 2.5
+      },
+      {
+        "label": "Other",
+        "percent": 30.0
+      }
+    ],
+    "location_summary": {
+      "dominant_country": "United States",
+      "dominant_country_share": 84.9,
+      "other_visible_countries": [
+        "Switzerland",
+        "India",
+        "France",
+        "Canada",
+        "Brazil",
+        "Cameroon",
+        "Netherlands",
+        "Latvia",
+        "South Africa"
+      ],
+      "note": "Country detail is directional; some visible country percentages are chart labels or change values rather than additive share values."
+    },
+    "most_active_author": "Glassroth Creative Strategies on Facebook - 4 posts",
+    "most_influential_author": "Sabin Vaccine Institute on LinkedIn - 55 engagements",
+    "most_active_site": "balloon-juice.com - 1 post",
+    "most_influential_site": "balloon-juice.com - 18 engagements",
+    "active_authors": [
+      {
+        "label": "Glassroth Creative Strategies",
+        "network": "Facebook",
+        "posts": 4,
+        "reach": 0,
+        "engagement": 0
+      },
+      {
+        "label": "sabinvaccine",
+        "network": "Instagram",
+        "posts": 4,
+        "reach": 715,
+        "engagement": 27
+      },
+      {
+        "label": "Glassroth Creative Strategies",
+        "network": "LinkedIn",
+        "posts": 4,
+        "reach": 925,
+        "engagement": 0
+      },
+      {
+        "label": "Sabin Vaccine Institute",
+        "network": "LinkedIn",
+        "posts": 4,
+        "reach": 119700,
+        "engagement": 55
+      },
+      {
+        "label": "Sabin Vaccine Institute",
+        "network": "Facebook",
+        "posts": 2,
+        "reach": 15800,
+        "engagement": 50
+      }
+    ],
+    "influential_sites": [
+      {
+        "label": "balloon-juice.com",
+        "posts": 1,
+        "reach": 11100,
+        "engagement": 18
+      },
+      {
+        "label": "www.goodthingsguy.com",
+        "posts": 1,
+        "reach": 131200,
+        "engagement": 3
+      },
+      {
+        "label": "hivebrite.io",
+        "posts": 1,
+        "reach": 17300,
+        "engagement": 0
+      },
+      {
+        "label": "inews.zoombangla.com",
+        "posts": 1,
+        "reach": 2100000,
+        "engagement": 0
+      },
+      {
+        "label": "journals.plos.org",
+        "posts": 1,
+        "reach": 2400000,
+        "engagement": 0
+      },
+      {
+        "label": "link.springer.com",
+        "posts": 1,
+        "reach": 20400000,
+        "engagement": 0
+      }
+    ]
+  },
+  "sentiment": {
+    "positive_percent": 37.0,
+    "negative_percent": 39.7,
+    "neutral_percent": 23.3,
+    "negative_result_count": 29,
+    "note": "Raw Talkwalker sentiment should not be treated as a reputation headline. The negative share is primarily driven by outbreak, fatality, security, and vaccine-pipeline context around Ebola/Marburg, including repost amplification of the same CIDRAP item."
+  },
+  "negative_analysis": {
+    "review_status": "manual review completed in expanded Talkwalker negative-results view",
+    "raw_negative_results": 29,
+    "observed_reputational_criticism": 0,
+    "reputation_risk_level": "low observed criticism; moderate topic-context risk",
+    "interpretation": "The negative bucket is not a clean measure of public criticism toward Sabin. It mostly captures negative public-health context where Sabin appears as a source credit, vaccine candidate reference, or owned educational content.",
+    "dominant_drivers": [
+      "CIDRAP Ebola item and reposts on Bluesky and X about cases mounting in an area under Islamic State control and attacks on burial teams and healthcare workers.",
+      "Sabin-owned Marburg explainer content using fatality-rate and outbreak-setting language.",
+      "Online news, blog, and YouTube items about Ebola vaccine availability, experimental candidates, and outbreak response speed.",
+      "High-reach news or scientific domains where Sabin appears in vaccine pipeline context rather than as the subject of criticism."
+    ],
+    "reviewed_examples": [
+      {
+        "source": "CIDRAP on Bluesky",
+        "date": "2026-06-04",
+        "channel": "Bluesky",
+        "engagement": 31,
+        "potential_reach": 18200,
+        "classification": "negative public-health context",
+        "sabin_relevance": "Sabin appears as image/source credit; the negative label is driven by Ebola, attacks, and healthcare-worker language."
+      },
+      {
+        "source": "CIDRAP on X",
+        "date": "2026-06-04",
+        "channel": "X",
+        "engagement": 30,
+        "potential_reach": 41700,
+        "classification": "negative public-health context",
+        "sabin_relevance": "Sabin appears as image/source credit; no criticism of Sabin observed."
+      },
+      {
+        "source": "Lazarus Long on X",
+        "date": "2026-06-04",
+        "channel": "X",
+        "engagement": 23,
+        "potential_reach": 16500,
+        "classification": "negative reaction to outbreak news",
+        "sabin_relevance": "The author reacts negatively to the Ebola situation, not to Sabin."
+      },
+      {
+        "source": "Sabin Vaccine Institute on Facebook",
+        "date": "2026-06-17",
+        "channel": "Facebook",
+        "engagement": 2,
+        "potential_reach": 7900,
+        "classification": "owned outbreak education",
+        "sabin_relevance": "The negative label is driven by Marburg fatality-rate and outbreak-setting language in Sabin's own educational content."
+      },
+      {
+        "source": "ZoomBangla",
+        "date": "2026-06-19",
+        "channel": "Online News Other",
+        "engagement": null,
+        "potential_reach": 2100000,
+        "classification": "vaccine-pipeline news context",
+        "sabin_relevance": "Sabin is mentioned as one of the experimental vaccine manufacturers; no criticism of Sabin observed."
+      }
+    ],
+    "recommended_reporting_language": "Talkwalker labeled 39.7% of June mentions negative, but manual review indicates the negative signal is mostly outbreak-context language and repost amplification, not direct criticism of Sabin. Treat sentiment as an issue-monitoring signal, not a brand-reputation score."
+  },
+  "intelligence_center": {
+    "summary": "June Brand Listening is verified for June 1-30, 2026. Talkwalker shows 73 results, 318 engagements, 60 unique authors, and 9 unique sites. Raw sentiment is mixed, with 39.7% negative, 37.0% positive, and 23.3% neutral, but manual review shows the negative bucket is dominated by Ebola/Marburg outbreak context rather than direct criticism of Sabin.",
+    "talkwalker_overview_url": "https://app.talkwalker.com/app/page#/IQ_APPS#co=project&cid=f3190b5e-b0bf-4579-a562-1287c371b4ae",
+    "talkwalker_report_url": "https://app.talkwalker.com/app/page#/BRAND_LISTENING#cid=f3190b5e-b0bf-4579-a562-1287c371b4ae&co=project&activePageId=PERFORMANCE",
+    "operational_cards": [
+      {
+        "label": "Results",
+        "value": "73",
+        "subtext": "-79.6% vs previous period"
+      },
+      {
+        "label": "Engagement",
+        "value": "318",
+        "subtext": "-92.4% vs previous period"
+      },
+      {
+        "label": "Unique authors",
+        "value": "60",
+        "subtext": "-76.7% vs previous period"
+      },
+      {
+        "label": "Unique sites",
+        "value": "9",
+        "subtext": "-96.3% vs previous period"
+      },
+      {
+        "label": "Negative review",
+        "value": "Low criticism",
+        "subtext": "29 raw negative labels; no direct anti-Sabin criticism observed in reviewed set"
+      }
+    ],
+    "active_monitors": [
+      "Sabin brand clean",
+      "Ebola / Filovirus Early Warning",
+      "Crisis / Rapid Response",
+      "Vaccine Confidence & Trust",
+      "Outbreak Preparedness & Response",
+      "Research / Innovation / R&D",
+      "Routine Immunization",
+      "Policy & Financing"
+    ],
+    "decision_rules": [
+      "Treat June Talkwalker volume, engagement, author, site, media mix, and audience widgets as verified June metrics.",
+      "Do not use the raw 39.7% negative share as a public reputation score without the manual caveat.",
+      "Escalate only if negative labels include direct criticism, misinformation, confusion about Sabin's role, or credible high-reach authors targeting Sabin.",
+      "Keep owned Sabin posts, partner amplification, third-party outbreak news, and genuine criticism separate before reporting reputation health."
+    ],
+    "weekly_questions": [
+      "Did any negative result directly criticize Sabin, or was it negative context around outbreak severity?",
+      "Which repeated outbreak terms are useful early-warning signals for Comms?",
+      "Which partner or owned content can clarify Sabin's role in Marburg/Ebola vaccine research without amplifying fear-based framing?",
+      "Which June themes from Talkwalker line up with Hootsuite engagement and GA4 audience behavior?"
+    ],
+    "next_actions": [
+      "Use the June Brand Listening metrics as the monthly listening baseline.",
+      "Add a sentiment caveat in any executive readout: June negativity is issue-context driven, not observed reputational criticism.",
+      "Monitor CIDRAP-style outbreak amplification separately from brand sentiment.",
+      "For future months, export negative results directly from Talkwalker and archive the raw CSV with the dashboard source package."
+    ],
+    "monthly_export_status": "Authenticated Brand Listening app reviewed for June 1-30, 2026. Raw CSV export was generated in Talkwalker but could not be downloaded through Chrome; expanded in-app review is attached as the source basis."
+  },
+  "insights": {
+    "strengths": [
+      "The dashboard now has verified June Talkwalker source coverage instead of stale shared-report placeholders.",
+      "Conversation volume is small enough for meaningful manual review: 73 total results and 29 negative-labeled results.",
+      "Owned Sabin channels remain prominent in the influencer view, with Sabin LinkedIn producing the strongest author engagement signal.",
+      "LinkedIn is the largest media-type share at 30.1%, followed by X at 20.5% and Bluesky at 13.7%."
+    ],
+    "vulnerabilities": [
+      "Raw listening volume, engagement, author breadth, and site breadth were all down sharply against the prior period.",
+      "Talkwalker labels 39.7% of the conversation negative, but that number is easy to misread without manual context.",
+      "Negative labels are concentrated around outbreak severity, fatality, security, and vaccine availability language, so the dashboard should avoid presenting the raw split as public disapproval of Sabin.",
+      "The generated CSV export could not be retained locally, so the June negative-review audit relies on the expanded in-app view rather than a durable row-level file."
+    ],
+    "opportunities": [
+      "Use the negative review as an internal method improvement: sentiment needs driver review before it becomes a reputation claim.",
+      "Separate issue-monitoring from brand sentiment in monthly reporting, especially for Ebola, Marburg, outbreak response, and vaccine-pipeline conversations.",
+      "Use Sabin's owned Marburg and outbreak-response content to clarify expertise while avoiding unnecessarily alarming framing.",
+      "Archive future Talkwalker CSV exports immediately so result-level classification can be reproduced."
+    ],
+    "content_ideas": [
+      "Create a short internal note explaining why outbreak-related negative sentiment is not the same as anti-Sabin sentiment.",
+      "Prepare a plain-language explanation of Sabin's role in filovirus vaccine research that can be used when outbreak coverage spikes.",
+      "Use LinkedIn as the primary amplification channel for research, awards, and partner-credibility stories because it held the largest share of June conversation.",
+      "Pair future outbreak posts with clear context, source citations, and next-step links so negative public-health language does not become ambiguous brand sentiment."
+    ],
+    "discussion_points": [
+      "The June Talkwalker problem was not missing data; it was interpretability. The live app had the right date range, but raw sentiment needed human review.",
+      "The correct leadership takeaway is: monitor outbreak-context negativity, but do not report it as evidence of reputational damage without direct criticism.",
+      "Negative-result curation should become a recurring monthly step for Talkwalker before sentiment appears in executive or board materials."
+    ],
+    "summary": "June Brand Listening is now verified from the authenticated Talkwalker app for June 1-30, 2026. The month shows 73 results, 318 engagements, 60 unique authors, and 9 unique sites. Raw sentiment is 37.0% positive, 23.3% neutral, and 39.7% negative, but manual review shows the negative set is dominated by Ebola/Marburg outbreak context, CIDRAP repost amplification, and vaccine-pipeline references rather than direct criticism of Sabin. Report the raw sentiment only with that caveat."
+  }
+}

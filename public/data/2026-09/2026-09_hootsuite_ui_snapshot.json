@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-10-06",
+  "source_mode": "hootsuite_authenticated_ui_export_fallback",
+  "report": {
+    "name": "Cross-network performance template",
+    "report_id": "18274371",
+    "reporting_period": {
+      "since": "2026-09-01",
+      "until": "2026-09-30"
+    },
+    "selected_reporting_accounts": [
+      {"platform": "facebook", "source_id": "123249786", "label": "Sabin Vaccine Institute"},
+      {"platform": "instagram", "source_id": "123251294", "label": "sabinvaccine"},
+      {"platform": "linkedin", "source_id": "123251332", "label": "Sabin Vaccine Institute"}
+    ]
+  },
+  "account_summary": {
+    "followers_start": 43346,
+    "followers_end": 43670,
+    "net_follower_change": 324,
+    "new_followers_acquired": 301,
+    "total_posts": 50,
+    "post_impressions": 53256,
+    "post_link_clicks": 3442,
+    "native_post_engagement": 9906,
+    "average_post_engagement_rate": 0.100672
+  },
+  "platforms": {
+    "facebook": {
+      "followers_start": 7904,
+      "followers_end": 7946,
+      "new_followers_acquired": 48,
+      "posts": 22,
+      "post_impressions": 28582,
+      "post_link_clicks": 53,
+      "native_post_engagement": 5947,
+      "average_post_engagement_rate": 0.0627
+    },
+    "instagram": {
+      "followers_start": 4702,
+      "followers_end": 4691,
+      "new_followers_acquired": 21,
+      "posts": 6,
+      "post_impressions": 1478,
+      "post_link_clicks": 0,
+      "native_post_engagement": 42,
+      "average_post_engagement_rate": 0.0528
+    },
+    "linkedin": {
+      "followers_start": 30740,
+      "followers_end": 31033,
+      "new_followers_acquired": 232,
+      "posts": 22,
+      "post_impressions": 23196,
+      "post_link_clicks": 3389,
+      "native_post_engagement": 3917,
+      "average_post_engagement_rate": 0.1517
+    }
+  },
+  "notes": [
+    "These values were read from the authenticated Hootsuite report for September 1-30, 2026 with Facebook, Instagram, and LinkedIn selected.",
+    "The LinkedIn CSV package was downloaded directly from Hootsuite because LinkedIn analytics are not exposed by the MCP.",
+    "The Hootsuite MCP was attempted first for Facebook and Instagram but OAuth metadata discovery returned HTTP 429 twice; no failed request was treated as zero.",
+    "New followers acquired is not interchangeable with net follower change. Dashboard net growth is followers_end minus followers_start."
+  ]
+}

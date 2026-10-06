@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "month": "2026-08",
+    "generated_at": "2026-09-24T12:53:25"
+  },
+  "status": "ready",
+  "ready_for_teammate_share": true,
+  "summary": "Validation passed with complete exports and no warning checks.",
+  "export_completeness_status": "complete",
+  "export_completeness_reason": "All expected monthly export families were present without relying on supplemental top-post files.",
+  "qa_status": "passed",
+  "qa_failed_count": 0,
+  "qa_warning_count": 0,
+  "failed_checks": [],
+  "warning_checks": [],
+  "recommended_actions": [
+    "Use this month package for teammate review or publishing."
+  ]
+}

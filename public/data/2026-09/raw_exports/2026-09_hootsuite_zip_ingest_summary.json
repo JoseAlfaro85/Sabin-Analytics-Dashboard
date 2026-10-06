@@ -1,0 +1,259 @@
+{
+  "month": "2026-09",
+  "generated_at": "2026-10-06T11:43:08",
+  "source_directory": "C:\\Users\\JAlfaro\\Downloads",
+  "source_zips": [
+    {
+      "zip_file": "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z.zip",
+      "members": [
+        {
+          "name": "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_account_metrics.csv",
+          "encrypted": false
+        },
+        {
+          "name": "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_custom_metrics.csv",
+          "encrypted": false
+        },
+        {
+          "name": "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_ig_posts.csv",
+          "encrypted": false
+        },
+        {
+          "name": "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_li_pages_video_performance.csv",
+          "encrypted": false
+        },
+        {
+          "name": "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_ig_top_posts.csv",
+          "encrypted": false
+        },
+        {
+          "name": "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_fb_top_posts.csv",
+          "encrypted": false
+        },
+        {
+          "name": "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_fb_video_performance.csv",
+          "encrypted": false
+        },
+        {
+          "name": "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_li_pages_top_posts.csv",
+          "encrypted": false
+        },
+        {
+          "name": "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_li_pages_posts_table_date.csv",
+          "encrypted": false
+        },
+        {
+          "name": "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_ig_video_performance.csv",
+          "encrypted": false
+        },
+        {
+          "name": "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_fb_traffic_to_sabinorg.csv",
+          "encrypted": false
+        }
+      ]
+    },
+    {
+      "zip_file": "facebook_post_performance_2026-09-01_to_2026-09-30_created_on_20261006T1505Z.zip",
+      "members": [
+        {
+          "name": "facebook_post_performance_2026-09-01_to_2026-09-30_created_on_20261006T1505Z_facebook_post_performance.csv",
+          "encrypted": false
+        }
+      ]
+    },
+    {
+      "zip_file": "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z.zip",
+      "members": [
+        {
+          "name": "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_account_metrics.csv",
+          "encrypted": false
+        },
+        {
+          "name": "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_tw_posts_by_focus_area.csv",
+          "encrypted": false
+        },
+        {
+          "name": "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_fb_posts_by_asset_type.csv",
+          "encrypted": false
+        },
+        {
+          "name": "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_ig_posts.csv",
+          "encrypted": false
+        },
+        {
+          "name": "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_tw_posts_by_asset_type.csv",
+          "encrypted": false
+        },
+        {
+          "name": "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_fb_topics.csv",
+          "encrypted": false
+        },
+        {
+          "name": "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_fb_posts_by_disease_focus_area.csv",
+          "encrypted": false
+        },
+        {
+          "name": "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_li_pages_posts.csv",
+          "encrypted": false
+        },
+        {
+          "name": "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_li_pages_posts_table_date.csv",
+          "encrypted": false
+        }
+      ]
+    },
+    {
+      "zip_file": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z.zip",
+      "members": [
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_account_metrics.csv",
+          "encrypted": false
+        },
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_ad_analytics_linkedin_ads_metrics.csv",
+          "encrypted": false
+        },
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_active_users.csv",
+          "encrypted": false
+        },
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_comments_account.csv",
+          "encrypted": false
+        },
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_cost_in_local_currency_account.csv",
+          "encrypted": false
+        },
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_li_pages_page_shares_page.csv",
+          "encrypted": false
+        },
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_impressions_account.csv",
+          "encrypted": false
+        },
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_li_pages_followers_page.csv",
+          "encrypted": false
+        },
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_li_pages_page_comments_page.csv",
+          "encrypted": false
+        },
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_clicks_account.csv",
+          "encrypted": false
+        },
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_li_pages_page_clicks_page.csv",
+          "encrypted": false
+        },
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_reactions_account.csv",
+          "encrypted": false
+        },
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_li_pages_page_new_followers_page.csv",
+          "encrypted": false
+        },
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_li_pages_page_impressions_page.csv",
+          "encrypted": false
+        },
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_li_pages_page_reactions_page.csv",
+          "encrypted": false
+        },
+        {
+          "name": "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_shares_account.csv",
+          "encrypted": false
+        }
+      ]
+    },
+    {
+      "zip_file": "audience_growth_2_2026-09-01_to_2026-09-30_created_on_20261002T1236Z.zip",
+      "members": [
+        {
+          "name": "audience_growth_2_2026-09-01_to_2026-09-30_created_on_20261002T1236Z_account_metrics.csv",
+          "encrypted": true
+        },
+        {
+          "name": "audience_growth_2_2026-09-01_to_2026-09-30_created_on_20261002T1236Z_ig_engaged_audience_country.csv",
+          "encrypted": true
+        }
+      ]
+    },
+    {
+      "zip_file": "owly_link_clicks_2026-09-01_to_2026-09-30_created_on_20261002T1048Z.zip",
+      "members": [
+        {
+          "name": "owly_link_clicks_2026-09-01_to_2026-09-30_created_on_20261002T1048Z_account_metrics.csv",
+          "encrypted": false
+        },
+        {
+          "name": "owly_link_clicks_2026-09-01_to_2026-09-30_created_on_20261002T1048Z_li_pages_posts_with_owly_clicks_table.csv",
+          "encrypted": false
+        },
+        {
+          "name": "owly_link_clicks_2026-09-01_to_2026-09-30_created_on_20261002T1048Z_fb_posts_with_owly_clicks_table.csv",
+          "encrypted": false
+        }
+      ]
+    }
+  ],
+  "extracted_files": [
+    "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_account_metrics.csv",
+    "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_custom_metrics.csv",
+    "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_ig_posts.csv",
+    "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_li_pages_video_performance.csv",
+    "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_ig_top_posts.csv",
+    "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_fb_top_posts.csv",
+    "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_fb_video_performance.csv",
+    "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_li_pages_top_posts.csv",
+    "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_li_pages_posts_table_date.csv",
+    "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_ig_video_performance.csv",
+    "crossnetwork_performance_template_2026-09-01_to_2026-09-30_created_on_20261006T1536Z_fb_traffic_to_sabinorg.csv",
+    "facebook_post_performance_2026-09-01_to_2026-09-30_created_on_20261006T1505Z_facebook_post_performance.csv",
+    "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_account_metrics.csv",
+    "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_tw_posts_by_focus_area.csv",
+    "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_fb_posts_by_asset_type.csv",
+    "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_ig_posts.csv",
+    "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_tw_posts_by_asset_type.csv",
+    "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_fb_topics.csv",
+    "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_fb_posts_by_disease_focus_area.csv",
+    "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_li_pages_posts.csv",
+    "tag_report_2026-09-01_to_2026-09-30_created_on_20261002T1534Z_li_pages_posts_table_date.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_account_metrics.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_ad_analytics_linkedin_ads_metrics.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_active_users.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_comments_account.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_cost_in_local_currency_account.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_li_pages_page_shares_page.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_impressions_account.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_li_pages_followers_page.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_li_pages_page_comments_page.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_clicks_account.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_li_pages_page_clicks_page.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_reactions_account.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_li_pages_page_new_followers_page.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_li_pages_page_impressions_page.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_li_pages_page_reactions_page.csv",
+    "linkedin_overview_paid__organic_2026-09-01_to_2026-09-30_created_on_20261002T1521Z_shares_account.csv",
+    "owly_link_clicks_2026-09-01_to_2026-09-30_created_on_20261002T1048Z_account_metrics.csv",
+    "owly_link_clicks_2026-09-01_to_2026-09-30_created_on_20261002T1048Z_li_pages_posts_with_owly_clicks_table.csv",
+    "owly_link_clicks_2026-09-01_to_2026-09-30_created_on_20261002T1048Z_fb_posts_with_owly_clicks_table.csv"
+  ],
+  "locked_files_skipped": [
+    {
+      "zip_file": "audience_growth_2_2026-09-01_to_2026-09-30_created_on_20261002T1236Z.zip",
+      "member": "audience_growth_2_2026-09-01_to_2026-09-30_created_on_20261002T1236Z_account_metrics.csv",
+      "reason": "password required"
+    },
+    {
+      "zip_file": "audience_growth_2_2026-09-01_to_2026-09-30_created_on_20261002T1236Z.zip",
+      "member": "audience_growth_2_2026-09-01_to_2026-09-30_created_on_20261002T1236Z_ig_engaged_audience_country.csv",
+      "reason": "password required"
+    }
+  ]
+}

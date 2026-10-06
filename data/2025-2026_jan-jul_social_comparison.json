@@ -1,0 +1,54 @@
+{
+  "reporting_window": "January-July",
+  "scope": ["Facebook", "Instagram", "LinkedIn"],
+  "sources": {
+    "2025": "SharePoint Raw Data/Profile performance/Profile Performance (Sabin Vaccine Institute) January 1, 2020 - November 30, 2025.csv",
+    "2026": "Sabin Performance Dashboard January-July 2026 YTD view"
+  },
+  "definition_notes": {
+    "net_followers": "Sum of reported Net Audience Growth for the reporting window.",
+    "content_placements": "Published Posts (Total) in the 2025 profile export and dashboard YTD platform posts in 2026.",
+    "engagements": "Reported engagement actions across the three common platforms.",
+    "tracked_link_clicks": "2025 Post Link Clicks and 2026 Ow.ly-tracked resource clicks use different source definitions; treat this comparison as directional only."
+  },
+  "totals": {
+    "2025": {
+      "starting_followers": 24372,
+      "ending_followers": 31127,
+      "net_followers": 6952,
+      "content_placements": 390,
+      "engagements": 22491,
+      "engagements_per_placement": 57.6692307692,
+      "tracked_link_clicks": 14926
+    },
+    "2026": {
+      "starting_followers": 38203,
+      "ending_followers": 43032,
+      "net_followers": 4829,
+      "content_placements": 309,
+      "engagements": 18471,
+      "engagements_per_placement": 59.7766990291,
+      "tracked_link_clicks": 11015
+    }
+  },
+  "july_net_followers": {
+    "2025": 1675,
+    "2026": 353,
+    "change": -1322,
+    "percent_change_vs_2025": -78.9253731343
+  },
+  "platforms": {
+    "Facebook": {
+      "2025": { "ending_followers": 7430, "net_followers": 147, "content_placements": 120, "engagements": 1173, "tracked_link_clicks": 44 },
+      "2026": { "ending_followers": 7929, "net_followers": 494, "content_placements": 108, "engagements": 5861, "tracked_link_clicks": 461 }
+    },
+    "Instagram": {
+      "2025": { "ending_followers": 1905, "net_followers": 845, "content_placements": 96, "engagements": 797, "tracked_link_clicks": 0 },
+      "2026": { "ending_followers": 4737, "net_followers": 187, "content_placements": 58, "engagements": 634, "tracked_link_clicks": 0 }
+    },
+    "LinkedIn": {
+      "2025": { "ending_followers": 21792, "net_followers": 5960, "content_placements": 174, "engagements": 20521, "tracked_link_clicks": 14882 },
+      "2026": { "ending_followers": 30366, "net_followers": 4148, "content_placements": 143, "engagements": 11976, "tracked_link_clicks": 10554 }
+    }
+  }
+}

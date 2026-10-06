@@ -1,0 +1,125 @@
+{
+  "generated_at": "2026-09-24T12:20:00-04:00",
+  "report_date": "2026-09-24T12:20:00-04:00",
+  "month_key": "2026-08",
+  "source_file": "Hootsuite Listening Lumen MCP",
+  "source_url": "https://app.talkwalker.com/",
+  "report_url": "https://app.talkwalker.com/",
+  "report_title": "Sabin listening intelligence - August 2026",
+  "status": "ATTACHED",
+  "data_quality": {
+    "coverage_status": "ready_with_interpretive_caveat",
+    "period_status": "verified",
+    "visible_period": "08/01/26 - 08/31/26",
+    "timezone": "UTC",
+    "source_mode": "Hootsuite Listening Lumen MCP",
+    "extraction_notes": [
+      "The Sabin topic was filtered to published timestamps from August 1 through August 31, 2026.",
+      "Mention volume, sentiment labels, unique authors, and the generated mention summary were retrieved through the Lumen MCP.",
+      "Automated sentiment was interpreted as issue context, not a brand-health score."
+    ],
+    "sentiment_caveat": "Negative sentiment includes direct anti-vaccine criticism and misinformation context as well as negative public-health language. It is not equivalent to the share of people who distrust Sabin."
+  },
+  "metrics": {
+    "positive_mentions": 25,
+    "neutral_mentions": 31,
+    "negative_mentions": 29,
+    "sabin_mentions": 85,
+    "results": 85,
+    "performance_results": 85,
+    "unique_authors": 53,
+    "sentiment_source": "Lumen MCP sentiment breakdown for the August published-date slice",
+    "trending_topics": [
+      "vaccine confidence and hesitancy",
+      "HPV vaccination",
+      "typhoid surveillance and prevention",
+      "vaccine research and development",
+      "anti-vaccine misinformation"
+    ],
+    "media_types": [
+      "LinkedIn",
+      "X",
+      "Online News",
+      "Instagram",
+      "Facebook",
+      "YouTube"
+    ]
+  },
+  "sentiment": {
+    "positive_percent": 29.4,
+    "negative_percent": 34.1,
+    "neutral_percent": 36.5,
+    "negative_result_count": 29,
+    "note": "August sentiment was mixed. The negative set contains genuine anti-vaccine criticism and misinformation in which Sabin is mentioned alongside global-health institutions, so it should be treated as an issue-monitoring and response-readiness signal rather than a reputation score."
+  },
+  "negative_analysis": {
+    "review_status": "Lumen MCP summary reviewed",
+    "raw_negative_results": 29,
+    "reputation_risk_level": "moderate issue-context risk",
+    "interpretation": "The principal risk is not evidence of broad dissatisfaction with Sabin. It is association risk: anti-vaccine narratives and claims of institutional corruption can pull Sabin into wider distrust conversations even when Sabin is not the original target.",
+    "dominant_drivers": [
+      "Anti-vaccine claims describing vaccines as harmful and global-health institutions as corrupt.",
+      "Political misinformation about COVID-19, with Sabin expertise appearing in corrective news coverage.",
+      "Personal-tragedy and litigation narratives used to reinforce vaccine-harm claims."
+    ],
+    "recommended_reporting_language": "August listening found 85 Sabin mentions from 53 authors. Automated sentiment was mixed (29% positive, 36% neutral, 34% negative), but the negative share is best read as a monitoring signal: it includes anti-vaccine misinformation and broader distrust narratives, not a measured brand-disapproval rate."
+  },
+  "intelligence_center": {
+    "summary": "August listening found 85 Sabin mentions from 53 authors. Conversation centered on vaccine confidence training, HPV vaccination, typhoid evidence, and Sabin's institutional mission. The main communications risk was association with anti-vaccine misinformation and corruption narratives; the opportunity is to use trusted experts and practical evidence to answer those narratives without amplifying them.",
+    "operational_cards": [
+      {"label": "Mentions", "value": "85", "subtext": "August 1-31"},
+      {"label": "Unique authors", "value": "53", "subtext": "Conversation breadth"},
+      {"label": "Positive", "value": "29.4%", "subtext": "25 mentions"},
+      {"label": "Negative", "value": "34.1%", "subtext": "29 mentions; interpretation required"}
+    ],
+    "decision_rules": [
+      "Do not report automated sentiment as public confidence in Sabin.",
+      "Separate Sabin-owned posts, partner amplification, corrective expert coverage, and direct criticism before drawing reputation conclusions.",
+      "Escalate negative mentions when a high-reach or credible author directly targets Sabin, misstates Sabin's role, or gains sustained engagement.",
+      "Use listening themes to explain organic performance only when the timing and content evidence align."
+    ],
+    "weekly_questions": [
+      "Which misinformation narratives are beginning to attach directly to Sabin?",
+      "Where can Sabin experts provide corrective context without repeating harmful claims?",
+      "Which evidence-led stories earn partner or earned-media amplification beyond Sabin-owned channels?"
+    ],
+    "evidence_findings": [
+      "The August dataset does not establish a sustained misinformation narrative aimed directly at Sabin. The more immediate risk is association: Sabin is being mentioned within broader anti-vaccine and institutional-corruption narratives.",
+      "Sabin experts have the clearest corrective role in vaccine confidence, HPV vaccination, typhoid prevention, and outbreak preparedness, where practical evidence can add context without repeating harmful claims.",
+      "Evidence-led conversation gained visibility around vaccine-confidence training, HPV vaccination, typhoid evidence, and vaccine research. Source-level classification is still needed before ranking partner and earned-media amplification by impact."
+    ],
+    "recommended_response": [
+      "Prioritize practical, expert-led vaccine-confidence content for health workers and community leaders.",
+      "Prepare concise response language for vaccine-harm and corruption narratives so Sabin can respond without restating or amplifying the claim.",
+      "Strengthen pathways from earned expert coverage to Sabin-owned evidence and track partner, earned, owned, and critical mentions separately."
+    ],
+    "next_actions": [
+      "Make vaccine-confidence content practical and expert-led, using concrete guidance for health workers and community leaders.",
+      "Prepare concise response language for corruption and vaccine-harm narratives before they directly target Sabin.",
+      "Track earned corrective coverage separately from owned posts so reputation impact is not inferred from publishing volume."
+    ]
+  },
+  "insights": {
+    "strengths": [
+      "Sabin appeared as a practical source on vaccine confidence, HPV vaccination, typhoid prevention, and vaccine research.",
+      "Corrective coverage used Sabin expertise to challenge political misinformation about COVID-19."
+    ],
+    "vulnerabilities": [
+      "Anti-vaccine and institutional-corruption narratives can create association risk even when they do not directly criticize Sabin.",
+      "A raw negative-share headline would overstate what automated sentiment can establish about reputation."
+    ],
+    "opportunities": [
+      "Turn vaccine-confidence training into an evidence-led content series for health workers and community leaders.",
+      "Use trusted Sabin experts in timely corrective media where misinformation is already attracting attention."
+    ],
+    "content_ideas": [
+      "A practical myth-response toolkit grounded in conversation skills rather than claim repetition.",
+      "Short expert explainers connecting surveillance evidence to decisions on typhoid, HPV, and outbreak preparedness."
+    ],
+    "discussion_points": [
+      "Audience growth continued while reach declined, so August's priority is not simply more distribution; it is clearer conversion and more externally validated authority.",
+      "Listening supports a trust-and-evidence strategy, but it does not support a numerical public-confidence claim."
+    ],
+    "summary": "August's strongest strategic signal is a trust opportunity paired with association risk. Sabin's practical, expert-led vaccine-confidence and evidence content has clear relevance, while anti-vaccine misinformation can pull the organization into broader distrust narratives. The communications response should emphasize credible experts, practical guidance, and owned-resource pathways."
+  }
+}

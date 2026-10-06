@@ -2,7 +2,7 @@
   "status": "unavailable",
   "month": "2026-05",
   "source_mode": "openai_responses_api",
-  "generated_at": "2026-06-17T12:39:56",
+  "generated_at": "2026-09-04T10:26:46",
   "report_file": "2026-05_openai_analysis.json",
   "prompt_version": "2026-03-23-v1",
   "model": "gpt-4o-mini",
@@ -14,7 +14,7 @@
     "api_key_configured": false,
     "max_output_tokens": 1400,
     "save_raw_response": false,
-    "sdk_available": true
+    "sdk_available": false
   },
   "reason": "OpenAI reporting analysis is disabled in config.",
   "analysis": {},
@@ -186,7 +186,7 @@
     },
     "web_analytics": {
       "status": "ready",
-      "source_mode": "ga4_saved_extract",
+      "source_mode": "ga4_api",
       "summary": {
         "sessions": 13173,
         "total_users": 10954,
@@ -261,7 +261,7 @@
           "source_type": "landing_page"
         },
         {
-          "title": "Vaccines 101: Their History, How They Work, and Their Impact",
+          "title": "Vaccines 101 Their History How They Work And Their Impact",
           "path": "/resources/vaccines-101-their-history-how-they-work-and-their-impact",
           "metric_label": "Sessions",
           "metric_value": 422,
@@ -281,7 +281,7 @@
           "source_type": "landing_page"
         },
         {
-          "title": "Understanding Pentavalent and Hexavalent Vaccines",
+          "title": "Understanding Pentavalent And Hexavalent Vaccines",
           "path": "/resources/understanding-pentavalent-and-hexavalent-vaccines",
           "metric_label": "Sessions",
           "metric_value": 337,
@@ -293,39 +293,39 @@
       ],
       "referral_sources": [
         {
-          "source": "(direct)",
-          "views": 8069,
-          "total_users": 6586,
-          "new_users": 6521,
-          "key_events": 24591
+          "source": "semanticscholar.org",
+          "views": 62,
+          "total_users": 48,
+          "new_users": 48,
+          "key_events": 164
         },
         {
-          "source": "google",
-          "views": 6717,
-          "total_users": 3284,
-          "new_users": 2969,
-          "key_events": 16028
+          "source": "statics.teams.cdn.office.net",
+          "views": 189,
+          "total_users": 41,
+          "new_users": 24,
+          "key_events": 336
         },
         {
-          "source": "bing",
-          "views": 565,
-          "total_users": 210,
-          "new_users": 171,
-          "key_events": 1214
+          "source": "en.wikipedia.org",
+          "views": 34,
+          "total_users": 11,
+          "new_users": 7,
+          "key_events": 65
         },
         {
-          "source": "hootsuite",
-          "views": 409,
-          "total_users": 175,
-          "new_users": 137,
-          "key_events": 904
+          "source": "google.com",
+          "views": 7,
+          "total_users": 7,
+          "new_users": 7,
+          "key_events": 21
         },
         {
-          "source": "chatgpt.com",
-          "views": 179,
-          "total_users": 79,
-          "new_users": 68,
-          "key_events": 385
+          "source": "tmc.edu",
+          "views": 11,
+          "total_users": 5,
+          "new_users": 5,
+          "key_events": 26
         }
       ],
       "event_audit_summary": {

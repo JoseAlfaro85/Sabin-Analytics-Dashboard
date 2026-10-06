@@ -9,6 +9,40 @@
     "end_date": "2026-02-28"
   },
   "queries": {
+    "traffic_totals": {
+      "query_name": "traffic_totals",
+      "dimensions": [],
+      "metrics": [
+        "activeUsers",
+        "sessions",
+        "engagedSessions",
+        "engagementRate",
+        "bounceRate",
+        "sessionKeyEventRate",
+        "eventCount",
+        "eventsPerSession",
+        "keyEvents",
+        "userEngagementDuration"
+      ],
+      "row_count": 1,
+      "rows": [
+        {
+          "dimensions": {},
+          "metrics": {
+            "activeUsers": "11110",
+            "sessions": "13074",
+            "engagedSessions": "12619",
+            "engagementRate": "0.9651981031054",
+            "bounceRate": "0.034801896894599969",
+            "sessionKeyEventRate": "0.99250420682270157",
+            "eventCount": "56087",
+            "eventsPerSession": "4.2899648156646784",
+            "keyEvents": "47288",
+            "userEngagementDuration": "305561"
+          }
+        }
+      ]
+    },
     "traffic_acquisition": {
       "query_name": "traffic_acquisition",
       "dimensions": [
@@ -21,6 +55,8 @@
         "engagementRate",
         "bounceRate",
         "sessionKeyEventRate",
+        "eventCount",
+        "eventsPerSession",
         "keyEvents",
         "userEngagementDuration"
       ],
@@ -37,6 +73,8 @@
             "engagementRate": "0.99300495482366657",
             "bounceRate": "0.0069950451763334306",
             "sessionKeyEventRate": "1",
+            "eventCount": "26711",
+            "eventsPerSession": "3.8925969105217137",
             "keyEvents": "24766",
             "userEngagementDuration": "54052"
           }
@@ -52,6 +90,8 @@
             "engagementRate": "0.94646057347670254",
             "bounceRate": "0.05353942652329749",
             "sessionKeyEventRate": "1",
+            "eventCount": "22257",
+            "eventsPerSession": "4.9858870967741939",
             "keyEvents": "16806",
             "userEngagementDuration": "213477"
           }
@@ -67,6 +107,8 @@
             "engagementRate": "0.98977272727272725",
             "bounceRate": "0.010227272727272727",
             "sessionKeyEventRate": "1",
+            "eventCount": "3336",
+            "eventsPerSession": "3.790909090909091",
             "keyEvents": "2948",
             "userEngagementDuration": "8669"
           }
@@ -82,6 +124,8 @@
             "engagementRate": "0.93653846153846154",
             "bounceRate": "0.063461538461538458",
             "sessionKeyEventRate": "1",
+            "eventCount": "2806",
+            "eventsPerSession": "5.3961538461538465",
             "keyEvents": "2024",
             "userEngagementDuration": "21220"
           }
@@ -97,6 +141,8 @@
             "engagementRate": "0.45333333333333331",
             "bounceRate": "0.54666666666666663",
             "sessionKeyEventRate": "0.6",
+            "eventCount": "625",
+            "eventsPerSession": "2.7777777777777777",
             "keyEvents": "441",
             "userEngagementDuration": "7051"
           }
@@ -112,6 +158,8 @@
             "engagementRate": "0.98461538461538467",
             "bounceRate": "0.015384615384615385",
             "sessionKeyEventRate": "1",
+            "eventCount": "282",
+            "eventsPerSession": "4.3384615384615381",
             "keyEvents": "242",
             "userEngagementDuration": "890"
           }
@@ -127,6 +175,8 @@
             "engagementRate": "1",
             "bounceRate": "0",
             "sessionKeyEventRate": "1",
+            "eventCount": "33",
+            "eventsPerSession": "3",
             "keyEvents": "33",
             "userEngagementDuration": "0"
           }
@@ -142,6 +192,8 @@
             "engagementRate": "1",
             "bounceRate": "0",
             "sessionKeyEventRate": "1",
+            "eventCount": "32",
+            "eventsPerSession": "6.4",
             "keyEvents": "23",
             "userEngagementDuration": "196"
           }
@@ -157,6 +209,8 @@
             "engagementRate": "1",
             "bounceRate": "0",
             "sessionKeyEventRate": "1",
+            "eventCount": "1",
+            "eventsPerSession": "1",
             "keyEvents": "1",
             "userEngagementDuration": "6"
           }
@@ -172,6 +226,8 @@
             "engagementRate": "1",
             "bounceRate": "0",
             "sessionKeyEventRate": "1",
+            "eventCount": "4",
+            "eventsPerSession": "4",
             "keyEvents": "4",
             "userEngagementDuration": "0"
           }
@@ -5522,7 +5578,8 @@
     "referral_sources": {
       "query_name": "referral_sources",
       "dimensions": [
-        "sessionSource"
+        "sessionSource",
+        "sessionDefaultChannelGroup"
       ],
       "metrics": [
         "screenPageViews",
@@ -5534,11 +5591,12 @@
         "keyEvents",
         "userEngagementDuration"
       ],
-      "row_count": 175,
+      "row_count": 180,
       "rows": [
         {
           "dimensions": {
-            "sessionSource": "(direct)"
+            "sessionSource": "(direct)",
+            "sessionDefaultChannelGroup": "Direct"
           },
           "metrics": {
             "screenPageViews": "7832",
@@ -5553,7 +5611,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "google"
+            "sessionSource": "google",
+            "sessionDefaultChannelGroup": "Organic Search"
           },
           "metrics": {
             "screenPageViews": "6345",
@@ -5568,7 +5627,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "hootsuite"
+            "sessionSource": "hootsuite",
+            "sessionDefaultChannelGroup": "Organic Social"
           },
           "metrics": {
             "screenPageViews": "742",
@@ -5583,7 +5643,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "bing"
+            "sessionSource": "bing",
+            "sessionDefaultChannelGroup": "Organic Search"
           },
           "metrics": {
             "screenPageViews": "501",
@@ -5598,7 +5659,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "linkedin.com"
+            "sessionSource": "linkedin.com",
+            "sessionDefaultChannelGroup": "Organic Social"
           },
           "metrics": {
             "screenPageViews": "312",
@@ -5613,7 +5675,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "statics.teams.cdn.office.net"
+            "sessionSource": "statics.teams.cdn.office.net",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "243",
@@ -5628,22 +5691,24 @@
         },
         {
           "dimensions": {
-            "sessionSource": "chatgpt.com"
+            "sessionSource": "chatgpt.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
-            "screenPageViews": "128",
-            "totalUsers": "61",
-            "newUsers": "56",
-            "engagedSessions": "83",
-            "engagementRate": "0.92222222222222228",
-            "bounceRate": "0.077777777777777779",
-            "keyEvents": "310",
-            "userEngagementDuration": "2424"
+            "screenPageViews": "99",
+            "totalUsers": "45",
+            "newUsers": "42",
+            "engagedSessions": "57",
+            "engagementRate": "0.90476190476190477",
+            "bounceRate": "0.095238095238095233",
+            "keyEvents": "235",
+            "userEngagementDuration": "2099"
           }
         },
         {
           "dimensions": {
-            "sessionSource": "yahoo"
+            "sessionSource": "yahoo",
+            "sessionDefaultChannelGroup": "Organic Search"
           },
           "metrics": {
             "screenPageViews": "78",
@@ -5658,22 +5723,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "(not set)"
-          },
-          "metrics": {
-            "screenPageViews": "65",
-            "totalUsers": "152",
-            "newUsers": "31",
-            "engagedSessions": "31",
-            "engagementRate": "0.20394736842105263",
-            "bounceRate": "0.79605263157894735",
-            "keyEvents": "172",
-            "userEngagementDuration": "3000"
-          }
-        },
-        {
-          "dimensions": {
-            "sessionSource": "duckduckgo"
+            "sessionSource": "duckduckgo",
+            "sessionDefaultChannelGroup": "Organic Search"
           },
           "metrics": {
             "screenPageViews": "61",
@@ -5688,7 +5739,24 @@
         },
         {
           "dimensions": {
-            "sessionSource": "campaign"
+            "sessionSource": "(not set)",
+            "sessionDefaultChannelGroup": "Unassigned"
+          },
+          "metrics": {
+            "screenPageViews": "57",
+            "totalUsers": "144",
+            "newUsers": "23",
+            "engagedSessions": "23",
+            "engagementRate": "0.15972222222222221",
+            "bounceRate": "0.84027777777777779",
+            "keyEvents": "140",
+            "userEngagementDuration": "2965"
+          }
+        },
+        {
+          "dimensions": {
+            "sessionSource": "campaign",
+            "sessionDefaultChannelGroup": "Email"
           },
           "metrics": {
             "screenPageViews": "52",
@@ -5703,7 +5771,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "perplexity.ai"
+            "sessionSource": "perplexity.ai",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "46",
@@ -5718,7 +5787,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "SVW_Q1"
+            "sessionSource": "SVW_Q1",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "43",
@@ -5733,7 +5803,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "semanticscholar.org"
+            "sessionSource": "semanticscholar.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "40",
@@ -5748,7 +5819,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "LinkedIn"
+            "sessionSource": "LinkedIn",
+            "sessionDefaultChannelGroup": "Organic Social"
           },
           "metrics": {
             "screenPageViews": "38",
@@ -5763,7 +5835,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "facebook.com"
+            "sessionSource": "facebook.com",
+            "sessionDefaultChannelGroup": "Organic Social"
           },
           "metrics": {
             "screenPageViews": "33",
@@ -5778,7 +5851,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "boostcommunity.org"
+            "sessionSource": "boostcommunity.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "32",
@@ -5793,7 +5867,24 @@
         },
         {
           "dimensions": {
-            "sessionSource": "staging-5em2ouy-34enb6wrwqulq.us-4.platformsh.site"
+            "sessionSource": "chatgpt.com",
+            "sessionDefaultChannelGroup": "Unassigned"
+          },
+          "metrics": {
+            "screenPageViews": "29",
+            "totalUsers": "16",
+            "newUsers": "14",
+            "engagedSessions": "26",
+            "engagementRate": "0.96296296296296291",
+            "bounceRate": "0.037037037037037035",
+            "keyEvents": "75",
+            "userEngagementDuration": "325"
+          }
+        },
+        {
+          "dimensions": {
+            "sessionSource": "staging-5em2ouy-34enb6wrwqulq.us-4.platformsh.site",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "28",
@@ -5808,7 +5899,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "usc-excel.officeapps.live.com"
+            "sessionSource": "usc-excel.officeapps.live.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "27",
@@ -5823,7 +5915,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "lnkd.in"
+            "sessionSource": "lnkd.in",
+            "sessionDefaultChannelGroup": "Organic Social"
           },
           "metrics": {
             "screenPageViews": "22",
@@ -5838,7 +5931,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "ucdc.ucmerced.edu"
+            "sessionSource": "ucdc.ucmerced.edu",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "21",
@@ -5853,7 +5947,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "en.wikipedia.org"
+            "sessionSource": "en.wikipedia.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "19",
@@ -5868,7 +5963,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "gavi.org"
+            "sessionSource": "gavi.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "19",
@@ -5883,7 +5979,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "eclass.yorku.ca"
+            "sessionSource": "eclass.yorku.ca",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "18",
@@ -5898,7 +5995,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "newsletter"
+            "sessionSource": "newsletter",
+            "sessionDefaultChannelGroup": "Email"
           },
           "metrics": {
             "screenPageViews": "16",
@@ -5913,7 +6011,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "time.com"
+            "sessionSource": "time.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "16",
@@ -5928,7 +6027,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "m.facebook.com"
+            "sessionSource": "m.facebook.com",
+            "sessionDefaultChannelGroup": "Organic Social"
           },
           "metrics": {
             "screenPageViews": "14",
@@ -5943,7 +6043,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "sabin.org"
+            "sessionSource": "sabin.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "14",
@@ -5958,7 +6059,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "globallingo365.sharepoint.com"
+            "sessionSource": "globallingo365.sharepoint.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "13",
@@ -5973,7 +6075,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "unfoundation.org"
+            "sessionSource": "unfoundation.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "13",
@@ -5988,7 +6091,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "youtube.com"
+            "sessionSource": "youtube.com",
+            "sessionDefaultChannelGroup": "Organic Video"
           },
           "metrics": {
             "screenPageViews": "13",
@@ -6003,7 +6107,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "ecosia.org"
+            "sessionSource": "ecosia.org",
+            "sessionDefaultChannelGroup": "Organic Search"
           },
           "metrics": {
             "screenPageViews": "12",
@@ -6018,7 +6123,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "gemini.google.com"
+            "sessionSource": "gemini.google.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "12",
@@ -6033,7 +6139,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "google.com"
+            "sessionSource": "google.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "12",
@@ -6048,7 +6155,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "zac-word-edit.officeapps.live.com"
+            "sessionSource": "zac-word-edit.officeapps.live.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "12",
@@ -6063,7 +6171,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "Sabin Vaccine Institute"
+            "sessionSource": "Sabin Vaccine Institute",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "11",
@@ -6078,7 +6187,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "biomap-consortium.org"
+            "sessionSource": "biomap-consortium.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "11",
@@ -6093,7 +6203,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "linkedin"
+            "sessionSource": "linkedin",
+            "sessionDefaultChannelGroup": "Organic Social"
           },
           "metrics": {
             "screenPageViews": "11",
@@ -6108,7 +6219,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "ig"
+            "sessionSource": "ig",
+            "sessionDefaultChannelGroup": "Paid Social"
           },
           "metrics": {
             "screenPageViews": "10",
@@ -6123,7 +6235,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "mybib.com"
+            "sessionSource": "mybib.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "10",
@@ -6138,7 +6251,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "ghtcoalition.org"
+            "sessionSource": "ghtcoalition.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "9",
@@ -6153,7 +6267,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "technet-21.org"
+            "sessionSource": "technet-21.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "9",
@@ -6168,7 +6283,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "chop.edu"
+            "sessionSource": "chop.edu",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "8",
@@ -6183,7 +6299,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "measlesrubellapartnership.org"
+            "sessionSource": "measlesrubellapartnership.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "8",
@@ -6198,7 +6315,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "perplexity"
+            "sessionSource": "perplexity",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "8",
@@ -6213,7 +6331,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "copilot.com"
+            "sessionSource": "copilot.com",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "7",
@@ -6228,7 +6347,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "coalitionagainsttyphoid.org"
+            "sessionSource": "coalitionagainsttyphoid.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "6",
@@ -6243,7 +6363,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "gwtodayemail"
+            "sessionSource": "gwtodayemail",
+            "sessionDefaultChannelGroup": "Email"
           },
           "metrics": {
             "screenPageViews": "6",
@@ -6258,7 +6379,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "tmc.edu"
+            "sessionSource": "tmc.edu",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "6",
@@ -6273,7 +6395,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "uk.search.yahoo.com"
+            "sessionSource": "uk.search.yahoo.com",
+            "sessionDefaultChannelGroup": "Organic Search"
           },
           "metrics": {
             "screenPageViews": "6",
@@ -6288,7 +6411,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "usc-word-edit.officeapps.live.com"
+            "sessionSource": "usc-word-edit.officeapps.live.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "6",
@@ -6303,7 +6427,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "GW Today Section"
+            "sessionSource": "GW Today Section",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "5",
@@ -6318,7 +6443,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "Sailthru"
+            "sessionSource": "Sailthru",
+            "sessionDefaultChannelGroup": "Email"
           },
           "metrics": {
             "screenPageViews": "5",
@@ -6333,7 +6459,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "afr-rn.samrc.ac.za"
+            "sessionSource": "afr-rn.samrc.ac.za",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "5",
@@ -6348,7 +6475,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "contact-gw"
+            "sessionSource": "contact-gw",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "5",
@@ -6363,7 +6491,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "ctccs.blackboard.com"
+            "sessionSource": "ctccs.blackboard.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "5",
@@ -6378,7 +6507,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "globalhealthotherwise.com"
+            "sessionSource": "globalhealthotherwise.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "5",
@@ -6393,7 +6523,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "l.facebook.com"
+            "sessionSource": "l.facebook.com",
+            "sessionDefaultChannelGroup": "Organic Social"
           },
           "metrics": {
             "screenPageViews": "5",
@@ -6408,22 +6539,24 @@
         },
         {
           "dimensions": {
-            "sessionSource": "mailchimp"
+            "sessionSource": "(not set)",
+            "sessionDefaultChannelGroup": "Email"
           },
           "metrics": {
-            "screenPageViews": "5",
-            "totalUsers": "5",
-            "newUsers": "5",
-            "engagedSessions": "5",
+            "screenPageViews": "4",
+            "totalUsers": "4",
+            "newUsers": "4",
+            "engagedSessions": "4",
             "engagementRate": "1",
             "bounceRate": "0",
             "keyEvents": "16",
-            "userEngagementDuration": "0"
+            "userEngagementDuration": "22"
           }
         },
         {
           "dimensions": {
-            "sessionSource": "cision.lightning.force.com"
+            "sessionSource": "cision.lightning.force.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "4",
@@ -6438,7 +6571,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "fhiclinical.lightning.force.com"
+            "sessionSource": "fhiclinical.lightning.force.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "4",
@@ -6453,7 +6587,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "mail.yahoo.com"
+            "sessionSource": "mail.yahoo.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "4",
@@ -6468,7 +6603,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "ntp.msn.com"
+            "sessionSource": "ntp.msn.com",
+            "sessionDefaultChannelGroup": "Organic Search"
           },
           "metrics": {
             "screenPageViews": "4",
@@ -6483,7 +6619,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "nursingnow.org"
+            "sessionSource": "nursingnow.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "4",
@@ -6498,7 +6635,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "privacy-noticear-eges-mxar-egar-eg"
+            "sessionSource": "privacy-noticear-eges-mxar-egar-eg",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "4",
@@ -6513,7 +6651,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "probablygood.org"
+            "sessionSource": "probablygood.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "4",
@@ -6528,7 +6667,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "publichealth.gwu.edu"
+            "sessionSource": "publichealth.gwu.edu",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "4",
@@ -6543,7 +6683,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "seekly.zone"
+            "sessionSource": "seekly.zone",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "4",
@@ -6558,7 +6699,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "terms-use"
+            "sessionSource": "terms-use",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "4",
@@ -6573,7 +6715,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "vaccinesafetynet.org"
+            "sessionSource": "vaccinesafetynet.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "4",
@@ -6588,7 +6731,24 @@
         },
         {
           "dimensions": {
-            "sessionSource": "credsverse.com"
+            "sessionSource": "(not set)",
+            "sessionDefaultChannelGroup": "Referral"
+          },
+          "metrics": {
+            "screenPageViews": "3",
+            "totalUsers": "3",
+            "newUsers": "3",
+            "engagedSessions": "3",
+            "engagementRate": "1",
+            "bounceRate": "0",
+            "keyEvents": "12",
+            "userEngagementDuration": "12"
+          }
+        },
+        {
+          "dimensions": {
+            "sessionSource": "credsverse.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "3",
@@ -6603,7 +6763,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "euc-excel.officeapps.live.com"
+            "sessionSource": "euc-excel.officeapps.live.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "3",
@@ -6618,7 +6779,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "github.com"
+            "sessionSource": "github.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "3",
@@ -6633,7 +6795,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "greenhouse.lightning.force.com"
+            "sessionSource": "greenhouse.lightning.force.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "3",
@@ -6648,7 +6811,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "hercampus.com"
+            "sessionSource": "hercampus.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "3",
@@ -6663,7 +6827,24 @@
         },
         {
           "dimensions": {
-            "sessionSource": "my.noodletools.com"
+            "sessionSource": "mailchimp",
+            "sessionDefaultChannelGroup": "Unassigned"
+          },
+          "metrics": {
+            "screenPageViews": "3",
+            "totalUsers": "3",
+            "newUsers": "3",
+            "engagedSessions": "3",
+            "engagementRate": "1",
+            "bounceRate": "0",
+            "keyEvents": "10",
+            "userEngagementDuration": "0"
+          }
+        },
+        {
+          "dimensions": {
+            "sessionSource": "my.noodletools.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "3",
@@ -6678,7 +6859,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "passporthealthusa.com"
+            "sessionSource": "passporthealthusa.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "3",
@@ -6693,7 +6875,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "privacy-noticeenes-mxar-egar-eg"
+            "sessionSource": "privacy-noticeenes-mxar-egar-eg",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "3",
@@ -6708,7 +6891,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "washingtonorg"
+            "sessionSource": "washingtonorg",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "3",
@@ -6723,7 +6907,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "yandex.ru"
+            "sessionSource": "yandex.ru",
+            "sessionDefaultChannelGroup": "Organic Search"
           },
           "metrics": {
             "screenPageViews": "3",
@@ -6738,7 +6923,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "Organic Social"
+            "sessionSource": "Organic Social",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "2",
@@ -6753,7 +6939,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "duck.ai"
+            "sessionSource": "duck.ai",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "2",
@@ -6768,7 +6955,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "fr.wikipedia.org"
+            "sessionSource": "fr.wikipedia.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "2",
@@ -6783,7 +6971,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "hs_email"
+            "sessionSource": "hs_email",
+            "sessionDefaultChannelGroup": "Email"
           },
           "metrics": {
             "screenPageViews": "2",
@@ -6798,7 +6987,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "immunizationeconomics.org"
+            "sessionSource": "immunizationeconomics.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "2",
@@ -6813,7 +7003,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "in.search.yahoo.com"
+            "sessionSource": "in.search.yahoo.com",
+            "sessionDefaultChannelGroup": "Organic Search"
           },
           "metrics": {
             "screenPageViews": "2",
@@ -6828,7 +7019,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "jobgether.com"
+            "sessionSource": "jobgether.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "2",
@@ -6843,7 +7035,24 @@
         },
         {
           "dimensions": {
-            "sessionSource": "muwrp.org"
+            "sessionSource": "mailchimp",
+            "sessionDefaultChannelGroup": "Email"
+          },
+          "metrics": {
+            "screenPageViews": "2",
+            "totalUsers": "2",
+            "newUsers": "2",
+            "engagedSessions": "2",
+            "engagementRate": "1",
+            "bounceRate": "0",
+            "keyEvents": "6",
+            "userEngagementDuration": "0"
+          }
+        },
+        {
+          "dimensions": {
+            "sessionSource": "muwrp.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "2",
@@ -6858,7 +7067,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "ntp.msn.cn"
+            "sessionSource": "ntp.msn.cn",
+            "sessionDefaultChannelGroup": "Organic Search"
           },
           "metrics": {
             "screenPageViews": "2",
@@ -6873,7 +7083,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "oldest.org"
+            "sessionSource": "oldest.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "2",
@@ -6888,7 +7099,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "padlet.com"
+            "sessionSource": "padlet.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "2",
@@ -6903,7 +7115,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "privacy-notice"
+            "sessionSource": "privacy-notice",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "2",
@@ -6918,7 +7131,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "seznam"
+            "sessionSource": "seznam",
+            "sessionDefaultChannelGroup": "Organic Search"
           },
           "metrics": {
             "screenPageViews": "2",
@@ -6933,7 +7147,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "volunia.com"
+            "sessionSource": "volunia.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "2",
@@ -6948,7 +7163,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "www3.gobiernodecanarias.org"
+            "sessionSource": "www3.gobiernodecanarias.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "2",
@@ -6963,7 +7179,24 @@
         },
         {
           "dimensions": {
-            "sessionSource": "05_14_25_ovpr"
+            "sessionSource": "(not set)",
+            "sessionDefaultChannelGroup": "Organic Social"
+          },
+          "metrics": {
+            "screenPageViews": "1",
+            "totalUsers": "1",
+            "newUsers": "1",
+            "engagedSessions": "1",
+            "engagementRate": "1",
+            "bounceRate": "0",
+            "keyEvents": "4",
+            "userEngagementDuration": "1"
+          }
+        },
+        {
+          "dimensions": {
+            "sessionSource": "05_14_25_ovpr",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -6978,7 +7211,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "AMP"
+            "sessionSource": "AMP",
+            "sessionDefaultChannelGroup": "Display"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -6993,7 +7227,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "ARL"
+            "sessionSource": "ARL",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7008,7 +7243,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "ECA"
+            "sessionSource": "ECA",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7023,7 +7259,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "Final Corrected Archive Final LV LEADS Newsletter June 2016"
+            "sessionSource": "Final Corrected Archive Final LV LEADS Newsletter June 2016",
+            "sessionDefaultChannelGroup": "Email"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7038,7 +7275,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "GW Today Rotator"
+            "sessionSource": "GW Today Rotator",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7053,7 +7291,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "Keystone"
+            "sessionSource": "Keystone",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7068,7 +7307,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "Mailchimp"
+            "sessionSource": "Mailchimp",
+            "sessionDefaultChannelGroup": "Email"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7083,7 +7323,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "May caSNP E-News"
+            "sessionSource": "May caSNP E-News",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7098,7 +7339,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "Revue newsletter"
+            "sessionSource": "Revue newsletter",
+            "sessionDefaultChannelGroup": "Email"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7113,7 +7355,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "StudyInternational"
+            "sessionSource": "StudyInternational",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7128,7 +7371,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "adata.aminer.cn"
+            "sessionSource": "adata.aminer.cn",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7143,7 +7387,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "bio-equip.cn"
+            "sessionSource": "bio-equip.cn",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7158,7 +7403,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "blindsearch.fejus.com"
+            "sessionSource": "blindsearch.fejus.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7173,7 +7419,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "br.search.yahoo.com"
+            "sessionSource": "br.search.yahoo.com",
+            "sessionDefaultChannelGroup": "Organic Search"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7188,7 +7435,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "business"
+            "sessionSource": "business",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7203,7 +7451,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "canlidovizfiyatlari.com"
+            "sessionSource": "canlidovizfiyatlari.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7218,7 +7467,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "canva.com"
+            "sessionSource": "canva.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7233,7 +7483,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "cn.bing.com"
+            "sessionSource": "cn.bing.com",
+            "sessionDefaultChannelGroup": "Organic Search"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7248,7 +7499,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "colab.research.google.com"
+            "sessionSource": "colab.research.google.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7263,7 +7515,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "columbian"
+            "sessionSource": "columbian",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7278,7 +7531,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "cprnearme.com"
+            "sessionSource": "cprnearme.com",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7293,7 +7547,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "cps"
+            "sessionSource": "cps",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7308,7 +7563,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "dbzcbvta"
+            "sessionSource": "dbzcbvta",
+            "sessionDefaultChannelGroup": "Email"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7323,7 +7579,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "devex.com"
+            "sessionSource": "devex.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7338,7 +7595,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "docs.google.com"
+            "sessionSource": "docs.google.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7353,7 +7611,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "draze.com"
+            "sessionSource": "draze.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7368,7 +7627,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "es.wikipedia.org"
+            "sessionSource": "es.wikipedia.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7383,7 +7643,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "fb"
+            "sessionSource": "fb",
+            "sessionDefaultChannelGroup": "Paid Social"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7398,7 +7659,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "felo.ai"
+            "sessionSource": "felo.ai",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7413,7 +7675,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "fivetran.lightning.force.com"
+            "sessionSource": "fivetran.lightning.force.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7428,7 +7691,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "gigablast.com"
+            "sessionSource": "gigablast.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7443,7 +7707,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "grok.com"
+            "sessionSource": "grok.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7458,7 +7723,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "gsehd"
+            "sessionSource": "gsehd",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7473,7 +7739,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "gw_main_site"
+            "sessionSource": "gw_main_site",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7488,7 +7755,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "gwtoday"
+            "sessionSource": "gwtoday",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7503,7 +7771,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "gwu"
+            "sessionSource": "gwu",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7518,7 +7787,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "idealist"
+            "sessionSource": "idealist",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7533,7 +7803,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "ieltsdata.org"
+            "sessionSource": "ieltsdata.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7548,7 +7819,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "iseek.com"
+            "sessionSource": "iseek.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7563,7 +7835,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "it.wikipedia.org"
+            "sessionSource": "it.wikipedia.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7578,7 +7851,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "kimptonhotels.com"
+            "sessionSource": "kimptonhotels.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7593,7 +7867,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "librechat.pasteur.cloud"
+            "sessionSource": "librechat.pasteur.cloud",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7608,7 +7883,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "lm.facebook.com"
+            "sessionSource": "lm.facebook.com",
+            "sessionDefaultChannelGroup": "Organic Social"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7623,7 +7899,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "luxxle.com"
+            "sessionSource": "luxxle.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7638,7 +7915,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "m.baidu.com"
+            "sessionSource": "m.baidu.com",
+            "sessionDefaultChannelGroup": "Organic Search"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7653,7 +7931,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "mail.google.com"
+            "sessionSource": "mail.google.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7668,7 +7947,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "manyget.com"
+            "sessionSource": "manyget.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7683,7 +7963,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "mmglobalhealth.org"
+            "sessionSource": "mmglobalhealth.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7698,7 +7979,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "portal.fusion.norstella.com"
+            "sessionSource": "portal.fusion.norstella.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7713,7 +7995,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "pressrelease"
+            "sessionSource": "pressrelease",
+            "sessionDefaultChannelGroup": "Unassigned"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7728,7 +8011,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "privacy-noticear-eg"
+            "sessionSource": "privacy-noticear-eg",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7743,7 +8027,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "privacy-noticear-egenar-egar-eg"
+            "sessionSource": "privacy-noticear-egenar-egar-eg",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7758,7 +8043,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "privacy-noticear-egenar-egar-egar-eg"
+            "sessionSource": "privacy-noticear-egenar-egar-egar-eg",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7773,7 +8059,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "privacy-noticear-egenar-eges-mxes-mx"
+            "sessionSource": "privacy-noticear-egenar-eges-mxes-mx",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7788,7 +8075,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "privacy-noticear-eges-mxar-egen"
+            "sessionSource": "privacy-noticear-eges-mxar-egen",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7803,7 +8091,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "privacy-noticeenenar-eg"
+            "sessionSource": "privacy-noticeenenar-eg",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7818,7 +8107,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "privacy-noticeenenar-egenar-egenar-eg"
+            "sessionSource": "privacy-noticeenenar-egenar-egenar-eg",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7833,7 +8123,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "privacy-noticeenes-mxar-egenes-mxar-eg"
+            "sessionSource": "privacy-noticeenes-mxar-egenes-mxar-eg",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7848,7 +8139,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "privacy-noticeenes-mxenar-eges-mxar-eg"
+            "sessionSource": "privacy-noticeenes-mxenar-eges-mxar-eg",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7863,7 +8155,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "privacy-noticeenes-mxes-mx"
+            "sessionSource": "privacy-noticeenes-mxes-mx",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7878,7 +8171,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "privacy-noticees-mx"
+            "sessionSource": "privacy-noticees-mx",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7893,7 +8187,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "qwant.com"
+            "sessionSource": "qwant.com",
+            "sessionDefaultChannelGroup": "Organic Search"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7908,7 +8203,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "roundup.hbculifestyle.com"
+            "sessionSource": "roundup.hbculifestyle.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7923,7 +8219,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "simmani.com"
+            "sessionSource": "simmani.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7938,7 +8235,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "smartsheet.lightning.force.com"
+            "sessionSource": "smartsheet.lightning.force.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7953,7 +8251,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "smhs"
+            "sessionSource": "smhs",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7968,7 +8267,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "stagingsite.muwrp.cloud"
+            "sessionSource": "stagingsite.muwrp.cloud",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7983,7 +8283,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "szczepienia.pzh.gov.pl"
+            "sessionSource": "szczepienia.pzh.gov.pl",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -7998,7 +8299,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "topsite.com"
+            "sessionSource": "topsite.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -8013,7 +8315,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "townint-seeds.govpredict.com"
+            "sessionSource": "townint-seeds.govpredict.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -8028,7 +8331,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "twitter"
+            "sessionSource": "twitter",
+            "sessionDefaultChannelGroup": "Organic Social"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -8043,7 +8347,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "union.joinhandshake.com"
+            "sessionSource": "union.joinhandshake.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -8058,7 +8363,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "us20.campaign-archive.com"
+            "sessionSource": "us20.campaign-archive.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -8073,7 +8379,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "vacunasaep.org"
+            "sessionSource": "vacunasaep.org",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -8088,7 +8395,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "www.biotechsnap.com"
+            "sessionSource": "www.biotechsnap.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -8103,7 +8411,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "x.com"
+            "sessionSource": "x.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "1",
@@ -8118,7 +8427,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "(data not available)"
+            "sessionSource": "(data not available)",
+            "sessionDefaultChannelGroup": "Cross-network"
           },
           "metrics": {
             "screenPageViews": "0",
@@ -8133,7 +8443,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "foundationsearch.com"
+            "sessionSource": "foundationsearch.com",
+            "sessionDefaultChannelGroup": "Referral"
           },
           "metrics": {
             "screenPageViews": "0",
@@ -8148,7 +8459,8 @@
         },
         {
           "dimensions": {
-            "sessionSource": "t.co"
+            "sessionSource": "t.co",
+            "sessionDefaultChannelGroup": "Organic Social"
           },
           "metrics": {
             "screenPageViews": "0",

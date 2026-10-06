@@ -1,9 +1,10 @@
-const CACHE_NAME = "sabin-dashboard-2026-05-2026-06-17t12-39-56";
+const CACHE_NAME = "sabin-dashboard-2026-09-2026-10-06t11-51-26";
 const APP_SHELL = [
   "/",
   "/app",
   "/DASHBOARD_PREVIEW.html",
   "/REPORTS.html",
+  "/ASSETS.html",
   "/ADS.html",
   "/PROGRAMS_REPORT.html",
   "/EXECUTIVE_REPORT.html",
