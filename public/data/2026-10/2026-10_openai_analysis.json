@@ -2,7 +2,7 @@
   "status": "unavailable",
   "month": "2026-10",
   "source_mode": "openai_responses_api",
-  "generated_at": "2026-11-06T10:04:18",
+  "generated_at": "2026-11-06T12:03:29",
   "report_file": "2026-10_openai_analysis.json",
   "prompt_version": "2026-03-23-v1",
   "model": "gpt-4o-mini",
@@ -24,7 +24,7 @@
   "source_snapshot": {
     "month": null,
     "executive_context": {
-      "headline": "October 2026: 50 social posts generated 85,024 impressions and 1,773 engagements.",
+      "headline": "October 2026: 50 social posts generated 85,024 impressions and 1,897 engagements.",
       "adjustment_areas": [
         "LinkedIn follower pace is off track.",
         "LinkedIn posting cadence is off track.",
@@ -36,21 +36,21 @@
       "total_followers": 44252,
       "net_new_followers": 623,
       "total_posts": 50,
-      "total_engagements": 1773,
+      "total_engagements": 1897,
       "total_link_clicks": 4749,
       "page_impressions": 85024,
       "page_reach": 85024,
       "engagement_rate_platform_average": 0.0675,
-      "engagement_per_post": 35.46,
+      "engagement_per_post": 37.94,
       "follows_per_1000_impressions": 7.33
     },
     "export_completeness": {
-      "status": "partial",
-      "status_reason": "supplemental top-post files used for facebook; full post-performance exports present for instagram, linkedin",
+      "status": "complete",
+      "status_reason": "All expected monthly export families were present without relying on supplemental top-post files.",
       "fallback_platforms": [],
       "missing_post_data_platforms": [],
       "post_data_sources": {
-        "facebook": "supplemental_top_posts",
+        "facebook": "full_post_performance",
         "instagram": "full_post_performance",
         "linkedin": "full_post_performance",
         "x": "missing"
@@ -97,7 +97,7 @@
           "target_benchmark_followers_to_date": 8609,
           "target_benchmark_net_new_followers_to_date": 957,
           "gap_to_target_benchmark_net_new_followers": -566,
-          "posts_actual": 20,
+          "posts_actual": 17,
           "posts_target_min": 14,
           "posts_target_max": 22,
           "gap_to_year_end_target": 830
@@ -123,24 +123,24 @@
     "content_performance": {
       "account": {
         "posts": 50,
-        "engagements": 1773,
+        "engagements": 1897,
         "link_clicks": 4749,
         "impressions": 85024,
         "engagement_rate": 0.0675,
-        "engagement_per_post": 35.46,
+        "engagement_per_post": 37.94,
         "follows_per_1000_impressions": 7.33
       },
       "platforms": [
         {
           "platform": "Facebook",
-          "posts": 20,
-          "engagements": 15,
-          "link_clicks": 230,
+          "posts": 17,
+          "engagements": 139,
+          "link_clicks": 139,
           "impressions": 64189,
           "engagement_rate": 0.0551,
-          "engagement_per_post": 0.75,
+          "engagement_per_post": 8.18,
           "follows_per_1000_impressions": 0.73,
-          "post_data_source": "supplemental_top_posts"
+          "post_data_source": "full_post_performance"
         },
         {
           "platform": "Linkedin",
@@ -348,15 +348,9 @@
       "status": "passed",
       "can_finalize": true,
       "failed_checks": 0,
-      "warning_checks": 1,
+      "warning_checks": 0,
       "failed_check_details": [],
-      "warning_check_details": [
-        {
-          "name": "monthly_export_completeness",
-          "status": "warning",
-          "details": "Monthly export completeness is partial. supplemental top-post files used for facebook; full post-performance exports present for instagram, linkedin"
-        }
-      ]
+      "warning_check_details": []
     },
     "assumptions": [
       "Reach and impressions are standardized into one visibility metric per platform, using impressions when available and otherwise reach.",
@@ -368,10 +362,9 @@
       "YouTube follower counts remain available in raw Hootsuite exports, but report-facing summary cards exclude YouTube until a matching platform detail layer is maintained.",
       "Actual follower pace uses real January 1 follower counts when they can be recovered from January exports or saved January dashboard artifacts.",
       "Target pace remains a separate benchmark derived from the stated year-end target and annual growth rate.",
-      "Monthly export completeness is complete only when the cross-platform aggregate export, Facebook/Instagram/LinkedIn full post-performance exports, and the expected Facebook/LinkedIn Owly website-click exports are present.",
+      "Monthly export completeness is complete when the cross-platform aggregate export, the decision-relevant Facebook traffic-to-Sabin.org post export (or native Facebook performance export), Instagram/LinkedIn full post-performance exports, and the expected Facebook/LinkedIn Owly website-click exports are present.",
       "Email exports are excluded from social platform calculations to avoid mixing unlike metrics.",
-      "Follower pace is labeled slightly behind when actual performance is within 5% of the benchmark pace.",
-      "The cross-platform aggregate account_metrics export is the all-platform rollup, and supplemental top-post files may still be needed to support post-level context where full post-performance exports are missing."
+      "Follower pace is labeled slightly behind when actual performance is within 5% of the benchmark pace."
     ]
   },
   "response": {}

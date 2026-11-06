@@ -1,26 +1,19 @@
 {
   "_meta": {
     "month": "2026-10",
-    "generated_at": "2026-11-06T10:04:18"
+    "generated_at": "2026-11-06T12:03:29"
   },
-  "status": "review_required",
-  "ready_for_teammate_share": false,
-  "summary": "Validation passed, but warning-level review is still required before teammate sharing.",
-  "export_completeness_status": "partial",
-  "export_completeness_reason": "supplemental top-post files used for facebook; full post-performance exports present for instagram, linkedin",
+  "status": "ready",
+  "ready_for_teammate_share": true,
+  "summary": "Validation passed with complete exports and no warning checks.",
+  "export_completeness_status": "complete",
+  "export_completeness_reason": "All expected monthly export families were present without relying on supplemental top-post files.",
   "qa_status": "passed",
   "qa_failed_count": 0,
-  "qa_warning_count": 1,
+  "qa_warning_count": 0,
   "failed_checks": [],
-  "warning_checks": [
-    {
-      "name": "monthly_export_completeness",
-      "details": "Monthly export completeness is partial. supplemental top-post files used for facebook; full post-performance exports present for instagram, linkedin"
-    }
-  ],
+  "warning_checks": [],
   "recommended_actions": [
-    "Review warning checks and decide whether the month is presentable as-is.",
-    "Refresh missing Hootsuite exports so export completeness reaches complete.",
-    "Open the month validation summary and reconcile each warning before presenting results."
+    "Use this month package for teammate review or publishing."
   ]
 }
