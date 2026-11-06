@@ -1,6 +1,19 @@
 {
-  "latest_month": "2026-09",
+  "latest_month": "2026-10",
   "months": [
+    {
+      "key": "2026-10",
+      "label": "October 2026",
+      "has_dashboard": true,
+      "has_listening": false,
+      "has_validation_summary": true,
+      "validation_source": "validation_summary",
+      "validation_status": "review_required",
+      "ready_for_teammate_share": false,
+      "qa_warning_count": 1,
+      "qa_failed_count": 0,
+      "export_completeness_status": "partial"
+    },
     {
       "key": "2026-09",
       "label": "September 2026",
@@ -119,5 +132,5 @@
       "export_completeness_status": "partial"
     }
   ],
-  "generated_at": "2026-10-06T11:51:26"
+  "generated_at": "2026-11-06T10:04:19"
 }

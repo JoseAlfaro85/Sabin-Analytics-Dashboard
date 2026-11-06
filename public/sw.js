@@ -1,4 +1,4 @@
-const CACHE_NAME = "sabin-dashboard-2026-09-2026-10-06t11-51-26";
+const CACHE_NAME = "sabin-dashboard-2026-10-2026-11-06t10-04-19";
 const APP_SHELL = [
   "/",
   "/app",
@@ -17,6 +17,7 @@ const APP_SHELL = [
   "/assets/sabin-logo-color.png",
   "/assets/sabin-logo-white.png",
   "/assets/sabin-logo-black.png",
+  "/assets/albert-caricature-thumbnail.png",
   "/data/dashboard_manifest.json",
   "/data/latest_dashboard.json"
 ];

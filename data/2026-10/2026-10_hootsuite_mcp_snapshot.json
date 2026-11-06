@@ -1,0 +1,11 @@
+{
+  "reporting_period": {
+    "since": "2026-10-01",
+    "until": "2026-10-31"
+  },
+  "report_close": {
+    "close_date": "2026-11-01"
+  },
+  "source": "Hootsuite CSV report exports requested for October 1–31, 2026",
+  "generated_at": "2026-11-06T10:03:00-05:00"
+}
