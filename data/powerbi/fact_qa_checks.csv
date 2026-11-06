@@ -96,16 +96,16 @@ month,qa_status,can_finalize,failed_checks,warning_checks,check_name,check_statu
 2026-09,passed,True,0,0,source_data_loaded_for_reporting_month,passed,Required monthly source data loaded and standardized social rows were available.
 2026-09,passed,True,0,0,source_dates_match_reporting_month,passed,All parsed source dates aligned to the selected reporting month.
 2026-09,passed,True,0,0,source_files_in_selected_folder,passed,All selected source files came from the reporting folder.
-2026-10,passed,True,0,1,account_totals_match_cross_network_export,passed,Account summary metrics reconcile to platform-native Hootsuite engagement inputs plus tracked-click enrichments.
-2026-10,passed,True,0,1,additive_and_nonadditive_separation,passed,"Derived rates reconcile to additive totals, while native Hootsuite average engagement rates are preserved as source-provided metrics."
-2026-10,passed,True,0,1,month_label_correct,passed,Report month label is 2026-10.
-2026-10,passed,True,0,1,monthly_export_completeness,warning,"Monthly export completeness is partial. supplemental top-post files used for facebook; full post-performance exports present for instagram, linkedin"
-2026-10,passed,True,0,1,native_engagements_follow_platform_sum,passed,Report-facing engagements reconcile to the sum of platform-native Post engagement totals.
-2026-10,passed,True,0,1,native_post_engagement_source_identified,passed,Every platform-native engagement total has an identified source.
-2026-10,passed,True,0,1,no_archive_or_test_files,passed,All selected source files avoided archive/test style paths.
-2026-10,passed,True,0,1,no_duplicate_platform_post_ids,passed,No duplicate platform/post identifiers were detected.
-2026-10,passed,True,0,1,platform_totals_internal_consistency,passed,Detailed platform totals reconcile to the summed platform rows.
-2026-10,passed,True,0,1,report_close_date_declared,passed,Reporting close date is explicitly set to 2026-11-01.
-2026-10,passed,True,0,1,source_data_loaded_for_reporting_month,passed,Required monthly source data loaded and standardized social rows were available.
-2026-10,passed,True,0,1,source_dates_match_reporting_month,passed,All parsed source dates aligned to the selected reporting month.
-2026-10,passed,True,0,1,source_files_in_selected_folder,passed,All selected source files came from the reporting folder.
+2026-10,passed,True,0,0,account_totals_match_cross_network_export,passed,Account summary metrics reconcile to platform-native Hootsuite engagement inputs plus tracked-click enrichments.
+2026-10,passed,True,0,0,additive_and_nonadditive_separation,passed,"Derived rates reconcile to additive totals, while native Hootsuite average engagement rates are preserved as source-provided metrics."
+2026-10,passed,True,0,0,facebook_traffic_source_scope,passed,Facebook detail rows intentionally represent posts that drove traffic to Sabin.org; the account-level post total includes all Facebook posts.
+2026-10,passed,True,0,0,month_label_correct,passed,Report month label is 2026-10.
+2026-10,passed,True,0,0,native_engagements_follow_platform_sum,passed,Report-facing engagements reconcile to the sum of platform-native Post engagement totals.
+2026-10,passed,True,0,0,native_post_engagement_source_identified,passed,Every platform-native engagement total has an identified source.
+2026-10,passed,True,0,0,no_archive_or_test_files,passed,All selected source files avoided archive/test style paths.
+2026-10,passed,True,0,0,no_duplicate_platform_post_ids,passed,No duplicate platform/post identifiers were detected.
+2026-10,passed,True,0,0,platform_totals_internal_consistency,passed,Detailed platform totals reconcile to the summed platform rows.
+2026-10,passed,True,0,0,report_close_date_declared,passed,Reporting close date is explicitly set to 2026-11-01.
+2026-10,passed,True,0,0,source_data_loaded_for_reporting_month,passed,Required monthly source data loaded and standardized social rows were available.
+2026-10,passed,True,0,0,source_dates_match_reporting_month,passed,All parsed source dates aligned to the selected reporting month.
+2026-10,passed,True,0,0,source_files_in_selected_folder,passed,All selected source files came from the reporting folder.

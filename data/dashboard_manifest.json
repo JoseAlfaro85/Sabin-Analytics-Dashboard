@@ -8,11 +8,11 @@
       "has_listening": false,
       "has_validation_summary": true,
       "validation_source": "validation_summary",
-      "validation_status": "review_required",
-      "ready_for_teammate_share": false,
-      "qa_warning_count": 1,
+      "validation_status": "ready",
+      "ready_for_teammate_share": true,
+      "qa_warning_count": 0,
       "qa_failed_count": 0,
-      "export_completeness_status": "partial"
+      "export_completeness_status": "complete"
     },
     {
       "key": "2026-09",
@@ -132,5 +132,5 @@
       "export_completeness_status": "partial"
     }
   ],
-  "generated_at": "2026-11-06T10:04:19"
+  "generated_at": "2026-11-06T12:03:29"
 }

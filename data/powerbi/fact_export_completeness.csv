@@ -8,4 +8,4 @@ month,status,status_reason,fallback_files_used,cross_network_export_present,post
 2026-07,partial,"supplemental top-post files used for facebook; full post-performance exports present for instagram, linkedin",,True,True,False,True,True
 2026-08,complete,All expected monthly export families were present without relying on supplemental top-post files.,,True,True,True,True,True
 2026-09,complete,All expected monthly export families were present without relying on supplemental top-post files.,,True,True,True,True,True
-2026-10,partial,"supplemental top-post files used for facebook; full post-performance exports present for instagram, linkedin",,True,True,False,True,True
+2026-10,complete,All expected monthly export families were present without relying on supplemental top-post files.,,True,True,True,True,True

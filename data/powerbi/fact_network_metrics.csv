@@ -26,6 +26,6 @@ month,platform,platform_label,platform_sort_order,posts,reach,impressions,clicks
 2026-09,facebook,Facebook,1,22,28582,28582,53,5947,,0.0627,270.3181818181818,7904,7946,42,1.4694563011685675,full_post_performance,standardized_posts_with_hootsuite_ui_rollup
 2026-09,instagram,Instagram,2,6,1478,1478,0,42,,0.0528,7.0,4702,4691,-11,-7.442489851150203,full_post_performance,standardized_posts_with_hootsuite_ui_rollup
 2026-09,linkedin,LinkedIn,3,22,23196,23196,3389,3917,,0.1517,178.04545454545453,30740,31033,293,12.631488187618555,full_post_performance,standardized_posts_with_hootsuite_ui_rollup
-2026-10,facebook,Facebook,1,20,64189,64189,230,15,,0.055099999999999996,0.75,7923,7970,47,0.732212684416333,supplemental_top_posts,account_metrics_rollup
+2026-10,facebook,Facebook,1,17,64189,64189,139,139,,0.055099999999999996,8.176470588235293,7923,7970,47,0.732212684416333,full_post_performance,"standardized_posts_with_legacy_backfill[visibility,base_engagements]"
 2026-10,instagram,Instagram,2,5,718,718,0,31,,0.057300000000000004,6.2,4654,4681,27,37.60445682451254,full_post_performance,standardized_posts
 2026-10,linkedin,LinkedIn,3,25,20117,20117,1169,1727,,0.0794,69.08,31052,31601,549,27.29035144405229,full_post_performance,standardized_posts
